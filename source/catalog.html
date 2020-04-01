@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <section class="top-menu header__top-menu">
+        <div class="functions top-menu__functions">
+          <a href="index.html" class="functions__link functions__link--white">
+            <img class="top-menu__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+          </a>
+          <button class="functions__button functions__button--open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <div class="information top-menu__information">
+          <ul class="inner-links information__inner-links">
+            <li class="inner-links__item">
+              <a class="inner-links__link" href="./index.html">О сервисе</a>
+            </li>
+            <li class="inner-links__item">
+              <a class="inner-links__link" href="./form.html">Направления</a>
+            </li>
+            <li class="inner-links__item">
+              <a class="inner-links__link inner-links__link--active" href="./catalog.html">Попутчики</a>
+            </li>
+          </ul>
+
+          <a class="information__auth-link" href="">Авторизация</a>
+
+          <ul class="contacts information__contacts">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--phone" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+
+          <ul class="social information__social">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">Наш Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="">
+                <span class="visually-hidden">Наш VK</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Наш instagram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+
+      <h1 class="main__heading">Попутчики</h1>
+
+      <!-- <section class="filter-country main__filter-country">
+        <div class="filter-country__name-wrapper">
+          <h2 class="filter-country__name">Фильтрация по странам</h2>
+          <button class="filter-country__open visually-hidden" type="button" name="button">
+            <span class="visually-hidden">Развернуть фильтр</span>
+          </button>
+          <button class="filter-country__collapse" type="button" name="button">
+            <span class="visually-hidden">Свернуть фильтр</span>
+          </button>
+        </div>
+        <div class="filter filter-country__filter">
+
+          <div class="filter__continents-wrapper">
+            <ul class="continent-list filter__continent-list">
+              <li class="continent-list__item">
+                <a class="continent-list__link continent-list__link--active" href="">Европа</a>
+              </li>
+              <li class="continent-list__item">
+                <a class="continent-list__link" href="">Азия</a>
+              </li>
+              <li class="continent-list__item">
+                <a class="continent-list__link" href="">Америка</a>
+              </li>
+              <li class="continent-list__item">
+                <a class="continent-list__link" href="">Острова</a>
+              </li>
+            </ul>
+
+            <ul class="letters-list filter__letters-list">
+              <li class="letters-list__item">
+                <a class="letters-list__link letters-list__link--active" href="">А</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Б</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">В</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Г</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Д</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Е</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">З</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">И</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">К</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Л</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">М</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Н</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">О</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">П</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Р</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">С</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Т</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">У</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Ф</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Х</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Ч</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Ш</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Э</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Ю</a>
+              </li>
+              <li class="letters-list__item">
+                <a class="letters-list__link" href="">Я</a>
+              </li>
+            </ul>
+
+            <ul class="filter-to-visit filter__filter-to-visit">
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Афганистан</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Албания</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Алжир</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Андорра</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Аргентина</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Армения</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Австралия</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Австрия</a>
+              </li>
+              <li class="filter-to-visit__item">
+                <a class="filter-to-visit__link" href="">Азербайджан</a>
+              </li>
+            </ul>
+          </div>
+
+
+          <button class="filter__collapse-filter" type="button" name="button">
+            <span class="filter__text">Свернуть</span>
+            <span class="visually-hidden">фильтр</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="travelmates-filter main__travelmates-filter">
+        <div class="travelmates-filter__wrapper">
+          <h2 class="visually-hidden">Фильтр попутчиков</h2>
+          <p class="travelmates-filter__heading">Подберите идеального попутчика</p>
+          <form class="travelmates-filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="preferences-list travelmates-filters__preferences-list">
+              <li class="preferences-list__item">
+                <span class="preferences-list__name">Хобби</span>
+                <ul class="checkbox-list preferences-list__checkbox-list">
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="gym" name="gym" checked>
+                    <label class="checkbox-list__label" for="gym">
+                      <span class="checkbox-list__text">Спортзал</span>
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="hookah" name="hookah">
+                    <label class="checkbox-list__label" for="hookah">
+                      <span class="checkbox-list__text">Кальян</span>
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="sofa" name="sofa">
+                    <label class="checkbox-list__label" for="sofa">
+                      <span class="checkbox-list__text">Диван</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="preferences-list__item">
+                <span class="preferences-list__name">Музыка</span>
+                <ul class="checkbox-list preferences-list__checkbox-list">
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="hard-rock" name="hard-rock" checked>
+                    <label class="checkbox-list__label" for="hard-rock">
+                      <span class="checkbox-list__text">Тяжелый рок</span>
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="russian-rap" name="russian-rap">
+                    <label class="checkbox-list__label" for="russian-rap">
+                      <span class="checkbox-list__text">Русский рэп</span>
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="eurodance" name="eurodance">
+                    <label class="checkbox-list__label" for="eurodance">
+                      <span class="checkbox-list__text">Евроденс</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+              <li class="preferences-list__item">
+                <span class="preferences-list__name">Еда</span>
+                <ul class="checkbox-list preferences-list__checkbox-list">
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden visually-hidden" type="checkbox" id="meat-eater" name="meat-eater" checked>
+                    <label class="checkbox-list__label" for="meat-eater">
+                      <span class="checkbox-list__text">Мясоед</span>
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden" type="checkbox" id="healthy-food" name="healthy-food">
+                    <label class="checkbox-list__label" for="healthy-food">
+                      <span class="checkbox-list__text">Сидит на ПП</span>
+                    </label>
+                  </li>
+                  <li class="checkbox-list__item">
+                    <input class="checkbox-list__checkbox visually-hidden" type="checkbox" id="vegan" name="vegan" value="">
+                    <label class="checkbox-list__label" for="vegan">
+                      <span class="checkbox-list__text">Веган-сыроед</span>
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="transport-block travelmates-filter__transport-block">
+              <span class="transport-block__heading">Транспорт</span>
+              <div class="transport-block__buttons-wrapper">
+                <input class="visually-hidden transport-block__checkbox" type="checkbox" name="plane" id="plane" checked>
+                <label class="transport-block__button transport-block__button--plane" for="plane">
+                  <span class="transport__description">Авиаперелет</span>
+                </label>
+                <input class="visually-hidden transport-block__checkbox" type="checkbox" name="bus" id="bus" checked>
+                <label class="transport-block__button transport-block__button--bus" for="bus">
+                  <span class="transport__description">Автотранспорт</span>
+                </label>
+                <input class="visually-hidden transport-block__checkbox" type="checkbox" name="bike" id="bike">
+                <label class="transport-block__button transport-block__button--bike" for="bike">
+                  <span class="transport__description">Велосипед</span>
+                </label>
+                <input class="visually-hidden transport-block__checkbox" type="checkbox" name="run" id="run" checked>
+                <label class="transport-block__button transport-block__button--run" for="run">
+                  <span class="transport__description">Пешком</span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="level-filter travelmates-filter__level-filter">
+              <p class="level-filter__name">ЛЕВЕЛ</p>
+              <div class="level-filter__input-wrapper">
+                <input class="level-filter__input level-filter__input--min-level" type="number" name="min-level" value="30">
+                <input class="level-filter__input level-filter__input--max-level" type="number" name="max-level" value="100">
+              </div>
+              <div class="level-filter__line">
+                <button class="level-filter__button level-filter__button--min-level" type="button">
+                  <span class="visually-hidden">Минимальное значение</span>
+                </button>
+                <button class="level-filter__button level-filter__button--max-level" type="button">
+                  <span class="visually-hidden">Максимальное значение</span>
+                </button>
+              </div>
+            </div>
+            <button class="travelmates-filter__submit" type="submit">Показать</button>
+          </form>
+        </div>
+      </section> -->
+
+      <section class="mates-sorted main__mates-sorted">
+        <ul class="mates-sorted__list">
+          <li class="mates-sorted__item">
+            <div class="catalog-mate-card mates-sorted__catalog-mate-card">
+                <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
+
+              <div class="catalog-mate-card__name-wrapper">
+                <h3 class="catalog-mate-card__name">Таня Фирсова <span class="visually-hidden">offline</span></h3>
+                <div class="catalog-mate-card__likes-wrapper">
+                  <button class="catalog-mate-card__like-btn catalog-mate-card__like-btn--active" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                    <p class="catalog-mate-card__like-number">1,5 М</p>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="hashtags hashtags--catalog catalog-mate-card__hashtags">
+                <li class="hashtags__item">
+                  <a href="">ЗОЖ</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">ПП</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">Фитнес</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">пляж</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">авокадо</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">смузи</a>
+                </li>
+              </ul>
+              <div class="catalog-mate-card__countries-wrapper">
+                <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
+                <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--sri-lanka">Шри-ланка</p>
+                    </a>
+                  </li>
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--thailand">Таиланд</p>
+                    </a>
+                  </li>
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--seishells">Сейшелы</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="catalog-mate-card__transport-wrapper">
+                <h4 class="catalog-mate-card__text">Транспорт:</h4>
+                <ul class="transport transport--catalog catalog-mate-card__transport">
+                  <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                    <span class="transport__description">Авиаперелет</span>
+                  </li>
+                  <li class="transport__item transport__item--bus transport__item--catalog">
+                    <span class="transport__description">Автотранспорт</span>
+                  </li>
+                  <li class="transport__item transport__item--bycicle transport__item--catalog">
+                    <span class="transport__description">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--run transport__item--catalog">
+                    <span class="transport__description">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-mate-card__level-wrapper">
+                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__level">99</p>
+              </div>
+
+              <a class="catalog-mate-card__go" href="">Позвать!</a>
+            </div>
+          </li>
+
+          <li class="mates-sorted__item">
+            <div class="catalog-mate-card mates-sorted__catalog-mate-card">
+                <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
+
+              <div class="catalog-mate-card__name-wrapper">
+                <h3 class="catalog-mate-card__name">Петя Демин <span class="visually-hidden">offline</span></h3>
+                <div class="catalog-mate-card__likes-wrapper">
+                  <button class="catalog-mate-card__like-btn" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                    <p class="catalog-mate-card__like-number">150</p>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="hashtags hashtags--catalog catalog-mate-card__hashtags">
+                <li class="hashtags__item">
+                  <a href="">бургер</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">бар</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">футбол</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">концерт</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">крафт</a>
+                </li>
+              </ul>
+              <div class="catalog-mate-card__countries-wrapper">
+                <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
+                <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--sri-lanka">Бельгия</p>
+                    </a>
+                  </li>
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--thailand">Чехия</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog-mate-card__transport-wrapper">
+                <h4 class="catalog-mate-card__text">Транспорт:</h4>
+                <ul class="transport transport--catalog catalog-mate-card__transport">
+                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--plane-active">
+                    <span class="transport__description">Авиаперелет</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--bus transport__item--bus-active">
+                    <span class="transport__description">Автотранспорт</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--bycicle">
+                    <span class="transport__description">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--run transport__item--run-active">
+                    <span class="transport__description">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-mate-card__level-wrapper">
+                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__level">80</p>
+              </div>
+
+              <a class="catalog-mate-card__go" href="">Позвать!</a>
+            </div>
+          </li>
+
+          <li class="mates-sorted__item">
+            <div class="catalog-mate-card mates-sorted__catalog-mate-card">
+                <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
+
+              <div class="catalog-mate-card__name-wrapper">
+                <h3 class="catalog-mate-card__name">Марк Смолов <span class="visually-hidden">offline</span></h3>
+                <div class="catalog-mate-card__likes-wrapper">
+                  <button class="catalog-mate-card__like-btn" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                    <p class="catalog-mate-card__like-number">1700</p>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="hashtags hashtags--catalog catalog-mate-card__hashtags">
+                <li class="hashtags__item">
+                  <a href="">рэп</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">тату</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">хайпбист</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">кроссовки</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">суприм</a>
+                </li>
+              </ul>
+              <div class="catalog-mate-card__countries-wrapper">
+                <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
+                <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--sri-lanka">США</p>
+                    </a>
+                  </li>
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--thailand">Австралия</p>
+                    </a>
+                  </li>
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--seishells">Доминикана</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="catalog-mate-card__transport-wrapper">
+                <h4 class="catalog-mate-card__text">Транспорт:</h4>
+                <ul class="transport transport--catalog catalog-mate-card__transport">
+                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--plane-active">
+                    <span class="transport__description">Авиаперелет</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--bus">
+                    <span class="transport__description">Автотранспорт</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--bycicle transport__item--bycicle-active">
+                    <span class="transport__description">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--run">
+                    <span class="transport__description">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-mate-card__level-wrapper">
+                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__level">25</p>
+              </div>
+
+              <a class="catalog-mate-card__go" href="">Позвать!</a>
+            </div>
+          </li>
+
+          <li class="mates-sorted__item">
+            <div class="catalog-mate-card mates-sorted__catalog-mate-card">
+                <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
+
+              <div class="catalog-mate-card__name-wrapper">
+                <h3 class="catalog-mate-card__name">Лариса Роговая <span class="visually-hidden">online</span></h3>
+                <div class="catalog-mate-card__likes-wrapper">
+                  <button class="catalog-mate-card__like-btn" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                    <p class="catalog-mate-card__like-number">23</p>
+                  </button>
+                </div>
+              </div>
+
+              <ul class="hashtags hashtags--catalog catalog-mate-card__hashtags">
+                <li class="hashtags__item">
+                  <a href="">образование</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">карьера</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">учеба</a>
+                </li>
+                <li class="hashtags__item">
+                  <a href="">линкедин</a>
+                </li>
+              </ul>
+              <div class="catalog-mate-card__countries-wrapper">
+                <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
+                <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--sri-lanka">Великобритания</p>
+                    </a>
+                  </li>
+                  <li class="to-visit__item">
+                    <a class="to-visit__link to-visit__link--catalog" href="">
+                      <p class="to-visit__text ountries-list__text--thailand">Германия</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="catalog-mate-card__transport-wrapper">
+                <h4 class="catalog-mate-card__text">Транспорт:</h4>
+                <ul class="transport transport--catalog catalog-mate-card__transport">
+                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--plane-active">
+                    <span class="transport__description">Авиаперелет</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--bus transport__item--bus-active">
+                    <span class="transport__description">Автотранспорт</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--bycicle">
+                    <span class="transport__description">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--catalog transport__item--run">
+                    <span class="transport__description">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="catalog-mate-card__level-wrapper">
+                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__level">50</p>
+              </div>
+
+              <a class="catalog-mate-card__go" href="">Позвать!</a>
+            </div>
+          </li>
+        </ul>
+
+        <a class="mates-sorted__link" href="">Показать еще</a>
+
+        <ul class="page-navigation mates-sorted__page-navigation">
+          <li class="page-navigation__item">
+            <a class="page-navigation__link page-navigation__link--previous" href="">
+              <span class="visually-hidden">Предыдущая страница</span>
+            </a>
+          </li>
+          <li class="page-navigation__item">
+            <a class="page-navigation__link page-navigation__link--next" href="">
+              <span class="visually-hidden">Следующая страница</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="info footer__info">
+        <a href="" class="info__link">
+          <img class="info__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        </a>
+        <ul class="social info__social">
+          <li class="social__item social__item--ftr">
+            <a class="social__link social__link--ftr  social__link--facebook-ftr" href="">
+              <span class="visually-hidden">Наш Facebook</span>
+            </a>
+          </li>
+          <li class="social__item social__item--ftr">
+            <a class="social__link social__link--ftr social__link--vk-ftr" href="">
+              <span class="visually-hidden">Наш VK</span>
+            </a>
+          </li>
+          <li class="social__item social__item--ftr">
+            <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
+              <span class="visually-hidden">Наш instagram</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="developer footer__developer">
+        <p class="developer__text">Разработано</p>
+        <a class="developer__link" href="">
+          <img class="developer__logo" width="27" height="34" src="./img/developed-by/recolorized/dark-blue/htmlacademy.svg" alt="HTML Academy">
+        </a>
+      </section>
+    </footer>
+
+  </body>
+</html>
