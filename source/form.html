@@ -81,39 +81,42 @@
         <form class="form change-bio__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="form__change-avatar" for="change-avatar__button">
             Cменить фото
-            <input class="visually-hidden" type="file" id="change-avatar__button">
+            <input class="visually-hidden" type="file">
           </label>
 
-          <div class="tags form__tags">
+          <div class="form__fieldset form__fieldset--tags">
+            <h3 class="form__fieldset--legend">Тэги</h3>
+            <div class="form__tags">
               <label class="tags__legend">
-                Тэги
+                <span class="visually-hidden">Тэги</span>
                 <textarea class="tags__textarea" name="tags" rows="8" cols="20"></textarea>
               </label>
-
+            </div>
           </div>
 
-          <fieldset class="change-transport form__change-transport">
-            <legend class="change-transport__legend">Транспорт</legend>
+          <fieldset class="form__fieldset form__fieldset--change-transport">
+            <legend class="form__fieldset--legend">Транспорт</legend>
+            <div class="form__change--transport">
+              <label class="change-transport__button change-transport__button--plane">
+                <span class="visually-hidden">Самолет</span>
+                <input class="visually-hidden" type="checkbox" name="plane" checked>
+              </label>
 
-            <label class="change-transport__plane" for="plane">
-              <span class="visually-hidden">Самолет</span>
-              <input class="visually-hidden" type="checkbox" name="plane" id="plane" checked>
-            </label>
+              <label class="change-transport__button change-transport__button--bus">
+                <span class="visually-hidden">Автобус</span>
+                <input class="visually-hidden" type="checkbox" name="bus" checked>
+              </label>
 
-            <label class="change-transport__bus" for="bus">
-              <span class="visually-hidden">Автобус</span>
-              <input class="visually-hidden" type="checkbox" name="bus" id="bus" checked>
-            </label>
+              <label class="change-transport__button change-transport__button--bycicle">
+                <span class="visually-hidden">Велосипед</span>
+                <input class="visually-hidden" type="checkbox" name="bycicle">
+              </label>
 
-            <label class="change-transport__bycicle" for="bycicle">
-              <span class="visually-hidden">Велосипед</span>
-              <input class="visually-hidden" type="checkbox" name="bycicle" id="bycicle">
-            </label>
-
-            <label class="change-transport__run" for="run">
-              <span class="visually-hidden">Пешком</span>
-              <input class="visually-hidden" type="checkbox" name="run" id="run" checked>
-            </label>
+              <label class="change-transport__button change-transport__button--run">
+                <span class="visually-hidden">Пешком</span>
+                <input class="visually-hidden" type="checkbox" name="run" checked>
+              </label>
+            </div>
           </fieldset>
         </form>
 
@@ -156,7 +159,7 @@
             <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
             <div class="number-input steps-ordered__number-input">
-              <legend class="number-input__legend">Ищу попутчиков</legend>
+              <h4 class="number-input__legend">Ищу попутчиков</h4>
 
               <button class="number-input__button number-input__button--minus" type="button">
                 <span class="visually-hidden">Убрать</span>
@@ -173,13 +176,17 @@
             </div>
 
             <div class="number-input steps-ordered__number-input">
-              <legend class="number-input__legend">Длительность</legend>
+              <h4 class="number-input__legend">Длительность</h4>
 
               <button class="number-input__button number-input__button--minus" type="button">
                 <span class="visually-hidden">Убрать</span>
               </button>
 
-              <input class="number-input__input" type="number" name="length-of-the-trip" value="2">
+              <label class="number-input__label">
+                <span class="visually-hidden">Длительность поездки</span>
+                <input class="number-input__input" type="number" name="length-of-the-trip" value="2">
+              </label>
+
 
               <button class="number-input__button number-input__button--plus" type="button">
                 <span class="visually-hidden">Добавить</span>
@@ -413,23 +420,21 @@
 
             <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
 
-            <fieldset class="step-description steps-ordered__step-description">
-              <legend class="step-description__country">Босния и герцеговина</legend>
+            <div class="step-description steps-ordered__step-description">
+              <h4 class="step-description__country">Босния и герцеговина</h4>
               <label class="steps-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
                 <textarea class="step-description__text" name="plan" rows="8" cols="60"></textarea>
               </label>
+            </div>
 
-            </fieldset>
-
-            <fieldset class="step-description steps-ordered__step-description">
-              <legend class="step-description__country">Чехия</legend>
+            <div class="step-description steps-ordered__step-description">
+              <h4 class="step-description__country">Чехия</h4>
               <label class="steps-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
                 <textarea class="step-description__text" name="plan" rows="8" cols="60">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
-
-            </fieldset>
+            </div>
 
             <button class="steps-ordered__submit" type="submit">Отправить</button>
 
