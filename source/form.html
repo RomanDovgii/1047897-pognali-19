@@ -79,42 +79,38 @@
         <img class="change-bio__user-img" width="100" height="100" src="https://via.placeholder.com/150x150" alt="фото пользователя">
 
         <form class="form change-bio__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="form__change-avatar" for="change-avatar__button">
+          <label class="form__change-avatar">
             Cменить фото
             <input class="visually-hidden" type="file">
           </label>
 
-          <div class="form__fieldset form__fieldset--tags">
-            <label class="tags form__tags">
-              <span class="tags__label">Тэги</span>
-              <textarea class="tags__textarea" name="tags" rows="8" cols="20"></textarea>
-            </label>
 
-          </div>
+          <label class="form__fieldset form__fieldset--tags">
+            <span class="form__heading">Тэги</span>
+            <textarea class="form__tags" name="tags" rows="8" cols="20"></textarea>
+          </label>
 
           <fieldset class="form__fieldset form__fieldset--change-transport">
             <legend class="form__legend">Транспорт</legend>
-            <div class="form__change--transport">
-              <label class="change-transport__button change-transport__button--plane">
-                <span class="visually-hidden">Самолет</span>
-                <input class="visually-hidden" type="checkbox" name="plane" checked>
-              </label>
+            <label class="form__transport-button form__transport-button--plane">
+              <span class="visually-hidden">Самолет</span>
+              <input class="visually-hidden" type="checkbox" name="plane" checked>
+            </label>
 
-              <label class="change-transport__button change-transport__button--bus">
-                <span class="visually-hidden">Автобус</span>
-                <input class="visually-hidden" type="checkbox" name="bus" checked>
-              </label>
+            <label class="form__transport-button form__transport-button--bus">
+              <span class="visually-hidden">Автобус</span>
+              <input class="visually-hidden" type="checkbox" name="bus" checked>
+            </label>
 
-              <label class="change-transport__button change-transport__button--bycicle">
-                <span class="visually-hidden">Велосипед</span>
-                <input class="visually-hidden" type="checkbox" name="bycicle">
-              </label>
+            <label class="form__transport-button form__transport-button--bycicle">
+              <span class="visually-hidden">Велосипед</span>
+              <input class="visually-hidden" type="checkbox" name="bycicle">
+            </label>
 
-              <label class="change-transport__button change-transport__button--run">
-                <span class="visually-hidden">Пешком</span>
-                <input class="visually-hidden" type="checkbox" name="run" checked>
-              </label>
-            </div>
+            <label class="form__transport-button form__transport-button--run">
+              <span class="visually-hidden">Пешком</span>
+              <input class="visually-hidden" type="checkbox" name="run" checked>
+            </label>
           </fieldset>
         </form>
 
