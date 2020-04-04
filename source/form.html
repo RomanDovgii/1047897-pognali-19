@@ -67,6 +67,376 @@
 
       <h1 class="main__heading">Направления</h1>
 
+      <section class="change-bio main__change-bio">
+
+        <h2 class="visually-hidden">Обновить профиль</h2>
+
+        <p class="level change-bio__level">
+          <span class="level__number">99</span>
+          <span class="level__text">level</span>
+        </p>
+
+        <img class="change-bio__user-img" width="100" height="100" src="https://via.placeholder.com/150x150" alt="фото пользователя">
+
+        <form class="form change-bio__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="form__change-avatar">
+            Cменить фото
+            <input class="visually-hidden" type="file">
+          </label>
+
+
+          <label class="form__fieldset form__fieldset--tags">
+            <span class="form__heading">Тэги</span>
+            <textarea class="form__tags" name="tags" rows="8" cols="20"></textarea>
+          </label>
+
+          <fieldset class="form__fieldset form__fieldset--change-transport">
+            <legend class="form__legend">Транспорт</legend>
+            <label class="form__transport-button form__transport-button--plane">
+              <span class="visually-hidden">Самолет</span>
+              <input class="visually-hidden" type="checkbox" name="plane" checked>
+            </label>
+
+            <label class="form__transport-button form__transport-button--bus">
+              <span class="visually-hidden">Автобус</span>
+              <input class="visually-hidden" type="checkbox" name="bus" checked>
+            </label>
+
+            <label class="form__transport-button form__transport-button--bycicle">
+              <span class="visually-hidden">Велосипед</span>
+              <input class="visually-hidden" type="checkbox" name="bycicle">
+            </label>
+
+            <label class="form__transport-button form__transport-button--run">
+              <span class="visually-hidden">Пешком</span>
+              <input class="visually-hidden" type="checkbox" name="run" checked>
+            </label>
+          </fieldset>
+        </form>
+
+      </section>
+
+      <section class="plans main__plans">
+
+        <h2 class="plans__heading">Мои планы:</h2>
+
+        <ol class="plans__list">
+          <li class="plans__item">
+            <h3 class="plans__place">Франция, Италия</h3>
+            <p class="plans__mates">3 попутчика</p>
+            <p class="plans__dates">26 мар - 29 мар</p>
+            <a class="plans__link" href="">изменить</a>
+          </li>
+          <li class="plans__item">
+            <h3 class="plans__place">Таиланд, Индонезия</h3>
+            <p class="plans__mates">1 попутчик</p>
+            <p class="plans__dates">1 июл - 15 июл</p>
+            <a class="plans__link" href="">изменить</a>
+          </li>
+        </ol>
+
+      </section>
+
+      <section class="new-plan main__new-plan">
+
+        <h2 class="new-plan__heading">Добавить план:<span class="new-plan__page-indicator"></span></h2>
+
+        <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
+
+          <section class="steps-ordered__item" id="step-1">
+
+            <h3 class="steps-ordered__heading">
+              Шаг 1. <br>
+              Даты пребывания
+            </h3>
+
+            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+
+            <div class="number-input steps-ordered__number-input">
+              <h4 class="number-input__legend">Ищу попутчиков</h4>
+
+              <button class="number-input__button number-input__button--minus" type="button">
+                <span class="visually-hidden">Убрать</span>
+              </button>
+
+              <label class="number-input__label">
+                <span class="visually-hidden">Количество попутчиков</span>
+                <input class="number-input__input" type="number" name="number-of-mates" value="2">
+              </label>
+
+              <button class="number-input__button number-input__button--plus" type="button">
+                <span class="visually-hidden">Добавить</span>
+              </button>
+            </div>
+
+            <div class="number-input steps-ordered__number-input">
+              <h4 class="number-input__legend">Длительность</h4>
+
+              <button class="number-input__button number-input__button--minus" type="button">
+                <span class="visually-hidden">Убрать</span>
+              </button>
+
+              <label class="number-input__label">
+                <span class="visually-hidden">Длительность поездки</span>
+                <input class="number-input__input" type="number" name="length-of-the-trip" value="2">
+              </label>
+
+
+              <button class="number-input__button number-input__button--plus" type="button">
+                <span class="visually-hidden">Добавить</span>
+              </button>
+            </div>
+
+            <div class="children-fieldset steps-ordered__children-fieldset">
+              <label class="children-fieldset__label">
+                <input class="visually-hidden" type="checkbox" name="with-children">
+                Можно с детьми
+              </label>
+            </div>
+
+            <div class="calendar steps-ordered__calendar">
+              <div class="month-selection calendar__month-selection">
+                <h3 class="visually-hidden">Выбор месяца</h3>
+                <button class="month-selection__previous" type="button">
+                  <span class="visually-hidden">Предыдущий месяц</span>
+                </button>
+
+                <span class="month-selection__month-year">Март 2019</span>
+
+                <button class="month-selection__next" type="button">
+                  <span class="visually-hidden">Следующий месяц</span>
+                </button>
+              </div>
+
+              <ul class="calendar__week-days">
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Понедельник</p>
+                </li>
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Вторник</p>
+                </li>
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Среда</p>
+                </li>
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Четверг</p>
+                </li>
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Пятница</p>
+                </li>
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Суббота</p>
+                </li>
+                <li class="calendar__week-day">
+                  <p class="visually-hidden">Воскресенье</p>
+                </li>
+              </ul>
+
+              <ul class="calendar__days">
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">23</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">24</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">25</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">26</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">27</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">28</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">1</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">2</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">3</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">4</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">5</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">6</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">7</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">8</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">9</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">10</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">11</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">12</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">13</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">14</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">15</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">16</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">17</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">18</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">19</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">20</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">21</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">22</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">23</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">24</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">25</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link calendar__day-link--arrive" href="">26</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">27</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link calendar__day-link--departure" href="">28</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">29</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">30</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">31</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">1</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">2</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">3</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">4</a>
+                </li>
+                <li class="calendar__day">
+                  <a class="calendar__day-link" href="">5</a>
+                </li>
+              </ul>
+            </div>
+
+            <a class="steps-ordered__next" href="#step-2">Следующий шаг</a>
+
+          </section>
+
+          <section class="steps-ordered__item" id="step-2">
+
+            <h3 class="steps-ordered__heading">
+              Шаг 2. <br>
+              Маршрут
+            </h3>
+
+            <p class="steps-ordered__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+
+            <ul class="countries-planned step-list__countries-planned">
+              <li class="countries-planned__country">
+                <button class="countries-planned__delete" type="button">
+                  <span class="visually-hidden">удалить страну</span>
+                </button>
+                <button class="countries-planned__selection" type="button">Босния и Герцеговина</button>
+                <input type="text" name="country" value="Босния и Герцеговина" readonly>
+              </li>
+              <li class="countries-planned__country">
+                <button class="countries-planned__delete" type="button">
+                  <span class="visually-hidden">удалить страну</span>
+                </button>
+                <button class="countries-planned__selection" type="button">Чехия</button>
+                <input type="text" name="country" value="Чехия" readonly>
+              </li>
+              <li class="countries-planned__country">
+                <button class="countries-planned__delete" type="button">
+                  <span class="visually-hidden">удалить страну</span>
+                </button>
+                <button class="countries-planned__selection" type="button"></button>
+                <input type="text" name="country" value="" readonly>
+              </li>
+              <li>
+                <button class="countries-planned__add-country-button" type="button">Добавить страну</button>
+              </li>
+            </ul>
+
+            <a class="steps-ordered__next" href="#step-3">Следующий шаг</a>
+            <a class="steps-ordered__previous" href="#step-1">На шаг назад</a>
+          </section>
+          <section class="steps-ordered__item" id="step-3">
+
+            <h3 class="steps-ordered__heading">
+              Шаг 3. <br>
+              Развлечения
+            </h3>
+
+            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+            <div class="step-description steps-ordered__step-description">
+              <h4 class="step-description__country">Босния и герцеговина</h4>
+              <label class="steps-description__label">
+                <span class="visually-hidden">Описание данной части маршрута</span>
+                <textarea class="step-description__text" name="plan" rows="8" cols="60"></textarea>
+              </label>
+            </div>
+
+            <div class="step-description steps-ordered__step-description">
+              <h4 class="step-description__country">Чехия</h4>
+              <label class="steps-description__label">
+                <span class="visually-hidden">Описание данной части маршрута</span>
+                <textarea class="step-description__text" name="plan" rows="8" cols="60">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+              </label>
+            </div>
+
+            <button class="steps-ordered__submit" type="submit">Отправить</button>
+
+            <a class="steps-ordered__previous" href="">На шаг назад</a>
+          </section>
+        </form>
+      </section>
+
     </main>
 
     <footer class="footer">
