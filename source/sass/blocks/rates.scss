@@ -1,0 +1,128 @@
+.rates {
+  position: relative;
+  padding-left: 50px;
+  padding-right: 25px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 33px;
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    z-index: 2;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    background-color: #edeff6;
+  }
+}
+
+.rates__heading-wrapper {
+  display: flex;
+
+  &::after {
+    content: "";
+
+    flex-shrink: 0;
+
+    width: 100px;
+    height: 100px;
+
+    margin-top: 17px;
+
+    background-image: url("../img/mobile/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.rates__heading {
+  color: #ff8d30;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  padding-top: 32px;
+
+  text-wrap: wrap;
+}
+
+.rates__list {
+  list-style: none;
+  margin-top: 30px;
+  padding-right: 45px;
+
+  counter-reset: items;
+}
+
+.rates__item {
+  position: relative;
+
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &::after {
+    counter-increment: items;
+    content: counter(items);
+
+    display: block;
+    width: 34px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    right: -44px;
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    padding-top: 12px;
+
+    border-radius: 50%;
+    background-color: #ffbd30;
+  }
+
+  &:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+    &::after {
+      background-color: #ffa530;
+    }
+  }
+
+  &:last-child {
+    &::after {
+      background-color: #ffd74b;
+    }
+  }
+}
+
+.rates__text {
+  display: flex;
+  flex-direction: column;
+
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.rates__link {
+  text-decoration: none;
+
+  display: block;
+
+  color: rgba(25, 33, 68, 1);
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+
+  margin-top: 31px;
+  padding-bottom: 5px;
+}

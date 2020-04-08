@@ -1,0 +1,20 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-right: 25px;
+  margin-left: 25px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.developer__text {
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 20px;
+}
+
+.developer__link {
+  padding-top: 14px;
+}

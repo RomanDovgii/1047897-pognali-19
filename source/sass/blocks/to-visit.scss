@@ -1,0 +1,22 @@
+.to-visit {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.to-visit__item {
+  width: 35px;
+  height: 24px;
+
+  &:not(:first-child) {
+    margin-left: 19px;
+  }
+}
+
+.to-visit__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://via.placeholder.com/150");
+  border-radius: 3px;
+}

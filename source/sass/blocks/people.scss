@@ -1,0 +1,9 @@
+.people {
+  list-style: none;
+}
+
+.people__item {
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+}

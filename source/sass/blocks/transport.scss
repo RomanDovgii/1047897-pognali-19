@@ -1,0 +1,42 @@
+.transport {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.transport__item {
+  opacity: 0.15;
+
+  width: 24px;
+  height: 21px;
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+
+  &--plane {
+    background: url("../img/icons/mobile/plane.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--bus {
+    background: url("../img/icons/mobile/bus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--bycicle {
+    background: url("../img/icons/mobile/bike.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--run {
+    background: url("../img/icons/mobile/run.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}
