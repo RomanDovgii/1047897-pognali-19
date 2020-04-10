@@ -4,6 +4,7 @@
   align-items: center;
   padding-bottom: 77px;
 }
+
 .mates-sorted__list {
   display: flex;
   flex-direction: column;
@@ -19,10 +20,6 @@
   &:not(:first-child) {
     margin-top: 16px;
   }
-}
-
-.mates-sorted__link-wrapper {
-
 }
 
 .mates-sorted__link {

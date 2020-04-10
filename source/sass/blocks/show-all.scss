@@ -1,7 +1,5 @@
 .show-all {
-  transition: background-color 0.3s;
-  transition: color 0.3s;
-  transition: opacity 0.3s;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s;
   text-decoration: none;
 
   display: block;
@@ -33,9 +31,9 @@
   }
 
   &:active {
-    transition: color 0.3s;
-    transition: opacity 0.3s;
+    transition: color 0.3s, opacity 0.3s;
     color: rgba(29, 46, 91, 0.3);
+
     &::after {
       opacity: 0.3;
     }

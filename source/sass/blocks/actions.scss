@@ -12,10 +12,9 @@ $font-color: #161c35;
 .actions {
   position: relative;
   list-style: none;
-  background-image: url("../img/mobile/traveller-illustration-mobile@1x.png"),
-                    url("../img/mobile/globe-back-mobile@1x.jpg");
+  background-image: url("../img/mobile/traveller-illustration-mobile@1x.png"), url("../img/mobile/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position:79px 9px, 0px -214px;
+  background-position: 79px 9px, 0 -214px;
   padding-top: 244px;
   padding-right: 25px;
   padding-left: 25px;
@@ -48,6 +47,7 @@ $font-color: #161c35;
       transition: background-color 0.5s;
       background-color: $orange-color__actions;
     }
+
     &:hover {
       transition: background-color 0.5s;
       background-color: $orange-color__actions;
@@ -59,8 +59,8 @@ $font-color: #161c35;
       background-size: 18px;
       background-position: center;
     }
-
   }
+
   &--email {
     background-color: $orangish-yellow-color;
 
@@ -68,6 +68,7 @@ $font-color: #161c35;
       transition: background-color 0.5s;
       background-color: $orangish-yellow-color__actions;
     }
+
     &:hover {
       transition: background-color 0.5s;
       background-color: $orangish-yellow-color__actions;
@@ -79,8 +80,8 @@ $font-color: #161c35;
       background-size: 18px;
       background-position: center;
     }
-
   }
+
   &--auth {
     text-decoration: none;
 
@@ -91,6 +92,7 @@ $font-color: #161c35;
       transition: background-color 0.5s;
       background-color: $yellow-color__actions;
     }
+
     &:hover {
       transition: background-color 0.5s;
       background-color: $yellow-color__actions;

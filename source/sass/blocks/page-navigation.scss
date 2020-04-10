@@ -15,8 +15,6 @@
   width: 50%;
   height: 100%;
 
-
-
   &:last-child {
     border-left: 1px solid #edeff6;
   }
@@ -31,12 +29,10 @@
     top: 15px;
     left: 62px;
 
-
-
     background: url("../img/icons/mobile/triangle-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:  contain;
+    background-size: contain;
   }
 
   &:first-child {

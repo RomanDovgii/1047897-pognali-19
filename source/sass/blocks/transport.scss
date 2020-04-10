@@ -38,6 +38,7 @@
       z-index: 4;
     }
   }
+
   &--bus {
     &::after {
       content: "";
@@ -57,6 +58,7 @@
       z-index: 4;
     }
   }
+
   &--bycicle {
     &::after {
       content: "";
@@ -76,6 +78,7 @@
       z-index: 4;
     }
   }
+
   &--run {
     &::after {
       content: "";
@@ -114,7 +117,6 @@
       opacity: 1;
       background-color: #edeff6;
       border-radius: 50%;
-
     }
 
     &:not(:first-child) {
