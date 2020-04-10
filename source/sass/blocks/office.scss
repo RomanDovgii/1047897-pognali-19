@@ -1,5 +1,9 @@
 .office {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   padding-left: 25px;
   padding-right: 25px;
   &::after {
@@ -22,6 +26,7 @@
 
 .office__text {
   display: flex;
+  max-width: 320px;
 
   color: #192144;
   font-size: 16px;

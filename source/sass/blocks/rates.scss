@@ -1,4 +1,6 @@
 .rates {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-left: 50px;
   padding-right: 25px;

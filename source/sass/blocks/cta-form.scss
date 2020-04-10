@@ -1,4 +1,7 @@
 .cta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 
   background: #192144;
@@ -28,8 +31,9 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  padding-left: 30px;
   padding-top: 55px;
+
+  max-width: 320px;
 }
 
 .cta-form__text {
@@ -93,4 +97,5 @@
 
 .cta-form__contacts {
   margin-top: 17px;
+  padding-right: 33px;
 }

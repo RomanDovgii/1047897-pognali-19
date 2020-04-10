@@ -18,7 +18,7 @@
           </button>
         </div>
 
-        <div class="information top-menu__information">
+        <div class="information top-menu__information visually-hidden">
           <ul class="inner-links information__inner-links">
             <li class="inner-links__item">
               <a class="inner-links__link" href="./index.html">О сервисе</a>
@@ -65,9 +65,11 @@
 
     <main class="main">
 
-      <h1 class="main__heading">Попутчики</h1>
+      <div class="main__heading-wrapper">
+        <h1 class="main__heading">Попутчики</h1>
+      </div>
 
-      <section class="country-filter main__country-filter">
+      <section class="country-filter main__country-filter visually-hidden">
         <div class="country-filter__name-wrapper">
 
           <h2 class="country-filter__name">Фильтрация по странам</h2>
@@ -209,7 +211,7 @@
         </div>
       </section>
 
-      <section class="mates-filter main__mates-filter">
+      <section class="mates-filter main__mates-filter visually-hidden">
         <div class="mates-filter__wrapper">
           <h2 class="visually-hidden">Фильтр попутчиков</h2>
           <p class="mates-filter__heading">Подберите идеального попутчика</p>
@@ -290,22 +292,22 @@
               <h3 class="transportation__heading">Транспорт</h3>
               <div class="transportation__buttons">
                 <label class="transportation__button transportation__button--plane">
-                  <span class="transport__description">Авиаперелет</span>
+                  <span class="transport__description visually-hidden">Авиаперелет</span>
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="plane" checked>
                 </label>
 
                 <label class="transportation__button transportation__button--bus" >
-                  <span class="transport__description">Автотранспорт</span>
+                  <span class="transport__description visually-hidden">Автотранспорт</span>
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="bus" checked>
                 </label>
 
                 <label class="transportation__button transportation__button--bike">
-                  <span class="transport__description">Велосипед</span>
+                  <span class="transport__description visually-hidden">Велосипед</span>
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="bike">
                 </label>
 
                 <label class="transportation__button transportation__button--run">
-                  <span class="transport__description">Пешком</span>
+                  <span class="transport__description visually-hidden">Пешком</span>
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="run" checked>
                 </label>
               </div>
@@ -341,7 +343,7 @@
         <ul class="mates-sorted__list">
           <li class="mates-sorted__item">
             <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
+              <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
 
               <div class="catalog-mate-card__name-wrapper">
                 <h3 class="catalog-mate-card__name">Таня Фирсова <span class="visually-hidden">offline</span></h3>
@@ -376,17 +378,17 @@
               <div class="catalog-mate-card__countries-wrapper">
                 <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
                 <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--sri-lanka">Шри-ланка</p>
                     </a>
                   </li>
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--thailand">Таиланд</p>
                     </a>
                   </li>
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--seishells">Сейшелы</p>
                     </a>
@@ -399,26 +401,28 @@
                 <h4 class="catalog-mate-card__text">Транспорт:</h4>
                 <ul class="transport transport--catalog catalog-mate-card__transport">
                   <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
-                    <span class="transport__description">Авиаперелет</span>
+                    <span class="transport__description visually-hidden">Авиаперелет</span>
                   </li>
                   <li class="transport__item transport__item--bus transport__item--catalog">
-                    <span class="transport__description">Автотранспорт</span>
+                    <span class="transport__description visually-hidden">Автотранспорт</span>
                   </li>
                   <li class="transport__item transport__item--bycicle transport__item--catalog">
-                    <span class="transport__description">Велосипед</span>
+                    <span class="transport__description visually-hidden">Велосипед</span>
                   </li>
                   <li class="transport__item transport__item--run transport__item--catalog">
-                    <span class="transport__description">Пешком</span>
+                    <span class="transport__description visually-hidden">Пешком</span>
                   </li>
                 </ul>
               </div>
 
               <div class="catalog-mate-card__level-wrapper">
-                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                 <p class="catalog-mate-card__level">99</p>
               </div>
 
-              <a class="catalog-mate-card__go" href="">Позвать!</a>
+              <div class="catalog-mate-card__go-wrapper">
+                <a class="catalog-mate-card__go" href="">Позвать!</a>
+              </div>
             </div>
           </li>
 
@@ -456,12 +460,12 @@
               <div class="catalog-mate-card__countries-wrapper">
                 <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
                 <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--sri-lanka">Бельгия</p>
                     </a>
                   </li>
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--thailand">Чехия</p>
                     </a>
@@ -471,27 +475,29 @@
               <div class="catalog-mate-card__transport-wrapper">
                 <h4 class="catalog-mate-card__text">Транспорт:</h4>
                 <ul class="transport transport--catalog catalog-mate-card__transport">
-                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--plane-active">
-                    <span class="transport__description">Авиаперелет</span>
+                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--active">
+                    <span class="transport__description visually-hidden">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--catalog transport__item--bus transport__item--bus-active">
-                    <span class="transport__description">Автотранспорт</span>
+                  <li class="transport__item transport__item--catalog transport__item--bus transport__item--active">
+                    <span class="transport__description visually-hidden">Автотранспорт</span>
                   </li>
                   <li class="transport__item transport__item--catalog transport__item--bycicle">
-                    <span class="transport__description">Велосипед</span>
+                    <span class="transport__description visually-hidden">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--catalog transport__item--run transport__item--run-active">
-                    <span class="transport__description">Пешком</span>
+                  <li class="transport__item transport__item--catalog transport__item--run transport__item--active">
+                    <span class="transport__description visually-hidden">Пешком</span>
                   </li>
                 </ul>
               </div>
 
               <div class="catalog-mate-card__level-wrapper">
-                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                 <p class="catalog-mate-card__level">80</p>
               </div>
 
-              <a class="catalog-mate-card__go" href="">Позвать!</a>
+              <div class="catalog-mate-card__go-wrapper">
+                <a class="catalog-mate-card__go" href="">Позвать!</a>
+              </div>
             </div>
           </li>
 
@@ -529,17 +535,17 @@
               <div class="catalog-mate-card__countries-wrapper">
                 <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
                 <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--sri-lanka">США</p>
                     </a>
                   </li>
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--thailand">Австралия</p>
                     </a>
                   </li>
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--seishells">Доминикана</p>
                     </a>
@@ -551,27 +557,29 @@
               <div class="catalog-mate-card__transport-wrapper">
                 <h4 class="catalog-mate-card__text">Транспорт:</h4>
                 <ul class="transport transport--catalog catalog-mate-card__transport">
-                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--plane-active">
-                    <span class="transport__description">Авиаперелет</span>
+                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--active">
+                    <span class="transport__description visually-hidden">Авиаперелет</span>
                   </li>
                   <li class="transport__item transport__item--catalog transport__item--bus">
-                    <span class="transport__description">Автотранспорт</span>
+                    <span class="transport__description visually-hidden">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--catalog transport__item--bycicle transport__item--bycicle-active">
-                    <span class="transport__description">Велосипед</span>
+                  <li class="transport__item transport__item--catalog transport__item--bycicle transport__item--active">
+                    <span class="transport__description visually-hidden">Велосипед</span>
                   </li>
                   <li class="transport__item transport__item--catalog transport__item--run">
-                    <span class="transport__description">Пешком</span>
+                    <span class="transport__description visually-hidden">Пешком</span>
                   </li>
                 </ul>
               </div>
 
               <div class="catalog-mate-card__level-wrapper">
-                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                 <p class="catalog-mate-card__level">25</p>
               </div>
 
-              <a class="catalog-mate-card__go" href="">Позвать!</a>
+              <div class="catalog-mate-card__go-wrapper">
+                <a class="catalog-mate-card__go" href="">Позвать!</a>
+              </div>
             </div>
           </li>
 
@@ -580,7 +588,7 @@
                 <img class="catalog-mate-card__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="фото пользователя">
 
               <div class="catalog-mate-card__name-wrapper">
-                <h3 class="catalog-mate-card__name">Лариса Роговая <span class="visually-hidden">online</span></h3>
+                <h3 class="catalog-mate-card__name catalog-mate-card__name--online">Лариса Роговая <span class="visually-hidden">online</span></h3>
                 <div class="catalog-mate-card__likes-wrapper">
                   <button class="catalog-mate-card__like-btn" type="button">
                     <span class="visually-hidden">Нравится</span>
@@ -606,12 +614,12 @@
               <div class="catalog-mate-card__countries-wrapper">
                 <h4 class="catalog-mate-card__text">Хочет посетить:</h4>
                 <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--sri-lanka">Великобритания</p>
                     </a>
                   </li>
-                  <li class="to-visit__item">
+                  <li class="to-visit__item to-visit__item--catalog">
                     <a class="to-visit__link to-visit__link--catalog" href="">
                       <p class="to-visit__text ountries-list__text--thailand">Германия</p>
                     </a>
@@ -623,27 +631,29 @@
               <div class="catalog-mate-card__transport-wrapper">
                 <h4 class="catalog-mate-card__text">Транспорт:</h4>
                 <ul class="transport transport--catalog catalog-mate-card__transport">
-                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--plane-active">
-                    <span class="transport__description">Авиаперелет</span>
+                  <li class="transport__item transport__item--catalog transport__item--plane transport__item--active">
+                    <span class="transport__description visually-hidden">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--catalog transport__item--bus transport__item--bus-active">
-                    <span class="transport__description">Автотранспорт</span>
+                  <li class="transport__item transport__item--catalog transport__item--bus transport__item--active">
+                    <span class="transport__description visually-hidden">Автотранспорт</span>
                   </li>
                   <li class="transport__item transport__item--catalog transport__item--bycicle">
-                    <span class="transport__description">Велосипед</span>
+                    <span class="transport__description visually-hidden">Велосипед</span>
                   </li>
                   <li class="transport__item transport__item--catalog transport__item--run">
-                    <span class="transport__description">Пешком</span>
+                    <span class="transport__description visually-hidden">Пешком</span>
                   </li>
                 </ul>
               </div>
 
               <div class="catalog-mate-card__level-wrapper">
-                <p class="catalog-mate-card__text">левел:</p>
+                <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                 <p class="catalog-mate-card__level">50</p>
               </div>
 
-              <a class="catalog-mate-card__go" href="">Позвать!</a>
+              <div class="catalog-mate-card__go-wrapper">
+                <a class="catalog-mate-card__go" href="">Позвать!</a>
+              </div>
             </div>
           </li>
         </ul>
@@ -667,12 +677,13 @@
 
     <footer class="footer">
       <section class="info footer__info">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
         <a href="" class="info__link">
           <img class="info__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
         </a>
         <ul class="social info__social">
           <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr  social__link--facebook-ftr" href="">
+            <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
               <span class="visually-hidden">Наш Facebook</span>
             </a>
           </li>
@@ -692,7 +703,7 @@
       <section class="developer footer__developer">
         <p class="developer__text">Разработано</p>
         <a class="developer__link" href="">
-          <img class="developer__logo" width="27" height="34" src="./img/developed-by/recolorized/dark-blue/htmlacademy.svg" alt="HTML Academy">
+          <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
         </a>
       </section>
     </footer>

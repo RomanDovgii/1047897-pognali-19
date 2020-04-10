@@ -4,6 +4,7 @@ $white-color: #ffffff;
 .intro {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: $header-color;
 }
 

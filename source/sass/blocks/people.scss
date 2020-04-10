@@ -1,5 +1,8 @@
 .people {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .people__item {

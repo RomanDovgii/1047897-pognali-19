@@ -1,0 +1,53 @@
+.page-navigation {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 50px;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.page-navigation__item {
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+
+
+  &:last-child {
+    border-left: 1px solid #edeff6;
+  }
+
+  &::after {
+    content: "";
+    display: flex;
+    width: 10px;
+    height: 20px;
+    justify-content: center;
+    position: absolute;
+    top: 15px;
+    left: 62px;
+
+
+
+    background: url("../img/icons/mobile/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  contain;
+  }
+
+  &:first-child {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.page-navigation__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

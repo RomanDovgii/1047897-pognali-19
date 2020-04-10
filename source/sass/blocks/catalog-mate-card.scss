@@ -1,0 +1,184 @@
+.catalog-mate-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  background-color: #ffffff;
+  border-radius: 20px;
+
+  padding-bottom: 16px;
+}
+
+.catalog-mate-card__img {
+  margin-top: 21px;
+  margin-left: 18px;
+
+  border-radius: 50%;
+}
+
+.catalog-mate-card__name {
+  display: block;
+  max-width: 165px;
+  position: relative;
+
+  color: #1d2e5b;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+
+  margin-left: 16px;
+  margin-top: 21px;
+  padding-right: 59px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 8px;
+    right: 21px;
+
+    background-color: #f97676;
+    border-radius: 50%;
+  }
+
+  &--online {
+    &::after {
+      background-color: #81e31e;
+    }
+  }
+}
+
+.catalog-mate-card__like-btn {
+  border: none;
+  background: none;
+
+  display: block;
+  position: relative;
+
+  color: rgba(22, 28, 53, 1);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  padding-top: 5px;
+  padding-left: 16px;
+
+  &::before {
+    content: "";
+
+    display: block;
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 0;
+    left: -21px;
+
+    background: #edeff6 url("../img/icons/mobile/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 11px;
+    border-radius: 50%;
+  }
+
+  &--active {
+    &::before {
+      background: #f9eaea url("../img/icons/mobile/heart-active.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 13px 11px;
+    }
+  }
+}
+
+.catalog-mate-card__hashtags {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.catalog-mate-card__text {
+  color: #444444;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
+
+  text-transform: lowercase;
+
+  padding-left: 26px;
+
+  &--level {
+    padding-right: 23px;
+  }
+}
+
+.catalog-mate-card__countries-wrapper {
+  width: 100%;
+  margin-top: 13px;
+}
+
+.catalog-mate-card__transport-wrapper, .catalog-mate-card__level-wrapper {
+  padding-top: 16px;
+}
+
+.catalog-mate-card__level-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.catalog-mate-card__level {
+  display: block;
+
+  border: 3px solid orange;
+
+  color: #1d2e5b;
+  font-size: 24px;
+  line-height: 18px;
+  font-weight: 700;
+
+  margin-top: 6px;
+  margin-left: 4px;
+  padding-top: 14px;
+  padding-right: 7px;
+  padding-left: 8px;
+  padding-bottom: 9px;
+
+  border-radius: 50%;
+}
+
+.catalog-mate-card__transport {
+  margin-top: 14px;
+}
+
+.catalog-mate-card__go-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin-top: 13px;
+}
+
+.catalog-mate-card__go {
+  text-decoration: none;
+
+  max-width: 230px;
+
+  color: #161c35;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  padding-top: 7px;
+  padding-right: 79px;
+  padding-bottom: 3px;
+  padding-left: 78px;
+
+  background-color: rgba(255, 215, 75, 1);
+  border-radius: 20px;
+}
