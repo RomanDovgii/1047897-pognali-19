@@ -20,8 +20,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp css",
-    "start": "gulp start",
-    "svgo": "svgo --config ./svgo.yml -f source/img/icons"
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",
