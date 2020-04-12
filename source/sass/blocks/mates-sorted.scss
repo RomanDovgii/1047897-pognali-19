@@ -1,4 +1,5 @@
 .mates-sorted {
+  @include reset;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,6 +7,7 @@
 }
 
 .mates-sorted__list {
+  @include reset;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,6 +16,7 @@
 }
 
 .mates-sorted__item {
+  @include reset;
   display: block;
   max-width: 270px;
 
@@ -23,6 +26,7 @@
 }
 
 .mates-sorted__link {
+  @include reset;
   text-decoration: none;
 
   display: flex;
@@ -39,6 +43,7 @@
   margin-left: -3px;
 
   &::before {
+    @include reset;
     content: "";
 
     width: 18px;
@@ -55,5 +60,6 @@
 }
 
 .mates-sorted__page-navigation {
+  @include reset;
   margin-top: 19px;
 }

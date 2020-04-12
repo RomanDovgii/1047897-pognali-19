@@ -17,6 +17,7 @@
 }
 
 .catalog-mate-card__name {
+  @include reset;
   display: block;
   max-width: 165px;
   position: relative;
@@ -31,6 +32,7 @@
   padding-right: 59px;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -52,6 +54,7 @@
 }
 
 .catalog-mate-card__like-btn {
+  @include reset;
   border: none;
   background: none;
 
@@ -67,6 +70,8 @@
   padding-left: 16px;
 
   &::before {
+    @include reset;
+
     content: "";
 
     display: block;
@@ -86,8 +91,14 @@
   &--active {
     &::before {
       background: $background__whitish url("../img/icons/mobile/heart-active.svg");
+      background-repeat: no-repeat;
+      background-position: center;
       background-size: 13px 11px;
     }
+  }
+
+  p {
+    @include reset;
   }
 }
 
@@ -97,6 +108,7 @@
 }
 
 .catalog-mate-card__text {
+  @include reset;
   color: $gray;
   font-size: 15px;
   line-height: 18px;
@@ -112,6 +124,7 @@
 }
 
 .catalog-mate-card__countries-wrapper {
+  @include reset;
   width: 100%;
   margin-top: 13px;
 }
@@ -130,6 +143,7 @@
 }
 
 .catalog-mate-card__level {
+  @include reset;
   display: block;
 
   border: 3px solid $level-circle__orange;
@@ -154,6 +168,7 @@
 }
 
 .catalog-mate-card__go-wrapper {
+  @include reset;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -162,6 +177,7 @@
 }
 
 .catalog-mate-card__go {
+  @include reset;
   text-decoration: none;
 
   max-width: 230px;

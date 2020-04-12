@@ -4,6 +4,7 @@
   padding-left: 25px;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -22,6 +23,7 @@
 }
 
 .directions__heading {
+  @include reset;
   color: $background__orange-color;
   font-size: 24px;
   line-height: 24px;
@@ -32,6 +34,7 @@
 }
 
 .directions__text {
+  @include reset;
   color: $gray;
   font-size: 16px;
   line-height: 22px;
@@ -43,10 +46,12 @@
 }
 
 .directions__countries {
+  @include reset;
   margin-top: 60px;
 }
 
 .directions__show-all {
+  @include reset;
   margin-top: 26px;
   margin-right: auto;
   margin-left: auto;

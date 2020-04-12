@@ -11,6 +11,7 @@
 }
 
 .page-navigation__item {
+  @include reset;
   position: relative;
   width: 50%;
   height: 100%;
@@ -20,6 +21,7 @@
   }
 
   &::after {
+    @include reset;
     content: "";
     display: flex;
     width: 10px;
@@ -43,6 +45,7 @@
 }
 
 .page-navigation__link {
+  @include reset;
   display: block;
   width: 100%;
   height: 100%;

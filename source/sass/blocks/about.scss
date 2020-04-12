@@ -6,6 +6,7 @@
   background-color: $background__dark-blue;
 
   &::before {
+    @include reset;
     content: "";
 
     display: block;
@@ -25,6 +26,7 @@
   }
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -49,6 +51,7 @@
 }
 
 .about__heading {
+  @include reset;
   color: $background__orange-color;
   font-size: 24px;
   line-height: 24px;
@@ -57,6 +60,7 @@
 }
 
 .about__text {
+  @include reset;
   color: $white;
   font-size: 16px;
   line-height: 22px;

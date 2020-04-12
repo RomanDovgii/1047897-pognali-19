@@ -5,6 +5,7 @@
 }
 
 .info__social {
+  @include reset;
   margin-top: 31px;
   padding-bottom: 37px;
 }

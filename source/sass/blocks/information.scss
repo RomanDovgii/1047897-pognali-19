@@ -9,6 +9,7 @@
 }
 
 .information__auth-link {
+  @include reset;
   text-decoration: none;
 
   display: block;
@@ -29,11 +30,17 @@
 }
 
 .information__contacts {
+  @include reset;
   margin-top: 50px;
   margin-left: -33px;
 }
 
 .information__social {
+  @include reset;
   margin-top: 29px;
   padding-bottom: 28px;
+}
+
+.information__inner-links {
+  @include reset;
 }

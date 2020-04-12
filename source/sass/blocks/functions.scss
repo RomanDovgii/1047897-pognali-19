@@ -4,6 +4,7 @@
 }
 
 .functions__button {
+  @include reset;
   border: none;
   margin-top: 4px;
 

@@ -1,4 +1,5 @@
 .map {
+  @include reset;
   position: relative;
 
   // &::after {

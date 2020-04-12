@@ -10,11 +10,13 @@
 }
 
 .transport__item {
+  @include reset;
   width: 24px;
   height: 21px;
   position: relative;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;

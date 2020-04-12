@@ -11,16 +11,19 @@
 }
 
 .actions__item {
+  @include reset;
   z-index: 2;
   width: 40px;
   height: 40px;
 
   &:last-child {
+    @include reset;
     width: 190px;
   }
 }
 
 .actions__link {
+  @include reset;
   display: block;
 
   width: 100%;
@@ -43,6 +46,7 @@
     }
 
     span {
+      @include reset;
       background: url("../img/icons/mobile/topmenu-phone.svg");
       background-repeat: no-repeat;
       background-size: 18px;
@@ -64,6 +68,7 @@
     }
 
     span {
+      @include reset;
       background: url("../img/icons/mobile/topmenu-mail.svg");
       background-repeat: no-repeat;
       background-size: 18px;
@@ -88,6 +93,7 @@
     }
 
     span {
+      @include reset;
       font-size: 17px;
       line-height: 30px;
       font-weight: 700;
@@ -101,6 +107,7 @@
 
   &:active {
     span {
+      @include reset;
       transition: opacity 0.1s;
       opacity: 0.3;
     }
@@ -108,6 +115,7 @@
 }
 
 .actions__background {
+  @include reset;
   display: block;
 
   width: 100%;

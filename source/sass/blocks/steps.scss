@@ -12,6 +12,7 @@
   counter-reset: actions;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -26,6 +27,7 @@
 }
 
 .steps__item {
+  @include reset;
   position: relative;
   background-color: $orangish-yellow-color;
   z-index: 2;
@@ -60,6 +62,7 @@
   }
 
   &::after {
+    @include reset;
     counter-increment: actions;
     content: counter(actions);
 

@@ -6,6 +6,8 @@
 }
 
 .countries__country-card {
+  @include reset;
+
   &:not(:first-child) {
     margin-top: 10px;
   }

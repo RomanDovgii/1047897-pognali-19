@@ -6,6 +6,7 @@
   padding-left: 50px;
 
   &::before {
+    @include reset;
     content: "";
 
     display: block;
@@ -20,12 +21,14 @@
 }
 
 .quote__text {
+  @include reset;
   color: $white;
   font-size: 16px;
   line-height: 22px;
 }
 
 .quote__text--author {
+  @include reset;
   padding-top: 18px;
   font-weight: 700;
 }

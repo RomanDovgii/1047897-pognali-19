@@ -9,6 +9,7 @@
 }
 
 .developer__text {
+  @include reset;
   color: $gray;
   font-size: 16px;
   line-height: 22px;
@@ -16,5 +17,6 @@
 }
 
 .developer__link {
+  @include reset;
   padding-top: 14px;
 }

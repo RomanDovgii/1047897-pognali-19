@@ -14,6 +14,7 @@
   padding-right: 25px;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -32,6 +33,7 @@
 }
 
 .mates__heading {
+  @include reset;
   position: relative;
   z-index: 2;
 
@@ -44,6 +46,7 @@
 }
 
 .mates__text {
+  @include reset;
   position: relative;
   z-index: 2;
 
@@ -62,6 +65,7 @@
 }
 
 .mates__people {
+  @include reset;
   margin-top: 56px;
 }
 

@@ -6,6 +6,7 @@
   padding-right: 25px;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -24,9 +25,11 @@
 }
 
 .rates__heading-wrapper {
+  @include reset;
   display: flex;
 
   &::after {
+    @include reset;
     content: "";
 
     flex-shrink: 0;
@@ -44,6 +47,7 @@
 }
 
 .rates__heading {
+  @include reset;
   color: $background__orange-color;
   font-size: 24px;
   line-height: 24px;
@@ -55,6 +59,7 @@
 }
 
 .rates__list {
+  @include reset;
   list-style: none;
   margin-top: 30px;
   padding-right: 45px;
@@ -63,6 +68,7 @@
 }
 
 .rates__item {
+  @include reset;
   position: relative;
 
   padding-top: 11px;
@@ -70,6 +76,7 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
   &::after {
+    @include reset;
     counter-increment: items;
     content: counter(items);
 
@@ -106,6 +113,7 @@
 }
 
 .rates__text {
+  @include reset;
   display: flex;
   flex-direction: column;
 
@@ -116,6 +124,7 @@
 }
 
 .rates__link {
+  @include reset;
   text-decoration: none;
 
   display: block;

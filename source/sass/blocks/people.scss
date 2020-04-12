@@ -6,6 +6,8 @@
 }
 
 .people__item {
+  @include reset;
+
   &:not(:first-child) {
     margin-top: 10px;
   }

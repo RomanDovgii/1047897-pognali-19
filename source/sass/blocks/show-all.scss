@@ -35,11 +35,13 @@
     color: $rgba__light-bright-blue;
 
     &::after {
+      @include reset;
       opacity: 0.3;
     }
   }
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;

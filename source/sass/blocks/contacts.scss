@@ -6,6 +6,7 @@
 }
 
 .contacts__link {
+  @include reset;
   text-decoration: none;
 
   display: flex;
@@ -23,6 +24,7 @@
   }
 
   &::before {
+    @include reset;
     content: "";
 
     width: 45px;

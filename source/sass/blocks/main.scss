@@ -1,9 +1,11 @@
 .main {
+  @include reset;
   background-color: $main-color;
   width: 100%;
 }
 
 .main__heading-wrapper {
+  @include reset;
   display: flex;
   width: 100%;
 
@@ -18,6 +20,7 @@
 }
 
 .main__heading {
+  @include reset;
   position: relative;
   color: $white;
   font-size: 36px;
@@ -25,6 +28,7 @@
   font-weight: 700;
 
   &::after {
+    @include reset;
     content: "";
 
     display: block;
@@ -42,5 +46,6 @@
 .main__rates,
 .main__cta-form,
 .main__office {
+  @include reset;
   padding-top: 50px;
 }
