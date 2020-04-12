@@ -1,11 +1,12 @@
+@import "colors.scss";
+
 .to-visit {
   display: flex;
   width: 100%;
   justify-content: center;
+  list-style: none;
 
   &--catalog {
-    list-style: none;
-
     flex-direction: column;
     justify-content: flex-start;
 
@@ -46,7 +47,7 @@
     background: none;
     display: flex;
 
-    color: #1d2e5b;
+    color: $text__dark-blue;
     font-size: 15px;
     line-height: 18px;
     font-weight: 500;

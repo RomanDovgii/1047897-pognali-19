@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .developer {
   display: flex;
   justify-content: space-between;
@@ -5,11 +7,11 @@
   margin-right: 25px;
   margin-left: 25px;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid $rgba__background__gray-from-black;
 }
 
 .developer__text {
-  color: #444444;
+  color: $gray;
   font-size: 16px;
   line-height: 22px;
   padding-top: 20px;

@@ -1,4 +1,4 @@
-$header-color: #161c35;
+@import "colors.scss";
 
 .steps {
   display: flex;
@@ -23,14 +23,13 @@ $header-color: #161c35;
     bottom: 0;
     left: 0;
 
-    background-color: #192144;
+    background-color: $background__dark-blue;
   }
 }
 
 .steps__item {
-  display: block;
   position: relative;
-  background-color: #ffbd30;
+  background-color: $orangish-yellow-color;
   z-index: 2;
 
   color: $header-color;
@@ -47,17 +46,17 @@ $header-color: #161c35;
   margin-bottom: -8px;
 
   &:nth-child(even) {
-    background-color: #ffa530;
+    background-color: $yellowish-orange-color;
   }
 
   &:first-child {
-    background-color: #ff8d30;
+    background-color: $background__orange-color;
   }
 
   &:last-child {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-color: #ffd74b;
+    background-color: $universal__bright-yellow;
     padding-bottom: 22px;
     margin-bottom: 0;
   }
@@ -71,6 +70,6 @@ $header-color: #161c35;
     top: 22px;
     right: 21px;
 
-    color: #ffffff;
+    color: $white;
   }
 }

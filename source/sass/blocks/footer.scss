@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -20,6 +22,6 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 
-    background-color: #ffffff;
+    background-color: $white;
   }
 }

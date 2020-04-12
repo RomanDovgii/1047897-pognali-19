@@ -1,13 +1,4 @@
-$orange-color: #ff8d30;
-$orange-color__actions: #f26926;
-$yellowish-orange-color: #ffa530;
-$yellowish-orange-color__actions: #ffa530;
-$orangish-yellow-color: #ffbd30;
-$orangish-yellow-color__actions: #ff8d30;
-$yellow-color: #ffb74b;
-$yellow-color__actions: #ffbd30;
-$font-color: #161c35;
-
+@import "colors.scss";
 
 .actions {
   position: relative;
@@ -41,16 +32,16 @@ $font-color: #161c35;
   transition: background-color 0.5s;
 
   &--phone {
-    background-color: $orange-color;
+    background-color: $background__orange-color;
 
     &:focus {
       transition: background-color 0.5s;
-      background-color: $orange-color__actions;
+      background-color: $background__orange-color__actions;
     }
 
     &:hover {
       transition: background-color 0.5s;
-      background-color: $orange-color__actions;
+      background-color: $background__orange-color__actions;
     }
 
     span {

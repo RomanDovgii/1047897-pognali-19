@@ -1,9 +1,11 @@
+@import "colors.scss";
+
 .about {
   width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: #192144;
+  background-color: $background__dark-blue;
 
   &::before {
     content: "";
@@ -38,7 +40,7 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
-    background-color: #192144;
+    background-color: $background__dark-blue;
   }
 }
 
@@ -49,7 +51,7 @@
 }
 
 .about__heading {
-  color: #ff8d30;
+  color: $background__orange-color;
   font-size: 24px;
   line-height: 24px;
 
@@ -57,7 +59,7 @@
 }
 
 .about__text {
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;

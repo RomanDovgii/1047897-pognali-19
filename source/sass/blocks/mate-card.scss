@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .mate-card {
   position: relative;
   max-width: 270px;
@@ -20,7 +22,7 @@
   align-items: center;
   position: relative;
 
-  background: #ffffff;
+  background: $white;
 
   margin-top: -5px;
   padding-bottom: 22px;
@@ -42,7 +44,7 @@
 
   position: relative;
 
-  color: #1d2e5b;
+  color: $text__dark-blue;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
@@ -57,13 +59,13 @@
     left: -16px;
     bottom: -12px;
 
-    background-color: #f97676;
+    background-color: $background__pinkish;
     border-radius: 50%;
   }
 
   &--online {
     &::before {
-      background-color: #81e31e;
+      background-color: $background__greenish;
     }
   }
 }

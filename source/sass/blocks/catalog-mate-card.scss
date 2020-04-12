@@ -1,9 +1,11 @@
+@import "colors.scss";
+
 .catalog-mate-card {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 20px;
 
   padding-bottom: 16px;
@@ -21,7 +23,7 @@
   max-width: 165px;
   position: relative;
 
-  color: #1d2e5b;
+  color: $text__dark-blue;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
@@ -40,13 +42,13 @@
     top: 8px;
     right: 21px;
 
-    background-color: #f97676;
+    background-color: $background__pinkish;
     border-radius: 50%;
   }
 
   &--online {
     &::after {
-      background-color: #81e31e;
+      background-color: $background__greenish;
     }
   }
 }
@@ -76,7 +78,7 @@
     top: 0;
     left: -21px;
 
-    background: #edeff6 url("../img/icons/mobile/heart.svg");
+    background: $main-color url("../img/icons/mobile/heart.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 13px 11px;
@@ -85,9 +87,7 @@
 
   &--active {
     &::before {
-      background: #f9eaea url("../img/icons/mobile/heart-active.svg");
-      background-repeat: no-repeat;
-      background-position: center;
+      background: $background__whitish url("../img/icons/mobile/heart-active.svg");
       background-size: 13px 11px;
     }
   }
@@ -99,7 +99,7 @@
 }
 
 .catalog-mate-card__text {
-  color: #444444;
+  color: $gray;
   font-size: 15px;
   line-height: 18px;
   font-weight: 300;
@@ -134,9 +134,9 @@
 .catalog-mate-card__level {
   display: block;
 
-  border: 3px solid orange;
+  border: 3px solid $level-circle__orange;
 
-  color: #1d2e5b;
+  color: $text__dark-blue;
   font-size: 24px;
   line-height: 18px;
   font-weight: 700;
@@ -168,7 +168,7 @@
 
   max-width: 230px;
 
-  color: #161c35;
+  color: $font-color;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;

@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -11,7 +13,7 @@
   display: flex;
   position: relative;
 
-  color: #121936;
+  color: $universal__dark-blue;
   font-size: 16px;
   line-height: 46px;
   font-weight: 700;
@@ -19,7 +21,7 @@
   text-transform: uppercase;
 
   &--cta {
-    color: #ffd74b;
+    color: $universal__bright-yellow;
   }
 
   &::before {
@@ -29,7 +31,7 @@
     height: 45px;
     position: relative;
 
-    background-color: #121936;
+    background-color: $universal__dark-blue;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px 18px;

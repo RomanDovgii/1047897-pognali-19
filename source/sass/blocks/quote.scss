@@ -1,4 +1,4 @@
-$header-color: #161c35;
+@import "colors.scss";
 
 .quote {
   position: relative;
@@ -22,7 +22,7 @@ $header-color: #161c35;
 }
 
 .quote__text {
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 22px;
 }

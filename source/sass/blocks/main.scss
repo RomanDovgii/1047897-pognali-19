@@ -1,4 +1,4 @@
-$main-color: #edeff6;
+@import "colors.scss";
 
 .main {
   background-color: $main-color;
@@ -14,14 +14,14 @@ $main-color: #edeff6;
   padding-bottom: 9px;
   padding-left: 25px;
 
-  background-color: #161c35;
+  background-color: $header-color;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .main__heading {
   position: relative;
-  color: #ffffff;
+  color: $white;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
@@ -36,19 +36,13 @@ $main-color: #edeff6;
     bottom: -11px;
     left: 0;
 
-    background-color: #ff8d30;
+    background-color: $background__orange-color;
     border-radius: 2.39px;
   }
 }
 
-.main__rates {
-  padding-top: 50px;
-}
-
-.main__cta-form {
-  padding-top: 50px;
-}
-
+.main__rates,
+.main__cta-form,
 .main__office {
   padding-top: 50px;
 }

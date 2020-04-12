@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .show-all {
   transition: background-color 0.3s, color 0.3s, opacity 0.3s;
   text-decoration: none;
@@ -6,9 +8,9 @@
   max-width: 270px;
   position: relative;
 
-  background-color: #ffd74b;
+  background-color: $universal__bright-yellow;
 
-  color: rgba(29, 46, 91, 1);
+  color: $rgba__bright-blue;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -22,17 +24,17 @@
 
   &:hover {
     transition: background-color 0.3s;
-    background-color: #ffbd30;
+    background-color: $orangish-yellow-color;
   }
 
   &:focus {
     transition: background-color 0.3s;
-    background-color: #ffbd30;
+    background-color: $orangish-yellow-color;
   }
 
   &:active {
     transition: color 0.3s, opacity 0.3s;
-    color: rgba(29, 46, 91, 0.3);
+    color: $rgba__light-bright-blue;
 
     &::after {
       opacity: 0.3;

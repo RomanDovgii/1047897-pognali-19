@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .directions {
   position: relative;
   padding-right: 25px;
@@ -17,12 +19,12 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
-    background-color: #edeff6;
+    background-color: $main-color;
   }
 }
 
 .directions__heading {
-  color: #ff8d30;
+  color: $background__orange-color;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -32,7 +34,7 @@
 }
 
 .directions__text {
-  color: #444444;
+  color: $gray;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;

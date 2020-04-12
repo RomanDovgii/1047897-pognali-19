@@ -1,6 +1,7 @@
+@import "colors.scss";
+
 .transport {
   display: flex;
-  width: 100%;
   justify-content: center;
 
   &--catalog {
@@ -15,87 +16,48 @@
   height: 21px;
   position: relative;
 
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.15;
+    z-index: 4;
+  }
+
   &:not(:first-child) {
     margin-left: 10px;
   }
 
   &--plane {
     &::after {
-      content: "";
-
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
       background-image: url("../img/icons/mobile/plane.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-
-      opacity: 0.15;
-      z-index: 4;
     }
   }
 
   &--bus {
     &::after {
-      content: "";
-
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
       background-image: url("../img/icons/mobile/bus.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-
-      opacity: 0.15;
-      z-index: 4;
     }
   }
 
   &--bycicle {
     &::after {
-      content: "";
-
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
       background-image: url("../img/icons/mobile/bike.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-
-      opacity: 0.15;
-      z-index: 4;
     }
   }
 
   &--run {
     &::after {
-      content: "";
-
-      display: block;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-
       background-image: url("../img/icons/mobile/run.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-
-      opacity: 0.15;
-      z-index: 4;
     }
   }
 
@@ -108,14 +70,8 @@
     }
 
     &::before {
-      content: "";
-
-      display: block;
-      width: 100%;
-      height: 100%;
-
       opacity: 1;
-      background-color: #edeff6;
+      background-color: $main-color;
       border-radius: 50%;
     }
 

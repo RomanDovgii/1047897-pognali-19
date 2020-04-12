@@ -1,10 +1,12 @@
+@import "colors.scss";
+
 .cta-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 
-  background: #192144;
+  background: $background__dark-blue;
   padding-left: 25px;
   padding-right: 25px;
 
@@ -22,12 +24,12 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
-    background-color: #192144;
+    background-color: $background__dark-blue;
   }
 }
 
 .cta-form__heading {
-  color: #ff8d30;
+  color: $background__orange-color;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -37,7 +39,7 @@
 }
 
 .cta-form__text {
-  color: #ffffff;
+  color: $white;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
@@ -51,7 +53,7 @@
 }
 
 .cta-form__link {
-  color: #ffd74b;
+  color: $universal__bright-yellow;
 }
 
 .cta-form__email-form {
@@ -59,7 +61,7 @@
   width: 100%;
   height: 62px;
 
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 10px;
 
   margin-top: 29px;

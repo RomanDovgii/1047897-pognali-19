@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .office {
   position: relative;
   display: flex;
@@ -21,7 +23,7 @@
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
-    background-color: #edeff6;
+    background-color: $main-color;
   }
 }
 
@@ -29,7 +31,7 @@
   display: flex;
   max-width: 320px;
 
-  color: #192144;
+  color: $background__dark-blue;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -47,7 +49,7 @@
     width: 45px;
     height: 45px;
 
-    background: #121936 url("../img/icons/mobile/contacts-location.svg");
+    background: $universal__dark-blue url("../img/icons/mobile/contacts-location.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 14px 22px;
@@ -65,10 +67,10 @@
   height: 62px;
   position: relative;
 
-  border: 3px solid #1d2e5b;
+  border: 3px solid $text__dark-blue;
   border-radius: 10px;
 
-  color: #1d2e5b;
+  color: $text__dark-blue;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;

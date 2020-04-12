@@ -1,3 +1,5 @@
+@import "colors.scss";
+
 .level {
   display: flex;
   flex-wrap: wrap;
@@ -15,14 +17,14 @@
     content: "";
 
     display: block;
-    width: 54px;
-    height: 54px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
     clip: rect(0, 30px, 60px, 0);
     border-radius: 50%;
-    border: 3px solid #f58a32;
+    border: 3px solid $level-circle__orange;
     transform: rotate(180deg);
   }
 
@@ -30,14 +32,14 @@
     content: "";
 
     display: block;
-    width: 54px;
-    height: 54px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     top: 0;
     left: 0;
     clip: rect(0, 30px, 60px, 0);
     border-radius: 50%;
-    border: 3px solid #f58a32;
+    border: 3px solid $level-circle__orange;
     transform: rotate(350deg);
   }
 
@@ -52,7 +54,7 @@
   display: flex;
   flex-direction: column;
 
-  color: #ffffff;
+  color: $white;
   font-size: 14px;
   line-height: 14px;
 
