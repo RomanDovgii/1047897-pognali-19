@@ -37,12 +37,10 @@
     background-color: $background__orange-color;
 
     &:focus {
-      transition: background-color 0.5s;
       background-color: $background__orange-color__actions;
     }
 
     &:hover {
-      transition: background-color 0.5s;
       background-color: $background__orange-color__actions;
     }
 
@@ -67,12 +65,10 @@
     background-color: $orangish-yellow-color;
 
     &:focus {
-      transition: background-color 0.5s;
       background-color: $orangish-yellow-color__actions;
     }
 
     &:hover {
-      transition: background-color 0.5s;
       background-color: $orangish-yellow-color__actions;
     }
 
@@ -100,12 +96,10 @@
     background-color: $yellow-color;
 
     &:focus {
-      transition: background-color 0.5s;
       background-color: $yellow-color__actions;
     }
 
     &:hover {
-      transition: background-color 0.5s;
       background-color: $yellow-color__actions;
     }
 
