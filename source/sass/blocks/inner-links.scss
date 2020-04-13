@@ -3,12 +3,10 @@
 }
 
 .inner-links__item {
-  @include reset;
   text-align: center;
 }
 
 .inner-links__link {
-  @include reset;
   text-decoration: none;
 
   color: $rgba__text__dark-blue;

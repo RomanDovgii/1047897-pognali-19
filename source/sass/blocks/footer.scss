@@ -1,5 +1,4 @@
 .footer {
-  @include reset;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,7 +7,6 @@
   padding-top: 7px;
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;

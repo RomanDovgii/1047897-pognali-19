@@ -47,7 +47,6 @@
   }
 
   &::after {
-    @include reset;
     counter-increment: actions;
     content: counter(actions);
 

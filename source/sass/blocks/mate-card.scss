@@ -4,20 +4,17 @@
 }
 
 .mate-card__img {
-  @include reset;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
 .mate-card__level {
-  @include reset;
   position: absolute;
   top: 16px;
   left: 17px;
 }
 
 .mate-card__info {
-  @include reset;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +34,6 @@
 }
 
 .mate-card__name-wrapper {
-  @include reset;
   padding-top: 26px;
 }
 
@@ -46,7 +42,6 @@
 }
 
 .mate-card__name-link {
-  @include reset;
   text-decoration: none;
 
   position: relative;
@@ -57,7 +52,6 @@
   font-weight: 700;
 
   &::before {
-    @include reset;
     content: "";
 
     display: block;
@@ -73,7 +67,6 @@
 
   &--online {
     &::before {
-      @include reset;
       background-color: $background__greenish;
     }
   }

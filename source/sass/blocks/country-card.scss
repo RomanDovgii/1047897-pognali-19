@@ -5,13 +5,11 @@
 }
 
 .country-card__img {
-  @include reset;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
 .country-card__description {
-  @include reset;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -33,7 +31,6 @@
   padding-left: 24px;
 
   &::before {
-    @include reset;
     content: "";
     display: block;
     width: 35px;
@@ -66,7 +63,6 @@
     margin-left: auto;
 
     &::before {
-      @include reset;
       content: "";
 
       display: block;

@@ -1,11 +1,9 @@
 .main {
-  @include reset;
   background-color: $main-color;
   width: 100%;
 }
 
 .main__heading-wrapper {
-  @include reset;
   display: flex;
   width: 100%;
 
@@ -28,7 +26,6 @@
   font-weight: 700;
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;

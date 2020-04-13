@@ -21,7 +21,6 @@
   }
 
   &::after {
-    @include reset;
     content: "";
     display: flex;
     width: 10px;

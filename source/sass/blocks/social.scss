@@ -6,7 +6,6 @@
 }
 
 .social__item {
-  @include reset;
   width: 45px;
   height: 45px;
 
@@ -18,7 +17,6 @@
 }
 
 .social__link {
-  @include reset;
   display: block;
   width: 100%;
   height: 100%;

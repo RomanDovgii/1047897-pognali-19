@@ -12,9 +12,7 @@
 
     padding-left: 25px;
 
-    li {
-      @include reset;
-
+    .hashtags__item {
       &:not(:last-child) {
         margin-right: 2px;
       }
@@ -23,15 +21,11 @@
 }
 
 .hashtags__item {
-  @include reset;
-
   &:not(:last-child) {
-    @include reset;
     margin-right: 5px;
   }
 
   a {
-    @include reset;
     display: block;
     color: $rgba__text__gray;
     font-size: 16px;
@@ -39,7 +33,6 @@
     text-decoration: none;
 
     &::before {
-      @include reset;
       content: "#";
     }
   }

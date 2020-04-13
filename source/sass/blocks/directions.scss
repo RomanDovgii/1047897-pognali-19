@@ -4,7 +4,6 @@
   padding-left: 25px;
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;
@@ -51,7 +50,6 @@
 }
 
 .directions__show-all {
-  @include reset;
   margin-top: 26px;
   margin-right: auto;
   margin-left: auto;

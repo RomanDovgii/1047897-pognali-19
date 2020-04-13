@@ -11,19 +11,16 @@
 }
 
 .actions__item {
-  @include reset;
   z-index: 2;
   width: 40px;
   height: 40px;
 
   &:last-child {
-    @include reset;
     width: 190px;
   }
 }
 
 .actions__link {
-  @include reset;
   display: block;
   position: relative;
 
@@ -95,6 +92,13 @@
     border-radius: 20px;
     background-color: $yellow-color;
 
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $font-color;
+
     &:focus {
       background-color: $yellow-color__actions;
     }
@@ -103,16 +107,11 @@
       background-color: $yellow-color__actions;
     }
 
-    span {
-      font-size: 17px;
-      line-height: 30px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: center;
-      color: $font-color;
-    }
-
     padding-top: 7px;
+
+    &:active {
+      color: rgba($font-color, 0.3);
+    }
   }
 
   &:active {
@@ -120,20 +119,5 @@
       transition: opacity 0.1s;
       opacity: 0.3;
     }
-
-    span {
-      transition: opacity 0.1s;
-      opacity: 0.3;
-    }
   }
-}
-
-.actions__background {
-  @include reset;
-  display: block;
-
-  width: 100%;
-  height: 100%;
-
-  transition: opacity 0.1s;
 }

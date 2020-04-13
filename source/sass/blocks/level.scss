@@ -12,7 +12,6 @@
   border-radius: 50%;
 
   &::before {
-    @include reset;
     content: "";
 
     display: block;
@@ -28,7 +27,6 @@
   }
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;
@@ -45,7 +43,6 @@
 
   &--demin {
     &::after {
-      @include reset;
       transform: rotate(296deg);
     }
   }
@@ -63,7 +60,6 @@
   padding-left: 8px;
 
   &--number {
-    @include reset;
     position: relative;
 
     font-size: 24px;
@@ -71,7 +67,6 @@
     font-weight: 700;
 
     &::after {
-      @include reset;
       content: "";
 
       display: block;

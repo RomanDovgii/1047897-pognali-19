@@ -9,7 +9,6 @@
   background-color: $universal__bright-yellow;
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;
@@ -28,7 +27,6 @@
 }
 
 .office__text {
-  @include reset;
   display: flex;
   max-width: 320px;
 
@@ -43,7 +41,6 @@
   padding-right: 50px;
 
   &::before {
-    @include reset;
     content: "";
 
     flex-shrink: 0;
@@ -62,7 +59,6 @@
 }
 
 .office__link {
-  @include reset;
   text-decoration: none;
 
   display: block;
@@ -85,7 +81,6 @@
 
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;

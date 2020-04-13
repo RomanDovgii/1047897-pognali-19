@@ -9,7 +9,6 @@
   padding-right: 25px;
 
   &::after {
-    @include reset;
     content: "";
 
     display: block;
@@ -54,14 +53,12 @@
 }
 
 .cta-form__link {
-  @include reset;
   color: $universal__bright-yellow;
 }
 
 .cta-form__email-form {
-  @include reset;
   display: flex;
-  width: 100%;
+  max-width: 270px;
   height: 62px;
 
   background-color: $white;
@@ -71,7 +68,6 @@
 }
 
 .cta-form__input {
-  @include reset;
   width: 210px;
   border: none;
   background: none;
@@ -82,13 +78,11 @@
   font-weight: 700;
 
   &::placeholder {
-    @include reset;
     color: rgba(68, 68, 68, 0.3);
   }
 }
 
 .cta-form__button {
-  @include reset;
   border: none;
 
   flex-shrink: 0;
@@ -104,7 +98,6 @@
 }
 
 .cta-form__contacts {
-  @include reset;
   margin-top: 17px;
   padding-right: 33px;
 }

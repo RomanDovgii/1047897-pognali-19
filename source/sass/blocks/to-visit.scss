@@ -14,7 +14,6 @@
 }
 
 .to-visit__item {
-  @include reset;
   width: 35px;
   height: 24px;
 
@@ -33,7 +32,6 @@
 }
 
 .to-visit__link {
-  @include reset;
   display: block;
   width: 100%;
   height: 100%;
@@ -57,7 +55,6 @@
     padding-top: 13px;
 
     &::before {
-      @include reset;
       content: "";
 
       width: 26px;
