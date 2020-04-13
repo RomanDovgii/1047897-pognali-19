@@ -61,7 +61,7 @@
   display: block;
   position: relative;
 
-  color: rgba(22, 28, 53, 1);
+  color: rgba($blue-700-color, 1);
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -90,10 +90,8 @@
 
   &--active {
     &::before {
-      background: $background__whitish url("../img/icons/mobile/heart-active.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 13px 11px;
+      background-color: $background__whitish;
+      background-image: url("../img/icons/mobile/heart-active.svg");
     }
   }
 
@@ -194,6 +192,6 @@
   padding-bottom: 3px;
   padding-left: 78px;
 
-  background-color: rgba(255, 215, 75, 1);
+  background-color: rgba($yellow-200-color, 1);
   border-radius: 20px;
 }

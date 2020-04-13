@@ -1,18 +1,4 @@
 .map {
   @include reset;
   position: relative;
-
-  // &::after {
-  //   content: "";
-  //
-  //   display: block;
-  //   width: 41px;
-  //   height: 41px;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   margin-top: -28px;
-  //   margin-left: -20px;
-  //   background: url("../img/icons/mobile/map-marker.svg");
-  // }
 }

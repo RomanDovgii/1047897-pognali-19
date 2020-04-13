@@ -39,13 +39,10 @@
     left: 0;
 
     background-color: $background__orange-color;
-    border-radius: 2.39px;
+    border-radius: 2px;
   }
 }
 
-.main__rates,
-.main__cta-form,
-.main__office {
-  @include reset;
+.main__section {
   padding-top: 50px;
 }

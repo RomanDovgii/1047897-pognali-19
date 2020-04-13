@@ -25,6 +25,7 @@
 .actions__link {
   @include reset;
   display: block;
+  position: relative;
 
   width: 100%;
   height: 100%;
@@ -45,8 +46,16 @@
       background-color: $background__orange-color__actions;
     }
 
-    span {
-      @include reset;
+    &::after {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
       background: url("../img/icons/mobile/topmenu-phone.svg");
       background-repeat: no-repeat;
       background-size: 18px;
@@ -67,8 +76,16 @@
       background-color: $orangish-yellow-color__actions;
     }
 
-    span {
-      @include reset;
+    &::after {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
       background: url("../img/icons/mobile/topmenu-mail.svg");
       background-repeat: no-repeat;
       background-size: 18px;
@@ -93,7 +110,6 @@
     }
 
     span {
-      @include reset;
       font-size: 17px;
       line-height: 30px;
       font-weight: 700;
@@ -106,8 +122,12 @@
   }
 
   &:active {
+    &::after {
+      transition: opacity 0.1s;
+      opacity: 0.3;
+    }
+
     span {
-      @include reset;
       transition: opacity 0.1s;
       opacity: 0.3;
     }
