@@ -1,0 +1,86 @@
+.transport {
+  display: flex;
+  justify-content: center;
+
+  &--catalog {
+    list-style: none;
+
+    padding-left: 25px;
+  }
+}
+
+.transport__item {
+  width: 24px;
+  height: 21px;
+  position: relative;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.15;
+    z-index: 4;
+  }
+
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  &--plane {
+    &::after {
+      background-image: url("../img/icons/mobile/plane.svg");
+    }
+  }
+
+  &--bus {
+    &::after {
+      background-image: url("../img/icons/mobile/bus.svg");
+    }
+  }
+
+  &--bycicle {
+    &::after {
+      background-image: url("../img/icons/mobile/bike.svg");
+    }
+  }
+
+  &--run {
+    &::after {
+      background-image: url("../img/icons/mobile/run.svg");
+    }
+  }
+
+  &--catalog {
+    width: 32px;
+    height: 32px;
+
+    &::after {
+      background-size: 19px 17px;
+    }
+
+    &::before {
+      opacity: 1;
+      background-color: $main-color;
+      border-radius: 50%;
+    }
+
+    &:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+
+  &--active {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

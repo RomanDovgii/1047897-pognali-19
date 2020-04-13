@@ -1,0 +1,103 @@
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  background: $background__dark-blue;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    z-index: 2;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    background-color: $background__dark-blue;
+  }
+}
+
+.cta-form__heading {
+  @include reset;
+  color: $background__orange-color;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 55px;
+
+  max-width: 320px;
+}
+
+.cta-form__text {
+  @include reset;
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+
+  padding-top: 19px;
+
+  &--questions {
+    padding-top: 29px;
+  }
+}
+
+.cta-form__link {
+  color: $universal__bright-yellow;
+}
+
+.cta-form__email-form {
+  display: flex;
+  max-width: 270px;
+  height: 62px;
+
+  background-color: $white;
+  border-radius: 10px;
+
+  margin-top: 29px;
+}
+
+.cta-form__input {
+  width: 210px;
+  border: none;
+  background: none;
+  padding-left: 20px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.cta-form__button {
+  border: none;
+
+  flex-shrink: 0;
+
+  width: 60px;
+  height: 62px;
+
+  background: rgba(255, 215, 75, 1) url("../img/icons/mobile/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: 27px 24px;
+  background-size: 10px 14px;
+  border-radius: 10px;
+}
+
+.cta-form__contacts {
+  margin-top: 17px;
+  padding-right: 33px;
+}

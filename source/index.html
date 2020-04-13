@@ -9,7 +9,7 @@
   <body>
     <header class="header">
       <section class="top-menu header__top-menu">
-        <div class="functions top-menu__functions top-menu__functions--index">
+        <div class="functions top-menu__functions top-menu__functions--white top-menu__functions--index">
           <a href="index.html" class="functions__link functions__link--white">
             <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
           </a>
@@ -100,8 +100,8 @@
       <section class="about main__about">
         <div class="about__wrapper">
           <h2 class="about__heading">О сервисе</h2>
-          <p class="about__slogan">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-          <p class="about__additional">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+          <p class="about__text about__text--additional">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
       </section>
 
@@ -117,24 +117,24 @@
             <img class="country-card__img" width="270" height="110" src="./img/mobile/thailand-mobile@1x.jpg" alt="Таиланд">
             <div class="country-card__description">
               <p class="country-card__name">Таиланд</p>
-              <p class="country-card__visited">18321</p>
-              <p class="country-card__slogan">Джунгли зовут!</p>
+              <p class="country-card__text country-card__text--number">18321<span class="visually-hidden"> человек посетило эту страну</span></p>
+              <p class="country-card__text">Джунгли зовут!</p>
             </div>
           </li>
           <li class="country-card countries__country-card">
             <img class="country-card__img" width="270" height="110" src="./img/mobile/france-mobile@1x.jpg" alt="Франция">
             <div class="country-card__description">
               <p class="country-card__name">Франция</p>
-              <p class="country-card__visited">12518</p>
-              <p class="country-card__slogan">Трэ бьен, манифик!</p>
+              <p class="country-card__text country-card__text--number">12518<span class="visually-hidden"> человек посетило эту страну</span></p>
+              <p class="country-card__text">Трэ бьен, манифик!</p>
             </div>
           </li>
           <li class="country-card countries__country-card">
             <img class="country-card__img" width="270" height="110" src="./img/mobile/czech-mobile@1x.jpg" alt="Чехия">
             <div class="country-card__description">
               <p class="country-card__name">Чехия</p>
-              <p class="country-card__visited">5326</p>
-              <p class="country-card__slogan">Закоулки старой Европы</p>
+              <p class="country-card__text country-card__text--number">5326<span class="visually-hidden"> человек посетило эту страну</span></p>
+              <p class="country-card__text">Закоулки старой Европы</p>
             </div>
           </li>
         </ul>
@@ -145,16 +145,16 @@
       <section class="mates main__mates">
         <div class="mates__wrapper">
           <h2 class="mates__heading">Попутчики</h2>
-          <p class="mates__slogan">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="mates__additional">Теперь можно легко найти единомышленников!</p>
+          <p class="mates__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="mates__text mates__text--additional">Теперь можно легко найти единомышленников!</p>
         </div>
 
         <ul class="people mates__people">
           <li class="people__item">
             <div class="mate-card people__mate-card">
-              <img class="mate-card__img" width="270" height="270" src="https://via.placeholder.com/150x150" alt="фото пользователя">
+              <img class="mate-card__img" width="270" height="270" src="./img/desktop/firsova-desktop@1x.jpg" alt="фото пользователя">
                 <div class="level mate-card__level">
-                  <p class="level__text"><span class="level__number">99</span> level</p>
+                  <p class="level__text"><span class="level__text--number">99</span> level</p>
                 </div>
 
                 <div class="mate-card__info">
@@ -205,16 +205,16 @@
 
                   <ul class="transport mate-card__transport">
                     <li class="transport__item transport__item--plane transport__item--active">
-                      <span class="transport__description">Авиаперелет</span>
+                      <span class="transport__description visually-hidden">Авиаперелет</span>
                     </li>
                     <li class="transport__item transport__item--bus">
-                      <span class="transport__description">Автотранспорт</span>
+                      <span class="transport__description visually-hidden">Автотранспорт</span>
                     </li>
                     <li class="transport__item transport__item--bycicle">
-                      <span class="transport__description">Велосипед</span>
+                      <span class="transport__description visually-hidden">Велосипед</span>
                     </li>
                     <li class="transport__item transport__item--run">
-                      <span class="transport__description">Пешком</span>
+                      <span class="transport__description visually-hidden">Пешком</span>
                     </li>
                   </ul>
                 </div>
@@ -222,15 +222,15 @@
           </li>
           <li class="people__item">
             <div class="mate-card people__mate-card">
-                <img class="mate-card__img" width="270" height="270" src="https://via.placeholder.com/150x150" alt="фото пользователя">
-                <div class="level mate-card__level">
+                <img class="mate-card__img" width="270" height="270" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
+                <div class="level level--demin mate-card__level">
                   <p class="level__text">
-                    <span class="level__number">80</span>level</p>
+                    <span class="level__text--number">80</span>level</p>
                 </div>
 
                 <div class="mate-card__info">
                   <div class="mate-card__name-wrapper">
-                    <a class="mate-card__name-link" href="">
+                    <a class="mate-card__name-link mate-card__name-link--online" href="">
                       <h3 class="mate-card__name">Петя Демин <span class="visually-hidden">online</span></h3>
                     </a>
                   </div>
@@ -268,16 +268,16 @@
 
                   <ul class="transport mate-card__transport">
                     <li class="transport__item transport__item--plane transport__item--active">
-                      <span class="transport__description">Авиаперелет</span>
+                      <span class="transport__description visually-hidden">Авиаперелет</span>
                     </li>
                     <li class="transport__item transport__item--bus transport__item--active">
-                      <span class="transport__description">Автотранспорт</span>
+                      <span class="transport__description visually-hidden">Автотранспорт</span>
                     </li>
                     <li class="transport__item transport__item--bycicle">
-                      <span class="transport__description">Велосипед</span>
+                      <span class="transport__description visually-hidden">Велосипед</span>
                     </li>
                     <li class="transport__item transport__item--run transport__item--active">
-                      <span class="transport__description">Пешком</span>
+                      <span class="transport__description visually-hidden">Пешком</span>
                     </li>
                   </ul>
                 </div>
@@ -288,7 +288,7 @@
         <a class="show-all mates__show-all" href="">Показать всех</a>
       </section>
 
-      <section class="rates main__rates">
+      <section class="rates main__rates main__section">
         <div class="rates__heading-wrapper">
           <h2 class="rates__heading">Добавьте свой профиль</h2>
         </div>
@@ -314,15 +314,16 @@
           </li>
         </ol>
 
-        <a href="./business-rates.html" class="rates__button">Показать тарифы для бизнеса</a>
+        <a href="./business-rates.html" class="rates__link">Показать тарифы для бизнеса</a>
       </section>
 
-      <section class="cta-form main__cta-form">
+      <section class="cta-form main__cta-form main__section">
         <h2 class="visually-hidden">Связаться с нами</h2>
         <p class="cta-form__heading">Заинтересовались?</p>
         <p class="cta-form__text">Зарегистрируйтесь,<br>
           это быстро и бесплатно! <br>
-          Уже зарегистрированы? Тогда скорее <a class="cta-form__link" href="">авторизуйтесь.</a>
+          Уже зарегистрированы? Тогда <br>
+          скорее <a class="cta-form__link" href="">авторизуйтесь.</a>
         </p>
 
         <form class="cta-form__email-form" action="https://echo.htmlacademy.ru" method="post">
@@ -332,7 +333,7 @@
           </button>
         </form>
 
-        <p class="cta-form__text">Остались вопросы?<br>Мы с радостью на них ответим!</p>
+        <p class="cta-form__text cta-form__text--questions">Остались вопросы?<br>Мы с радостью на них ответим!</p>
 
         <ul class="contacts cta-form__contacts">
           <li class="contacts__item contacts__item--cta">
@@ -344,11 +345,9 @@
         </ul>
       </section>
 
-      <section class="office main__office">
+      <section class="office main__office main__section">
         <h2 class="visually-hidden">Расположение нашего офиса</h2>
-        <div class="office__wrapper">
-          <p class="office__text">ул. Большая Конюшенная, 19/8</p>
-        </div>
+        <p class="office__text">ул. Большая Конюшенная, 19/8</p>
         <a class="office__link" href="">Проложить маршрут</a>
       </section>
 
@@ -360,6 +359,7 @@
 
     <footer class="footer">
       <section class="info footer__info">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
         <a href="" class="info__link">
           <img class="info__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
         </a>
@@ -385,12 +385,12 @@
       <section class="developer footer__developer">
         <p class="developer__text">Разработано</p>
         <a class="developer__link" href="">
-          <img class="developer__logo" width="27" height="34" src="./img/developed-by/recolorized/dark-blue/htmlacademy.svg" alt="HTML Academy">
+          <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
         </a>
       </section>
     </footer>
 
-    <div class="business-rates">
+    <div class="business-rates visually-hidden">
       <h3 class="business-rates__heading">Бизнес-тарифы</h3>
       <ul class="business-rates__list">
         <li class="business-rates__list-item">

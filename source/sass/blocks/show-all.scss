@@ -1,0 +1,54 @@
+.show-all {
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+  text-decoration: none;
+
+  display: block;
+  max-width: 270px;
+  position: relative;
+
+  background-color: $universal__bright-yellow;
+
+  color: $rgba__bright-blue;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  padding-top: 23px;
+  padding-right: 130px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+
+  border-radius: 10px;
+
+  &:hover {
+    transition: background-color 0.3s;
+    background-color: $orangish-yellow-color;
+  }
+
+  &:focus {
+    transition: background-color 0.3s;
+    background-color: $orangish-yellow-color;
+  }
+
+  &:active {
+    transition: color 0.3s, opacity 0.3s;
+    color: $rgba__light-bright-blue;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    top: 24px;
+    right: 23px;
+
+    background: url("../img/icons/mobile/triangle-arrow-right.svg");
+  }
+}

@@ -1,0 +1,73 @@
+.mates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  background-color: $background__dark-blue;
+  background-image: url("../img/mobile/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 152px 69px, -10px 341px, -20px 69px;
+  background-size: 143px 143px, 71px 71px, 132px 132px;
+  padding-top: 102px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    z-index: 2;
+
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    background-color: $background__dark-blue;
+  }
+}
+
+.mates__heading {
+  @include reset;
+  position: relative;
+  z-index: 2;
+
+  color: $background__orange-color;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+
+  padding-left: 24px;
+}
+
+.mates__text {
+  @include reset;
+  position: relative;
+  z-index: 2;
+
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  &--additional {
+    font-weight: 700;
+  }
+}
+
+.mates__people {
+  @include reset;
+  margin-top: 56px;
+}
+
+.mates__show-all {
+  margin-top: 20px;
+}

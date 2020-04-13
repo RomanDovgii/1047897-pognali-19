@@ -1,0 +1,16 @@
+.functions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.functions__button {
+  @include reset;
+  border: none;
+  margin-top: 4px;
+
+  width: 25px;
+  height: 11px;
+  background: url("../img/icons/mobile/menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

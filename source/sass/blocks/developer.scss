@@ -1,0 +1,21 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-right: 25px;
+  margin-left: 25px;
+
+  border-top: 1px solid $rgba__background__gray-from-black;
+}
+
+.developer__text {
+  @include reset;
+  color: $gray;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 20px;
+}
+
+.developer__link {
+  padding-top: 14px;
+}

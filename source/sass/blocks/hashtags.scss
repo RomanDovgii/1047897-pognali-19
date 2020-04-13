@@ -1,0 +1,39 @@
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  &--catalog {
+    list-style: none;
+
+    justify-content: flex-start;
+
+    padding-left: 25px;
+
+    .hashtags__item {
+      &:not(:last-child) {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+.hashtags__item {
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  a {
+    display: block;
+    color: $rgba__text__gray;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+
+    &::before {
+      content: "#";
+    }
+  }
+}

@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include reset;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+}

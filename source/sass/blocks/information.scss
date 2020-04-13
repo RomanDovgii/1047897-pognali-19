@@ -1,0 +1,46 @@
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  background: $white;
+  padding-top: 65px;
+}
+
+.information__auth-link {
+  @include reset;
+  text-decoration: none;
+
+  display: block;
+  height: 50px;
+  max-width: 270px;
+
+  background-color: $universal__bright-yellow;
+  border-radius: 25px;
+
+  color: $header-color;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  padding: 12px 80px;
+  margin-top: 49px;
+}
+
+.information__contacts {
+  @include reset;
+  margin-top: 50px;
+  margin-left: -33px;
+}
+
+.information__social {
+  @include reset;
+  margin-top: 29px;
+  padding-bottom: 28px;
+}
+
+.information__inner-links {
+  @include reset;
+}
