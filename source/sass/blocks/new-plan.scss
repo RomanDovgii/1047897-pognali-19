@@ -1,0 +1,21 @@
+.new-plan {
+  background-color: #d4d9eb;
+}
+
+.new-plan__heading {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
+  z-index: 4;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+  padding-top: 1px;
+  padding-bottom: 13px;
+}
+
+.new-plan__form {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,29 @@
+.children-checkbox__label-name {
+  position: relative;
+  font-size: 15px;
+  line-height: 29px;
+  color: #444444;
+  display: flex;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 11px;
+  margin-bottom: 18px;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cdced9;
+    border-radius: 4px;
+    margin-right: 13px;
+  }
+}
+
+.children-checkbox__label input:checked + .children-checkbox__label-name {
+  &::before {
+    background-image: url("../img/icons/mobile/tick.svg");
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+    background-position: 8px 7px;
+  }
+}

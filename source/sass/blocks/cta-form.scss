@@ -54,6 +54,15 @@
 
 .cta-form__link {
   color: $universal__bright-yellow;
+
+  &:hover,
+  &:focus {
+    color: $background__orange-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .cta-form__email-form {
@@ -98,6 +107,7 @@
 }
 
 .cta-form__contacts {
+  @include reset;
   margin-top: 17px;
   padding-right: 33px;
 }

@@ -64,62 +64,65 @@
     </header>
 
     <main class="main">
-      <!-- doesn't exist now-->
 
       <div class="main__heading-wrapper">
         <h1 class="main__heading">Направления</h1>
       </div>
 
-      <section class="change-bio main__change-bio visually-hidden">
+      <section class="change-bio main__change-bio">
 
         <h2 class="visually-hidden">Обновить профиль</h2>
 
-        <p class="level change-bio__level">
-          <span class="level__number">99</span>
-          <span class="level__text">level</span>
-        </p>
+        <div class="change-bio__wrapper">
+          <p class="change-bio__level">
+            <span class="change-bio__number">80</span>
+            <span class="change-bio__text">level</span>
+          </p>
 
-        <img class="change-bio__user-img" width="100" height="100" src="https://via.placeholder.com/150x150" alt="фото пользователя">
+          <img class="change-bio__user-img" width="100" height="100" src="https://via.placeholder.com/150x150" alt="фото пользователя">
+        </div>
 
-        <form class="form change-bio__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="form__change-avatar">
+        <form class="change-bio__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="change-bio__change-avatar">
             Cменить фото
             <input class="visually-hidden" type="file">
           </label>
 
 
-          <label class="form__fieldset form__fieldset--tags">
-            <span class="form__heading">Тэги</span>
-            <textarea class="form__tags" name="tags" rows="8" cols="20"></textarea>
+          <label class="change-bio__fieldset change-bio__fieldset--tags">
+            <span class="change-bio__legend change-bio__legend--tags">Тэги</span>
+            <textarea class="change-bio__tags" name="tags" rows="8" cols="20">#бургер #бар #футбол #концерт #крафт</textarea>
           </label>
 
-          <fieldset class="form__fieldset form__fieldset--change-transport">
-            <legend class="form__legend">Транспорт</legend>
-            <label class="form__transport-button form__transport-button--plane">
-              <span class="visually-hidden">Самолет</span>
-              <input class="visually-hidden" type="checkbox" name="plane" checked>
-            </label>
+          <fieldset class="change-bio__fieldset change-bio__fieldset--change-transport">
+            <legend class="change-bio__legend">Транспорт</legend>
+            <div class="change-bio__transport-wrapper">
+              <label class="change-bio__transport-button change-bio__transport-button--plane">
+                <span class="visually-hidden">Самолет</span>
+                <input class="visually-hidden" type="checkbox" name="plane" checked>
+              </label>
 
-            <label class="form__transport-button form__transport-button--bus">
-              <span class="visually-hidden">Автобус</span>
-              <input class="visually-hidden" type="checkbox" name="bus" checked>
-            </label>
+              <label class="change-bio__transport-button change-bio__transport-button--bus">
+                <span class="visually-hidden">Автобус</span>
+                <input class="visually-hidden" type="checkbox" name="bus" checked>
+              </label>
 
-            <label class="form__transport-button form__transport-button--bycicle">
-              <span class="visually-hidden">Велосипед</span>
-              <input class="visually-hidden" type="checkbox" name="bycicle">
-            </label>
+              <label class="change-bio__transport-button change-bio__transport-button--bycicle">
+                <span class="visually-hidden">Велосипед</span>
+                <input class="visually-hidden" type="checkbox" name="bycicle">
+              </label>
 
-            <label class="form__transport-button form__transport-button--run">
-              <span class="visually-hidden">Пешком</span>
-              <input class="visually-hidden" type="checkbox" name="run" checked>
-            </label>
+              <label class="change-bio__transport-button change-bio__transport-button--run">
+                <span class="visually-hidden">Пешком</span>
+                <input class="visually-hidden" type="checkbox" name="run" checked>
+              </label>
+            </div>
           </fieldset>
         </form>
 
       </section>
 
-      <section class="plans main__plans visually-hidden">
+      <section class="plans main__plans">
 
         <h2 class="plans__heading">Мои планы:</h2>
 
@@ -140,13 +143,13 @@
 
       </section>
 
-      <section class="new-plan main__new-plan visually-hidden">
+      <section class="new-plan main__new-plan">
 
         <h2 class="new-plan__heading">Добавить план:<span class="new-plan__page-indicator"></span></h2>
 
         <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <section class="steps-ordered__item" id="step-1">
+          <section class="steps-ordered new-plan__steps-ordered" id="step-1">
 
             <h3 class="steps-ordered__heading">
               Шаг 1. <br>
@@ -190,23 +193,23 @@
               </button>
             </div>
 
-            <div class="children-fieldset steps-ordered__children-fieldset">
-              <label class="children-fieldset__label">
+            <div class="children-checkbox steps-ordered__children-checkbox">
+              <label class="children-checkbox__label">
                 <input class="visually-hidden" type="checkbox" name="with-children">
-                Можно с детьми
+                <span class="children-checkbox__label-name">Можно с детьми</span>
               </label>
             </div>
 
             <div class="calendar steps-ordered__calendar">
               <div class="month-selection calendar__month-selection">
                 <h3 class="visually-hidden">Выбор месяца</h3>
-                <button class="month-selection__previous" type="button">
+                <button class="month-selection__button month-selection__button--previous" type="button">
                   <span class="visually-hidden">Предыдущий месяц</span>
                 </button>
 
                 <span class="month-selection__month-year">Март 2019</span>
 
-                <button class="month-selection__next" type="button">
+                <button class="month-selection__button month-selection__button--next" type="button">
                   <span class="visually-hidden">Следующий месяц</span>
                 </button>
               </div>
@@ -369,7 +372,7 @@
 
           </section>
 
-          <section class="steps-ordered__item" id="step-2">
+          <section class="steps-ordered new-plan__steps-ordered" id="step-2">
 
             <h3 class="steps-ordered__heading">
               Шаг 2. <br>
@@ -408,7 +411,7 @@
             <a class="steps-ordered__next" href="#step-3">Следующий шаг</a>
             <a class="steps-ordered__previous" href="#step-1">На шаг назад</a>
           </section>
-          <section class="steps-ordered__item" id="step-3">
+          <section class="steps-ordered new-plan__steps-ordered" id="step-3">
 
             <h3 class="steps-ordered__heading">
               Шаг 3. <br>
@@ -439,7 +442,6 @@
           </section>
         </form>
       </section>
-      <!-- doesn't exist now-->
     </main>
 
     <footer class="footer">
@@ -468,8 +470,8 @@
       </section>
 
       <section class="developer footer__developer">
-        <p class="developer__text">Разработано</p>
         <a class="developer__link" href="">
+          <p class="developer__text">Разработано</p>
           <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
         </a>
       </section>

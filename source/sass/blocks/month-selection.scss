@@ -1,0 +1,41 @@
+.month-selection {
+  border-top: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.month-selection__month-year {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.month-selection__button {
+  background: none;
+  border: none;
+  width: 10;
+  height: 18;
+  background-repeat: no-repeat;
+  background-size: 9px 18px;
+  opacity: 0.3;
+
+  &--previous {
+    background-image: url("../img/icons/mobile/month-arrow-left.svg");
+    background-position: 0 12px;
+  }
+
+  &--next {
+    background-image: url("../img/icons/mobile/month-arrow-right.svg");
+    background-position: 3px 12px;
+  }
+}

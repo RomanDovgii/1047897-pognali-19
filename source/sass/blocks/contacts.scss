@@ -41,13 +41,54 @@
 
   &--phone {
     &::before {
-      background-image: url("../img/icons/mobile/contacts-phone-yellow.svg");
+      background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow.svg");
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow-hover.svg");
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 1;
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow-active.svg");
+      }
     }
   }
 
   &--email {
     &::before {
-      background-image: url("../img/icons/mobile/contacts-mail-yellow.svg");
+      background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow.svg");
+    }
+
+    &:hover,
+    &:focus {
+      &::before {
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow-hover.svg");
+      }
+    }
+
+    &:active {
+      &::before {
+        opacity: 1;
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow-active.svg");
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    span {
+      color: $orangish-yellow-color;
+    }
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
     }
   }
 }

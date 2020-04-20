@@ -1,0 +1,88 @@
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+  background-color: #dfe3f0;
+}
+
+.plans__heading {
+  width: 270px;
+  margin-top: -20px;
+  z-index: 4;
+}
+
+.plans__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: blocks;
+}
+
+.plans__item {
+  width: 270px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  counter-increment: blocks;
+  padding-bottom: 21px;
+
+  &:first-child {
+    margin-top: 8px;
+  }
+}
+
+.plans__place {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 24px;
+
+  &::before {
+    content: counter(blocks) ".";
+    padding-left: 23px;
+    padding-right: 6px;
+    font-weight: 500;
+  }
+}
+
+.plans__mates {
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-top: 20px;
+  letter-spacing: 1.5px;
+
+  &--number {
+    padding-right: 5px;
+  }
+}
+
+.plans__dates {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-top: 5px;
+  letter-spacing: 1.5px;
+}
+
+.plans__link {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 26px;
+  padding-top: 21px;
+  color: #000000;
+  opacity: 0.3;
+}
