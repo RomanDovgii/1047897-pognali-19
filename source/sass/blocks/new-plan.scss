@@ -1,21 +1,24 @@
 .new-plan {
   background-color: #d4d9eb;
+  padding-bottom: 44px;
 }
 
 .new-plan__heading {
+  @include reset;
   position: relative;
-  margin: 0;
   padding-left: 25px;
   z-index: 4;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   color: #1d2e5b;
-  padding-top: 1px;
+  padding-top: 30px;
   padding-bottom: 13px;
 }
 
 .new-plan__form {
   display: flex;
   flex-direction: column;
+
+  margin-top: 16px;
 }

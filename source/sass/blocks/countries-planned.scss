@@ -1,0 +1,217 @@
+.countries-planned {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countries-planned__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countries-planned__country {
+
+  font-family: inherit;
+  text-align: left;
+
+
+  max-width: 221px;
+
+  position: relative;
+  display: flex;
+  margin-bottom: 22px;
+  min-width: 168px;
+
+  &:not(:nth-last-child(2))::after {
+    content: "";
+    width: 53px;
+    height: inherit;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+    margin-left: -1px;
+  }
+
+  &:not(:nth-last-child(2))::before {
+    content: "";
+    position: absolute;
+    bottom: 17px;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1d2e5b;
+    z-index: 5;
+  }
+}
+
+.countries-planned__country-name {
+  background: none;
+
+  font-family: inherit;
+  text-align: left;
+
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  padding-right: 10px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 168px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 49px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, #ffffff 35%, #ffffff 100%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    right: 13px;
+    display: block;
+    width: 12px;
+    height: 7px;
+    background-image: url("../img/icons/dropdown-form.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px 7px;
+    opacity: 0.3;
+  }
+}
+
+.countries-planned__delete {
+  height: 21px;
+  width: 21px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-image: url("../img/icons/mobile/small-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    background-size: 9px 9px;
+  }
+}
+
+.countries-planned__choose {
+  background: none;
+
+  font-family: inherit;
+  text-align: left;
+
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  color: #1d2e5b;
+  text-transform: uppercase;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-right: 73px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 16px;
+    right: 48px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #cdd0db;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    right: 14px;
+    display: block;
+    width: 12px;
+    height: 7px;
+    background-image: url("../img/icons/dropdown-form.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px 7px;
+    opacity: 0.3;
+  }
+}
+
+.countries-planned__add {
+  font-family: inherit;
+  text-align: left;
+
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-right: 73px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  background-color: #edeff6;
+  border-radius: 4px;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 17px;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #cdd0db;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icons/mobile/qty-plus-mobile.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    bottom: 14px;
+    right: 14px;
+  }
+}
