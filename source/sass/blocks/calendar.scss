@@ -5,8 +5,8 @@
 }
 
 .calendar__month-year-wrapper {
-  border-top: 1px solid #cbced9;
-  border-bottom: 1px solid #cbced9;
+  border-top: 1px solid $blue-10-color;
+  border-bottom: 1px solid $blue-10-color;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 22px;
@@ -33,7 +33,7 @@
 .calendar__week-day {
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $gray;
   padding-left: 13px;
   padding-right: 11px;
 
@@ -70,14 +70,14 @@
   &:nth-child(6) {
     &::before {
       content: "С";
-      color: #ff5c23;
+      color: $red-100-color;
     }
   }
 
   &:last-child {
     &::before {
       content: "В";
-      color: #ff5c23;
+      color: $red-100-color;
     }
   }
 }
@@ -90,8 +90,8 @@
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
-  border-left: 1px solid #cbced9;
-  border-top: 1px solid #cbced9;
+  border-left: 1px solid $blue-10-color;
+  border-top: 1px solid $blue-10-color;
 }
 
 .calendar__day {
@@ -101,28 +101,28 @@
   font-size: 14px;
   line-height: 18px;
   padding-top: 7px;
-  border-right: 1px solid #cbced9;
-  border-bottom: 1px solid #cbced9;
+  border-right: 1px solid $blue-10-color;
+  border-bottom: 1px solid $blue-10-color;
 
   a {
     text-decoration: none;
     opacity: 0.3;
     padding-top: 20px;
-    color: #444444;
+    color: $gray;
   }
 
   &--available {
-    background-color: #edeff6;
+    background-color: $main-color;
 
     a {
       opacity: 1;
-      color: #444444;
+      color: $gray;
     }
   }
 
   &--active {
     position: relative;
-    background-color: #1d2e5b;
+    background-color: $text__dark-blue;
 
     &:hover {
       &::after {
@@ -132,12 +132,12 @@
         left: -1px;
         height: 107%;
         width: 107%;
-        border: 2px solid #ff5c23;
+        border: 2px solid $red-100-color;
       }
     }
 
     a {
-      color: #ffffff;
+      color: $white;
     }
   }
 
@@ -149,7 +149,7 @@
       left: -1px;
       height: 107%;
       width: 107%;
-      border: 2px solid #ff5c23;
+      border: 2px solid $red-100-color;
     }
   }
 }

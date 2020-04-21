@@ -1,6 +1,6 @@
 .month-selection {
-  border-top: 1px solid #cbced9;
-  border-bottom: 1px solid #cbced9;
+  border-top: 1px solid $blue-10-color;
+  border-bottom: 1px solid $blue-10-color;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 22px;
@@ -12,7 +12,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
-  color: #1d2e5b;
+  color: $text__dark-blue;
   text-align: center;
   padding-top: 12px;
   padding-bottom: 10px;

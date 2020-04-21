@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: #e2e5f2;
+  background-color: $grayish-blue-light-alt;
   padding-bottom: 16px;
 }
 
@@ -23,7 +23,7 @@
   font-weight: 700;
   padding-right: 5px;
   padding-left: 23px;
-  color: #192144;
+  color: $background__dark-blue;
   text-transform: uppercase;
 
   &::before {

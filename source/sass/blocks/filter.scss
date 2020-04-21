@@ -1,7 +1,7 @@
 .filter {
   position: relative;
   width: 100%;
-  background-color: #e2e5f2;
+  background-color: $grayish-blue-light-alt;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -17,10 +17,6 @@
     position: absolute;
     top: -20px;
     left: 0;
-    background-color: #e2e5f2;
+    background-color: $grayish-blue-light-alt;
   }
 }
-
-
-
-

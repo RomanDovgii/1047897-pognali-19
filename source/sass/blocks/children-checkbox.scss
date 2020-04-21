@@ -2,7 +2,7 @@
   position: relative;
   font-size: 15px;
   line-height: 29px;
-  color: #444444;
+  color: $gray;
   display: flex;
   width: 220px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
     content: "";
     width: 26px;
     height: 26px;
-    border: 1px solid #cdced9;
+    border: 1px solid $blue-10-color;
     border-radius: 4px;
     margin-right: 13px;
   }

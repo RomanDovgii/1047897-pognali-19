@@ -1,5 +1,5 @@
 .steps-ordered {
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 10px;
   margin-left: 25px;
   margin-right: 25px;
@@ -20,7 +20,7 @@
   padding-left: 24px;
   font-size: 20px;
   line-height: 20px;
-  color: #1d2e5b;
+  color: $text__dark-blue;
   padding-top: 20px;
 }
 
@@ -28,7 +28,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: $gray;
   padding-top: 15px;
   padding-right: 25px;
   padding-left: 25px;
@@ -38,7 +38,7 @@
   position: relative;
   font-size: 15px;
   line-height: 29px;
-  color: #444444;
+  color: $gray;
   display: flex;
   width: 220px;
   margin: 0 auto;
@@ -49,7 +49,7 @@
     content: "";
     width: 26px;
     height: 26px;
-    border: 1px solid #cdced9;
+    border: 1px solid $blue-10-color;
     border-radius: 4px;
     margin-right: 13px;
   }
@@ -74,7 +74,7 @@
   width: 230px;
   margin: 0 auto;
   border-radius: 20px;
-  background-color: #ffd74b;
+  background-color: $universal__bright-yellow;
   font-size: 17px;
   line-height: 30px;
   padding-top: 7px;
@@ -82,7 +82,7 @@
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
-  color: #161c35;
+  color: $blue-700-color;
 
   &:hover {
     background-color: $orangish-yellow-color;
@@ -100,7 +100,7 @@
   text-align: center;
   font-size: 17px;
   line-height: 30px;
-  color: #161c35;
+  color: $blue-700-color;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -131,7 +131,7 @@
   //     display: block;
   //     width: 2px;
   //     height: 281px;
-  //     background-color: #1d2e5b;
+  //     background-color: $text__dark-blue;
   //   }
   // }
 }
@@ -148,10 +148,10 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
-  color: #161c35;
+  color: $blue-700-color;
   text-transform: uppercase;
   text-align: center;
-  background-color: #ffd74b;
+  background-color: $universal__bright-yellow;
   border-radius: 20px;
   padding-top: 7px;
   padding-bottom: 3px;

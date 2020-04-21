@@ -15,9 +15,9 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: #b6b9c8;
+  color: $grayish-blue;
 
   &--active {
-    color: #192144;
+    color: $background__dark-blue;
   }
 }
