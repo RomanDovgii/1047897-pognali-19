@@ -83,6 +83,13 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #161c35;
+
+  &:hover {
+    background-color: $orangish-yellow-color;
+  }
+  &:active {
+    color: rgba($text__dark-blue, 0.3);
+  }
 }
 
 .steps-ordered__route {
@@ -130,8 +137,11 @@
 }
 
 .steps-ordered__submit {
+  font-family: inherit;
+
   display: block;
   width: 230px;
+
   margin: 0 auto;
   background: none;
   border: none;

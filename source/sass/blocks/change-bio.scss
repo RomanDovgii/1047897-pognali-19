@@ -73,9 +73,17 @@
   text-align: center;
   padding-top: 7px;
   padding-bottom: 5px;
-  color: #161c35;
+  color: $text__dark-blue;
   font-weight: 700;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $blue-200-color;
+  }
+
+  &:active {
+    color: rgba($text__dark-blue, 0.3);
+  }
 }
 
 .change-bio__fieldset {
@@ -113,6 +121,8 @@
 }
 
 .change-bio__tags {
+  outline: none;
+
   font-family: inherit;
   resize: none;
   width: 270px;
@@ -127,6 +137,14 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+
+  &:hover {
+    border: 1px solid $blue-100-color;
+  }
+
+  &:focus {
+    border: 1px solid $blue-700-color;
+  }
 }
 
 .change-bio__transport-wrapper {
@@ -144,6 +162,14 @@
   background-color: #ffffff;
   border-radius: 50%;
 
+  &:hover {
+    box-shadow: 2px 0 10px rgba($black, 0.08);
+  }
+
+  &:active {
+    background-color: $blue-50-color;
+  }
+
   &--plane {
     background-image: url("../img/transport/recolorized/gray/plane.svg");
     background-position: 8px 9px;
@@ -158,7 +184,7 @@
     background-size: 13px 16px;
   }
 
-  &--bike {
+  &--bycicle {
     background-image: url("../img/transport/recolorized/gray/bike.svg");
     background-position: center;
     background-repeat: no-repeat;

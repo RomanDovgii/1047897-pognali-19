@@ -1,6 +1,6 @@
 .mates-filter {
   position: relative;
-  background-color: #edeff6;
+  background-color: $main-color;
 
   &::before {
     content: "";
@@ -9,17 +9,21 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-color: #edeff6;
+    background-color: $main-color;
     z-index: -1;
   }
 }
 
 .mates-filter__wrapper {
-  background-color: #ffd74b;
+  background-color: $universal__bright-yellow;
   border-radius: 20px;
+
+
   padding-top: 5px;
   padding-right: 25px;
   padding-left: 25px;
+
+  margin-top: 24px;
   margin-left: 25px;
   margin-right: 25px;
   padding-bottom: 22px;
@@ -29,7 +33,7 @@
   font-size: 22.5px;
   line-height: 22.5px;
   font-weight: 700;
-  color: #1d2e5b;
+  color: $text__dark-blue;
 }
 
 .mates-filter__transport-block {
@@ -47,6 +51,8 @@
 .mates-filter__submit {
   border: none;
   background: none;
+  font-family: inherit;
+
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
@@ -55,7 +61,15 @@
   padding-left: 75px;
   padding-right: 77px;
   padding-bottom: 3px;
-  background-color: #ffffff;
+  background-color: $white;
   border-radius: 20px;
   margin-left: -5px;
+}
+
+.mates-filter__transportation {
+  margin-bottom: 30px;
+}
+
+.mates-filter__set-level {
+  margin-bottom: 30px;
 }

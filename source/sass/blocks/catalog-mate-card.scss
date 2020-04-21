@@ -187,4 +187,12 @@
 
   background-color: rgba($yellow-200-color, 1);
   border-radius: 20px;
+
+  &:hover {
+    background-color: $orangish-yellow-color;
+  }
+
+  &:active {
+    color: rgba($font-color, 0.3)
+  }
 }

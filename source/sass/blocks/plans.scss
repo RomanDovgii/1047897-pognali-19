@@ -87,6 +87,13 @@
   text-decoration: none;
   padding-left: 26px;
   padding-top: 21px;
-  color: #000000;
-  opacity: 0.3;
+  color: rgba($black, 0.3);
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active{
+    color: rgba($black, 0.1);
+  }
 }
