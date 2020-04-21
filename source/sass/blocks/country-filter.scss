@@ -41,6 +41,8 @@
 }
 
 .country-filter__button {
+  cursor: pointer;
+
   &--open {
     position: relative;
     z-index: 5;

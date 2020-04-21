@@ -52,18 +52,34 @@
   border: none;
   background: none;
   font-family: inherit;
+  cursor: pointer;
 
+  color: $blue-700-color;
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+
+  margin-left: -5px;
+
   padding-top: 7px;
   padding-left: 75px;
   padding-right: 77px;
   padding-bottom: 3px;
+
   background-color: $white;
   border-radius: 20px;
-  margin-left: -5px;
+
+  &:hover {
+    box-shadow: 2px 0 10px rgba($black, 0.08);
+  }
+
+  &:active {
+    box-shadow: none;
+
+    color: rgba($blue-700-color, 0.3);
+    background-color: $yellow-bright;
+  }
 }
 
 .mates-filter__transportation {

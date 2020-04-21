@@ -54,26 +54,48 @@
   line-height: 18px;
   font-weight: 400;
   text-transform: none;
-  color: $gray;
   display: flex;
   margin-bottom: 9px;
 }
 
 .preference__name {
   position: relative;
+
+  color: $gray;
+
   padding-top: 3px;
   padding-left: 27px;
 
   &::before {
     content: "";
+
+    width: 18px;
+    height: 18px;
+
     position: absolute;
     top: 0;
     left: 0;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    background-color: $white;
+
     margin-left: -1px;
+    border-radius: 4px;
+
+    background-color: $white;
+  }
+
+  &:hover {
+    color: rgba($gray, 0.6);
+
+    &::before {
+      background-color: rgba($white, 0.6);
+    }
+  }
+
+  &:active {
+    color: rgba($gray, 0.3);
+
+    &::before {
+      background-color: rgba($white, 0.3);
+    }
   }
 }
 
