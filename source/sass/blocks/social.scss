@@ -8,11 +8,32 @@
 .social__item {
   width: 45px;
   height: 45px;
-
-  border-radius: 50%;
+  position: relative;
 
   &--ftr {
-    background-color: $universal__bright-yellow;
+    .social__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+
+      background-color: $universal__bright-yellow;
+
+      &:hover,
+      &:focus {
+        background-color: $orangish-yellow-color;
+      }
+
+      &:active {
+        opacity: 1;
+
+        &::after {
+          opacity: 0.3;
+        }
+      }
+    }
   }
 }
 
@@ -24,33 +45,69 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   &--facebook {
-    background-image: url("../img/icons/mobile/facebook-blue.svg");
-    background-size: 11px 21px;
+    &::after {
+      background-image: url("../img/icons/mobile/facebook-blue.svg");
+      background-size: 11px 21px;
+    }
   }
 
   &--vk {
-    background-image: url("../img/icons/mobile/vk-blue.svg");
-    background-size: 23px 12px;
+    &::after {
+      background-image: url("../img/icons/mobile/vk-blue.svg");
+      background-size: 23px 12px;
+    }
   }
 
   &--instagram {
-    background-image: url("../img/icons/mobile/instagram-blue.svg");
-    background-size: 18px 18px;
+    &::after {
+      background-image: url("../img/icons/mobile/instagram-blue.svg");
+      background-size: 18px 18px;
+    }
   }
 
   &--facebook-ftr {
-    background-image: url("../img/icons/mobile/facebook-navy.svg");
-    background-size: 11px 21px;
+    &::after {
+      background-image: url("../img/icons/mobile/facebook-navy.svg");
+      background-size: 11px 21px;
+    }
   }
 
   &--vk-ftr {
-    background-image: url("../img/icons/mobile/vk-navy.svg");
-    background-size: 23px 12px;
+    &::after {
+      background-image: url("../img/icons/mobile/vk-navy.svg");
+      background-size: 23px 12px;
+    }
   }
 
   &--instagram-ftr {
-    background-image: url("../img/icons/mobile/instagram-navy.svg");
-    background-size: 18px 18px;
+    &::after {
+      background-image: url("../img/icons/mobile/instagram-navy.svg");
+      background-size: 18px 18px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -30,7 +30,7 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+  gulp.watch("source/sass/**/*.scss",{delay: 200}, gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

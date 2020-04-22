@@ -1,0 +1,99 @@
+.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  background-color: $blue-80-color;
+}
+
+.plans__heading {
+  @include reset;
+  width: 270px;
+  z-index: 4;
+
+  padding-top: 28px;
+}
+
+.plans__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: blocks;
+
+  margin-top: 20px;
+}
+
+.plans__item {
+  width: 270px;
+  border-radius: 10px;
+  background-color: $white;
+  margin-top: 10px;
+  counter-increment: blocks;
+  padding-bottom: 22px;
+
+  &:first-child {
+    margin-top: 8px;
+  }
+}
+
+.plans__place {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 24px;
+
+  &::before {
+    content: counter(blocks) ".";
+    padding-left: 23px;
+    padding-right: 6px;
+    font-weight: 500;
+  }
+}
+
+.plans__mates {
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-top: 20px;
+  letter-spacing: 1.5px;
+
+  &--number {
+    padding-right: 5px;
+  }
+}
+
+.plans__dates {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 25px;
+  padding-top: 5px;
+  letter-spacing: 1.5px;
+}
+
+.plans__link {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 26px;
+  padding-top: 21px;
+  color: rgba($black, 0.3);
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.1);
+  }
+}

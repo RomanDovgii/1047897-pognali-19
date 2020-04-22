@@ -1,0 +1,159 @@
+.steps-ordered {
+  max-width: 270px;
+
+  background-color: $white;
+  border-radius: 10px;
+  padding-top: 4px;
+  margin-top: 10px;
+  padding-bottom: 9px;
+
+  &:first-child {
+    margin-top: 0;
+    padding-bottom: 22px;
+  }
+}
+
+.steps-ordered__heading {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text__dark-blue;
+  padding-top: 20px;
+}
+
+.steps-ordered__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: $gray;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.steps-ordered__children-label {
+  position: relative;
+  font-size: 15px;
+  line-height: 29px;
+  color: $gray;
+  display: flex;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 11px;
+  margin-bottom: 18px;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px solid $blue-10-color;
+    border-radius: 4px;
+    margin-right: 13px;
+  }
+}
+
+.steps-ordered__children-check:checked + .steps-ordered__children-label {
+  &::before {
+    background-image: url("../img/icons/mobile/tick.svg");
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+    background-position: 8px 7px;
+  }
+}
+
+.steps-ordered__calendar {
+  margin-bottom: 22px;
+}
+
+.steps-ordered__next {
+  display: block;
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: $universal__bright-yellow;
+  font-size: 17px;
+  line-height: 30px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $blue-700-color;
+
+  &:hover {
+    background-color: $orangish-yellow-color;
+  }
+
+  &:active {
+    color: rgba($text__dark-blue, 0.3);
+  }
+}
+
+.steps-ordered__route {
+  padding-top: 10.5px;
+}
+
+.steps-ordered__previous {
+  text-align: center;
+  font-size: 17px;
+  line-height: 30px;
+  color: $blue-700-color;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.steps-ordered__step-description {
+  position: relative;
+  margin-bottom: 23px;
+
+  &:first-of-type {
+    margin-top: 19px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
+
+
+  // &:not(:first-of-type) {
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: -269px;
+  //     left: 12px;
+  //     display: block;
+  //     width: 2px;
+  //     height: 281px;
+  //     background-color: $text__dark-blue;
+  //   }
+  // }
+}
+
+.steps-ordered__submit {
+  font-family: inherit;
+
+  display: block;
+  width: 230px;
+
+  margin: 0 auto;
+  background: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $blue-700-color;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $universal__bright-yellow;
+  border-radius: 20px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+}

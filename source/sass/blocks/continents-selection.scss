@@ -1,0 +1,23 @@
+.continents-selection {
+  list-style: none;
+  padding-left: 0;
+  margin-right: 50px;
+  margin-bottom: 19px;
+}
+
+.continents-selection__item {
+  margin-bottom: 5px;
+}
+
+.continents-selection__link {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grayish-blue;
+
+  &--active {
+    color: $background__dark-blue;
+  }
+}

@@ -1,0 +1,89 @@
+.mates-filter {
+  position: relative;
+  background-color: $main-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: $main-color;
+    z-index: -1;
+  }
+}
+
+.mates-filter__wrapper {
+  max-width: 270px;
+
+  background-color: $universal__bright-yellow;
+  border-radius: 20px;
+
+
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+}
+
+.mates-filter__heading {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $text__dark-blue;
+}
+
+.mates-filter__transport-block {
+  padding-bottom: 33px;
+}
+
+.mates-filter__level-filter {
+  padding-bottom: 26px;
+}
+
+.mates-filter__preferences {
+  @include reset;
+}
+
+.mates-filter__submit {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+
+  color: $blue-700-color;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  margin-left: -5px;
+
+  padding-top: 7px;
+  padding-left: 75px;
+  padding-right: 77px;
+  padding-bottom: 3px;
+
+  background-color: $white;
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: 2px 0 10px rgba($black, 0.08);
+  }
+
+  &:active {
+    box-shadow: none;
+
+    color: rgba($blue-700-color, 0.3);
+    background-color: $yellow-bright;
+  }
+}
+
+.mates-filter__transportation {
+  margin-bottom: 30px;
+}
+
+.mates-filter__set-level {
+  margin-bottom: 30px;
+}

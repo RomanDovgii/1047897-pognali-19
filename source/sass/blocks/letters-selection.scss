@@ -1,0 +1,52 @@
+.letters-selection {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid $blue-10-color;
+  border-left: 1px solid $blue-10-color;
+  width: 221px;
+  margin: 0 auto;
+
+  &--form {
+    width: 220px;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-right: 0;
+  }
+}
+
+.letters-selection__item {
+  position: relative;
+  border-right: 1px solid $blue-10-color;
+  border-bottom: 1px solid $blue-10-color;
+  width: 44px;
+  height: 41px;
+}
+
+.letters-selection__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $blue-300-color;
+  padding-left: 18px;
+  padding-top: 12px;
+  width: 100%;
+  height: 100%;
+
+  &--active {
+    background-color: $text__dark-blue;
+    color: $white;
+  }
+
+  &--active-form {
+    background-color: $main-color;
+    color: $text__dark-blue;
+    border-left: 1px solid $blue-10-color;
+  }
+}
