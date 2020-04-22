@@ -149,7 +149,7 @@
 
         position: absolute;
         top: -1px;
-        right:-1px;
+        right: -1px;
         bottom: -1px;
         left: -1px;
 
@@ -163,12 +163,13 @@
 
     background-color: $text__dark-blue;
     color: $white;
+
     &::after {
       content: "";
 
       position: absolute;
       top: -1px;
-      right:-1px;
+      right: -1px;
       bottom: -1px;
       left: -1px;
 
