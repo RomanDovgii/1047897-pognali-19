@@ -22,7 +22,7 @@
       background-color: $universal__bright-yellow;
 
       &:hover,
-      &focus {
+      &:focus {
         background-color: $orangish-yellow-color;
       }
 
@@ -101,7 +101,7 @@
   }
 
   &:hover,
-  &focus {
+  &:focus {
     &::after {
       opacity: 0.6;
     }

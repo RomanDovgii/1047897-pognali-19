@@ -43,3 +43,12 @@
 .main__section {
   padding-top: 50px;
 }
+
+.main__mates-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-right: 25px;
+  padding-left: 25px;
+}

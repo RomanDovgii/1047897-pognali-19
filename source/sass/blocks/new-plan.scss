@@ -5,15 +5,18 @@
 
 .new-plan__heading {
   @include reset;
+
   position: relative;
-  padding-left: 25px;
   z-index: 4;
+
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   color: $text__dark-blue;
+
   padding-top: 30px;
   padding-bottom: 13px;
+  padding-left: 25px;
 }
 
 .new-plan__form {
