@@ -1,15 +1,16 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  @include reset;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
+    @include reset;
+    font-family: "Blogger Sans", "Arial", sans-serif;
+    font-size: 16px;
+    min-width: 320px;
 }
