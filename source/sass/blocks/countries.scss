@@ -10,3 +10,14 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .countries {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .countries__country-card {
+    margin-top: 10px;
+  }
+}

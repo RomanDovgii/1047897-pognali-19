@@ -60,18 +60,13 @@
 
 @media (min-width: $tablet-breakpoint) {
   .steps {
-    display: flex;
-    width: 100%;
+    max-width: 688px;
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
 
-    list-style: none;
-    padding-right: 25px;
-    padding-bottom: 35px;
-    padding-left: 25px;
-
-    counter-reset: actions;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .steps__item {
@@ -79,31 +74,9 @@
     flex-grow: 1;
     max-width: 50%;
 
-    &:nth-child(even) {
-      background-color: $yellowish-orange-color;
-    }
-
-    &:first-child {
-      background-color: $background__orange-color;
-    }
-
     &:last-child {
       border-radius: unset;
       padding-bottom: 35px;
-
-      background-color: $universal__bright-yellow;
-    }
-
-    &::after {
-      counter-increment: actions;
-      content: counter(actions);
-
-      display: block;
-      position: absolute;
-      top: 22px;
-      right: 21px;
-
-      color: $white;
     }
   }
 }

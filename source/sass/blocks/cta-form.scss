@@ -81,7 +81,7 @@
   background: none;
   outline: none;
 
-  width: 210px;
+  max-width: 210px;
   padding-left: 20px;
 
   font-size: 18px;
@@ -125,4 +125,25 @@
   @include reset;
   margin-top: 17px;
   padding-right: 33px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .cta-form {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .cta-form {
+    br {
+      display: none;
+    }
+  }
+
+  .cta-form__email-form {
+    max-width: 100%;
+  }
+
+  .cta-form__input {
+    max-width: 100%;
+  }
 }

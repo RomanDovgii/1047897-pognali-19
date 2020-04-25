@@ -71,3 +71,17 @@
     padding-bottom: 50px;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .about {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .about__wrapper {
+    padding-right: 0;
+
+    max-width: 50%;
+    padding-left: 35px;
+  }
+}

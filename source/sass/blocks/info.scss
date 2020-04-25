@@ -9,3 +9,9 @@
   margin-top: 31px;
   padding-bottom: 37px;
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .info {
+    flex-direction: row;
+  }
+}

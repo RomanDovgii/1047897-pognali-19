@@ -97,3 +97,22 @@
     color: rgba($black, 0.1);
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .plans {
+    @include tablet-paddings;
+    align-items: initial;
+  }
+
+  .plans__item {
+    width: 100%;
+  }
+
+  .plans__additional-info {
+    display: flex;
+  }
+
+  .plans__dates {
+    padding-top: 20px;
+  }
+}

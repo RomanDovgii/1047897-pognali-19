@@ -27,3 +27,17 @@
 
   margin-top: 16px;
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .new-plan {
+    @include tablet-paddings;
+  }
+
+  .new-plan__heading {
+    margin-left: 0;
+  }
+
+  .new-plan__form {
+    align-items: initial;
+  }
+}

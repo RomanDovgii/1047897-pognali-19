@@ -72,17 +72,41 @@
       <section class="change-bio main__change-bio">
 
         <h2 class="visually-hidden">Обновить профиль</h2>
-
-        <div class="change-bio__wrapper">
-          <p class="change-bio__level">
-            <span class="change-bio__number">80</span>
-            <span class="change-bio__text">level</span>
-          </p>
-
-          <img class="change-bio__user-img" width="100" height="100" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
-        </div>
-
         <form class="change-bio__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="change-bio__wrapper">
+            <p class="change-bio__level">
+              <span class="change-bio__number">80</span>
+              <span class="change-bio__text">level</span>
+            </p>
+
+            <fieldset class="change-bio__fieldset change-bio__fieldset--change-transport change-bio__fieldset--change-transport-tablet">
+              <div class="change-bio__transport-wrapper">
+                <label class="change-bio__transport-button change-bio__transport-button--plane">
+                  <span class="visually-hidden">Самолет</span>
+                  <input class="visually-hidden" type="checkbox" name="plane" checked>
+                </label>
+
+                <label class="change-bio__transport-button change-bio__transport-button--bus">
+                  <span class="visually-hidden">Автобус</span>
+                  <input class="visually-hidden" type="checkbox" name="bus" checked>
+                </label>
+
+                <label class="change-bio__transport-button change-bio__transport-button--bycicle">
+                  <span class="visually-hidden">Велосипед</span>
+                  <input class="visually-hidden" type="checkbox" name="bycicle">
+                </label>
+
+                <label class="change-bio__transport-button change-bio__transport-button--run">
+                  <span class="visually-hidden">Пешком</span>
+                  <input class="visually-hidden" type="checkbox" name="run" checked>
+                </label>
+              </div>
+              <legend class="change-bio__legend">Транспорт</legend>
+            </fieldset>
+
+            <img class="change-bio__user-img" width="100" height="100" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
+          </div>
+
           <label class="change-bio__change-avatar">
             Cменить фото
             <input class="visually-hidden" type="file">
@@ -129,15 +153,19 @@
         <ol class="plans__list">
           <li class="plans__item">
             <h3 class="plans__place">Франция, Италия</h3>
-            <p class="plans__mates">3 попутчика</p>
-            <p class="plans__dates">26 мар - 29 мар</p>
-            <a class="plans__link" href="">изменить</a>
+            <div class="plans__additional-info">
+              <p class="plans__mates">3 попутчика</p>
+              <p class="plans__dates">26 мар - 29 мар</p>
+              <a class="plans__link" href="">изменить</a>
+            </div>
           </li>
           <li class="plans__item">
             <h3 class="plans__place">Таиланд, Индонезия</h3>
-            <p class="plans__mates">1 попутчик</p>
-            <p class="plans__dates">1 июл - 15 июл</p>
-            <a class="plans__link" href="">изменить</a>
+            <div class="plans__additional-info">
+              <p class="plans__mates">1 попутчик</p>
+              <p class="plans__dates">1 июл - 15 июл</p>
+              <a class="plans__link" href="">изменить</a>
+            </div>
           </li>
         </ol>
 

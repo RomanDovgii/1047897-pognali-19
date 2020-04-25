@@ -26,3 +26,24 @@
     background-color: $white;
   }
 }
+
+.footer__developer {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .footer {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__developer {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
