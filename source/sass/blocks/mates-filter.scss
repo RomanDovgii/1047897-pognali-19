@@ -1,6 +1,12 @@
 .mates-filter {
   position: relative;
   background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  padding-right: 25px;
+  padding-left: 25px;
 
   &::before {
     content: "";
@@ -86,4 +92,28 @@
 
 .mates-filter__set-level {
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .mates-filter {
+    @include tablet-paddings;
+  }
+
+  .mates-filter__wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mates-filter__transportation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mates-filter__set-level {
+    display: flex;
+  }
+
+  .mates-filter__submit {
+    width: 100%;
+  }
 }

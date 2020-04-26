@@ -136,3 +136,17 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .office {
+    @include tablet-paddings;
+  }
+
+  .office__text {
+    max-width: 100%;
+  }
+
+  .office__link {
+    width: 100%;
+  }
+}

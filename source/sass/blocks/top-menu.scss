@@ -7,3 +7,21 @@
     padding-top: 27px;
   }
 }
+
+.top-menu__actions {
+  display: none;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .top-menu {
+    @include desktop-paddings;
+    display: flex;
+  }
+
+  .top-menu__actions {
+    @include reset;
+    background: none;
+
+    display: flex;
+  }
+}

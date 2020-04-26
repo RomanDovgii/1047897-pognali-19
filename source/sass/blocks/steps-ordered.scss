@@ -1,4 +1,6 @@
 .steps-ordered {
+  display: flex;
+  flex-direction: column;
   max-width: 270px;
 
   background-color: $white;
@@ -156,4 +158,71 @@
   border-radius: 20px;
   padding-top: 7px;
   padding-bottom: 3px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .steps-ordered {
+    max-width: 100%;
+  }
+
+  .steps-ordered__movement {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  .steps-ordered__next {
+    margin: 0;
+  }
+
+  .steps-ordered__heading {
+    order: 1;
+  }
+
+  .steps-ordered__description {
+    order: 2;
+  }
+
+  .steps-ordered__number-input {
+    padding-right: 43px;
+    padding-left: 43px;
+
+    &--mates {
+      order: 3;
+    }
+
+    &--duration {
+      order: 5;
+    }
+  }
+
+  .steps-ordered__children-checkbox {
+    order: 4;
+  }
+
+  .steps-ordered__calendar {
+    order: 6;
+  }
+
+  .steps-ordered__movement {
+    order: 7;
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  .steps-ordered__countries-planned {
+    order: 3;
+  }
+
+  .steps-ordered__step-description {
+    order: 3;
+  }
+
+  .steps-ordered__submit {
+    margin: 0;
+  }
 }

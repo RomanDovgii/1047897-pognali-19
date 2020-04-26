@@ -118,3 +118,17 @@
     right: 0;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .set-level__name {
+    order: 1;
+  }
+
+  .set-level__input-wrapper {
+    order: 3;
+  }
+
+  .set-level__line {
+    order: 2;
+  }
+}

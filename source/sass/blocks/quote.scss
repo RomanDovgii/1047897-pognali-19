@@ -30,3 +30,29 @@
     font-weight: 700;
   }
 }
+
+
+@media (min-width: $desktop-breakpoint) {
+  .quote {
+    background: none;
+
+    padding-left: 28px;
+    max-width: 420px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .quote__text {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+
+    &--author {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
+}

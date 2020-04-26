@@ -16,6 +16,7 @@
           <button class="functions__button functions__button--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
+          <a class="functions__auth-link" href="">Авторизация</a>
         </div>
 
         <div class="information top-menu__information">
@@ -186,7 +187,7 @@
 
             <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
-            <div class="number-input steps-ordered__number-input">
+            <div class="number-input steps-ordered__number-input steps-ordered__number-input--mates">
               <h4 class="number-input__legend">Ищу попутчиков</h4>
 
               <div class="number-input__wrapper">
@@ -206,7 +207,7 @@
 
             </div>
 
-            <div class="number-input steps-ordered__number-input">
+            <div class="number-input steps-ordered__number-input steps-ordered__number-input--duration">
               <h4 class="number-input__legend">Длительность</h4>
 
               <div class="number-input__wrapper">
@@ -402,8 +403,9 @@
               </ul>
             </div>
 
-            <a class="steps-ordered__next" href="#step-2">Следующий шаг</a>
-
+            <div class="steps-ordered__movement">
+              <a class="steps-ordered__next" href="#step-2">Следующий шаг</a>
+            </div>
           </section>
 
           <section class="steps-ordered new-plan__steps-ordered" id="step-2">
@@ -415,7 +417,7 @@
 
             <p class="steps-ordered__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
 
-            <div class="countries-planned step-list__countries-planned">
+            <div class="countries-planned steps-ordered__countries-planned">
               <ul class="countries-planned__list">
                 <li class="countries-planned__country">
                   <button class="countries-planned__delete" type="button">
@@ -444,9 +446,10 @@
               </ul>
             </div>
 
-
-            <a class="steps-ordered__next" href="#step-3">Следующий шаг</a>
-            <a class="steps-ordered__previous" href="#step-1">На шаг назад</a>
+            <div class="steps-ordered__movement">
+              <a class="steps-ordered__next" href="#step-3">Следующий шаг</a>
+              <a class="steps-ordered__previous" href="#step-1">На шаг назад</a>
+            </div>
           </section>
           <section class="steps-ordered new-plan__steps-ordered" id="step-3">
 
@@ -478,9 +481,11 @@
               </label>
             </div>
 
-            <button class="steps-ordered__submit" type="submit">Отправить</button>
+            <div class="steps-ordered__movement">
+              <button class="steps-ordered__submit" type="submit">Отправить</button>
+              <a class="steps-ordered__previous" href="">На шаг назад</a>
+            </div>
 
-            <a class="steps-ordered__previous" href="">На шаг назад</a>
           </section>
         </form>
       </section>

@@ -85,3 +85,30 @@
     padding-left: 35px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .about {
+    @include desktop-paddings;
+  }
+
+  .about__wrapper {
+    max-width: 700px;
+    padding-left: 70px;
+  }
+
+  .about__heading {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--additional {
+      font-size: 21px;
+      line-height: 25px;
+      padding-right: 190px;
+    }
+  }
+}

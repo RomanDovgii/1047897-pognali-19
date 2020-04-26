@@ -63,10 +63,18 @@
   &--plus {
     background-image: url("../img/icons/mobile/qty-plus-mobile.svg");
     margin-right: 14px;
+    margin-left: auto;
   }
 
   &--minus {
     background-image: url("../img/icons/mobile/qty-minus-mobile.svg");
+    margin-right: auto;
     margin-left: 14px;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .number-input__wrapper {
+    width: 100%;
   }
 }

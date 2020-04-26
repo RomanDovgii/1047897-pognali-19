@@ -5,22 +5,18 @@
 @import "./mixins.scss";
 @import "./general.scss";
 @import "./fonts.scss";
-//main-blocks
-@import "./blocks/header.scss";
-@import "./blocks/main.scss";
-@import "./blocks/footer.scss";
+
 //blocks from header
-@import "./blocks/top-menu.scss";
 @import "./blocks/functions.scss";
-@import "./blocks/information.scss";
 @import "./blocks/inner-links.scss";
+
 //blocks from main
-@import "./blocks/intro.scss";
+
 @import "./blocks/actions.scss";
 @import "./blocks/quote.scss";
 @import "./blocks/steps.scss";
 @import "./blocks/about.scss";
-@import "./blocks/directions.scss";
+
 @import "./blocks/countries.scss";
 @import "./blocks/country-card.scss";
 @import "./blocks/show-all.scss";
@@ -58,7 +54,19 @@
 @import "./blocks/change-bio.scss";
 @import "./blocks/countries-planned.scss";
 @import "./blocks/step-description.scss";
+@import "./blocks/numbered-navigation.scss";
 //blocks from footer
 @import "./blocks/info.scss";
 @import "./blocks/developer.scss";
 @import "./blocks/social.scss";
+
+//blocks
+@import "./blocks/intro.scss";
+@import "./blocks/top-menu.scss";
+@import "./blocks/information.scss";
+@import "./blocks/directions.scss";
+
+//main-blocks
+@import "./blocks/header.scss";
+@import "./blocks/main.scss";
+@import "./blocks/footer.scss";

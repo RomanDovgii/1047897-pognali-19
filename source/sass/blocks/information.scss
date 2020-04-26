@@ -44,3 +44,38 @@
 .information__inner-links {
   @include reset;
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .information {
+    padding-left: 100px;
+    align-items: initial;;
+  }
+
+  .information__auth-link {
+    display: none;
+  }
+
+  .information__social {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .information {
+    @include reset;
+    background: none;
+  }
+
+  .information__contacts {
+    display: none;
+  }
+
+  .information__social {
+    display: none;
+  }
+
+  .information__inner-links {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -81,3 +81,10 @@
   }
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .steps {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

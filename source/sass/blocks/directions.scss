@@ -53,6 +53,10 @@
   margin-top: 26px;
   margin-right: auto;
   margin-left: auto;
+
+  &--desktop {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -60,4 +64,33 @@
     padding-right: 40px;
     padding-left: 40px;
   }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .directions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .directions__countries {
+    order: 1;
+    max-width: 50%;
+  }
+
+  .directions__wrapper {
+    order: 2;
+    max-width: 50%;
+
+    padding-right: 182px;
+  }
+
+  .directions__show-all {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
+  }
+
 }

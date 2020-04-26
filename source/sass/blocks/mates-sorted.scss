@@ -67,7 +67,41 @@
   }
 }
 
+.mates-sorted__navigation {
+  @include reset;
+
+  display: flex;
+  justify-content: center;
+}
+
+.mates-sorted__numbered-navigation {
+  @include reset;
+
+  display: none;
+}
+
 .mates-sorted__page-navigation {
   @include reset;
   margin-top: 19px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .mates-sorted {
+    @include tablet-paddings;
+    align-items: stretch;
+  }
+
+  .mates-sorted__list {
+    width: 100%;
+  }
+
+  .mates-sorted__item {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mates-sorted__navigation {
+    background-color: $white;
+    justify-content: space-between;
+  }
 }
