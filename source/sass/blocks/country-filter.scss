@@ -81,6 +81,10 @@
   display: none;
 }
 
+.country-filter__button-text {
+  display: none;
+}
+
 @media (min-width: $tablet-breakpoint) {
   .country-filter__name {
     display: none;
@@ -89,6 +93,20 @@
   .country-filter__continents-selection {
     display: flex;
     flex-direction: row;
+  }
+
+  .country-filter__button {
+    font-family: inherit;
+    width: auto;
+    background-position: right;
+    padding-right: 50px;
+  }
+
+  .country-filter__button-text {
+    font-family: inherit;
+    font-weight: 700;
+    display: unset;
+    text-transform: uppercase;
   }
 }
 

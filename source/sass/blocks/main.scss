@@ -52,3 +52,16 @@
     border-bottom-right-radius: 60px;
   }
 }
+
+.main__index-link {
+  display: none;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .main__index-link {
+    display: unset;
+  }
+}
