@@ -158,6 +158,8 @@
   }
 
   .steps-ordered__movement {
+    order: 7;
+
     display: flex;
     justify-content: space-between;
     padding-left: 43px;
@@ -191,15 +193,6 @@
 
   .steps-ordered__calendar {
     order: 6;
-  }
-
-  .steps-ordered__movement {
-    order: 7;
-
-    display: flex;
-    justify-content: space-between;
-    padding-left: 43px;
-    padding-right: 43px;
   }
 
   .steps-ordered__countries-planned {
@@ -240,6 +233,7 @@
       margin-right: auto;
       margin-left: 0;
     }
+
     &--duration {
       order: 3;
       width: 100%;
