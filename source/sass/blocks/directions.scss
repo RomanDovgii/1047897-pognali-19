@@ -75,7 +75,7 @@
 
   .directions__countries {
     order: 1;
-    max-width: 50%;
+    flex-grow: 1;
   }
 
   .directions__wrapper {
