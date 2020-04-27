@@ -77,3 +77,45 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .country-card {
+    flex-direction: row;
+
+    min-width: 100%;
+  }
+
+  .country-card__description {
+    margin-top: 0;
+
+    order: 1;
+    flex-grow: 1;
+    flex-direction: column;
+
+    max-width: 432px;
+  }
+
+  .country-card__name {
+    order: 1;
+  }
+
+  .country-card__text {
+    order: 2;
+
+    padding: 0;
+
+    &--number {
+      order: 3;
+
+      margin: 0;
+      margin-left: 42px;
+    }
+  }
+
+  .country-card__img {
+    order: 2;
+    flex-grow: 1;
+
+    max-width: 186px;
+  }
+}

@@ -72,3 +72,32 @@
     background-repeat: no-repeat;
   }
 }
+
+.country-filter__continents-selection {
+  display: none;
+}
+
+.country-filter__colon {
+  display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .country-filter__name {
+    display: none;
+  }
+
+  .country-filter__continents-selection {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .country-filter__name {
+    display: flex;
+  }
+
+  .country-filter__colon {
+    display: unset;
+  }
+}

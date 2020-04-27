@@ -43,7 +43,6 @@
     border-bottom-left-radius: 10px;
     background-color: $universal__bright-yellow;
     padding-bottom: 22px;
-    margin-bottom: 0;
   }
 
   &::after {
@@ -56,5 +55,36 @@
     right: 21px;
 
     color: $white;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .steps {
+    max-width: 688px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .steps__item {
+    border-radius: unset;
+    flex-grow: 1;
+    max-width: 50%;
+
+    &:last-child {
+      border-radius: unset;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .steps {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }

@@ -63,10 +63,44 @@
   &--plus {
     background-image: url("../img/icons/mobile/qty-plus-mobile.svg");
     margin-right: 14px;
+    margin-left: auto;
   }
 
   &--minus {
     background-image: url("../img/icons/mobile/qty-minus-mobile.svg");
+    margin-right: auto;
     margin-left: 14px;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .number-input__wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .number-input {
+    flex-direction: row;
+  }
+
+  .number-input__legend {
+    width: auto;
+    min-width: 188px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .number-input__wrapper {
+    width: 181px;
+  }
+
+  .number-input__input {
+    max-width: 120px;
+
+    font-size: 20px;
+    line-height: 18px;
   }
 }

@@ -2,7 +2,7 @@
   transition: background-color 0.3s, color 0.3s, opacity 0.3s;
   text-decoration: none;
 
-  display: block;
+  display: flex;
   max-width: 270px;
   position: relative;
 
@@ -50,5 +50,15 @@
     right: 23px;
 
     background: url("../img/icons/mobile/triangle-arrow-right.svg");
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .show-all {
+    max-width: 100%;
+    flex-grow: 1;
+
+    margin-right: 35px;
+    margin-left: 35px;
   }
 }

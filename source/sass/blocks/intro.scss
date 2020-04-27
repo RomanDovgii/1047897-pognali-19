@@ -23,6 +23,35 @@
   margin-top: 30px;
 }
 
-.intro__actions {
-  @include reset;
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .intro {
+    @include desktop-paddings;
+    padding-bottom: 90px;
+  }
+
+  .intro__actions {
+    display: none;
+  }
+
+  .intro__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .intro__heading {
+    padding-left: 60px;
+    max-width: 485px;
+
+    text-align: left;
+    font-size: 60px;
+    line-height: 70px;
+  }
 }

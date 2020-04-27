@@ -12,4 +12,5 @@ body {
   @include reset;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
+  min-width: 320px;
 }

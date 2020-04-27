@@ -1,6 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   position: relative;
 
@@ -24,5 +25,25 @@
     border-top-right-radius: 30px;
 
     background-color: $white;
+  }
+}
+
+.footer__developer {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.footer__social {
+  @include reset;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .footer {
+    padding-right: 40px;
+    padding-left: 40px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }

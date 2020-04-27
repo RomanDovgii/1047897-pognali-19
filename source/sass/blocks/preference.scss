@@ -107,3 +107,32 @@ input[type="checkbox"]:checked + .preference__name {
     background-position: center;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .preference {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .preference__block-name {
+    min-width: 126px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .preference__checkboxes {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .preference__checkbox {
+    min-width: 169px;
+  }
+}

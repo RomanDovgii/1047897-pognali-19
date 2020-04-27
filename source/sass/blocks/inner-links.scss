@@ -15,3 +15,22 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .inner-links__item {
+    text-align: initial;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .inner-links__item {
+    margin-left: 35px;
+  }
+
+  .inner-links__link {
+    color: $white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+}

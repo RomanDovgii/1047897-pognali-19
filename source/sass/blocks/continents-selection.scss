@@ -21,3 +21,13 @@
     color: $background__dark-blue;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .select-country__continents-selection {
+    display: none;
+  }
+
+  .select-country__wrapper {
+    display: flex;
+  }
+}

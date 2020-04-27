@@ -2,3 +2,34 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin tablet-margins {
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+@mixin tablet-paddings {
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+@mixin desktop-paddings {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+@mixin desktop-section-heading {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+@mixin desktop-form-headings {
+  font-size: 36px;
+  line-height: 50px;
+}
+
+@mixin desktop-light-text {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 300;
+}
