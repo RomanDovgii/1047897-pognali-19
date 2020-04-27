@@ -31,6 +31,10 @@
   }
 }
 
+.mates__wrapper {
+  padding-left: 25px;
+}
+
 .mates__heading {
   @include reset;
   position: relative;
@@ -40,8 +44,6 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-
-  padding-left: 24px;
 }
 
 .mates__text {
@@ -56,7 +58,6 @@
 
   padding-top: 20px;
   padding-right: 25px;
-  padding-left: 25px;
 
   &--additional {
     font-weight: 700;
@@ -77,3 +78,38 @@
   }
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .mates {
+    @include desktop-paddings;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mates__heading {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .mates__text {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: 300;
+
+    &--additional {
+      font-size: 21px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
+
+  .mates__show-all {
+    display: none;
+
+    &--desktop {
+      margin: 0;
+      display: block;
+      max-width: 280px;
+    }
+  }
+}

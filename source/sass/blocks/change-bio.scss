@@ -288,3 +288,57 @@
     }
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .change-bio__form {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 73px;
+  }
+
+  .change-bio__change-avatar {
+    order: 1;
+    margin: 0;
+    min-width: 190px;
+
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+
+    position: absolute;
+    top: 0;
+    right: 155px;
+
+    span {
+      display: none;
+    }
+  }
+
+  .change-bio__fieldset {
+    order: 2;
+    margin-top: 0;
+    height: 94px;
+    min-width: 384px;
+  }
+  .change-bio__tags {
+    height: 100%;
+    min-width: 730px;
+  }
+
+  .change-bio__wrapper {
+    order: 3;
+    margin-top: 0;
+    width: auto;
+  }
+
+  .change-bio__user-img {
+    display: none;
+  }
+
+  .change-bio__level {
+    display: none;
+  }
+
+
+}

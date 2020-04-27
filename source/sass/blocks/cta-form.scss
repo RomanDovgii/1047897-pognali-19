@@ -119,6 +119,16 @@
   background-position: 27px 24px;
   background-size: 10px 14px;
   border-radius: 10px;
+
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.cta-form__button-description {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
 }
 
 .cta-form__contacts {
@@ -148,6 +158,56 @@
   }
 
   .cta-form__input {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .cta-form__heading {
+    @include desktop-section-heading;
+  }
+
+  .cta-form__text {
+    @include desktop-light-text;
+  }
+
+  br.cta-form__desktop-break {
+    display: unset;
+  }
+
+  .cta-form__email-form {
+    width: 100%;
+    margin-right: 132px;
+    margin-left: 132px;
+  }
+
+  .cta-form__input {
+    max-width: unset;
+    flex-grow: 1;
+  }
+
+  .cta-form__button {
+    font-family: inherit;
+    width: 324px;
+    background-position: 310px 24px;
+    text-align: left;
+  }
+
+  .cta-form__button-description {
+    font-family: inherit;
+    position: relative;
+    z-index: 1;
+
+    color: $text__dark-blue;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+
+    padding-left: 32px;
+  }
+
+  .cta-form__contacts {
+    flex-direction: row;
     max-width: 100%;
   }
 }

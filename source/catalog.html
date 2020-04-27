@@ -9,9 +9,9 @@
   <body>
     <header class="header">
       <section class="top-menu header__top-menu">
-        <div class="functions top-menu__functions">
+        <div class="functions top-menu__functions top-menu__functions--white top-menu__functions--index">
           <a href="index.html" class="functions__link functions__link--white">
-            <img class="top-menu__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+            <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
           </a>
           <button class="functions__button functions__button--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -61,6 +61,22 @@
             </li>
           </ul>
         </div>
+
+        <ul class="actions top-menu__actions">
+          <li class="actions__item">
+            <a class="actions__link actions__link--phone" href="tel:88005558628">
+              <span class="visually-hidden">8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="actions__item">
+            <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
+          </li>
+          <li class="actions__item">
+            <a class="actions__link actions__link--auth" href="">Авторизация</a>
+          </li>
+        </ul>
       </section>
     </header>
 
@@ -73,7 +89,22 @@
       <section class="country-filter main__country-filter">
         <div class="country-filter__name-wrapper">
 
-          <h2 class="country-filter__name">Фильтрация по странам</h2>
+          <h2 class="country-filter__name">Фильтрация по странам <span class="country-filter__colon">:</span></h2>
+
+          <ul class="continents-selection country-filter__continents-selection">
+            <li class="continents-selection__item">
+              <a class="continents-selection__link continents-selection__link--active" href="">Европа</a>
+            </li>
+            <li class="continents-selection__item">
+              <a class="continents-selection__link" href="">Азия</a>
+            </li>
+            <li class="continents-selection__item">
+              <a class="continents-selection__link" href="">Америка</a>
+            </li>
+            <li class="continents-selection__item">
+              <a class="continents-selection__link" href="">Острова</a>
+            </li>
+          </ul>
 
           <button class="country-filter__button country-filter__button--collapse" type="button" name="button">
             <span class="visually-hidden">Свернуть фильтр</span>
@@ -693,36 +724,31 @@
     </main>
 
     <footer class="footer">
-      <section class="info footer__info">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
-        <a href="" class="info__link">
-          <img class="info__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
-        </a>
-        <ul class="social info__social">
-          <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
-              <span class="visually-hidden">Наш Facebook</span>
-            </a>
-          </li>
-          <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr social__link--vk-ftr" href="">
-              <span class="visually-hidden">Наш VK</span>
-            </a>
-          </li>
-          <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
-              <span class="visually-hidden">Наш instagram</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="developer footer__developer">
-        <a class="developer__link" href="">
-          <p class="developer__text">Разработано</p>
-          <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
-        </a>
-      </section>
+      <h2 class="visually-hidden">Наши социальные сети</h2>
+      <a href="" class="info__link">
+        <img class="info__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+      </a>
+      <ul class="social info__social">
+        <li class="social__item social__item--ftr">
+          <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
+            <span class="visually-hidden">Наш Facebook</span>
+          </a>
+        </li>
+        <li class="social__item social__item--ftr">
+          <a class="social__link social__link--ftr social__link--vk-ftr" href="">
+            <span class="visually-hidden">Наш VK</span>
+          </a>
+        </li>
+        <li class="social__item social__item--ftr">
+          <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
+            <span class="visually-hidden">Наш instagram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="developer footer__developer" href="">
+        <p class="developer__text">Разработано</p>
+        <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
+      </a>
     </footer>
 
   </body>

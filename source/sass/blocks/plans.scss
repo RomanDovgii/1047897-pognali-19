@@ -116,3 +116,27 @@
     padding-top: 20px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .plans__heading {
+    @include desktop-form-headings;
+  }
+
+  .plans__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plans__place {
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  .plans__mates,
+  .plans__dates,
+  .plans__link {
+    font-size: 20px;
+    line-height: 18px;
+  }
+}

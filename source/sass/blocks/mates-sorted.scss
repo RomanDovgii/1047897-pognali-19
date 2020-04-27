@@ -74,12 +74,6 @@
   justify-content: center;
 }
 
-.mates-sorted__numbered-navigation {
-  @include reset;
-
-  display: none;
-}
-
 .mates-sorted__page-navigation {
   @include reset;
   margin-top: 19px;

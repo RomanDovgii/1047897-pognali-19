@@ -5,6 +5,7 @@
 
 .main__heading-wrapper {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 
   padding-top: 50px;
@@ -42,4 +43,12 @@
 
 .main__section {
   padding-top: 50px;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .main__heading-wrapper {
+    @include desktop-paddings;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }

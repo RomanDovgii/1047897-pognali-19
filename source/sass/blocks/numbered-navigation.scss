@@ -2,7 +2,7 @@
   @include reset;
 
     list-style: none;
-    display: flex;
+    display: none;
 
     padding-left: 28px;
 }
@@ -29,5 +29,11 @@
 
   &--active {
     background-color: $yellow-200-color;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .numbered-navigation {
+    display: flex;
   }
 }

@@ -342,7 +342,7 @@
         <h2 class="visually-hidden">Связаться с нами</h2>
         <p class="cta-form__heading">Заинтересовались?</p>
         <p class="cta-form__text">Зарегистрируйтесь,<br>
-          это быстро и бесплатно! <br>
+          это быстро и бесплатно! <br class="cta-form__desktop-break">
           Уже зарегистрированы? Тогда <br>
           скорее <a class="cta-form__link" href="">авторизуйтесь.</a>
         </p>
@@ -350,11 +350,11 @@
         <form class="cta-form__email-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="cta-form__input" type="email" name="email" placeholder="E-mail">
           <button class="cta-form__button" type="submit">
-            <span class="visually-hidden">Отправить</span>
+            <span class="cta-form__button-description">Регистрация</span>
           </button>
         </form>
 
-        <p class="cta-form__text cta-form__text--questions">Остались вопросы?<br>Мы с радостью на них ответим!</p>
+        <p class="cta-form__text cta-form__text--questions">Остались вопросы? <br>Мы с радостью на них ответим!</p>
 
         <ul class="contacts cta-form__contacts">
           <li class="contacts__item contacts__item--cta">
@@ -385,36 +385,31 @@
     </main>
 
     <footer class="footer">
-      <section class="info footer__info">
-        <h2 class="visually-hidden">Наши социальные сети</h2>
-        <a href="" class="info__link">
-          <img class="info__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
-        </a>
-        <ul class="social info__social">
-          <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
-              <span class="visually-hidden">Наш Facebook</span>
-            </a>
-          </li>
-          <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr social__link--vk-ftr" href="">
-              <span class="visually-hidden">Наш VK</span>
-            </a>
-          </li>
-          <li class="social__item social__item--ftr">
-            <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
-              <span class="visually-hidden">Наш instagram</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="developer footer__developer">
-        <a class="developer__link" href="">
-          <p class="developer__text">Разработано</p>
-          <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
-        </a>
-      </section>
+      <h2 class="visually-hidden">Наши социальные сети</h2>
+      <a href="" class="footer__link">
+        <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+      </a>
+      <ul class="social footer__social">
+        <li class="social__item social__item--ftr">
+          <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
+            <span class="visually-hidden">Наш Facebook</span>
+          </a>
+        </li>
+        <li class="social__item social__item--ftr">
+          <a class="social__link social__link--ftr social__link--vk-ftr" href="">
+            <span class="visually-hidden">Наш VK</span>
+          </a>
+        </li>
+        <li class="social__item social__item--ftr">
+          <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
+            <span class="visually-hidden">Наш instagram</span>
+          </a>
+        </li>
+      </ul>
+      <a class="developer footer__developer" href="">
+        <p class="developer__text">Разработано</p>
+        <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
+      </a>
     </footer>
 
     <div class="business-rates visually-hidden">
