@@ -129,20 +129,6 @@
   &:last-of-type {
     margin-bottom: 22px;
   }
-
-
-  // &:not(:first-of-type) {
-  //   &::after {
-  //     content: "";
-  //     position: absolute;
-  //     top: -269px;
-  //     left: 12px;
-  //     display: block;
-  //     width: 2px;
-  //     height: 281px;
-  //     background-color: $text__dark-blue;
-  //   }
-  // }
 }
 
 .steps-ordered__submit {

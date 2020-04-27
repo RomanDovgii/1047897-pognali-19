@@ -116,6 +116,7 @@ input[type="checkbox"]:checked + .preference__name {
 
   .preference__block-name {
     min-width: 126px;
+
     &::before {
       display: none;
     }
