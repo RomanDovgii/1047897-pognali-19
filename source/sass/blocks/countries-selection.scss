@@ -12,3 +12,9 @@
     color: $gray;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .countries-selection {
+   display: none;
+  }
+}

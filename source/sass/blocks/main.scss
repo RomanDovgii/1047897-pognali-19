@@ -64,4 +64,12 @@
   .main__index-link {
     display: unset;
   }
+
+  .main__filter-mates-wrapper {
+    display: flex;
+  }
+
+  .main__mates-sorted {
+    order: -1;
+  }
 }

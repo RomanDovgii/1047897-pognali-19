@@ -117,3 +117,22 @@
     width: 100%;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .mates-filter {
+    @include reset;
+    margin-right: 60px;
+  }
+
+  .mates-filter__wrapper {
+    max-width: 285px;
+  }
+
+  .mates-filter__transportation {
+    flex-direction: column;
+  }
+
+  .mates-filter__set-level {
+    flex-direction: column;
+  }
+}

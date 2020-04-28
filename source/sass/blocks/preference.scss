@@ -136,3 +136,15 @@ input[type="checkbox"]:checked + .preference__name {
     min-width: 169px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .preference {
+    flex-direction: column;
+  }
+
+  .preference__checkboxes {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+}
