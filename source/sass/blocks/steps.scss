@@ -70,12 +70,12 @@
   }
 
   .steps__item {
-    border-radius: unset;
+    border-radius: 0;
     flex-grow: 1;
     max-width: 50%;
 
     &:last-child {
-      border-radius: unset;
+      border-radius: 0;
       padding-bottom: 35px;
     }
   }
@@ -84,7 +84,6 @@
 @media (min-width: $desktop-breakpoint) {
   .steps {
     max-width: 100%;
-    flex-direction: row;
     flex-wrap: nowrap;
   }
 }

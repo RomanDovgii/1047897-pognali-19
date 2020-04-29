@@ -105,7 +105,7 @@
   .country-filter__button-text {
     font-family: inherit;
     font-weight: 700;
-    display: unset;
+    display: inline;
     text-transform: uppercase;
   }
 }
@@ -116,6 +116,6 @@
   }
 
   .country-filter__colon {
-    display: unset;
+    display: inline;
   }
 }

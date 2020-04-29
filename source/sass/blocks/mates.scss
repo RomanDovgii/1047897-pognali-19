@@ -104,8 +104,10 @@
 
   .mates__show-all {
     display: none;
+  }
 
-    &--desktop {
+  .mates__wrapper {
+    .mates__show-all {
       margin: 0;
       display: block;
       max-width: 280px;

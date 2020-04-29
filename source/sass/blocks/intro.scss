@@ -29,6 +29,18 @@
   align-items: center;
 }
 
+@media (min-width: $tablet-breakpoint) {
+  .intro__actions {
+    display: none;
+  }
+
+  .intro__quote {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .intro {
     @include desktop-paddings;
