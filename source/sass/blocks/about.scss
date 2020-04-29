@@ -72,6 +72,10 @@
   }
 }
 
+.about__details {
+  display: none;
+}
+
 @media (min-width: $tablet-breakpoint) {
   .about {
     padding-left: 40px;
@@ -83,6 +87,24 @@
 
     max-width: 50%;
     padding-left: 35px;
+  }
+
+  .about__details {
+    text-decoration: none;
+    display: inline;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+
+    color: $font-color;
+
+    padding-top: 31px;
+    padding-right: 126px;
+    padding-left: 33px;
+    padding-bottom: 20px;
+
+    background-color: $universal__bright-yellow;
   }
 }
 

@@ -52,3 +52,24 @@
     border-bottom-right-radius: 60px;
   }
 }
+
+.main__index-link {
+  display: none;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .main__index-link {
+    display: inline;
+  }
+
+  .main__filter-mates-wrapper {
+    display: flex;
+  }
+
+  .main__mates-sorted {
+    order: -1;
+  }
+}

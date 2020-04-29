@@ -81,6 +81,10 @@
   display: none;
 }
 
+.country-filter__button-text {
+  display: none;
+}
+
 @media (min-width: $tablet-breakpoint) {
   .country-filter__name {
     display: none;
@@ -90,6 +94,20 @@
     display: flex;
     flex-direction: row;
   }
+
+  .country-filter__button {
+    font-family: inherit;
+    width: auto;
+    background-position: right;
+    padding-right: 50px;
+  }
+
+  .country-filter__button-text {
+    font-family: inherit;
+    font-weight: 700;
+    display: inline;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -98,6 +116,6 @@
   }
 
   .country-filter__colon {
-    display: unset;
+    display: inline;
   }
 }

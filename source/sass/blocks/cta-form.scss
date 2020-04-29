@@ -141,10 +141,6 @@
   .cta-form {
     padding-right: 40px;
     padding-left: 40px;
-
-    br {
-      display: none;
-    }
   }
 
   .cta-form__heading {
@@ -169,10 +165,6 @@
     @include desktop-light-text;
   }
 
-  br.cta-form__desktop-break {
-    display: unset;
-  }
-
   .cta-form__email-form {
     width: 100%;
     margin-right: 132px;
@@ -180,7 +172,7 @@
   }
 
   .cta-form__input {
-    max-width: unset;
+    max-width: block;
     flex-grow: 1;
   }
 

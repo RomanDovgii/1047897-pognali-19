@@ -157,6 +157,14 @@
     max-width: 100%;
   }
 
+  .steps-ordered__next {
+    margin: 0;
+  }
+
+  .steps-ordered__submit {
+    margin: 0;
+  }
+
   .steps-ordered__movement {
     order: 7;
 
@@ -166,45 +174,28 @@
     padding-right: 43px;
   }
 
-  .steps-ordered__next {
-    margin: 0;
-  }
-
-  .steps-ordered__heading {
-    order: 1;
-  }
-
-  .steps-ordered__description {
-    order: 2;
-  }
-
   .steps-ordered__inputs-wrapper {
-    order: 3;
+    display: flex;
+    flex-direction: column;
+
+    .steps-ordered__number-input {
+      &--mates {
+        order: 1;
+      }
+
+      &--duration {
+        order: 3;
+      }
+    }
+
+    .steps-ordered__children-checkbox {
+      order: 2;
+    }
   }
 
   .steps-ordered__number-input {
     padding-right: 43px;
     padding-left: 43px;
-  }
-
-  .steps-ordered__children-checkbox {
-    order: 4;
-  }
-
-  .steps-ordered__calendar {
-    order: 6;
-  }
-
-  .steps-ordered__countries-planned {
-    order: 3;
-  }
-
-  .steps-ordered__step-description {
-    order: 3;
-  }
-
-  .steps-ordered__submit {
-    margin: 0;
   }
 }
 
@@ -225,24 +216,21 @@
   .steps-ordered__inputs-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
-  }
 
-  .steps-ordered__number-input {
-    &--mates {
-      order: 1;
-      margin-right: auto;
-      margin-left: 0;
+    .steps-ordered__number-input {
+      &--mates {
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      &--duration {
+        width: 100%;
+      }
     }
 
-    &--duration {
-      order: 3;
-      width: 100%;
+    .steps-ordered__children-checkbox {
+      margin-right: 0;
+      margin-left: auto;
     }
-  }
-
-  .steps-ordered__children-checkbox {
-    order: 2;
-    margin-right: 0;
-    margin-left: auto;
   }
 }

@@ -50,3 +50,39 @@
     border-left: 1px solid $blue-10-color;
   }
 }
+
+.letters-selection__countries {
+  display: none;
+  list-style: none;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .letters-selection {
+    @include reset;
+    @include desktop-paddings;
+    width: auto;
+    justify-content: center;
+  }
+
+  .letters-selection__item {
+    border: none;
+    width: 250px;
+    height: auto;
+  }
+
+  .letters-selection__link {
+    position: relative;
+    background: none;
+    padding-left: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .letters-selection__countries {
+    display: inline;
+  }
+
+  .letters-selection__country-link {
+    text-decoration: none;
+  }
+}
