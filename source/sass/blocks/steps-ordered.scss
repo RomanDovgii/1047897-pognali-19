@@ -178,7 +178,7 @@
     display: flex;
     flex-direction: column;
 
-    .steps-ordered__number-input{
+    .steps-ordered__number-input {
       &--mates {
         order: 1;
       }
@@ -217,7 +217,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    .steps-ordered__number-input{
+    .steps-ordered__number-input {
       &--mates {
         margin-right: auto;
         margin-left: 0;
