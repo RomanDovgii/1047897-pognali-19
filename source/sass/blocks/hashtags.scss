@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-left: 40px;
+  padding-left: 45px;
   padding-right: 40px;
 
   &--catalog {
@@ -34,6 +34,18 @@
 
     &::before {
       content: "#";
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .hashtags {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    a {
+      font-size: 20px;
+      line-height: 24px;
     }
   }
 }

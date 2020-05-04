@@ -1,7 +1,7 @@
 .quote {
   position: relative;
 
-  padding-top: 27px;
+  padding-top: 26px;
   padding-right: 110px;
   padding-left: 50px;
 
@@ -28,6 +28,25 @@
   &--author {
     padding-top: 18px;
     font-weight: 700;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .quote__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    max-width: 290px;
+
+    padding-top: 11px;
+    padding-left: 24px;
+
+    &--author {
+      font-size: 21px;
+      line-height: 25px;
+
+      padding-top: 44px;
+    }
   }
 }
 

@@ -5,6 +5,9 @@
   position: relative;
   background-color: $background__dark-blue;
 
+  padding-top: 6px;
+  padding-bottom: 2px;
+
   &::before {
     content: "";
 
@@ -18,7 +21,7 @@
 
     background: url("../img/mobile/about-mobile@1x.png");
     background-repeat: no-repeat;
-    background-position: 18px 4px;
+    background-position: 18px 12px;
 
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -78,20 +81,53 @@
 
 @media (min-width: $tablet-breakpoint) {
   .about {
-    padding-left: 40px;
     padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+
+    &::after {
+      height: 60px;
+      bottom: -58px;
+
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
   }
 
   .about__wrapper {
     padding-right: 0;
 
-    max-width: 50%;
+    max-width: 55%;
     padding-left: 35px;
+  }
+
+  .about__heading {
+    font-size: 45px;
+    line-height: 45px;
+
+    padding-top: 101px;
+  }
+
+  .about__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    padding-top: 41px;
+    padding-right: 43px;
+
+    &--additional {
+      font-size: 21px;
+      line-height: 25px;
+
+      padding-top: 32px;
+      padding-bottom: 0px;
+    }
   }
 
   .about__details {
     text-decoration: none;
-    display: inline;
+    display: block;
+    max-width: 274px;
 
     font-size: 24px;
     line-height: 24px;
@@ -99,10 +135,14 @@
 
     color: $font-color;
 
-    padding-top: 31px;
-    padding-right: 126px;
+    margin-top: 53px;
+
+    padding-top: 28px;
+    padding-right: 90px;
     padding-left: 33px;
-    padding-bottom: 20px;
+    padding-bottom: 29px;
+
+    border-radius: 20px;
 
     background-color: $universal__bright-yellow;
   }

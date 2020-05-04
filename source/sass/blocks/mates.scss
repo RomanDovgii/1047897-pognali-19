@@ -9,7 +9,7 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 152px 69px, -10px 341px, -20px 69px;
   background-size: 143px 143px, 71px 71px, 132px 132px;
-  padding-top: 102px;
+  padding-top: 100px;
   padding-left: 25px;
   padding-right: 25px;
 
@@ -33,6 +33,10 @@
 
 .mates__wrapper {
   padding-left: 25px;
+
+  .mates__show-all {
+    display: none;
+  }
 }
 
 .mates__heading {
@@ -66,7 +70,7 @@
 
 .mates__people {
   @include reset;
-  margin-top: 56px;
+  margin-top: 58px;
 }
 
 .mates__show-all {
@@ -74,6 +78,80 @@
 
   &--desktop {
     display: none;
+  }
+}
+
+.mates__tablet-br {
+  display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .mates {
+    &::after {
+      width: 100%;
+      height: 88px;
+      position: absolute;
+      bottom: -88px;
+      left: 0;
+      z-index: 2;
+
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+
+      background-color: $background__dark-blue;
+    }
+  }
+
+  .mates__heading {
+    font-size: 45px;
+    line-height: 45px;
+
+    padding-top: 117px;
+    padding-left: 23px;
+  }
+
+  .mates__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    padding-top: 58px;
+    padding-right: 215px;
+    padding-left: 25px;
+
+    &--additional {
+      font-size: 21px;
+      line-height: 25px;
+
+      padding-top: 40px;
+      padding-right: 230px;
+    }
+  }
+
+  .mates__people {
+    margin-top: 60px;
+  }
+
+  .mates__tablet-br {
+    display: inline;
+  }
+
+  .mates__show-all {
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-top: 80px;
+
+    padding-top: 29px;
+    padding-right: 434px;
+    padding-left: 33px;
+    padding-bottom: 28px;
+
+    border-radius: 20px;
+
+    &::after {
+      top: 34px;
+      right: 36px;
+    }
   }
 }
 

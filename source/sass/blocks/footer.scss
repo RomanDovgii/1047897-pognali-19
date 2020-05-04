@@ -6,7 +6,6 @@
   position: relative;
 
   padding-top: 7px;
-  margin-top: 31px;
 
   padding-bottom: 14px;
 
@@ -29,12 +28,14 @@
 }
 
 .footer__developer {
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-top: 36px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .footer__social {
   @include reset;
+  margin-top: 33px;
 }
 
 @media (min-width: $tablet-breakpoint) {

@@ -32,7 +32,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  padding-top: 55px;
+  padding-top: 53px;
 
   max-width: 320px;
 }
@@ -46,6 +46,8 @@
   text-align: center;
 
   padding-top: 19px;
+  padding-right: 18px;
+  padding-left: 18px;
 
   &--questions {
     padding-top: 29px;
@@ -73,7 +75,7 @@
   background-color: $white;
   border-radius: 10px;
 
-  margin-top: 29px;
+  margin-top: 31px;
 }
 
 .cta-form__input {
@@ -125,10 +127,7 @@
 }
 
 .cta-form__button-description {
-  position: absolute;
-  width: 0;
-  height: 0;
-  z-index: -1;
+  display: none;
 }
 
 .cta-form__contacts {
@@ -143,6 +142,10 @@
     padding-left: 40px;
   }
 
+  .cta-form__mobile-br {
+    display: none;
+  }
+
   .cta-form__heading {
     max-width: 100%;
   }
@@ -153,6 +156,13 @@
 
   .cta-form__input {
     max-width: 100%;
+  }
+
+  .cta-form__button-description {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
   }
 }
 

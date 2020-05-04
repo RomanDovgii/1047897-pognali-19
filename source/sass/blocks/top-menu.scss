@@ -12,6 +12,17 @@
   display: none;
 }
 
+.top-menu__information {
+  display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .top-menu {
+    padding-top: 13px;
+    padding-right: 15px;
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
     @include desktop-paddings;

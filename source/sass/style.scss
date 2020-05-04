@@ -14,10 +14,10 @@
 
 @import "./blocks/actions.scss";
 @import "./blocks/quote.scss";
-@import "./blocks/steps.scss";
+
 @import "./blocks/about.scss";
 @import "./blocks/desktop-user-info.scss";
-@import "./blocks/countries.scss";
+
 @import "./blocks/country-card.scss";
 @import "./blocks/show-all.scss";
 @import "./blocks/mates.scss";
@@ -60,10 +60,12 @@
 
 //blocks
 @import "./blocks/intro.scss";
-@import "./blocks/top-menu.scss";
+@import "./blocks/steps.scss";
 @import "./blocks/information.scss";
+@import "./blocks/top-menu.scss";
 @import "./blocks/directions.scss";
 @import "./blocks/cta-form.scss";
+@import "./blocks/countries.scss";
 
 //main-blocks
 @import "./blocks/header.scss";

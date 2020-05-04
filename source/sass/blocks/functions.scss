@@ -33,6 +33,18 @@
 @media (min-width: $tablet-breakpoint) {
   .functions__auth-link {
     display: flex;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 28px;
+  }
+
+  .functions__button {
+    margin-top: 21px;
+    margin-left: 105px;
   }
 }
 

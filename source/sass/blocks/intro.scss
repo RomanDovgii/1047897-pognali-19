@@ -13,14 +13,18 @@
   text-align: center;
   color: $white;
 
-  padding-top: 42px;
+  padding-top: 40px;
   padding-right: 30px;
   padding-left: 30px;
 }
 
+.intro__quote {
+  margin-top: -16px;
+}
+
 .intro__steps {
   @include reset;
-  margin-top: 30px;
+  margin-top: 31px;
 }
 
 .intro__wrapper {
@@ -30,6 +34,22 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .intro__wrapper {
+    width: 100%;
+  }
+
+  .intro__steps {
+    margin-top: 213px;
+  }
+
+  .intro__heading {
+    max-width: 490px;
+    font-size: 60px;
+    line-height: 70px;
+
+    padding-top: 68px;
+  }
+
   .intro__actions {
     display: none;
   }
