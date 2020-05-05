@@ -92,3 +92,36 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .contacts__link {
+    font-size: 28px;
+    line-height: 28px;
+
+    span {
+      padding-top: 22px;
+      padding-left: 7px;
+    }
+
+    &::before {
+      width: 68px;
+      height: 68px;
+
+      background-size: 27px 27px;
+    }
+
+    &--phone {
+      &::before {
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow.svg");
+      }
+    }
+
+    &--email {
+      &::before {
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow.svg");
+      }
+    }
+  }
+
+
+}

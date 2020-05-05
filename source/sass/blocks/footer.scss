@@ -46,5 +46,33 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    &::after {
+      height: 60px;
+      top: -31px;
+
+      border-top-left-radius: 60px;
+      border-top-right-radius: 60px;
+    }
+  }
+
+  .footer__link {
+    position: relative;
+    z-index: 4;
+  }
+
+  .footer__developer {
+    position: relative;
+    z-index: 4;
+    margin-top: 0;
+
+    padding: 0;
+  }
+
+  .footer__social {
+    position: relative;
+    z-index: 4;
+    margin-top: 10px;
+    margin-left: 55px;
   }
 }

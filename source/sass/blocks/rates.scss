@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  padding-top: 50px;
   padding-left: 50px;
   padding-right: 25px;
 
@@ -128,4 +130,144 @@
 
   margin-top: 31px;
   padding-bottom: 5px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .rates {
+    padding-top: 126px;
+    padding-bottom: 18px;
+
+    &::after {
+      height: 69px;
+      bottom: -65px;
+      left: 0;
+      z-index: 2;
+
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+  }
+
+  .rates__heading-wrapper {
+    justify-content: center;
+
+    &::after{
+      display: none;
+    }
+  }
+
+  .rates__heading {
+    font-size: 45px;
+    line-height: 45px;
+
+    padding-right: 21px;
+  }
+
+  .rates__list {
+    position: relative;
+
+    margin-top: 34px;
+
+    padding-top: 41px;
+    padding-right: 49px;
+    padding-left: 80px;
+    padding-bottom: 45px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 198px;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      right: 15px;
+
+      background-color: $grayish-blue-light-alt;
+
+      border-radius: 20px;
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 100px;
+      height: 100px;
+
+      position: absolute;
+      bottom: -75px;
+      right: 60px;
+
+      z-index: 4;
+
+      background-image: url("../img/mobile/rates@1x.png");
+      background-size: 100px 99px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .rates__item {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &::after {
+      right: auto;
+
+      width: 67px;
+      height: 67px;
+      position: absolute;
+      top: 0;
+      left: -90px;
+
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+      padding-top: 20px;
+
+      border-radius: 50%;
+    }
+  }
+
+  .rates__text {
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__link {
+    position: relative;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 14px;
+
+    padding-left: 79px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 67px;
+      height: 67px;
+
+      position: absolute;
+      top: -23px;
+      left: -10px;
+
+      z-index: 4;
+
+      background-color: $grayish-blue-light-alt;
+      background-image: url("../img/icons/mobile/business.svg");
+      background-size: 17px 21px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      border-radius: 50%;
+    }
+  }
 }
