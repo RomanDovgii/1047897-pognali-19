@@ -85,6 +85,23 @@
     padding-left: 40px;
     padding-bottom: 30px;
 
+    &::before {
+      background: none;
+
+      width: 376px;
+      height: 548px;
+
+      position: absolute;
+      left: auto;
+      top: auto;
+      right: 8px;
+      bottom: 30px;
+
+      border-radius: 0;
+
+      background-image: url("../img/tablet/about-tablet@1x.png");
+    }
+
     &::after {
       height: 60px;
       bottom: -58px;

@@ -20,6 +20,11 @@
   .inner-links__item {
     text-align: initial;
   }
+
+  .inner-links__link {
+    font-size: 60px;
+    line-height: 71px;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {

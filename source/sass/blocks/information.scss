@@ -47,12 +47,26 @@
 
 @media (min-width: $tablet-breakpoint) {
   .information {
-    padding-left: 100px;
+    padding-left: 97px;
     align-items: initial;
+
+    display: none;
+  }
+
+  .information__inner-links {
+    margin-top: 24px;
   }
 
   .information__auth-link {
     display: none;
+  }
+
+  .information__contacts {
+    margin-left: 0;
+    margin-top: 133px;
+
+    width: 100%;
+
   }
 
   .information__social {

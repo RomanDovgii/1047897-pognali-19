@@ -94,6 +94,10 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .contacts {
+    max-width: 100%;
+  }
+
   .contacts__link {
     font-size: 28px;
     line-height: 28px;

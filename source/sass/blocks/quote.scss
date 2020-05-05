@@ -32,6 +32,11 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .quote {
+    &::before {
+      display: none;
+    }
+  }
   .quote__text {
     font-size: 28px;
     line-height: 33px;
