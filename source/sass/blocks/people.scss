@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .people__item {
     &:not(:first-child) {
       margin-left: 60px;

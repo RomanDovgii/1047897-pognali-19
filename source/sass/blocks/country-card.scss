@@ -239,18 +239,23 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .country-card {
     padding-bottom: 11px;
   }
 
   .country-card__name {
-    padding-top: 21px;
+    padding-top: 22px;
   }
 
   .country-card__text {
     &--number {
-      margin-top: 8px;
+      margin-top: 7px;
+      padding-bottom: 7px;
+
+      &::before {
+        bottom: 12px;
+      }
     }
   }
 }
