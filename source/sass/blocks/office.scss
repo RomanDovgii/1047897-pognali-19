@@ -201,18 +201,35 @@
 @media (min-width: $desktop-breakpoint) {
   .office {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+
+    padding-top: 97px;
+    padding-left: 230px;
+    padding-right: 134px;
+
+    &::after {
+      height: 56px;
+      bottom: -56px;
+    }
   }
 
   .office__text {
     font-size: 28px;
     line-height: 28px;
+    margin-bottom: 0;
 
     &::before {
       width: 90px;
       height: 90px;
 
       background-size: 28px 43px;
+
+      margin-left: 53px;
+    }
+
+    span {
+      padding-top: 31px;
+      padding-left: 16px;
     }
   }
 
@@ -221,5 +238,7 @@
 
     font-size: 24px;
     line-height: 24px;
+
+    margin-top: 18px;
   }
 }

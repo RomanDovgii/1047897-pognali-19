@@ -157,5 +157,64 @@
   .steps {
     max-width: 100%;
     flex-wrap: nowrap;
+
+    margin-top: 105px;
+  }
+
+  .steps__item {
+    max-height: 107px;
+
+    padding-top: 27px;
+    padding-left: 34px;
+
+    border-radius: 0;
+
+    &::after {
+      font-size: 24px;
+      line-height: 120px;
+
+      top: -21px;
+      right: 35px;
+      left: auto;
+      bottom: auto;
+    }
+
+    &:first-child {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      padding-right: 115px;
+    }
+
+    &:nth-child(2) {
+      padding-left: 31px;
+      padding-right: 80px;
+    }
+
+    &:nth-last-child(2) {
+      padding-left: 28px;
+      padding-right: 91px;
+
+      &::after {
+        left: auto;
+        bottom: auto;
+
+        right: 29px;
+        top: -21px;
+      }
+    }
+
+    &:last-child {
+      padding-right: 124px;
+      padding-left: 31px;
+
+      &::after {
+        left: auto;
+        bottom: auto;
+
+        right: 33px;
+        top: -21px;
+      }
+    }
   }
 }

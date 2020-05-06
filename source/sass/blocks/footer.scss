@@ -76,3 +76,10 @@
     margin-left: 55px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .footer {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+}

@@ -28,8 +28,13 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .inner-links {
+    margin-top: 12px;
+    margin-left: 112px;
+  }
+
   .inner-links__item {
-    margin-left: 35px;
+    margin-left: 33px;
   }
 
   .inner-links__link {

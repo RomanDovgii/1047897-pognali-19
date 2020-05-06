@@ -31,6 +31,10 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .functions {
+    padding-top: 40px;
+  }
+
   .functions__auth-link {
     display: flex;
 
@@ -49,6 +53,20 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .functions {
+    @include reset;
+  }
+
+  .functions__link {
+    width: 200px;
+    height: 50px;
+  }
+
+  .functions__logo-img {
+    width: 100%;
+    height: 100%;
+  }
+
   .functions__button {
     display: none;
   }

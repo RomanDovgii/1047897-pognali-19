@@ -100,6 +100,7 @@
       border-radius: 0;
 
       background-image: url("../img/tablet/about-tablet@1x.png");
+      background-repeat: no-repeat;
     }
 
     &::after {
@@ -168,6 +169,19 @@
 @media (min-width: $desktop-breakpoint) {
   .about {
     @include desktop-paddings;
+    padding-bottom: 106px;
+
+    &::before {
+      width: 630px;
+      height: 750px;
+
+      right: 60px;
+      bottom: -58px;
+
+      background-image: url("../img/desktop/about-desktop@1x.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
   }
 
   .about__wrapper {
@@ -178,16 +192,25 @@
   .about__heading {
     font-size: 45px;
     line-height: 45px;
+    padding-top: 118px;
   }
 
   .about__text {
     font-size: 28px;
     line-height: 33px;
 
+    padding-top: 59px;
+    padding-right: 0;
+
     &--additional {
       font-size: 21px;
       line-height: 25px;
+      padding-top: 39px;
       padding-right: 190px;
     }
+  }
+
+  .about__details {
+    margin-top: 85px;
   }
 }

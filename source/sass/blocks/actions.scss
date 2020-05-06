@@ -121,3 +121,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .actions__item {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+
+    &:last-child {
+      width: 190px;
+    }
+  }
+
+  .actions__link {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--auth {
+      border-radius: 25px;
+      padding-top: 10px;
+    }
+  }
+}

@@ -62,3 +62,10 @@
     margin-left: 35px;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .show-all {
+    max-width: 274px;
+    padding-right: 0;
+  }
+}

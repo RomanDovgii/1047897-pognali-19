@@ -21,3 +21,10 @@
     margin-top: 10px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .countries {
+    padding-right: 173px;
+    padding-left: 91px;
+  }
+}

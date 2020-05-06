@@ -227,18 +227,31 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .cta-form {
+    padding-bottom: 43px;
+  }
+
   .cta-form__heading {
     @include desktop-section-heading;
+    padding-top: 83px;
   }
 
   .cta-form__text {
     @include desktop-light-text;
+
+    &--questions {
+      font-size: 29px;
+
+      padding-top: 66px;
+    }
   }
 
   .cta-form__email-form {
-    width: 100%;
-    margin-right: 132px;
-    margin-left: 132px;
+    max-width: 1171px;
+
+    margin-top: 60px;
+    margin-right: 133px;
+    margin-left: 131px;
   }
 
   .cta-form__input {
@@ -249,11 +262,12 @@
   .cta-form__button {
     font-family: inherit;
     width: 324px;
-    background-position: 310px 24px;
+    background-position: 279px 34px;
     text-align: left;
   }
 
   .cta-form__button-description {
+    display: inline;
     font-family: inherit;
     position: relative;
     z-index: 1;
@@ -268,6 +282,8 @@
 
   .cta-form__contacts {
     flex-direction: row;
+    justify-content: center;
     max-width: 100%;
+    padding-top: 28px;
   }
 }

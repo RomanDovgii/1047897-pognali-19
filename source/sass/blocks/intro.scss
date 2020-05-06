@@ -87,7 +87,28 @@
 @media (min-width: $desktop-breakpoint) {
   .intro {
     @include desktop-paddings;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
+  }
+
+  .intro__heading {
+    padding-right: 0;
+
+    padding-top: 106px;
+    padding-left: 67px;
+
+    max-width: 485px;
+
+    text-align: left;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .intro__quote {
+    margin-right: 0;
+    margin-left: auto;
+
+    padding-top: 45px;
+    padding-right: 20px;
   }
 
   .intro__actions {
@@ -99,14 +120,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .intro__heading {
-    padding-left: 60px;
-    max-width: 485px;
-
-    text-align: left;
-    font-size: 60px;
-    line-height: 70px;
   }
 }

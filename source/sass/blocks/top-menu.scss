@@ -12,12 +12,8 @@
   display: none;
 }
 
-.top-menu__information {
-}
-
 @media (min-width: $tablet-breakpoint) {
   .top-menu__functions {
-    padding-top: 40px;
     margin-left: 25px;
     margin-right: 40px;
   }
@@ -26,6 +22,20 @@
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
     @include desktop-paddings;
+    display: flex;
+
+    padding-top: 49px;
+  }
+
+  .top-menu__functions {
+    margin: 0;
+
+    &--index {
+      padding-top: 0px;
+    }
+  }
+
+  .top-menu__information {
     display: flex;
   }
 

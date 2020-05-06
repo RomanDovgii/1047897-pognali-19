@@ -13,3 +13,8 @@
   }
 }
 
+@media (min-width: $desktop-breakpoint) {
+  .map__img {
+    height: 480px;
+  }
+}

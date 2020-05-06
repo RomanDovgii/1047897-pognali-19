@@ -271,3 +271,43 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .rates {
+    padding-bottom: 120px;
+  }
+
+  .rates__heading {
+    padding-top: 66px;
+  }
+
+  .rates__list {
+    margin-top: 85px;
+    margin-right: 205px;
+    margin-left: 91px;
+
+    padding-top: 51px;
+    padding-right: 175px;
+    padding-bottom: 50px;
+
+    &::before {
+      width: 444px;
+    }
+
+    &::after {
+      bottom: auto;
+      top: 52px;
+      right: -96px;
+
+      height: 198px;
+      width: 198px;
+
+      background-size: 198px 198px;
+    }
+  }
+
+  .rates__link {
+    margin-top: 7px;
+    margin-left: 91px;
+  }
+}

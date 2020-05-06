@@ -28,3 +28,11 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .people__item {
+    &:not(:first-child) {
+      margin-left: 60px;
+    }
+  }
+}

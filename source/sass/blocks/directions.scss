@@ -128,18 +128,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 59px;
   }
 
   .directions__countries {
     order: 1;
     flex-grow: 1;
+
+    margin-top: 210px;
   }
 
   .directions__wrapper {
     order: 2;
     max-width: 50%;
 
-    padding-right: 182px;
+    padding-right: 198px;
   }
 
   .directions__show-all {
@@ -148,5 +151,22 @@
     &--desktop {
       display: block;
     }
+  }
+
+  .directions__heading {
+    padding-top: 220px;
+    padding-left: 0;
+  }
+
+  .directions__text {
+    padding-right: 0;
+
+    padding-left: 0;
+  }
+
+  .directions__show-all {
+    margin-top: 100px;
+    margin-left: 0;
+
   }
 }

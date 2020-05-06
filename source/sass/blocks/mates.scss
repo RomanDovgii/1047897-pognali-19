@@ -161,11 +161,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    padding-bottom: 46px;
   }
 
   .mates__heading {
     font-size: 45px;
     line-height: 45px;
+
+    padding-top: 105px;
+    padding-left: 44px;
   }
 
   .mates__text {
@@ -173,10 +178,16 @@
     line-height: 33px;
     font-weight: 300;
 
+    padding-top: 57px;
+    padding-right: 170px;
+    padding-left: 46px;
+
     &--additional {
       font-size: 21px;
       line-height: 25px;
       font-weight: 700;
+
+      padding-top: 40px;
     }
   }
 
@@ -189,6 +200,15 @@
       margin: 0;
       display: block;
       max-width: 280px;
+
+      margin-top: 85px;
+      margin-left: 46px;
+
+      padding-right: 10px;
     }
+  }
+
+  .mates__people {
+    margin-top: 112px;
   }
 }
