@@ -90,23 +90,50 @@
     display: none;
   }
 
+  .country-filter__name-wrapper {
+    max-width: 100%;
+    align-self: stretch;
+    justify-content: space-between;
+  }
+
   .country-filter__continents-selection {
     display: flex;
     flex-direction: row;
+
+    margin-top: 43px;
+    margin-left: 73px;
+    margin-bottom: 0;
   }
 
   .country-filter__button {
     font-family: inherit;
     width: auto;
-    background-position: right;
-    padding-right: 50px;
+
+    padding-right: 83px;
+    padding-bottom: 28px;
+
+    margin-top: 22px;
+    margin-right: 77px;
+
+    &--collapse {
+      background-size: 18px 18px;
+      background-position: 160px 4px;
+    }
   }
 
   .country-filter__button-text {
     font-family: inherit;
+
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 700;
+
     display: inline;
     text-transform: uppercase;
+  }
+
+  .country-filter__select-country {
+    align-self: stretch;
   }
 }
 
