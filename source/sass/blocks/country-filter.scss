@@ -75,6 +75,8 @@
 
 .country-filter__continents-selection {
   display: none;
+  margin-right: 50px;
+  margin-bottom: 19px;
 }
 
 .country-filter__colon {
@@ -86,6 +88,13 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .country-filter {
+    position: relative;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
   .country-filter__name {
     display: none;
   }
@@ -94,6 +103,7 @@
     max-width: 100%;
     align-self: stretch;
     justify-content: space-between;
+    padding-bottom: 15px;
   }
 
   .country-filter__continents-selection {
@@ -110,9 +120,9 @@
     width: auto;
 
     padding-right: 83px;
-    padding-bottom: 28px;
+    padding-bottom: 18px;
 
-    margin-top: 22px;
+    margin-top: 31px;
     margin-right: 77px;
 
     &--collapse {

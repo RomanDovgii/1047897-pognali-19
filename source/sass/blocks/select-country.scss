@@ -34,12 +34,51 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .select-country {
+    padding-top: 19px;
+  }
   .select-country__continents-selection {
     display: none;
   }
 
   .select-country__wrapper {
     display: flex;
-    justify-content: space-between;;
+    justify-content: space-between;
+
+    margin-top: -15px;
+  }
+
+  .select-country__letters-selection {
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 67px;
+  }
+
+  .select-country__countries-selection {
+    margin-top: 32px;
+    margin-right: 96px;
+    margin-bottom: 37px;
+  }
+
+  .select-country__collapse {
+    max-width: 618px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    margin: 0 auto;
+    margin-top: 61px;
+    margin-bottom: 58px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+
+      background-size: 18px 18px;
+      background-position: 1px 6px;
+    }
   }
 }
