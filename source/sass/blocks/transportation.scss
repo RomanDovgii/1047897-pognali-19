@@ -76,3 +76,23 @@
     background-image: url("../img/transport/recolorized/blue/run.svg");
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .transportation__heading {
+    font-size: 20px;
+    line-height: 30px;
+    display: inline;
+
+    margin-left: -1px;
+  }
+
+  .transportation__buttons {
+    margin-top: 5px;
+    margin-left: 13px;
+  }
+
+  .transportation__button {
+    width: 43px;
+    height: 43px;
+  }
+}

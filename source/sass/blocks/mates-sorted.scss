@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin-top: 22px;
+  padding-top: 22px;
   padding-bottom: 77px;
 }
 
@@ -20,6 +20,11 @@
   @include reset;
   display: block;
   max-width: 270px;
+
+  background-color: $white;
+  border-radius: 20px;
+
+  padding-bottom: 36px;
 
   &:not(:first-child) {
     margin-top: 16px;
@@ -83,6 +88,9 @@
   .mates-sorted {
     @include tablet-paddings;
     align-items: stretch;
+
+    padding-top: 40px;
+    padding-bottom: 93px;
   }
 
   .mates-sorted__list {
@@ -92,10 +100,38 @@
   .mates-sorted__item {
     max-width: 100%;
     width: 100%;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  .mates-sorted__link {
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-top: 44px;
+
+    margin-left: -9px;
+
+    &::before {
+      width: 27px;
+      height: 27px;
+
+      margin-top: 1px;
+      margin-right: 23px;
+    }
   }
 
   .mates-sorted__navigation {
+    margin-top: 49px;
+    width: 100%;
     background-color: $white;
     justify-content: space-between;
+
+    padding-top: 21px;
+    padding-bottom: 10px;
+
+    border-radius: 20px;
   }
 }

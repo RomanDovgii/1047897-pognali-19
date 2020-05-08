@@ -40,6 +40,10 @@
   color: $text__dark-blue;
 }
 
+.mates-filter__colon {
+  display: none;
+}
+
 .mates-filter__transport-block {
   padding-bottom: 33px;
 }
@@ -96,12 +100,40 @@
 
 @media (min-width: $tablet-breakpoint) {
   .mates-filter {
-    @include tablet-paddings;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    padding-top: 46px;
+  }
+
+  .mates-filter__heading {
+    font-size: 30px;
+    line-height: 30px;
+
+    padding-left: 9px;
+
+    margin-top: 29px;
+    margin-bottom: 0px;
+  }
+
+  .mates-filter__colon {
+    display: inline;
+  }
+
+  .mates-filter__form {
+    margin-top: 20px;
+    border-top: 1px solid $yellow-bright;
+
+    margin-top: 39px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .mates-filter__wrapper {
     max-width: 100%;
     width: 100%;
+
+    padding-bottom: 38px;
   }
 
   .mates-filter__transportation {
@@ -115,6 +147,34 @@
 
   .mates-filter__submit {
     width: 100%;
+  }
+
+  .mates-filter__preferences {
+    margin-top: 31px;
+  }
+
+  .mates-filter__preference {
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+
+  .mates-filter__transportation {
+    justify-content: flex-start;
+    margin-bottom: 0;
+  }
+
+  .mates-filter__submit {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-radius: 25px;
+
+    margin-top: 19px;
+    margin-left: 0;
   }
 }
 

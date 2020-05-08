@@ -112,10 +112,16 @@ input[type="checkbox"]:checked + .preference__name {
   .preference {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 0;
   }
 
   .preference__block-name {
     min-width: 126px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-left: -1px;
 
     &::before {
       display: none;
@@ -126,14 +132,42 @@ input[type="checkbox"]:checked + .preference__name {
     }
   }
 
+  .preference__name {
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $gray;
+
+    padding-top: 0;
+    padding-left: 34px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+
+      top: 0;
+      left: 0;
+
+      background-color: $white;
+    }
+  }
+
   .preference__checkboxes {
     flex-direction: row;
     justify-content: flex-start;
     flex-grow: 1;
+
+    margin-left: 2px;
   }
 
   .preference__checkbox {
     min-width: 169px;
+
+    margin-top: 6px;
+
+    &:last-child {
+      margin-left: 4px
+    }
   }
 }
 

@@ -35,5 +35,11 @@
 @media (min-width: $tablet-breakpoint) {
   .numbered-navigation {
     display: flex;
+
+    margin-top: 4px;
+  }
+
+  .numbered-navigation__link {
+    padding-top: 10px;
   }
 }
