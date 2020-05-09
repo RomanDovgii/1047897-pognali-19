@@ -8,24 +8,23 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    margin-top: 4px;
+    margin-top: 18px;
     padding-left: 25px;
   }
 }
 
 .to-visit__item {
   width: 35px;
-  height: 24px;
 
   &:not(:first-child) {
-    margin-left: 19px;
+    margin-left: 3px;
   }
 
   &--catalog {
     width: 100%;
 
     &:not(:first-child) {
-      margin-top: 5px;
+      margin-top: 9px;
       margin-left: 0;
     }
   }
@@ -51,8 +50,6 @@
     font-weight: 500;
 
     text-transform: uppercase;
-
-    padding-top: 13px;
 
     &::before {
       content: "";

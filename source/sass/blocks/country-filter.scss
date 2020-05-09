@@ -12,7 +12,7 @@
   flex-grow: 1;
   display: flex;
   align-items: center;
-  padding-top: 14px;
+  padding-top: 16px;
 }
 
 .country-filter__name {
@@ -73,6 +73,10 @@
   }
 }
 
+.country-filter__select-country {
+  display: none;
+}
+
 .country-filter__continents-selection {
   display: none;
   margin-right: 50px;
@@ -93,6 +97,8 @@
 
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+
+    padding-bottom: 33px;
   }
 
   .country-filter__name {
