@@ -172,8 +172,6 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 16px;
-
   width: 100%;
 }
 
@@ -229,8 +227,15 @@
     display: none;
   }
 
-  .catalog-mate-card__countries-wrapper {
+  .catalog-mate-card__to-visit {
     display: none;
+  }
+
+  .catalog-mate-card__countries-wrapper {
+    width: auto;
+
+    margin-right: 25px;
+    margin-left: auto;
 
     &--tablet {
       display: flex;
@@ -247,6 +252,10 @@
 
   .catalog-mate-card__text {
     padding-left: 83px;
+
+    &--to-visit {
+      display: none;
+    }
 
     &--transport {
       display: none;
@@ -303,7 +312,7 @@
 
   .catalog-mate-card__hashtags {
     padding-top: 18px;
-    padding-right: 37px;
+    padding-right: 84px;
     padding-left: 36px;
   }
 
@@ -417,5 +426,73 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .catalog-mate-card__img {
+    margin-top: 0;
+    margin-left: 0;
 
+    width: 285px;
+    height: 284px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .catalog-mate-card__second-block {
+    padding-left: 27px;
+    padding-top: 14px;
+  }
+
+  .catalog-mate-card__name {
+    &::after {
+      display: block;
+
+      margin-top: 0;
+      margin-left: 0;
+      right: auto;
+
+      top: -17px;
+      left: -27px;
+    }
+  }
+
+  .catalog-mate-card__hashtags {
+    padding-top: 11px;
+    padding-right: 46px;
+  }
+
+  .catalog-mate-card__countries-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 42px;
+
+    margin-right: auto;
+    margin-left: 21px;
+
+    &--tablet {
+      display: none;
+    }
+  }
+
+  .catalog-mate-card__to-visit {
+    display: flex;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  .catalog-mate-card__transport-level {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 31px;
+  }
+
+  .catalog-mate-card__transport {
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  .catalog-mate-card__level-wrapper {
+    margin-top: 0px;
+    margin-left: 46px;
+  }
 }

@@ -100,7 +100,7 @@
   .mates-sorted__item {
     max-width: 100%;
     width: 100%;
-    padding-bottom: 21px;
+    padding-bottom: 24px;
 
     &:not(:first-child) {
       margin-top: 40px;
@@ -134,5 +134,26 @@
     padding-bottom: 10px;
 
     border-radius: 20px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .mates-sorted__item {
+    min-width: 950px;
+    max-height: 285px;
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  .mates-sorted__link {
+    margin-top: 63px;
+    margin-left: -76px;
+  }
+
+  .mates-sorted__navigation {
+    margin-top: 68px;
+    margin-bottom: 108px;
   }
 }

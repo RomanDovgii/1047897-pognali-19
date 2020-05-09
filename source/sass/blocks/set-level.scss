@@ -187,13 +187,34 @@
 @media (min-width: $desktop-breakpoint) {
   .set-level__name {
     order: 1;
+    padding-bottom: 14px;
   }
 
   .set-level__input-wrapper {
     order: 2;
+    max-width: 100%;
+    margin-right: 11px;
   }
 
   .set-level__line {
     order: 3;
+    width: 192px;
+
+    margin-top: 12px;
+    margin-left: 1px;
+  }
+
+  .set-level__button {
+    &--min-level {
+      right: 121px;
+
+      &::after {
+        width: 124px;
+      }
+    }
+
+    &--max-level {
+      right: 2px;
+    }
   }
 }

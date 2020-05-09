@@ -96,3 +96,14 @@
     height: 43px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .transportation__heading {
+    @include reset;
+  }
+
+  .transportation__buttons {
+    margin-top: 14px;
+    margin-left: -3px;
+  }
+}

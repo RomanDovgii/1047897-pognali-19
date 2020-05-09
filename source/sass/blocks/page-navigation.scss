@@ -70,3 +70,9 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .page-navigation {
+    padding-right: 45px;
+  }
+}

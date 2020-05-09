@@ -59,7 +59,8 @@
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 
-    padding-bottom: 11px;
+    padding-top: 50px;
+    padding-bottom: 9px;
   }
 
   .main__heading {
@@ -106,11 +107,25 @@
     display: inline;
   }
 
+  .main__heading {
+    margin-left: 66px;
+    padding-top: 25px;
+  }
+
+  .main__index-link {
+    margin-top: 54px;
+    margin-right: 48px;
+  }
+
   .main__filter-mates-wrapper {
     display: flex;
+    justify-content: center;
+
+    padding-top: 60px;
   }
 
   .main__mates-sorted {
     order: -1;
+    padding: 0;
   }
 }

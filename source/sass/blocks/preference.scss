@@ -180,5 +180,14 @@ input[type="checkbox"]:checked + .preference__name {
     flex-direction: column;
     justify-content: flex-start;
     flex-grow: 1;
+    padding-bottom: 22px;
+  }
+
+  .preference__checkbox {
+    margin-top: 9px;
+
+    &:last-child {
+      margin-left: 0;
+    }
   }
 }

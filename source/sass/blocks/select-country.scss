@@ -82,3 +82,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .select-country__letters-selection {
+    margin-top: 0;
+  }
+
+  .select-country__collapse {
+    position: relative;
+    z-index: 10;
+    margin-top: -92px;
+    max-width: 100%;
+    width: 1320px;
+  }
+}
