@@ -206,6 +206,8 @@
 
     padding-right: 75px;
     padding-left: 75px;
+
+    margin-top: 64px;
   }
 
   .change-bio__user-img {
@@ -217,8 +219,16 @@
   }
 
   .change-bio__change-avatar {
+    margin-top: 52px;
     margin-left: 75px;
     margin-right: 75px;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
   }
 
   .change-bio__level {
@@ -250,12 +260,15 @@
       display: flex;
       position: relative;
 
+      padding-right: 67px;
+      padding-left: 67px;
+
       .change-bio__legend {
         position: absolute;
         left: 50%;
         bottom: -19px;
 
-        margin-left: -56px;
+        margin-left: -73px;
       }
 
       .change-bio__transport-wrapper {
@@ -264,6 +277,7 @@
     }
 
     &--tags {
+      margin-top: 51px;
       margin-right: 75px;
       margin-left: 75px;
 
@@ -271,11 +285,33 @@
     }
   }
 
+  .change-bio__number {
+    padding-top: 5px;
+    padding-left: 0;
+  }
+
+  .change-bio__text {
+    &::before {
+      top: -1px;
+    }
+  }
+
   .change-bio__tags {
     height: 59px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-top: 32px;
+    padding-bottom: 60px;
+    padding-left: 38px;
   }
 
   .change-bio__legend {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+
     &--tags {
       margin-top: 0;
       margin-bottom: 0;
@@ -284,9 +320,11 @@
       bottom: -19px;
       left: 50%;
 
-      margin-left: -33px;
+      margin-left: -40px;
     }
   }
+
+
 }
 
 @media (min-width: $desktop-breakpoint) {

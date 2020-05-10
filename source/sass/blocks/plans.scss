@@ -102,18 +102,81 @@
   .plans {
     @include tablet-paddings;
     align-items: initial;
+
+    padding-bottom: 77px;
+
+    margin-top: 27px;
+  }
+
+  .plans__heading {
+    font-size: 36px;
+    line-height: 50px;
+    padding-top: 47px;
+    padding-left: 35px;
+  }
+
+  .plans__list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .plans__item {
-    width: 100%;
+    width: 618px;
+    padding-bottom: 17px;
+  }
+
+  .plans__place {
+    position: relative;
+    font-size: 24px;
+    line-height: 50px;
+
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-bottom: 22px;
+
+
+    &::before {
+      position: absolute;
+      top: 42px;
+      right: 26px;
+
+      font-size: 20px;
+      line-height: 18px;
+    }
+  }
+
+  .plans__mates {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    padding-left: 32px;
+  }
+
+  .plans__dates {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2.2px;
+
+    padding-top: 19px;
+    margin-right: 56px;
+    margin-left: auto;
+  }
+
+  .plans__link {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2.2px;
+
+    padding-top: 19px;
+
+    margin-right: 34px;
   }
 
   .plans__additional-info {
     display: flex;
-  }
-
-  .plans__dates {
-    padding-top: 20px;
   }
 }
 

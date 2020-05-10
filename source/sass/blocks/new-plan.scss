@@ -34,11 +34,23 @@
   }
 
   .new-plan__heading {
-    margin-left: 0;
+    max-width: 100%;
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 50px;
+
+    padding-left: 35px;
+    padding-top: 44px;
   }
 
   .new-plan__form {
     align-items: initial;
+
+    padding-right: 35px;
+    padding-left: 35px;
+
+    margin-top: 38px;
   }
 }
 
