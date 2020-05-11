@@ -5,7 +5,6 @@
   font-weight: 700;
   color: $text__dark-blue;
   text-transform: uppercase;
-  padding-left: 1px;
   display: flex;
   flex-direction: column;
 
@@ -21,7 +20,6 @@
 
 .transportation__buttons {
   display: flex;
-  padding-left: 1px;
 }
 
 .transportation__button {
@@ -82,8 +80,6 @@
     font-size: 20px;
     line-height: 30px;
     display: inline;
-
-    margin-left: -1px;
   }
 
   .transportation__buttons {

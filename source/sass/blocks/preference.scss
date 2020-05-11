@@ -76,7 +76,6 @@
     top: 0;
     left: 0;
 
-    margin-left: -1px;
     border-radius: 4px;
 
     background-color: $white;
@@ -120,8 +119,6 @@ input[type="checkbox"]:checked + .preference__name {
 
     font-size: 20px;
     line-height: 30px;
-
-    margin-left: -1px;
 
     &::before {
       display: none;

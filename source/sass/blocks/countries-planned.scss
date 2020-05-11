@@ -31,7 +31,6 @@
     height: inherit;
     border: 1px solid $blue-10-color;
     border-radius: 4px;
-    margin-left: -1px;
   }
 
   &:not(:nth-last-child(2))::before {
@@ -344,7 +343,6 @@
     padding-bottom: 25px;
 
     margin-left: 3px;
-    margin-top: -1px;
 
     &::before {
       width: 15px;
