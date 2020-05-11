@@ -201,6 +201,12 @@
 
         <h2 class="new-plan__heading">Добавить план:<span class="new-plan__page-indicator"></span></h2>
 
+        <ul class="new-plan__progress">
+          <li class="new-plan__progress-item new-plan__progress-item--active"><span>Даты</span></li>
+          <li class="new-plan__progress-item"><span>Маршрут</span></li>
+          <li class="new-plan__progress-item"><span>Развлечения</span></li>
+        </ul>
+
         <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
 
           <section class="steps-ordered new-plan__steps-ordered" id="step-1">
@@ -234,7 +240,7 @@
               </div>
 
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--duration">
-                <h4 class="number-input__legend">Длительность</h4>
+                <h4 class="number-input__legend number-input__legend--time">Длительность</h4>
 
                 <div class="number-input__wrapper">
                   <button class="number-input__button number-input__button--minus" type="button">

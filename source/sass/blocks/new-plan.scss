@@ -3,6 +3,10 @@
   padding-bottom: 44px;
 }
 
+.new-plan__progress {
+  display: none;
+}
+
 .new-plan__heading {
   @include reset;
   display: block;
@@ -31,6 +35,7 @@
 @media (min-width: $tablet-breakpoint) {
   .new-plan {
     @include tablet-paddings;
+    position: relative;
     padding-bottom: 93px;
   }
 
@@ -43,6 +48,35 @@
 
     padding-left: 35px;
     padding-top: 44px;
+  }
+
+  .new-plan__progress {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    right: 75px;
+  }
+
+  .new-plan__progress-item {
+    display: block;
+    width: 5px;
+    height: 5px;
+
+    background-color: $grayish-blue-light-alt-4;
+    border-radius: 50%;
+
+    &--active {
+      background-color: $text__dark-blue;
+    }
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+
+    span {
+      display: none;
+    }
   }
 
   .new-plan__form {

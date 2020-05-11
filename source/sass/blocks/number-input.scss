@@ -24,6 +24,13 @@
     content: "Чел.";
     opacity: 0.3;
   }
+
+  &--time {
+    &::after {
+      content: "Дн.";
+      opacity: 0.3;
+    }
+  }
 }
 
 .number-input__wrapper {

@@ -251,5 +251,11 @@
 
     padding-top: 23px;
     padding-left: 2px;
+
+    &--choosen-start {
+      &::after {
+        border-width: 3px;
+      }
+    }
   }
 }
