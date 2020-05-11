@@ -215,3 +215,173 @@
     right: 14px;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .countries-planned__list {
+    width: 100%;
+    position: relative;
+
+    align-items: flex-start;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-top: 41px;
+    padding-bottom: 16px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 139px;
+
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: $grayish-blue-light-alt-3;
+    }
+  }
+
+  .countries-planned__country {
+    margin-left: 3px;
+    max-width: 100%;
+    width: 369px;
+    margin-bottom: 15px;
+
+    &:not(:nth-last-child(2)) {
+      &::before {
+        display: block;
+        background-color: $text__dark-blue;
+
+        width: 15px;
+        height: 15px;
+
+        right: -34px;
+        bottom: 29px;
+      }
+
+      &::after {
+        display: block;
+        width: 70px;
+        height: 47px;
+        position: absolute;
+        top: 12px;
+        right: -123px;
+
+
+        border: none;
+        background-color: $gray;
+      }
+    }
+  }
+
+  .countries-planned__country-name {
+    max-width: auto;
+    width: 100%;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    &::after {
+      width: 17px;
+      height: 9px;
+
+      background-size: 17px 9px;
+
+      bottom: 29px;
+      right: 26px;
+    }
+  }
+
+  .countries-planned__choose {
+    max-width: 100%;
+    width: 369px;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    &::before {
+      width: 15px;
+      height: 15px;
+
+      background-color: $white;
+
+      right: -35px;
+      bottom: 28px;
+    }
+
+    &::after {
+      width: 17px;
+      height: 9px;
+
+      background-size: 17px 9px;
+
+      bottom: 29px;
+      right: 26px;
+    }
+  }
+
+  .countries-planned__add {
+    max-width: 100%;
+    width: 369px;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2.5px;
+
+    padding-top: 27px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    margin-left: 3px;
+    margin-top: -1px;
+
+    &::before {
+      width: 15px;
+      height: 15px;
+
+      background-color: $main-color;
+
+      right: -34px;
+      bottom: 29px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+
+      background-size: 18px 18px;
+
+      bottom: 26px;
+      right: 27px;
+    }
+  }
+
+  .countries-planned__delete {
+    top: 24px;
+    right: -167px;
+    background-color: transparent;
+
+    &::after {
+      top: -4px;
+      left: -3px;
+
+      width: 27px;
+      height: 27px;
+
+      background-size: 17px 17px;
+
+      opacity: 0.2;
+    }
+  }
+}

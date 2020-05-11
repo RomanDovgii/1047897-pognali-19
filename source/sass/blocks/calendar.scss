@@ -24,6 +24,7 @@
   list-style: none;
   padding-left: 0;
   margin-left: 25px;
+  margin-right: 20px;
 }
 
 .calendar__week-day {
@@ -168,5 +169,87 @@
 
       border: 2px solid $red-100-color;
     }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .calendar__week-days {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 58px;
+    padding-right: 32px;
+    margin-bottom: 0;
+  }
+
+  .calendar__week-day {
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      &::before {
+        content: "Пн";
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        content: "Вс";
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        content: "Ср";
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        content: "Чт";
+      }
+    }
+
+    &:nth-child(5) {
+      &::before {
+        content: "Пт";
+      }
+    }
+
+    &:nth-child(6) {
+      &::before {
+        content: "Сб";
+        color: $red-100-color;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        content: "Вс";
+        color: $red-100-color;
+      }
+    }
+  }
+
+  .calendar__days {
+    width: 533px;
+    height: 415px;
+    margin-top: 3px;
+    margin-left: 19px;
+  }
+
+  .calendar__day {
+    width: 76px;
+    height: 69px;
+  }
+
+  .calendar__day-link {
+    font-size: 20px;
+    line-height: 18px;
+
+    padding-top: 23px;
+    padding-left: 2px;
   }
 }

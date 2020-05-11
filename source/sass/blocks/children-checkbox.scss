@@ -27,3 +27,25 @@
     background-position: 8px 7px;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .children-checkbox__label-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    width: 100%;
+    padding-top: 7px;
+
+    margin-bottom: 26px;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+
+      margin-top: -7px;
+      margin-right: 22px;
+    }
+  }
+}

@@ -31,6 +31,7 @@
 @media (min-width: $tablet-breakpoint) {
   .new-plan {
     @include tablet-paddings;
+    padding-bottom: 93px;
   }
 
   .new-plan__heading {

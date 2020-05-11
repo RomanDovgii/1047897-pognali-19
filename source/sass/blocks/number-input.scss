@@ -75,7 +75,50 @@
 
 @media (min-width: $tablet-breakpoint) {
   .number-input__wrapper {
+    width: 531px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .number-input__legend {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    margin-top: 23px;
+    margin-bottom: 22px;
+  }
+
+  .number-input {
     width: 100%;
+  }
+
+  .number-input__input {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
+
+  .number-input__button {
+    width: 20px;
+    height: 20px;
+
+    &--minus {
+      margin-top: 9px;
+      margin-left: 22px;
+    }
+
+    &--plus {
+      margin-top: 10px;
+      margin-right: 19px;
+    }
   }
 }
 
