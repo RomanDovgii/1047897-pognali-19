@@ -3,7 +3,6 @@
   border-bottom: 1px solid $blue-10-color;
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
 }
@@ -55,5 +54,24 @@
     width: 50px;
     background-size: 19px 34px;
     background-position: 16px 26px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .month-selection {
+    width: 100%;
+  }
+
+  .month-selection__button {
+    width: 50px;
+    background-size: 19px 34px;
+
+    &--next {
+      background-position: 31px 26px;
+    }
+
+    &--previous {
+      background-position: 0px 26px;
+    }
   }
 }

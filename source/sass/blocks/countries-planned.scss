@@ -383,3 +383,68 @@
     }
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .countries-planned {
+    margin-right: 160px;
+    margin-left: 160px;
+    margin-top: 56px;
+  }
+
+  .countries-planned__list {
+    padding-top: 62px;
+    padding-bottom: 7px;
+
+    &::before {
+      right: 224px;
+    }
+  }
+
+  .countries-planned__country {
+    width: 730px;
+    margin-left: 0;
+
+    &:not(:nth-last-child(2)) {
+      &::before {
+        right: -53px;
+      }
+
+      &::after {
+        right: -155px
+      }
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .countries-planned__delete {
+    &::after {
+      left: 96px;
+    }
+  }
+
+  .countries-planned__choose {
+    width: 100%;
+
+    &::before {
+      right: -54px;
+    }
+  }
+
+  .countries-planned__add {
+    width: 100%;
+
+    &::before {
+      right: -52px;
+      bottom: 30px;
+    }
+  }
+}

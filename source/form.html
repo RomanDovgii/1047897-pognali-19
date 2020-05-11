@@ -82,8 +82,8 @@
 
     <main class="main">
 
-      <div class="main__heading-wrapper">
-        <h1 class="main__heading">Направления</h1>
+      <div class="main__heading-wrapper main__heading-wrapper--form">
+        <h1 class="main__heading main__heading--form">Направления</h1>
 
         <div class="desktop-user-info main__desktop-user-info">
           <p class="desktop-user-info__level">
@@ -216,7 +216,13 @@
               Даты пребывания
             </h3>
 
-            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <ul class="steps-ordered__progress">
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Даты</span></li>
+              <li class="steps-ordered__progress-item"><span>Маршрут</span></li>
+              <li class="steps-ordered__progress-item"><span>Развлечения</span></li>
+            </ul>
+
+            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
             <div class="steps-ordered__inputs-wrapper">
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--mates">
@@ -327,7 +333,7 @@
                   <a class="calendar__day-link" href="">28</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link" href="">1</a>
+                  <a class="calendar__day-link" href="">1<span class="calendar__day-month"> мар</span></a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link" href="">2</a>
@@ -408,7 +414,7 @@
                   <a class="calendar__day-link calendar__day-link--choosen" href="">27</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--choosen" href="">28</a>
+                  <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-end" href="">28</a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--available" href="">29</a>
@@ -420,7 +426,7 @@
                   <a class="calendar__day-link calendar__day-link--available" href="">31</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--available" href="">1</a>
+                  <a class="calendar__day-link calendar__day-link--available" href="">1<span class="calendar__day-month"> апр</span></a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--available" href="">2</a>
@@ -449,6 +455,12 @@
               Маршрут
             </h3>
 
+            <ul class="steps-ordered__progress">
+              <li class="steps-ordered__progress-item"><span>Даты</span></li>
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Маршрут</span></li>
+              <li class="steps-ordered__progress-item"><span>Развлечения</span></li>
+            </ul>
+
             <p class="steps-ordered__description">Укажите страны, которые вы хотели посетить.<br> Это может быть одна или сразу несколько.</p>
 
             <div class="countries-planned steps-ordered__countries-planned">
@@ -474,7 +486,7 @@
                   <button class="countries-planned__choose" type="button">Выберите страну</button>
                   <input class="visually-hidden" type="text" name="country" value="" readonly>
                 </li>
-                <li class="">
+                <li class="countries-planned__country">
                   <button class="countries-planned__add" type="button">Добавить страну</button>
                 </li>
               </ul>
@@ -492,7 +504,13 @@
               Развлечения
             </h3>
 
-            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <ul class="steps-ordered__progress">
+              <li class="steps-ordered__progress-item"><span>Даты</span></li>
+              <li class="steps-ordered__progress-item"><span>Маршрут</span></li>
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Развлечения</span></li>
+            </ul>
+
+            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. <br>Можно писать в свободной форме и ставить тэги.</p>
 
             <div class="step-description steps-ordered__step-description">
 

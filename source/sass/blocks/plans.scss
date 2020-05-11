@@ -181,19 +181,55 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .plans {
+    padding-bottom: 63px;
+  }
+
   .plans__heading {
     @include desktop-form-headings;
+    padding-top: 48px;
+    padding-left: 88px;
+    width: auto;
+  }
+
+  .plans__list {
+    padding-left: 84px;
+    padding-right: 20px;
+    margin-top: 35px;
+  }
+
+  .plans__additional-info {
+    width: 662px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .plans__item {
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 4px;
+    margin-top: 14px;
+
+    &:first-child {
+      margin-top: 9px;
+    }
+
   }
 
   .plans__place {
     font-size: 24px;
     line-height: 50px;
+
+    padding-top: 22px;
+    padding-left: 95px;
+
+    &::before {
+      right: auto;
+      top: 41px;
+      left: 19px;
+    }
   }
 
   .plans__mates,
@@ -201,5 +237,18 @@
   .plans__link {
     font-size: 20px;
     line-height: 18px;
+    padding-top: 38px;
+  }
+
+  .plans__mates {
+    margin-right: 11px;
+  }
+
+  .plans__dates {
+    margin-right: 100px;
+  }
+
+  .plans__link {
+    margin-right: 40px;
   }
 }

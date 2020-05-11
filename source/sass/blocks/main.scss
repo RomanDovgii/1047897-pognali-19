@@ -107,9 +107,31 @@
     display: inline;
   }
 
+  .main__heading-wrapper {
+    &--form {
+      padding-bottom: 0;
+      position: relative;
+    }
+  }
+
+  .main__desktop-user-info {
+    position: absolute;
+    right: 155px;
+    bottom: 0;
+  }
+
   .main__heading {
     margin-left: 66px;
     padding-top: 25px;
+
+    &--form {
+      padding-top: 66px;
+      padding-bottom: 68px;
+
+      &::after {
+        bottom: -3px;
+      }
+    }
   }
 
   .main__index-link {

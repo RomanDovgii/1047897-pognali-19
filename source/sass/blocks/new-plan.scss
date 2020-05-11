@@ -90,7 +90,18 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .new-plan {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 103px;
+  }
+
   .new-plan__heading {
     @include desktop-form-headings;
+    padding-left: 106px;
+  }
+
+  .new-plan__form {
+    margin-top: 41px;
   }
 }

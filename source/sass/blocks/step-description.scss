@@ -165,3 +165,44 @@
     padding-right: 50px;
   }
 }
+
+@media (min-width: $desktop-breakpoint) {
+  .step-description {
+    margin-left: 161px;
+
+    &:first-of-type {
+      margin-top: 57px;
+      padding-top: 79px;
+
+      &::after {
+        top: 89px;
+        right: 339px;
+        width: 2px;
+      }
+    }
+  }
+
+  .step-description__country {
+    &::after {
+      right: 82px;
+    }
+  }
+
+  .step-description__text {
+    width: 729px;
+    padding-top: 24px;
+    padding-right: 17px;
+    padding-left: 24px;
+  }
+
+  .step-description__wrapper {
+    &::before {
+      right: 333px;
+    }
+
+    &::after {
+      margin-top: -5px;
+      margin-right: 230px;
+    }
+  }
+}
