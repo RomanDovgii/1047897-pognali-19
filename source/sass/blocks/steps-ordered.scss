@@ -196,6 +196,18 @@
   .steps-ordered__next {
     position: relative;
     margin: 0;
+    text-transform: none;
+    text-align: left;
+    font-size: 24px;
+    line-height: 24px;
+
+    width: 285px;
+
+    padding-top: 28px;
+    padding-left: 32px;
+    padding-bottom: 29px;
+
+    margin-top: 8px;
 
     &::after {
       content: "";
@@ -211,10 +223,6 @@
       background-image: url("../img/icons/mobile/triangle-arrow-right.svg");
       background-repeat: no-repeat;
     }
-  }
-
-  .steps-ordered__submit {
-    margin: 0;
   }
 
   .steps-ordered__movement {
@@ -236,6 +244,12 @@
 
   .steps-ordered__previous {
     position: relative;
+    text-transform: none;
+    font-size: 24px;
+    line-height: 24px;
+
+    padding-top: 36px;
+
     &::after {
       content: "";
 
@@ -255,6 +269,7 @@
   }
 
   .steps-ordered__submit {
+    margin: 0;
     position: relative;
     width: 285px;
     height: 81px;
@@ -317,29 +332,6 @@
 
   .steps-ordered__calendar {
     margin-top: 59px;
-  }
-
-  .steps-ordered__next {
-    text-transform: none;
-    text-align: left;
-    font-size: 24px;
-    line-height: 24px;
-
-    width: 285px;
-
-    padding-top: 28px;
-    padding-left: 32px;
-    padding-bottom: 29px;
-
-    margin-top: 8px;
-  }
-
-  .steps-ordered__previous {
-    text-transform: none;
-    font-size: 24px;
-    line-height: 24px;
-
-    padding-top: 36px;
   }
 
   .steps-ordered__countries-planned {
