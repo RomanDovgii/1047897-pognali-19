@@ -103,6 +103,8 @@
   }
 
   .directions__show-all {
+    width: 618px;
+
     font-size: 24px;
     line-height: 24px;
 
@@ -110,9 +112,8 @@
     padding-left: 33px;
     padding-bottom: 29px;
 
+    margin: 0 auto;
     margin-top: 47px;
-    margin-right: 35px;
-    margin-left: 35px;
 
     border-radius: 20px;
 
@@ -125,10 +126,12 @@
 
 @media (min-width: $desktop-breakpoint) {
   .directions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 59px;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 59px;
+    }
   }
 
   .directions__countries {

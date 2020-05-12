@@ -1,17 +1,7 @@
 .mates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 
   background-color: $background__dark-blue;
-  background-image: url("../img/mobile/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 152px 69px, -10px 341px, -20px 69px;
-  background-size: 143px 143px, 71px 71px, 132px 132px;
-  padding-top: 100px;
-  padding-left: 25px;
-  padding-right: 25px;
 
   &::after {
     content: "";
@@ -28,6 +18,20 @@
     border-bottom-right-radius: 30px;
 
     background-color: $background__dark-blue;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/mobile/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 152px 69px, -10px 341px, -20px 69px;
+    background-size: 143px 143px, 71px 71px, 132px 132px;
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 

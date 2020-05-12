@@ -99,20 +99,18 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
+  .to-visit__link {
+    &::before {
+      margin-right: 20px;
+    }
+  }
+
   .to-visit__item {
     &--catalog {
       &:not(:first-child) {
         margin-left: 0;
       }
-    }
-  }
-}
-
-@media (min-width: $desktop-breakpoint) {
-  .to-visit__link {
-    &::before {
-      margin-right: 20px;
     }
   }
 }

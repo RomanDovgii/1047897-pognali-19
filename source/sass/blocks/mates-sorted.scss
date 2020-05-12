@@ -99,7 +99,7 @@
 
   .mates-sorted__item {
     max-width: 100%;
-    width: 100%;
+    width: 668px;
     padding-bottom: 24px;
 
     &:not(:first-child) {
@@ -126,7 +126,7 @@
 
   .mates-sorted__navigation {
     margin-top: 49px;
-    width: 100%;
+    width: 688px;
     background-color: $white;
     justify-content: space-between;
 
@@ -153,6 +153,7 @@
   }
 
   .mates-sorted__navigation {
+    width: 950px;
     margin-top: 68px;
     margin-bottom: 108px;
   }

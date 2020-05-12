@@ -1,7 +1,4 @@
 .cta-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 
   background: $background__dark-blue;
@@ -25,6 +22,12 @@
     border-bottom-right-radius: 30px;
 
     background-color: $background__dark-blue;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

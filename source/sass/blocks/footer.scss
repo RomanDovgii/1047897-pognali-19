@@ -1,7 +1,4 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   position: relative;
 
@@ -25,6 +22,12 @@
 
     background-color: $white;
   }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__developer {
@@ -43,16 +46,18 @@
     padding-right: 40px;
     padding-left: 40px;
 
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
     &::after {
       height: 60px;
       top: -31px;
 
       border-top-left-radius: 60px;
       border-top-right-radius: 60px;
+    }
+
+    .wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 

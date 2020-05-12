@@ -4,8 +4,6 @@
 }
 
 .main__heading-wrapper {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 
   padding-top: 48px;
@@ -16,6 +14,12 @@
   background-color: $header-color;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main__heading {

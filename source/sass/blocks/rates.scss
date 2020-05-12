@@ -1,6 +1,4 @@
 .rates {
-  display: flex;
-  flex-direction: column;
   position: relative;
 
   padding-top: 50px;
@@ -22,6 +20,11 @@
     border-bottom-right-radius: 30px;
 
     background-color: $main-color;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
 

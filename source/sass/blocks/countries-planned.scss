@@ -44,6 +44,16 @@
     background-color: $text__dark-blue;
     z-index: 5;
   }
+
+  &:last-child {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .countries-planned__country-name {
@@ -226,7 +236,6 @@
     margin-bottom: 0;
 
     padding-top: 41px;
-    padding-bottom: 16px;
 
     &::before {
       content: "";

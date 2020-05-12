@@ -27,7 +27,11 @@
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
     @include desktop-paddings;
-    display: flex;
+
+    .wrapper {
+      display: flex;
+    }
+
 
     padding-top: 49px;
   }

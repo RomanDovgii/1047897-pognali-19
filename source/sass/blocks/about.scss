@@ -1,31 +1,6 @@
 .about {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   background-color: $background__dark-blue;
-
-  padding-top: 6px;
-  padding-bottom: 2px;
-
-  &::before {
-    content: "";
-
-    display: block;
-    width: 100%;
-    height: calc(100% + 31px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
-    background: url("../img/mobile/about-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 18px 12px;
-
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
+  position: relative;
 
   &::after {
     content: "";
@@ -42,6 +17,35 @@
     border-bottom-right-radius: 30px;
 
     background-color: $background__dark-blue;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding-top: 6px;
+    padding-bottom: 2px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: calc(100% + 31px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      background: url("../img/mobile/about-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 18px 12px;
+
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
   }
 }
 
@@ -81,33 +85,35 @@
 
 @media (min-width: $tablet-breakpoint) {
   .about {
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-
-    &::before {
-      background: none;
-
-      width: 376px;
-      height: 548px;
-
-      left: auto;
-      top: auto;
-      right: 8px;
-      bottom: 30px;
-
-      border-radius: 0;
-
-      background-image: url("../img/tablet/about-tablet@1x.png");
-      background-repeat: no-repeat;
-    }
-
     &::after {
       height: 60px;
       bottom: -58px;
 
       border-bottom-left-radius: 60px;
       border-bottom-right-radius: 60px;
+    }
+
+    .wrapper {
+      padding-right: 40px;
+      padding-left: 40px;
+      padding-bottom: 30px;
+
+      &::before {
+        background: none;
+
+        width: 376px;
+        height: 548px;
+
+        left: auto;
+        top: auto;
+        right: 8px;
+        bottom: 30px;
+
+        border-radius: 0;
+
+        background-image: url("../img/tablet/about-tablet@1x.png");
+        background-repeat: no-repeat;
+      }
     }
   }
 
@@ -167,19 +173,21 @@
 
 @media (min-width: $desktop-breakpoint) {
   .about {
-    @include desktop-paddings;
-    padding-bottom: 106px;
+    .wrapper {
+      @include desktop-paddings;
+      padding-bottom: 106px;
 
-    &::before {
-      width: 630px;
-      height: 750px;
+      &::before {
+        width: 630px;
+        height: 750px;
 
-      right: 60px;
-      bottom: -58px;
+        right: 60px;
+        bottom: -58px;
 
-      background-image: url("../img/desktop/about-desktop@1x.png");
-      background-position: bottom;
-      background-repeat: no-repeat;
+        background-image: url("../img/desktop/about-desktop@1x.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+      }
     }
   }
 
