@@ -203,8 +203,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .office {
-    flex-direction: row;
-    justify-content: space-between;
+
 
     padding-top: 97px;
     padding-left: 230px;
@@ -213,6 +212,11 @@
     &::after {
       height: 56px;
       bottom: -56px;
+    }
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
