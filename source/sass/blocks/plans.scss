@@ -183,6 +183,7 @@
 @media (min-width: $desktop-breakpoint) {
   .plans {
     padding-bottom: 63px;
+    margin-top: 33px;
   }
 
   .plans__heading {
@@ -213,7 +214,7 @@
     margin-top: 14px;
 
     &:first-child {
-      margin-top: 9px;
+      margin-top: 7px;
     }
   }
 
