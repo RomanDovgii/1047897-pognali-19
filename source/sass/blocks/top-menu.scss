@@ -12,6 +12,10 @@
   display: none;
 }
 
+.top-menu__inner-links {
+  display: none;
+}
+
 @media (min-width: $tablet-breakpoint) {
   .top-menu__functions {
     margin-left: 25px;
@@ -48,9 +52,17 @@
     display: flex;
   }
 
+  .top-menu__inner-links {
+    display: flex;
+    margin-left: 73px;
+  }
+
   .top-menu__actions {
     @include reset;
     background: none;
+
+    margin-left: auto;
+    margin-right: 0;
 
     display: flex;
   }
