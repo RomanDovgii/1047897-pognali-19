@@ -105,6 +105,8 @@
 @media (min-width: $desktop-breakpoint) {
   .main__index-link {
     display: inline;
+    margin-top: 54px;
+    margin-right: 48px;
   }
 
   .main__heading-wrapper {
@@ -132,11 +134,6 @@
         bottom: -3px;
       }
     }
-  }
-
-  .main__index-link {
-    margin-top: 54px;
-    margin-right: 48px;
   }
 
   .main__filter-mates-wrapper {

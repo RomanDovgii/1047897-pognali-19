@@ -147,6 +147,8 @@
 
   .directions__show-all {
     display: none;
+    margin-top: 100px;
+    margin-left: 0;
 
     &--desktop {
       display: block;
@@ -162,11 +164,5 @@
     padding-right: 0;
 
     padding-left: 0;
-  }
-
-  .directions__show-all {
-    margin-top: 100px;
-    margin-left: 0;
-
   }
 }

@@ -7,7 +7,6 @@
   position: relative;
 
   flex-wrap: wrap;
-  position: relative;
   background-color: $white;
 
   padding-top: 27px;
@@ -138,8 +137,6 @@
   .country-card {
     min-height: auto;
 
-    flex-direction: row;
-
     min-width: 100%;
     max-height: 140px;
 
@@ -183,6 +180,10 @@
 
   .country-card__img {
     height: 100%;
+    order: 2;
+    flex-grow: 1;
+
+    max-width: 186px;
   }
 
   .country-card__name {
@@ -229,13 +230,6 @@
         background-position: center;
       }
     }
-  }
-
-  .country-card__img {
-    order: 2;
-    flex-grow: 1;
-
-    max-width: 186px;
   }
 }
 
