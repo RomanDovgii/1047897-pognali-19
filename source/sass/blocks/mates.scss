@@ -161,13 +161,13 @@
 
 @media (min-width: $desktop-breakpoint) {
   .mates {
-    @include desktop-paddings;
-    padding-bottom: 46px;
-
     .wrapper {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+
+      @include desktop-paddings;
+      padding-bottom: 46px;
     }
   }
 

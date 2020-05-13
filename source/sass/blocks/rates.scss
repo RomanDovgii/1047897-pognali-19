@@ -1,10 +1,6 @@
 .rates {
   position: relative;
 
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 25px;
-
   &::after {
     content: "";
 
@@ -23,6 +19,9 @@
   }
 
   .wrapper {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 25px;
     display: flex;
     flex-direction: column;
   }

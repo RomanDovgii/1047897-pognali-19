@@ -30,9 +30,8 @@
 
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
-    @include desktop-paddings;
-
     .wrapper {
+      @include desktop-paddings;
       display: flex;
     }
 
@@ -49,7 +48,7 @@
   }
 
   .top-menu__information {
-    display: flex;
+    display: none;
   }
 
   .top-menu__inner-links {

@@ -2,10 +2,6 @@
   width: 100%;
   position: relative;
 
-  padding-top: 7px;
-
-  padding-bottom: 14px;
-
   &::after {
     content: "";
 
@@ -27,6 +23,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 7px;
+
+    padding-bottom: 14px;
   }
 }
 
@@ -43,9 +43,6 @@
 
 @media (min-width: $tablet-breakpoint) {
   .footer {
-    padding-right: 40px;
-    padding-left: 40px;
-
     &::after {
       height: 60px;
       top: -31px;
@@ -58,6 +55,9 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
+      padding-right: 40px;
+      padding-left: 40px;
     }
   }
 
@@ -84,7 +84,9 @@
 
 @media (min-width: $desktop-breakpoint) {
   .footer {
-    padding-left: 59px;
-    padding-right: 59px;
+    .wrapper {
+      padding-left: 59px;
+      padding-right: 59px;
+    }
   }
 }

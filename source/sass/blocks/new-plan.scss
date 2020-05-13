@@ -1,6 +1,9 @@
 .new-plan {
   background-color: $grayish-blue-light-alt-1;
-  padding-bottom: 44px;
+
+  .wrapper {
+    padding-bottom: 44px;
+  }
 }
 
 .new-plan__progress {
@@ -34,9 +37,11 @@
 
 @media (min-width: $tablet-breakpoint) {
   .new-plan {
-    @include tablet-paddings;
-    position: relative;
-    padding-bottom: 93px;
+    .wrapper {
+      @include tablet-paddings;
+      position: relative;
+      padding-bottom: 93px;
+    }
   }
 
   .new-plan__heading {
@@ -91,9 +96,11 @@
 
 @media (min-width: $desktop-breakpoint) {
   .new-plan {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 103px;
+    .wrapper {
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 103px;
+    }
   }
 
   .new-plan__heading {

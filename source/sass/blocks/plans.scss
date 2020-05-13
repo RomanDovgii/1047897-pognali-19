@@ -1,9 +1,12 @@
 .plans {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 30px;
   background-color: $blue-80-color;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
 }
 
 .plans__heading {
@@ -100,12 +103,14 @@
 
 @media (min-width: $tablet-breakpoint) {
   .plans {
-    @include tablet-paddings;
+    .wrapper {
+      @include tablet-paddings;
     align-items: initial;
 
     padding-bottom: 77px;
 
     margin-top: 27px;
+    }
   }
 
   .plans__heading {
@@ -182,8 +187,10 @@
 
 @media (min-width: $desktop-breakpoint) {
   .plans {
-    padding-bottom: 63px;
-    margin-top: 33px;
+    .wrapper {
+      padding-bottom: 63px;
+      margin-top: 33px;
+    }
   }
 
   .plans__heading {

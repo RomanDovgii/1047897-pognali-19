@@ -3,10 +3,6 @@
 
   background: $background__dark-blue;
 
-  padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-
   &::after {
     content: "";
 
@@ -28,6 +24,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 

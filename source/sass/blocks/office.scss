@@ -1,11 +1,6 @@
 .office {
   position: relative;
 
-  padding-top: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
-  background-color: $universal__bright-yellow;
-
   &::after {
     content: "";
 
@@ -27,6 +22,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: $universal__bright-yellow;
   }
 }
 
@@ -203,12 +203,6 @@
 
 @media (min-width: $desktop-breakpoint) {
   .office {
-
-
-    padding-top: 97px;
-    padding-left: 230px;
-    padding-right: 134px;
-
     &::after {
       height: 56px;
       bottom: -56px;
@@ -217,6 +211,11 @@
     .wrapper {
       flex-direction: row;
       justify-content: space-between;
+
+      padding-top: 97px;
+      padding-left: 230px;
+      padding-right: 134px;
+
     }
   }
 
