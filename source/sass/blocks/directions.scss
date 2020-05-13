@@ -1,7 +1,5 @@
 .directions {
   position: relative;
-  padding-right: 25px;
-  padding-left: 25px;
 
   &::after {
     content: "";
@@ -18,6 +16,11 @@
     border-bottom-right-radius: 30px;
 
     background-color: $main-color;
+  }
+
+  .wrapper {
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
@@ -61,9 +64,6 @@
 
 @media (min-width: $tablet-breakpoint) {
   .directions {
-    padding-right: 40px;
-    padding-left: 40px;
-
     &::after {
 
       display: block;
@@ -78,6 +78,11 @@
       border-bottom-right-radius: 60px;
 
       background-color: $main-color;
+    }
+
+    .wrapper {
+      padding-right: 40px;
+      padding-left: 40px;
     }
   }
 

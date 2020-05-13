@@ -1,8 +1,11 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: $header-color;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .intro__heading {
@@ -86,7 +89,6 @@
 
 @media (min-width: $desktop-breakpoint) {
   .intro {
-    @include desktop-paddings;
     padding-bottom: 100px;
 
     background-image: url("../img/desktop/traveller-illustration-desktop@1x.png"), url("../img/desktop/globe-back-desktop@1x.jpg");
@@ -96,6 +98,10 @@
 
     &::before {
       display: none;
+    }
+
+    .wrapper {
+      @include desktop-paddings;
     }
   }
 

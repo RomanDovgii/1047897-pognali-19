@@ -1,5 +1,6 @@
 .office {
   position: relative;
+  background-color: $universal__bright-yellow;
 
   &::after {
     content: "";
@@ -26,7 +27,6 @@
     padding-top: 50px;
     padding-left: 25px;
     padding-right: 25px;
-    background-color: $universal__bright-yellow;
   }
 }
 
@@ -143,7 +143,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .office {
-    @include tablet-paddings;
+
     padding-top: 90px;
 
     &::after {
@@ -152,6 +152,10 @@
 
       border-bottom-left-radius: 60px;
       border-bottom-right-radius: 60px;
+    }
+
+    .wrapper {
+      @include tablet-paddings;
     }
   }
 
