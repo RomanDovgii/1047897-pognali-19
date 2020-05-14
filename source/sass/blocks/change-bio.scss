@@ -1,4 +1,4 @@
-.change-bio__wrapper {
+.change-bio__content-wrapper {
   display: flex;
   justify-content: center;
 
@@ -125,7 +125,7 @@
   font-family: inherit;
   resize: none;
   min-width: 270px;
-  height: 89px;
+  height: 87px;
   border: 1px solid $blue-10-color;
   border-radius: 10px;
   background-color: $main-color;
@@ -151,7 +151,7 @@
   justify-content: center;
 
   margin-top: -12px;
-  padding-bottom: 4px;
+  padding-bottom: 7px;
   z-index: 5;
 }
 
@@ -200,12 +200,12 @@
 
 @media (min-width: $tablet-breakpoint) {
   .change-bio__wrapper {
-    width: 100%;
-
-    justify-content: space-between;
-
     padding-right: 75px;
     padding-left: 75px;
+  }
+
+  .change-bio__content-wrapper {
+    justify-content: space-between;
 
     margin-top: 64px;
   }
@@ -220,8 +220,6 @@
 
   .change-bio__change-avatar {
     margin-top: 52px;
-    margin-left: 75px;
-    margin-right: 75px;
 
     padding-top: 20px;
     padding-bottom: 40px;
@@ -278,8 +276,6 @@
 
     &--tags {
       margin-top: 51px;
-      margin-right: 75px;
-      margin-left: 75px;
 
       align-items: stretch;
     }
@@ -297,8 +293,7 @@
   }
 
   .change-bio__tags {
-    height: 59px;
-
+    height: 94px;
     font-size: 20px;
     line-height: 24px;
 
@@ -325,13 +320,15 @@
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .change-bio__wrapper {
+    padding-right: 0;
+  }
+
   .change-bio__form {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
     padding-top: 73px;
-
-    width: 1440px;
   }
 
   .change-bio__change-avatar {
@@ -374,7 +371,7 @@
     }
   }
 
-  .change-bio__wrapper {
+  .change-bio__content-wrapper {
     order: 3;
     margin-top: 0;
     width: auto;

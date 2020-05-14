@@ -6,6 +6,7 @@
 }
 
 .number-input__legend {
+  @include reset;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 1.5px;
@@ -13,7 +14,7 @@
   color: $text__dark-blue;
   text-transform: uppercase;
   width: 100%;
-  padding-top: 21px;
+  padding-top: 19px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 3px;
@@ -36,6 +37,7 @@
 .number-input__wrapper {
   border: 1px solid $blue-10-color;
   border-radius: 4px;
+  margin-top: 6px;
   margin-right: 11px;
   margin-left: 11px;
   display: flex;
@@ -85,6 +87,7 @@
     width: 531px;
     margin-left: 12px;
     margin-right: 12px;
+    padding-top: 8px;
   }
 
   .number-input__legend {

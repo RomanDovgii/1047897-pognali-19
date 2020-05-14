@@ -73,7 +73,8 @@
 .step-description__text {
   font-family: inherit;
   resize: none;
-  width: 100%;
+  width: 220px;
+  height: 220px;
   border: 1px solid $blue-10-color;
   border-radius: 4px;
   padding-bottom: 11px;
@@ -90,7 +91,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .step-description {
-    margin-top: 25px;
+    margin-top: 29px;
     padding-left: 0;
     padding-right: 0;
 

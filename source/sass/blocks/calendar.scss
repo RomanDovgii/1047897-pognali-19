@@ -20,6 +20,7 @@
 }
 
 .calendar__week-days {
+  @include reset;
   display: flex;
   list-style: none;
   padding-left: 0;
@@ -81,6 +82,7 @@
 
 .calendar__days {
   width: 221px;
+  margin-top: 6px;
   margin-left: 25px;
   margin-right: 20px;
   list-style: none;
