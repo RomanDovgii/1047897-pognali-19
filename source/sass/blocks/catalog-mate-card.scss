@@ -354,8 +354,6 @@
     margin-top: 21px;
   }
 
-
-
   .catalog-mate-card__name {
     position: relative;
     font-size: 30px;
@@ -436,8 +434,6 @@
     width: auto;
     max-width: 100%;
   }
-
-
 }
 
 @media (min-width: $desktop-breakpoint) {
@@ -473,6 +469,7 @@
     margin-left: 326px;
 
     max-width: 265px;
+
     &::after {
       display: block;
 
