@@ -20,7 +20,7 @@
     background-color: $background__dark-blue;
   }
 
-  .wrapper {
+  .mates__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
   }
 }
 
-.mates__wrapper {
+.mates__content-wrapper {
   padding-left: 25px;
 
   .mates__show-all {
@@ -161,7 +161,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .mates {
-    .wrapper {
+    .mates__wrapper {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
@@ -201,7 +201,7 @@
     display: none;
   }
 
-  .mates__wrapper {
+  .mates__content-wrapper {
     .mates__show-all {
       margin: 0;
       display: block;

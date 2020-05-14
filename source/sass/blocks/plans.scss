@@ -1,7 +1,7 @@
 .plans {
   background-color: $blue-80-color;
 
-  .wrapper {
+  .plans__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .plans {
-    .wrapper {
+    .plans__wrapper {
       @include tablet-paddings;
     align-items: initial;
 
@@ -187,7 +187,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .plans {
-    .wrapper {
+    .plans__wrapper {
       padding-bottom: 63px;
       margin-top: 33px;
     }

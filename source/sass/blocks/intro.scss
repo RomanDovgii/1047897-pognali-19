@@ -1,7 +1,7 @@
 .intro {
   background-color: $header-color;
 
-  .wrapper {
+  .intro__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@
   margin-top: 31px;
 }
 
-.intro__wrapper {
+.intro__content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +60,7 @@
     }
   }
 
-  .intro__wrapper {
+  .intro__content-wrapper {
     width: 100%;
   }
 
@@ -100,7 +100,7 @@
       display: none;
     }
 
-    .wrapper {
+    .intro__wrapper {
       @include desktop-paddings;
     }
   }
@@ -130,7 +130,7 @@
     display: none;
   }
 
-  .intro__wrapper {
+  .intro__content-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;

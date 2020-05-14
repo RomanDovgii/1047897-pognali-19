@@ -18,7 +18,7 @@
     background-color: $main-color;
   }
 
-  .wrapper {
+  .rates__wrapper {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 25px;
@@ -149,7 +149,7 @@
       border-bottom-right-radius: 60px;
     }
 
-    .wrapper {
+    .rates__wrapper {
       padding-top: 0;
     }
   }
@@ -282,7 +282,7 @@
   .rates {
     padding-bottom: 120px;
 
-    .wrapper {
+    .rates__wrapper {
       padding-top: 50px;
     }
   }

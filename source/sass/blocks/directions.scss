@@ -18,7 +18,7 @@
     background-color: $main-color;
   }
 
-  .wrapper {
+  .directions__wrapper {
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -80,7 +80,7 @@
       background-color: $main-color;
     }
 
-    .wrapper {
+    .directions__wrapper {
       padding-right: 40px;
       padding-left: 40px;
     }
@@ -131,7 +131,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .directions {
-    .wrapper {
+    .directions__wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -146,7 +146,7 @@
     margin-top: 209px;
   }
 
-  .directions__wrapper {
+  .directions__content-wrapper {
     order: 2;
 
     padding-right: 198px;

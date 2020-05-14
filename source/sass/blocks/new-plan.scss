@@ -1,7 +1,7 @@
 .new-plan {
   background-color: $grayish-blue-light-alt-1;
 
-  .wrapper {
+  .new-plan__wrapper {
     padding-bottom: 44px;
   }
 }
@@ -37,7 +37,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .new-plan {
-    .wrapper {
+    .new-plan__wrapper {
       @include tablet-paddings;
       position: relative;
       padding-bottom: 93px;
@@ -96,7 +96,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .new-plan {
-    .wrapper {
+    .new-plan__wrapper {
       padding-left: 25px;
       padding-right: 25px;
       padding-bottom: 103px;

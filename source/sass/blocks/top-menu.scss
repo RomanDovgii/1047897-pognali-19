@@ -30,7 +30,7 @@
 
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
-    .wrapper {
+    .top-menu__wrapper {
       @include desktop-paddings;
       display: flex;
     }
@@ -54,6 +54,19 @@
   .top-menu__inner-links {
     display: flex;
     margin-left: 73px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      top: 15px;
+      left: -32px;
+
+      background-color: $white;
+    }
   }
 
   .top-menu__actions {
