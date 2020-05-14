@@ -2,13 +2,35 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  position: relative;
+
+  padding-bottom: 74px;
+
+  background-color: $white;
+  border-radius: 20px;
+}
+
+.catalog-mate-card__second-block {
+  width: 100%;
 }
 
 .catalog-mate-card__img {
+  position: absolute;
   margin-top: 15px;
   margin-left: 18px;
 
   border-radius: 50%;
+
+  width: 70px;
+  height: 70px;
+
+  img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+  }
 }
 
 .catalog-mate-card__name {
@@ -17,12 +39,14 @@
   max-width: 165px;
   position: relative;
 
+  order: -1;
+
   color: $text__dark-blue;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
 
-  margin-left: 16px;
+  margin-left: 104px;
   margin-top: 13px;
   padding-right: 59px;
 
@@ -47,12 +71,18 @@
   }
 }
 
+.catalog-mate-card__lets-go-likes {
+  order: -1;
+}
+
 .catalog-mate-card__like-btn {
   border: none;
   background: none;
 
   display: block;
-  position: relative;
+  position: absolute;
+  top: 55px;
+  left: 88px;
 
   color: rgba($blue-700-color, 1);
   font-size: 14px;
@@ -93,20 +123,8 @@
 }
 
 .catalog-mate-card__hashtags {
-  width: 100%;
   padding-top: 13px;
-}
-
-.catalog-mate-card__second-block {
-  width: 100%;
-
-  .catalog-mate-card__name {
-    display: none;
-  }
-}
-
-.catalog-mate-card__lets-go-likes {
-  display: none;
+  margin-top: 32px;
 }
 
 .catalog-mate-card__text {
@@ -172,6 +190,8 @@
   display: flex;
   justify-content: space-between;
 
+  margin-top: 13px;
+
   width: 100%;
 }
 
@@ -189,6 +209,12 @@
 
 .catalog-mate-card__go {
   text-decoration: none;
+  position: absolute;
+  bottom: 22px;
+  right: 50%;
+  left: 50%;
+
+  margin-left: -115px;
 
   max-width: 230px;
 
@@ -200,7 +226,7 @@
   text-transform: uppercase;
 
   padding-top: 7px;
-  padding-right: 79px;
+  padding-right: 152px;
   padding-bottom: 3px;
   padding-left: 78px;
 
@@ -219,46 +245,90 @@
 @media (min-width: $tablet-breakpoint) {
   .catalog-mate-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
+    padding-bottom: 22px;
   }
 
-  .catalog-mate-card__name-wrapper {
-    display: none;
+  .catalog-mate-card__img {
+    width: 190px;
+    height: 190px;
+
+    position: absolute;
+
+    border-radius: 18px;
+
+    margin-top: 35px;
+    margin-left: 35px;
+
+    img {
+      border-radius: inherit;
+    }
   }
 
-  .catalog-mate-card__to-visit {
-    display: none;
-    margin-top: 9px;
-    padding-left: 36px;
-  }
+  .catalog-mate-card__transport-level {
+    position: absolute;
+    top: 3px;
+    right: 25px;
 
-  .catalog-mate-card__countries-wrapper {
+    display: flex;
     width: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-    margin-right: 25px;
-    margin-left: auto;
+  .catalog-mate-card__lets-go-likes {
+    display: flex;
+    position: relative;
+    order: 0;
 
-    &--tablet {
-      display: flex;
-      flex-direction: column;
-      margin-top: 18px;
+    margin-top: 47px;
+    margin-left: 225px;
 
-      .catalog-mate-card__to-visit {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+    .catalog-mate-card__go {
+      display: block;
+      position: relative;
+      bottom: auto;
+      right: auto;
+      left: auto;
+
+      padding-top: 10px;
+      padding-right: 33px;
+      padding-left: 30px;
+      padding-bottom: 10px;
+
+      font-size: 20px;
+      line-height: 30px;
+
+      border-radius: 25px;
+
+      margin-left: 30px;
+    }
+
+    .catalog-mate-card__like-btn {
+      position: relative;
+      font-size: 19px;
+      line-height: 30px;
+
+      top: auto;
+      left: auto;
+
+      padding-top: 3px;
+      padding-left: 58px;
+
+      &::before {
+        width: 50px;
+        height: 50px;
+
+        background-size: 19px 19px;
+
+        top: 0;
+        left: 0;
       }
     }
   }
 
   .catalog-mate-card__text {
-    padding-left: 83px;
-
-    &--to-visit {
-      display: none;
-    }
-
     &--transport {
       display: none;
     }
@@ -266,23 +336,28 @@
     &--level {
       display: none;
     }
+
+    &--to-visit {
+      padding-left: 82px;
+    }
   }
 
-  .catalog-mate-card__go-wrapper {
-    display: none;
+  .catalog-mate-card__to-visit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 9px;
+    padding-left: 36px;
   }
 
-  .catalog-mate-card__img {
-    width: 190px;
-    height: 190px;
-
-    border-radius: 18px;
-
-    margin-top: 35px;
-    margin-left: 35px;
+  .catalog-mate-card__countries-wrapper {
+    width: 100%;
+    margin-top: 21px;
   }
+
+
 
   .catalog-mate-card__name {
+    position: relative;
     font-size: 30px;
     line-height: 30px;
 
@@ -290,7 +365,9 @@
     padding-left: 17px;
     padding-top: 17px;
 
+    margin-top: 14px;
     margin-right: 0;
+    margin-left: 241px;
 
     max-width: 375px;
 
@@ -307,15 +384,11 @@
 
   .catalog-mate-card__hashtags {
     padding-top: 18px;
-    padding-right: 84px;
+    padding-right: 137px;
     padding-left: 36px;
-  }
 
-  .catalog-mate-card__transport-level {
-    display: flex;
-    width: auto;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-top: 0;
+    margin-left: 225px;
   }
 
   .catalog-mate-card__transport {
@@ -361,55 +434,19 @@
 
   .catalog-mate-card__second-block {
     width: auto;
-    max-width: 366px;
-
-    .catalog-mate-card__name {
-      display: block;
-    }
+    max-width: 100%;
   }
 
-  .catalog-mate-card__lets-go-likes {
-    display: flex;
 
-    margin-top: 47px;
-
-    .catalog-mate-card__go {
-      display: block;
-
-      padding-top: 10px;
-      padding-right: 33px;
-      padding-left: 30px;
-      padding-bottom: 10px;
-
-      font-size: 20px;
-      line-height: 30px;
-
-      border-radius: 25px;
-
-      margin-left: 30px;
-    }
-
-    .catalog-mate-card__like-btn {
-      font-size: 19px;
-      line-height: 30px;
-
-      padding-top: 3px;
-      padding-left: 58px;
-
-      &::before {
-        width: 50px;
-        height: 50px;
-
-        background-size: 19px 19px;
-
-        top: 0;
-        left: 0;
-      }
-    }
-  }
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .catalog-mate-card {
+    min-height: 285px;
+    display: flex;
+    flex-direction: row;
+  }
+
   .catalog-mate-card__img {
     margin-top: 0;
     margin-left: 0;
@@ -421,12 +458,21 @@
     border-bottom-right-radius: 0;
   }
 
+  .catalog-mate-card__first-block {
+    min-width: 630px;
+  }
+
   .catalog-mate-card__second-block {
     padding-left: 27px;
     padding-top: 14px;
   }
 
   .catalog-mate-card__name {
+    order: 0;
+    margin-top: 29px;
+    margin-left: 326px;
+
+    max-width: 265px;
     &::after {
       display: block;
 
@@ -439,9 +485,25 @@
     }
   }
 
+  .catalog-mate-card__lets-go-likes {
+    margin-top: 46px;
+    margin-left: 311px;
+    max-width: 310px;
+  }
+
   .catalog-mate-card__hashtags {
     padding-top: 11px;
     padding-right: 46px;
+
+    max-width: 318px;
+
+    margin-left: 311px;
+  }
+
+  .catalog-mate-card__text {
+    &--to-visit {
+      display: none;
+    }
   }
 
   .catalog-mate-card__countries-wrapper {
@@ -451,23 +513,24 @@
     padding-bottom: 42px;
 
     margin-right: auto;
-    margin-left: 21px;
-
-    &--tablet {
-      display: none;
-    }
+    margin-top: 15px;
+    margin-left: 15px;
   }
 
   .catalog-mate-card__to-visit {
     display: flex;
+    flex-direction: column;
     padding-left: 0;
-    padding-top: 15px;
+    padding-top: 0;
   }
 
   .catalog-mate-card__transport-level {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 31px;
+    top: auto;
+    bottom: 42px;
+    right: 44px;
   }
 
   .catalog-mate-card__transport {

@@ -148,6 +148,10 @@
       border-bottom-left-radius: 60px;
       border-bottom-right-radius: 60px;
     }
+
+    .wrapper {
+      padding-top: 0;
+    }
   }
 
   .rates__heading-wrapper {
@@ -277,10 +281,14 @@
 @media (min-width: $desktop-breakpoint) {
   .rates {
     padding-bottom: 120px;
+
+    .wrapper {
+      padding-top: 50px;
+    }
   }
 
   .rates__heading {
-    padding-top: 66px;
+    padding-top: 15px;
   }
 
   .rates__list {

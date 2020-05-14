@@ -155,7 +155,9 @@
     }
 
     .wrapper {
-      @include tablet-paddings;
+      padding-top: 0;
+      padding-right: 75px;
+      padding-left: 75px;
     }
   }
 
@@ -216,7 +218,7 @@
       flex-direction: row;
       justify-content: space-between;
 
-      padding-top: 97px;
+      padding-top: 7px;
       padding-left: 230px;
       padding-right: 134px;
 

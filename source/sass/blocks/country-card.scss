@@ -235,7 +235,8 @@
 
 @media (min-width: $desktop-breakpoint) {
   .country-card {
-    padding-bottom: 11px;
+    padding-bottom: 14px;
+    min-width: 560px;
   }
 
   .country-card__name {
