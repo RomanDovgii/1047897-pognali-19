@@ -97,6 +97,14 @@
   overflow: hidden;
 }
 
+@media (min-width: $tablet-breakpoint) {
+  .transport__item {
+    &--catalog {
+      background: none;
+    }
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .transport__item {
     &--plane {
