@@ -55,7 +55,6 @@
 @media (min-width: $desktop-breakpoint) {
   .functions {
     @include reset;
-    padding-top: 0;
   }
 
   .functions__link {
