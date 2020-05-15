@@ -49,3 +49,12 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .children-checkbox__label input:checked + .children-checkbox__label-name {
+    &::before {
+      background-size: 24px 12px;
+      background-position: 7px 11px;
+    }
+  }
+}

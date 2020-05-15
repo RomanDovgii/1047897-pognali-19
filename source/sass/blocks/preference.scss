@@ -154,7 +154,7 @@ input[type="checkbox"]:checked + .preference__name {
     justify-content: flex-start;
     flex-grow: 1;
 
-    margin-left: 2px;
+    margin-left: 0;
   }
 
   .preference__checkbox {
@@ -176,6 +176,19 @@ input[type="checkbox"]:checked + .preference__name {
   .preference__block-name {
     font-weight: 500;
     padding-bottom: 13px;
+
+    &::after {
+      content: "";
+      transform: rotate(180deg);
+      position: absolute;
+      right: 12px;
+      bottom: 26px;
+      display: block;
+      width: 10px;
+      height: 6px;
+      background-image: url("../img/icons/dropdown.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .preference__checkboxes {

@@ -80,10 +80,6 @@
   }
 }
 
-.steps-ordered__calendar {
-  margin-bottom: 7px;
-}
-
 .steps-ordered__next {
   display: block;
   text-align: center;
@@ -111,6 +107,10 @@
 
 .steps-ordered__route {
   padding-top: 10.5px;
+}
+
+.steps-ordered__movement {
+  margin-top: 22px
 }
 
 .steps-ordered__previous {
@@ -248,6 +248,7 @@
   }
 
   .steps-ordered__movement {
+    margin-top: 47px;
     order: 7;
 
     display: flex;
@@ -354,7 +355,7 @@
 
   .steps-ordered__calendar {
     margin-top: 59px;
-    margin-bottom: 22px;
+    margin-bottom: 3px;
   }
 
   .steps-ordered__countries-planned {
@@ -480,11 +481,16 @@
     margin-top: 32px;
     margin-left: 160px;
     margin-right: 160px;
-    margin-bottom: 59px;
+    margin-bottom: 3px;
   }
 
   .steps-ordered__movement {
     padding-left: 160px;
+    margin-top: 56px;
+
+    &--top-fix {
+      margin-top: 0;
+    }
 
     &--send {
       margin-top: 34px;

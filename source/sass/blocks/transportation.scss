@@ -84,25 +84,62 @@
     font-size: 20px;
     line-height: 30px;
     display: inline;
+    margin-top: 17px;
   }
 
   .transportation__buttons {
-    margin-top: 13px;
+    margin-top: 10px;
     margin-left: 13px;
   }
 
   .transportation__button {
     width: 43px;
     height: 43px;
+    &--plane {
+      background-position: 8px 11px;
+      background-size: 25px 23px;
+    }
+
+    &--bus {
+      background-size: 26px 21px;
+    }
+
+    &--bike {
+      background-image: url("../img/transport/recolorized/gray/bike.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px 21px;
+    }
+
+    &--run {
+      background-image: url("../img/transport/recolorized/gray/run.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 26px 21px;
+    }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .transportation__heading {
     @include reset;
+    font-weight: 500;
 
     &::before {
       display: none;
+    }
+
+    &::after {
+      content: "";
+      transform: rotate(180deg);
+      position: absolute;
+      right: 12px;
+      bottom: 14px;
+      display: block;
+      width: 10px;
+      height: 6px;
+      background-image: url("../img/icons/dropdown.svg");
+      background-repeat: no-repeat;
     }
   }
 

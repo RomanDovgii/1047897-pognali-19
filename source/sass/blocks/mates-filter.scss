@@ -61,15 +61,15 @@
 }
 
 .mates-filter__preference {
-  &:first-child {
+  &--hidden {
     .preference__checkboxes {
       display: none;
     }
-  }
 
-  &:last-child {
-    .preference__checkboxes {
-      display: none;
+    .preference__block-name {
+      &::after {
+        transform: rotate(0);
+      }
     }
   }
 }
@@ -163,6 +163,7 @@
 
   .mates-filter__set-level {
     display: flex;
+    margin-top: 14px;
   }
 
   .mates-filter__preferences {
@@ -171,15 +172,9 @@
 
   .mates-filter__preference {
     &:not(:first-child) {
-      margin-top: 4px;
+      margin-top: 1px;
     }
-    &:first-child {
-      .preference__checkboxes {
-        display: flex;
-      }
-    }
-
-    &:last-child {
+    &--hidden {
       .preference__checkboxes {
         display: flex;
       }
@@ -196,7 +191,7 @@
 
     border-radius: 25px;
 
-    margin-top: 19px;
+    margin-top: 23px;
     margin-left: 0;
   }
 }
@@ -221,15 +216,16 @@
   }
 
   .mates-filter__preference {
-    &:first-child {
+    &--hidden {
       .preference__checkboxes {
         display: none;
       }
-    }
 
-    &:last-child {
-      .preference__checkboxes {
-        display: none;
+      .preference__block-name {
+        &::after {
+          transform: rotate(0);
+          bottom: 25px;
+        }
       }
     }
 

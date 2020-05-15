@@ -191,10 +191,28 @@
   .set-level__name {
     order: 1;
     padding-bottom: 15px;
+    font-weight: none;
 
     &::before {
       display: none;
     }
+
+    &::after {
+      content: "";
+      transform: rotate(180deg);
+      position: absolute;
+      right: 12px;
+      bottom: 28px;
+      display: block;
+      width: 10px;
+      height: 6px;
+      background-image: url("../img/icons/dropdown.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .set-level__colon {
+    display: none;
   }
 
   .set-level__input-wrapper {
