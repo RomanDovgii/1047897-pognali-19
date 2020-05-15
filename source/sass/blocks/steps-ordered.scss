@@ -110,7 +110,15 @@
 }
 
 .steps-ordered__movement {
-  margin-top: 22px
+  margin-top: 6px;
+
+  &--top-fix {
+    margin-top: 0;
+  }
+
+  &--send {
+    margin-top: 0;
+  }
 }
 
 .steps-ordered__previous {

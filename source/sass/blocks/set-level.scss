@@ -17,6 +17,18 @@
     height: 1px;
     background-color: $yellow-bright;
   }
+
+  &::after {
+    content: "";
+    transform: rotate(180deg);
+    position: absolute;
+    right: 0;
+    bottom: 19px;
+    width: 8px;
+    height: 4px;
+    background-image: url("../img/icons/dropdown.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .set-level__input-wrapper {
