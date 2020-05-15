@@ -50,6 +50,7 @@
   &:nth-last-child(1) {
     position: relative;
     margin-bottom: 20px;
+
     &::before {
       display: none;
     }

@@ -36,6 +36,7 @@
 @media (min-width: $tablet-breakpoint) {
   .quote {
     background: none;
+
     &::before {
       display: none;
     }

@@ -211,6 +211,8 @@
 
   .mates-filter__form {
     border-top: none;
+    margin-top: 0;
+    padding-left: 12px;
   }
 
   .mates-filter__heading {
@@ -230,6 +232,10 @@
         display: none;
       }
     }
+
+    &:not(:first-child) {
+      margin-top: -2px;
+    }
   }
 
   .mates-filter__wrapper {
@@ -241,11 +247,6 @@
     display: none;
   }
 
-  .mates-filter__form {
-    margin-top: 0;
-    padding-left: 12px;
-  }
-
   .mates-filter__transportation {
     flex-direction: column;
     margin-top: 0;
@@ -254,12 +255,6 @@
   .mates-filter__set-level {
     flex-direction: column;
     margin-top: 21px;
-  }
-
-  .mates-filter__preference {
-    &:not(:first-child) {
-      margin-top: -2px;
-    }
   }
 
   .mates-filter__submit {
