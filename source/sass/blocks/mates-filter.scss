@@ -60,6 +60,20 @@
   @include reset;
 }
 
+.mates-filter__preference {
+  &:first-child {
+    .preference__checkboxes {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    .preference__checkboxes {
+      display: none;
+    }
+  }
+}
+
 .mates-filter__submit {
   border: none;
   background: none;
@@ -99,7 +113,7 @@
 }
 
 .mates-filter__set-level {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -159,6 +173,17 @@
     &:not(:first-child) {
       margin-top: 4px;
     }
+    &:first-child {
+      .preference__checkboxes {
+        display: flex;
+      }
+    }
+
+    &:last-child {
+      .preference__checkboxes {
+        display: flex;
+      }
+    }
   }
 
   .mates-filter__submit {
@@ -184,14 +209,36 @@
     margin-left: 84px;
   }
 
+  .mates-filter__form {
+    border-top: none;
+  }
+
   .mates-filter__heading {
     margin-top: 41px;
     padding-left: 22px;
   }
 
+  .mates-filter__preference {
+    &:first-child {
+      .preference__checkboxes {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      .preference__checkboxes {
+        display: none;
+      }
+    }
+  }
+
   .mates-filter__wrapper {
     max-width: 285px;
     padding-bottom: 47px;
+  }
+
+  .mates-filter__colon {
+    display: none;
   }
 
   .mates-filter__form {
@@ -220,6 +267,6 @@
 
     padding-left: 51px;
 
-    margin-top: 13px;
+    margin-top: 17px;
   }
 }

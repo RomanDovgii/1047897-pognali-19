@@ -48,6 +48,7 @@
   }
 
   &:last-child {
+    margin-bottom: 20px;
     &::before {
       display: none;
     }
@@ -284,6 +285,18 @@
         background-color: $gray;
       }
     }
+
+    &:last-child {
+      margin-bottom: 15px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
   .countries-planned__country-name {
@@ -422,16 +435,6 @@
 
       &::after {
         right: -155px;
-      }
-    }
-
-    &:last-child {
-      &::before {
-        display: none;
-      }
-
-      &::after {
-        display: none;
       }
     }
   }

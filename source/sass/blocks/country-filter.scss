@@ -5,7 +5,7 @@
   align-items: center;
 
   background-color: $grayish-blue-light-alt;
-  padding-bottom: 16px;
+  padding-bottom: 27px;
 }
 
 .country-filter__name-wrapper {
@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   padding-top: 16px;
+  padding-left: 29px;
 }
 
 .country-filter__name {
@@ -106,6 +107,7 @@
     align-self: stretch;
     justify-content: space-between;
     padding-bottom: 15px;
+    padding-left: 0;
   }
 
   .country-filter__continents-selection {

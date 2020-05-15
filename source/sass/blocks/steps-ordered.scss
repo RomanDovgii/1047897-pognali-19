@@ -132,6 +132,19 @@
 
   &:first-of-type {
     margin-top: 19px;
+    &::after {
+      content: "";
+
+      display: block;
+      width: 2px;
+      height: 281px;
+
+      position: absolute;
+      top: 13px;
+      left: 11px;
+
+      background-color: $text__dark-blue;
+    }
   }
 
   &:last-of-type {
@@ -438,7 +451,7 @@
     flex-wrap: wrap;
     border-top: 1px solid $grayish-blue-light-alt-3;
 
-    margin-top: 55px;
+    margin-top: 56px;
     margin-right: 160px;
     margin-left: 161px;
 
@@ -473,7 +486,7 @@
     padding-left: 160px;
 
     &--send {
-      margin-top: 30px;
+      margin-top: 34px;
     }
   }
 

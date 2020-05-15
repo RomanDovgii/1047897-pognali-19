@@ -7,7 +7,7 @@
   color: $text__dark-blue;
   text-transform: uppercase;
   padding-left: 1px;
-  padding-bottom: 11px;
+  padding-bottom: 13px;
 
   &::before {
     content: "";
@@ -58,9 +58,11 @@
 
 .set-level__input {
   position: relative;
+  font-family: inherit;
+  appearance: none;
   background: none;
   padding-top: 11px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
   font-size: 15px;
   line-height: 14px;
   font-weight: 500;
@@ -68,6 +70,7 @@
   width: 50%;
   background-color: $white;
   border: 1px solid $blue-10-color;
+
 
   &--min-level {
     border-right: none;
@@ -187,7 +190,11 @@
 @media (min-width: $desktop-breakpoint) {
   .set-level__name {
     order: 1;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .set-level__input-wrapper {
@@ -201,6 +208,7 @@
     width: 192px;
 
     margin-top: 12px;
+    margin-left: 1px;
   }
 
   .set-level__button {

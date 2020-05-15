@@ -307,6 +307,11 @@
     padding-left: 17px;
 
     &--choosen-start {
+      &::after {
+        top: -3px;
+        right: -3px;
+      }
+
       &::before {
         content: "Заезд";
         display: block;

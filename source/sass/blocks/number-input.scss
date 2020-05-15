@@ -57,6 +57,8 @@
 
   border: none;
   text-align: center;
+
+  appearance: none;
 }
 
 .number-input__button {
@@ -144,6 +146,7 @@
     width: auto;
     min-width: 188px;
     margin-right: 19px;
+    margin-top: 15px;
 
     &::after {
       display: block;
@@ -157,12 +160,19 @@
     }
   }
 
+  .number-input__button {
+    &--minus {
+      margin-left: 19px;
+    }
+  }
+
   .number-input__wrapper {
     width: 181px;
+    margin-top: -1px;
   }
 
   .number-input__input {
-    max-width: 120px;
+    max-width: 85px;
 
     font-size: 20px;
     line-height: 18px;

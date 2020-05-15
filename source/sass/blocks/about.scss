@@ -163,6 +163,10 @@
 
       border-radius: 20px;
     }
+
+    &::after {
+      display: none;
+    }
   }
 
   .about__heading {

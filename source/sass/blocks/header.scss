@@ -7,12 +7,17 @@
 
 @media (min-width: $tablet-breakpoint) {
   .header {
-    background-color: $header-color-tablet;
+    &--index {
+      background-color: $header-color-tablet;
+    }
+
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .header {
-    background-color: $header-color;
+    &--index {
+      background-color: $header-color;
+    }
   }
 }
