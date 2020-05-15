@@ -5,6 +5,8 @@
 }
 
 .countries-planned__list {
+  @include reset;
+  margin-top: 22px;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -25,13 +27,26 @@
   margin-bottom: 22px;
   min-width: 168px;
 
+  &:nth-last-child(2) {
+    .countries-planned__delete {
+      top: 11px;
+      right: 11px;
+
+      background-color: transparent;
+
+      &::after {
+        opacity: 1;
+        background-image: url("../img/icons/mobile/small-cross--white.svg");
+      }
+    }
+  }
+
   &:not(:nth-last-child(2))::after {
     content: "";
     width: 53px;
     height: inherit;
     border: 1px solid $blue-10-color;
     border-radius: 4px;
-    margin-left: -1px;
   }
 
   &:not(:nth-last-child(2))::before {
@@ -44,6 +59,19 @@
     border-radius: 50%;
     background-color: $text__dark-blue;
     z-index: 5;
+  }
+
+  &:nth-last-child(1) {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -107,6 +135,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
+  z-index: 10;
 
   &::after {
     content: "";
@@ -169,6 +198,24 @@
     background-size: 12px 7px;
     opacity: 0.3;
   }
+
+  &--active {
+    background-color: $text__dark-blue;
+    color: $white;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid $blue-10-color;
+
+    width: 221px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .countries-planned__add {
@@ -188,7 +235,7 @@
   padding-left: 12px;
   background-color: $main-color;
   border-radius: 4px;
-  margin-bottom: 25px;
+  margin-bottom: 4px;
 
   &::before {
     content: "";
@@ -213,5 +260,276 @@
     opacity: 0.3;
     bottom: 14px;
     right: 14px;
+  }
+}
+
+.countries-planned__add-block {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  z-index: 10;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .countries-planned__list {
+    width: 100%;
+    position: relative;
+
+    align-items: flex-start;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-top: 41px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 139px;
+
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: $grayish-blue-light-alt-3;
+    }
+  }
+
+  .countries-planned__country {
+    margin-left: 3px;
+    max-width: 100%;
+    width: 369px;
+    margin-bottom: 15px;
+
+    &:nth-last-child(2) {
+      .countries-planned__delete {
+        top: 25px;
+        right: 25px;
+
+        &::after {
+          opacity: 1;
+          background-image: url("../img/icons/mobile/small-cross--white.svg");
+        }
+      }
+    }
+
+    &:not(:nth-last-child(2)) {
+      &::before {
+        display: block;
+        background-color: $text__dark-blue;
+
+        width: 15px;
+        height: 15px;
+
+        right: -34px;
+        bottom: 29px;
+      }
+
+      &::after {
+        display: block;
+        width: 70px;
+        height: 47px;
+        position: absolute;
+        top: 12px;
+        right: -123px;
+
+
+        border: none;
+        background-color: $gray;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 15px;
+
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .countries-planned__country-name {
+    max-width: 100%;
+    width: 100%;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    &::after {
+      width: 17px;
+      height: 9px;
+
+      background-size: 17px 9px;
+
+      bottom: 29px;
+      right: 26px;
+    }
+  }
+
+  .countries-planned__choose {
+    max-width: 100%;
+    width: 369px;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    &::before {
+      width: 15px;
+      height: 15px;
+
+      background-color: $white;
+
+      right: -35px;
+      bottom: 28px;
+    }
+
+    &::after {
+      width: 17px;
+      height: 9px;
+
+      background-size: 17px 9px;
+
+      bottom: 29px;
+      right: 26px;
+    }
+  }
+
+  .countries-planned__add {
+    max-width: 100%;
+    width: 369px;
+
+    position: relative;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2.5px;
+
+    padding-top: 27px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+
+    &::before {
+      width: 15px;
+      height: 15px;
+
+      background-color: $main-color;
+
+      right: -34px;
+      bottom: 29px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+
+      background-size: 18px 18px;
+
+      bottom: 26px;
+      right: 27px;
+    }
+  }
+
+  .countries-planned__add-block {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .countries-planned__delete {
+    top: 24px;
+    right: -167px;
+    background-color: transparent;
+
+    &::after {
+      top: -4px;
+      left: -3px;
+
+      width: 27px;
+      height: 27px;
+
+      background-size: 17px 17px;
+
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .countries-planned {
+    margin-right: 160px;
+    margin-left: 160px;
+    margin-top: 56px;
+  }
+
+  .countries-planned__list {
+    padding-top: 62px;
+    padding-bottom: 7px;
+
+    &::before {
+      right: 224px;
+    }
+  }
+
+  .countries-planned__country {
+    width: 730px;
+    margin-left: 0;
+
+    &:not(:nth-last-child(2)) {
+      &::before {
+        right: -53px;
+      }
+
+      &::after {
+        right: -155px;
+      }
+    }
+
+    &:nth-last-child(2) {
+      .countries-planned__delete {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background-image: url("../img/icons/mobile/small-cross--white.svg");
+      }
+    }
+  }
+
+  .countries-planned__delete {
+    &::after {
+      left: 96px;
+    }
+  }
+
+  .countries-planned__choose {
+    width: 100%;
+
+    &::before {
+      right: -54px;
+    }
+  }
+
+  .countries-planned__add {
+    width: 100%;
+
+    &::before {
+      right: -52px;
+      bottom: 30px;
+    }
   }
 }

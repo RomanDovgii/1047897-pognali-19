@@ -1,11 +1,5 @@
 .office {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding-left: 25px;
-  padding-right: 25px;
   background-color: $universal__bright-yellow;
 
   &::after {
@@ -23,6 +17,16 @@
     border-bottom-right-radius: 30px;
 
     background-color: $universal__bright-yellow;
+  }
+
+  .office__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -139,33 +143,104 @@
 
 @media (min-width: $tablet-breakpoint) {
   .office {
-    @include tablet-paddings;
+
+    padding-top: 90px;
+
+    &::after {
+      height: 85px;
+      bottom: -85px;
+
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+    }
+
+    .office__wrapper {
+      padding-top: 0;
+      padding-right: 75px;
+      padding-left: 75px;
+    }
   }
 
   .office__text {
     max-width: 100%;
+    font-size: 28px;
+
+    line-height: 28px;
+
+    margin-top: 17px;
+
+    align-self: baseline;
+
+    span {
+      padding-top: 21px;
+      padding-left: 10px;
+    }
+
+    &::before {
+      width: 68px;
+      height: 68px;
+
+      background-size: 21px 32px;
+    }
   }
 
   .office__link {
     width: 100%;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-top: 16px;
+
+    padding-top: 28px;
+    padding-left: 36px;
+    padding-bottom: 53px;
+
+    &::before {
+      border-radius: 20px;
+    }
+
+    &::after {
+      top: 34px;
+      right: 36px;
+    }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .office {
-    flex-direction: row;
-    justify-content: center;
+    &::after {
+      height: 56px;
+      bottom: -56px;
+    }
+
+    .office__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+
+      padding-top: 7px;
+      padding-left: 230px;
+      padding-right: 134px;
+    }
   }
 
   .office__text {
     font-size: 28px;
     line-height: 28px;
+    margin-bottom: 0;
 
     &::before {
       width: 90px;
       height: 90px;
 
       background-size: 28px 43px;
+
+      margin-left: 53px;
+    }
+
+    span {
+      padding-top: 31px;
+      padding-left: 16px;
     }
   }
 
@@ -174,5 +249,7 @@
 
     font-size: 24px;
     line-height: 24px;
+
+    margin-top: 18px;
   }
 }

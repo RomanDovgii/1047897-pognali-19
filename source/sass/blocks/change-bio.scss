@@ -1,4 +1,4 @@
-.change-bio__wrapper {
+.change-bio__content-wrapper {
   display: flex;
   justify-content: center;
 
@@ -125,7 +125,7 @@
   font-family: inherit;
   resize: none;
   min-width: 270px;
-  height: 89px;
+  height: 87px;
   border: 1px solid $blue-10-color;
   border-radius: 10px;
   background-color: $main-color;
@@ -151,7 +151,7 @@
   justify-content: center;
 
   margin-top: -12px;
-  padding-bottom: 4px;
+  padding-bottom: 7px;
   z-index: 5;
 }
 
@@ -200,12 +200,14 @@
 
 @media (min-width: $tablet-breakpoint) {
   .change-bio__wrapper {
-    width: 100%;
-
-    justify-content: space-between;
-
     padding-right: 75px;
     padding-left: 75px;
+  }
+
+  .change-bio__content-wrapper {
+    justify-content: space-between;
+
+    margin-top: 64px;
   }
 
   .change-bio__user-img {
@@ -217,8 +219,14 @@
   }
 
   .change-bio__change-avatar {
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-top: 52px;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
   }
 
   .change-bio__level {
@@ -250,12 +258,15 @@
       display: flex;
       position: relative;
 
+      padding-right: 67px;
+      padding-left: 67px;
+
       .change-bio__legend {
         position: absolute;
         left: 50%;
         bottom: -19px;
 
-        margin-left: -56px;
+        margin-left: -73px;
       }
 
       .change-bio__transport-wrapper {
@@ -264,18 +275,37 @@
     }
 
     &--tags {
-      margin-right: 75px;
-      margin-left: 75px;
+      margin-top: 51px;
 
       align-items: stretch;
     }
   }
 
+  .change-bio__number {
+    padding-top: 5px;
+    padding-left: 0;
+  }
+
+  .change-bio__text {
+    &::before {
+      top: -1px;
+    }
+  }
+
   .change-bio__tags {
-    height: 59px;
+    height: 94px;
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-top: 32px;
+    padding-left: 38px;
   }
 
   .change-bio__legend {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1.5px;
+
     &--tags {
       margin-top: 0;
       margin-bottom: 0;
@@ -284,12 +314,16 @@
       bottom: -19px;
       left: 50%;
 
-      margin-left: -33px;
+      margin-left: -40px;
     }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .change-bio__wrapper {
+    padding-right: 0;
+  }
+
   .change-bio__form {
     flex-direction: row;
     justify-content: space-between;
@@ -304,6 +338,9 @@
 
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+
+    padding-top: 13px;
+    padding-bottom: 34px;
 
 
     position: absolute;
@@ -325,12 +362,20 @@
   .change-bio__tags {
     height: 100%;
     min-width: 730px;
+    margin-left: 50px;
   }
 
-  .change-bio__wrapper {
+  .change-bio__legend {
+    &--tags {
+      left: 112px;
+    }
+  }
+
+  .change-bio__content-wrapper {
     order: 3;
     margin-top: 0;
     width: auto;
+    padding-right: 60px;
   }
 
   .change-bio__user-img {

@@ -1,3 +1,20 @@
 .map {
   position: relative;
 }
+
+.map__img {
+  height: 334px;
+}
+
+
+@media (min-width: $tablet-breakpoint) {
+  .map__img {
+    height: 573px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .map__img {
+    height: 480px;
+  }
+}

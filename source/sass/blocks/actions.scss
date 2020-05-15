@@ -1,10 +1,7 @@
 .actions {
   position: relative;
   list-style: none;
-  background-image: url("../img/mobile/traveller-illustration-mobile@1x.png"), url("../img/mobile/globe-back-mobile@1x.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 79px 9px, 0 -214px;
-  padding-top: 244px;
+  padding-top: 231px;
   padding-right: 25px;
   padding-left: 25px;
   display: flex;
@@ -118,6 +115,28 @@
     &::after {
       transition: opacity 0.1s;
       opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .actions__item {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+
+    &:last-child {
+      width: 190px;
+    }
+  }
+
+  .actions__link {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--auth {
+      border-radius: 25px;
+      padding-top: 10px;
     }
   }
 }

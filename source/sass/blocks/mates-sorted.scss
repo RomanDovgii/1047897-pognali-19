@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  margin-top: 22px;
+  padding-top: 28px;
   padding-bottom: 77px;
 }
 
@@ -22,7 +22,7 @@
   max-width: 270px;
 
   &:not(:first-child) {
-    margin-top: 16px;
+    margin-top: 10px;
   }
 }
 
@@ -83,6 +83,9 @@
   .mates-sorted {
     @include tablet-paddings;
     align-items: stretch;
+
+    padding-top: 40px;
+    padding-bottom: 93px;
   }
 
   .mates-sorted__list {
@@ -91,11 +94,61 @@
 
   .mates-sorted__item {
     max-width: 100%;
-    width: 100%;
+    width: 688px;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+
+  .mates-sorted__link {
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-top: 44px;
+
+    margin-left: -9px;
+
+    &::before {
+      width: 27px;
+      height: 27px;
+
+      margin-top: 1px;
+      margin-right: 23px;
+    }
   }
 
   .mates-sorted__navigation {
+    margin-top: 49px;
+    width: 688px;
     background-color: $white;
     justify-content: space-between;
+
+    padding-top: 21px;
+    padding-bottom: 10px;
+
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .mates-sorted__item {
+    min-width: 950px;
+    max-height: 285px;
+
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  .mates-sorted__link {
+    margin-top: 63px;
+    margin-left: -76px;
+  }
+
+  .mates-sorted__navigation {
+    width: 950px;
+    margin-top: 68px;
+    margin-bottom: 108px;
   }
 }

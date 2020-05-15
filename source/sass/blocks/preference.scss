@@ -7,7 +7,7 @@
   font-weight: 700;
   color: $text__dark-blue;
   text-transform: uppercase;
-  padding-top: 11px;
+  padding-top: 9px;
   display: flex;
   flex-direction: column;
 }
@@ -15,7 +15,7 @@
 .preference__block-name {
   @include reset;
   position: relative;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 
   font-size: 16px;
 
@@ -55,7 +55,7 @@
   font-weight: 400;
   text-transform: none;
   display: flex;
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .preference__name {
@@ -76,7 +76,6 @@
     top: 0;
     left: 0;
 
-    margin-left: -1px;
     border-radius: 4px;
 
     background-color: $white;
@@ -112,10 +111,14 @@ input[type="checkbox"]:checked + .preference__name {
   .preference {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 0;
   }
 
   .preference__block-name {
     min-width: 126px;
+
+    font-size: 20px;
+    line-height: 30px;
 
     &::before {
       display: none;
@@ -126,14 +129,42 @@ input[type="checkbox"]:checked + .preference__name {
     }
   }
 
+  .preference__name {
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $gray;
+
+    padding-top: 0;
+    padding-left: 34px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+
+      top: 0;
+      left: 0;
+
+      background-color: $white;
+    }
+  }
+
   .preference__checkboxes {
     flex-direction: row;
     justify-content: flex-start;
     flex-grow: 1;
+
+    margin-left: 0;
   }
 
   .preference__checkbox {
     min-width: 169px;
+
+    margin-top: 6px;
+
+    &:last-child {
+      margin-left: 4px;
+    }
   }
 }
 
@@ -142,9 +173,37 @@ input[type="checkbox"]:checked + .preference__name {
     flex-direction: column;
   }
 
+  .preference__block-name {
+    font-weight: 500;
+    padding-bottom: 13px;
+
+    &::after {
+      content: "";
+      transform: rotate(180deg);
+      position: absolute;
+      right: 12px;
+      bottom: 26px;
+      display: block;
+      width: 10px;
+      height: 6px;
+      background-image: url("../img/icons/dropdown.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
   .preference__checkboxes {
     flex-direction: column;
     justify-content: flex-start;
     flex-grow: 1;
+    padding-bottom: 19px;
+  }
+
+  .preference__checkbox {
+    margin-top: 10px;
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-left: 0;
+    }
   }
 }

@@ -92,3 +92,67 @@
     }
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .contacts {
+    max-width: 100%;
+  }
+
+  .contacts__link {
+    font-size: 28px;
+    line-height: 28px;
+
+    span {
+      padding-top: 22px;
+      padding-left: 7px;
+    }
+
+    &::before {
+      width: 68px;
+      height: 68px;
+
+      background-size: 27px 27px;
+    }
+
+    &--phone {
+      &::before {
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow.svg");
+      }
+    }
+
+    &--email {
+      &::before {
+        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow.svg");
+      }
+    }
+  }
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+  .contacts__item {
+    &--cta:first-child {
+      margin-left: 30px;
+    }
+
+    &--cta:last-child {
+      margin-left: 110px;
+    }
+  }
+
+  .contacts__link {
+    span {
+      padding-top: 30px;
+      padding-left: 16px;
+    }
+
+    &--cta {
+      &::before {
+        width: 90px;
+        height: 90px;
+
+        background-size: 36px 36px;
+      }
+    }
+  }
+}

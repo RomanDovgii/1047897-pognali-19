@@ -22,8 +22,8 @@
 
   background: $white;
 
-  margin-top: -5px;
-  padding-bottom: 22px;
+  margin-top: -4px;
+  padding-bottom: 23px;
 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -34,7 +34,7 @@
 }
 
 .mate-card__name-wrapper {
-  padding-top: 26px;
+  padding-top: 25px;
 }
 
 .mate-card__name {
@@ -87,4 +87,55 @@
 .mate-card__transport {
   @include reset;
   margin-top: 16px;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .mate-card {
+    max-width: 285px;
+  }
+
+  .mate-card__info {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    padding-bottom: 29px;
+  }
+
+  .mate-card__name {
+    font-size: 24px;
+    line-height: 24px;
+
+    padding-top: 5px;
+  }
+
+  .mate-card__name-link {
+    &::before {
+      width: 7px;
+      height: 7px;
+
+      left: -22px;
+      bottom: -21px;
+    }
+  }
+
+  .mate-card__hashtags {
+    margin-top: 20px;
+  }
+
+  .mate-card__transport {
+    margin-top: 26px;
+  }
+
+  .mate-card__level {
+    top: 20px;
+    left: 21px;
+  }
+
+  .mate-card__img {
+    width: 285px;
+    height: 285px;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
 }

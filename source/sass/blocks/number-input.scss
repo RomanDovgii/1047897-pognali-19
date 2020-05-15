@@ -6,6 +6,7 @@
 }
 
 .number-input__legend {
+  @include reset;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 1.5px;
@@ -13,7 +14,7 @@
   color: $text__dark-blue;
   text-transform: uppercase;
   width: 100%;
-  padding-top: 21px;
+  padding-top: 19px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 3px;
@@ -24,11 +25,19 @@
     content: "Чел.";
     opacity: 0.3;
   }
+
+  &--time {
+    &::after {
+      content: "Дн.";
+      opacity: 0.3;
+    }
+  }
 }
 
 .number-input__wrapper {
   border: 1px solid $blue-10-color;
   border-radius: 4px;
+  margin-top: 6px;
   margin-right: 11px;
   margin-left: 11px;
   display: flex;
@@ -48,6 +57,8 @@
 
   border: none;
   text-align: center;
+
+  appearance: textfield;
 }
 
 .number-input__button {
@@ -75,30 +86,93 @@
 
 @media (min-width: $tablet-breakpoint) {
   .number-input__wrapper {
+    width: 531px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 14px;
+  }
+
+  .number-input__legend {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+    margin-top: 23px;
+    margin-bottom: 16px;
+  }
+
+  .number-input {
     width: 100%;
+  }
+
+  .number-input__input {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
+
+  .number-input__button {
+    width: 20px;
+    height: 20px;
+
+    &--minus {
+      margin-top: 9px;
+      margin-left: 22px;
+    }
+
+    &--plus {
+      margin-top: 10px;
+      margin-right: 19px;
+    }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
   .number-input {
     flex-direction: row;
+    padding-left: 0;
+    max-width: 50%;
   }
 
   .number-input__legend {
+    position: relative;
     width: auto;
     min-width: 188px;
+    margin-right: 19px;
+    margin-top: 15px;
 
     &::after {
-      display: none;
+      display: block;
+      width: 50px;
+      position: absolute;
+      top: 0;
+      right: -299px;
+      text-align: left;
+      color: $text__dark-blue;
+      opacity: 1;
+    }
+  }
+
+  .number-input__button {
+    &--minus {
+      margin-left: 19px;
     }
   }
 
   .number-input__wrapper {
     width: 181px;
+    margin-top: -1px;
   }
 
   .number-input__input {
-    max-width: 120px;
+    max-width: 85px;
 
     font-size: 20px;
     line-height: 18px;

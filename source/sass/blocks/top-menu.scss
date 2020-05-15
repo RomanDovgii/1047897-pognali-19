@@ -12,15 +12,70 @@
   display: none;
 }
 
+.top-menu__inner-links {
+  display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .top-menu__functions {
+    margin-left: 25px;
+    margin-right: 40px;
+    padding-top: 40px;
+
+    &--index {
+      padding-top: 40px;
+    }
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
-    @include desktop-paddings;
+    .top-menu__wrapper {
+      @include desktop-paddings;
+      display: flex;
+    }
+
+
+    padding-top: 49px;
+  }
+
+  .top-menu__functions {
+    margin: 0;
+    padding-top: 0;
+
+    &--index {
+      padding-top: 0;
+    }
+  }
+
+  .top-menu__information {
+    display: none;
+  }
+
+  .top-menu__inner-links {
     display: flex;
+    margin-left: 73px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      top: 15px;
+      left: -32px;
+
+      background-color: $white;
+    }
   }
 
   .top-menu__actions {
     @include reset;
     background: none;
+
+    margin-left: auto;
+    margin-right: 0;
 
     display: flex;
   }

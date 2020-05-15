@@ -14,9 +14,9 @@
   font-weight: 700;
 
   padding-top: 23px;
-  padding-right: 130px;
+  padding-right: 132px;
   padding-bottom: 21px;
-  padding-left: 23px;
+  padding-left: 24px;
 
   border-radius: 10px;
 
@@ -60,5 +60,12 @@
 
     margin-right: 35px;
     margin-left: 35px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .show-all {
+    max-width: 274px;
+    padding-right: 0;
   }
 }

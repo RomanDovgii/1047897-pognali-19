@@ -1,17 +1,7 @@
 .mates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 
   background-color: $background__dark-blue;
-  background-image: url("../img/mobile/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 152px 69px, -10px 341px, -20px 69px;
-  background-size: 143px 143px, 71px 71px, 132px 132px;
-  padding-top: 102px;
-  padding-left: 25px;
-  padding-right: 25px;
 
   &::after {
     content: "";
@@ -29,10 +19,28 @@
 
     background-color: $background__dark-blue;
   }
+
+  .mates__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url("../img/mobile/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 152px 69px, -10px 341px, -20px 69px;
+    background-size: 143px 143px, 71px 71px, 132px 132px;
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
-.mates__wrapper {
+.mates__content-wrapper {
   padding-left: 25px;
+
+  .mates__show-all {
+    display: none;
+  }
 }
 
 .mates__heading {
@@ -66,7 +74,7 @@
 
 .mates__people {
   @include reset;
-  margin-top: 56px;
+  margin-top: 58px;
 }
 
 .mates__show-all {
@@ -77,17 +85,98 @@
   }
 }
 
-@media (min-width: $desktop-breakpoint) {
+.mates__tablet-br {
+  display: none;
+}
+
+@media (min-width: $tablet-breakpoint) {
   .mates {
-    @include desktop-paddings;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    &::after {
+      width: 100%;
+      height: 88px;
+      position: absolute;
+      bottom: -88px;
+      left: 0;
+      z-index: 2;
+
+      border-bottom-left-radius: 60px;
+      border-bottom-right-radius: 60px;
+
+      background-color: $background__dark-blue;
+    }
   }
 
   .mates__heading {
     font-size: 45px;
     line-height: 45px;
+
+    padding-top: 117px;
+    padding-left: 23px;
+  }
+
+  .mates__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    padding-top: 58px;
+    padding-right: 215px;
+    padding-left: 25px;
+
+    &--additional {
+      font-size: 21px;
+      line-height: 25px;
+
+      padding-top: 40px;
+      padding-right: 230px;
+    }
+  }
+
+  .mates__people {
+    margin-top: 60px;
+  }
+
+  .mates__tablet-br {
+    display: inline;
+  }
+
+  .mates__show-all {
+    font-size: 24px;
+    line-height: 24px;
+
+    margin-top: 80px;
+
+    padding-top: 29px;
+    padding-right: 434px;
+    padding-left: 33px;
+    padding-bottom: 28px;
+
+    border-radius: 20px;
+
+    &::after {
+      top: 34px;
+      right: 36px;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .mates {
+    .mates__wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @include desktop-paddings;
+      padding-bottom: 46px;
+    }
+  }
+
+  .mates__heading {
+    font-size: 45px;
+    line-height: 45px;
+
+    padding-top: 105px;
+    padding-left: 44px;
   }
 
   .mates__text {
@@ -95,10 +184,16 @@
     line-height: 33px;
     font-weight: 300;
 
+    padding-top: 57px;
+    padding-right: 170px;
+    padding-left: 46px;
+
     &--additional {
       font-size: 21px;
       line-height: 25px;
       font-weight: 700;
+
+      padding-top: 40px;
     }
   }
 
@@ -106,11 +201,20 @@
     display: none;
   }
 
-  .mates__wrapper {
+  .mates__content-wrapper {
     .mates__show-all {
       margin: 0;
       display: block;
       max-width: 280px;
+
+      margin-top: 86px;
+      margin-left: 46px;
+
+      padding-right: 10px;
     }
+  }
+
+  .mates__people {
+    margin-top: 113px;
   }
 }

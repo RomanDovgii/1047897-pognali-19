@@ -1,41 +1,140 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: $header-color;
+  background-image: url("../img/mobile/globe-back-mobile@1x.jpg");
+  background-position: 0 -51px;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 174px;
+
+    position: absolute;
+    bottom: 76px;
+    left: 0;
+
+    background-color: $header-color;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .intro__heading {
   @include reset;
+  position: relative;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
   text-align: center;
   color: $white;
 
-  padding-top: 42px;
+  padding-top: 40px;
   padding-right: 30px;
   padding-left: 30px;
+  z-index: 3;
+}
+
+.intro__quote {
+  margin-top: -16px;
 }
 
 .intro__steps {
   @include reset;
-  margin-top: 30px;
+  margin-top: 31px;
 }
 
-.intro__wrapper {
+.intro__content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.intro__actions {
+  &::after {
+    content: "";
+
+    display: block;
+    width: 192px;
+    height: 255px;
+
+    position: absolute;
+    bottom: 20px;
+    right: 49px;
+
+    background-image: url("../img/mobile/traveller-illustration-mobile@1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
 @media (min-width: $tablet-breakpoint) {
+  .intro {
+    position: relative;
+
+    background-image: url("../img/tablet/globe-back-tablet@1x.jpg");
+    background-size: 1479px 612px;
+    background-position: -355px 292px;
+    background-repeat: no-repeat;
+    background-color: $header-color-tablet;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 100%;
+      height: 167px;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      background-color: #192144;
+    }
+  }
+
+  .intro__content-wrapper {
+    width: 100%;
+  }
+
+  .intro__steps {
+    margin-top: 213px;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 372px;
+      height: 451px;
+
+      position: absolute;
+      top: -451px;
+      right: 72px;
+
+      background-image: url("../img/tablet/traveller-illustration-tablet@1x.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .intro__heading {
+    max-width: 490px;
+    font-size: 60px;
+    line-height: 70px;
+
+    padding-top: 68px;
+  }
+
   .intro__actions {
     display: none;
   }
 
   .intro__quote {
-    margin-top: 50px;
+    margin-top: 55px;
     margin-left: 0;
     margin-right: auto;
   }
@@ -43,27 +142,66 @@
 
 @media (min-width: $desktop-breakpoint) {
   .intro {
-    @include desktop-paddings;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
+
+    background-image: url("../img/desktop/globe-back-desktop@1x.jpg");
+    background-size: 1800px 750px;
+    background-position: -178px -98px;
+    background-repeat: no-repeat;
+    background-color: $header-color;
+
+    &::before {
+      display: none;
+    }
+
+    .intro__wrapper {
+      @include desktop-paddings;
+    }
+  }
+
+  .intro__heading {
+    padding-right: 0;
+
+    padding-top: 100px;
+    padding-left: 67px;
+
+    max-width: 485px;
+
+    text-align: left;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .intro__steps {
+    &::before {
+      width: 431px;
+      height: 640px;
+
+      top: -410px;
+      right: 345px;
+
+      background-image: url("../img/desktop/traveller-illustration-desktop@1x.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .intro__quote {
+    margin-right: 0;
+    margin-left: auto;
+
+    padding-top: 40px;
+    padding-right: 20px;
   }
 
   .intro__actions {
     display: none;
   }
 
-  .intro__wrapper {
+  .intro__content-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .intro__heading {
-    padding-left: 60px;
-    max-width: 485px;
-
-    text-align: left;
-    font-size: 60px;
-    line-height: 70px;
   }
 }

@@ -13,6 +13,15 @@
   }
 }
 
+@media (min-width: $tablet-breakpoint) {
+  .countries-selection__item {
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
 @media (min-width: $desktop-breakpoint) {
   .countries-selection {
     display: none;

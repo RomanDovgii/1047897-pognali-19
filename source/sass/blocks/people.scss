@@ -16,7 +16,8 @@
 @media (min-width: $tablet-breakpoint) {
   .people {
     flex-direction: row;
-    align-items: center;
+    width: 100%;
+    justify-content: center;
   }
 
   .people__item {
@@ -24,6 +25,14 @@
       margin-top: 0;
 
       margin-left: 48px;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .people__item {
+    &:not(:first-child) {
+      margin-left: 60px;
     }
   }
 }

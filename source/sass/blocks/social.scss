@@ -111,3 +111,33 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet-breakpoint) {
+  .social__item {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__link {
+    &--facebook-ftr {
+      &::after {
+        background-image: url("../img/icons/mobile/facebook-navy.svg");
+        background-size: 14px 28px;
+      }
+    }
+
+    &--vk-ftr {
+      &::after {
+        background-image: url("../img/icons/mobile/vk-navy.svg");
+        background-size: 31px 16px;
+      }
+    }
+
+    &--instagram-ftr {
+      &::after {
+        background-image: url("../img/icons/mobile/instagram-navy.svg");
+        background-size: 24px 24px;
+      }
+    }
+  }
+}

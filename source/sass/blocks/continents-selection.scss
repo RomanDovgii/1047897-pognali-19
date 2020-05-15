@@ -1,8 +1,6 @@
 .continents-selection {
   list-style: none;
   padding-left: 0;
-  margin-right: 50px;
-  margin-bottom: 19px;
 }
 
 .continents-selection__item {
@@ -23,11 +21,14 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
-  .select-country__continents-selection {
-    display: none;
+  .continents-selection__item {
+    &:not(:first-child) {
+      margin-left: 28px;
+    }
   }
 
-  .select-country__wrapper {
-    display: flex;
+  .continents-selection__link {
+    font-size: 20px;
+    line-height: 24px;
   }
 }

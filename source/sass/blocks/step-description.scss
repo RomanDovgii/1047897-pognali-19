@@ -70,10 +70,15 @@
   }
 }
 
+.step-description__label {
+  margin-left: 2px;
+}
+
 .step-description__text {
   font-family: inherit;
   resize: none;
-  width: 100%;
+  width: 220px;
+  height: 220px;
   border: 1px solid $blue-10-color;
   border-radius: 4px;
   padding-bottom: 11px;
@@ -85,5 +90,123 @@
 
   &::placeholder {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .step-description {
+    margin-top: 29px;
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-left: 45px;
+    margin-right: 45px;
+
+    &:first-of-type {
+      margin-top: 35px;
+      padding-top: 36px;
+
+      border-top: 1px solid $grayish-blue-light-alt-3;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 261px;
+
+        position: absolute;
+        top: 49px;
+        right: 1px;
+        left: auto;
+
+        background-color: $text__dark-blue;
+      }
+    }
+  }
+
+  .step-description__wrapper {
+    &::before {
+      display: block;
+      width: 15px;
+      height: 15px;
+
+      position: absolute;
+      top: 8px;
+      right: -5px;
+      left: auto;
+      bottom: auto;
+
+      border-radius: 50%;
+    }
+
+    &::after {
+      width: 70px;
+      height: 47px;
+      margin-top: -9px;
+      margin-right: 30px;
+    }
+  }
+
+  .step-description__country {
+    font-size: 30px;
+    line-height: 18px;
+    padding-left: 0;
+    padding-bottom: 45px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .step-description__text {
+    width: 499px;
+    height: 142px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-top: 15px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .step-description {
+    margin-left: 161px;
+
+    &:first-of-type {
+      margin-top: 57px;
+      padding-top: 79px;
+
+      &::after {
+        top: 89px;
+        right: 339px;
+        width: 2px;
+      }
+    }
+  }
+
+  .step-description__country {
+    &::after {
+      right: 82px;
+    }
+  }
+
+  .step-description__text {
+    width: 729px;
+    padding-top: 24px;
+    padding-right: 17px;
+    padding-left: 24px;
+  }
+
+  .step-description__wrapper {
+    &::before {
+      right: 333px;
+    }
+
+    &::after {
+      margin-top: -5px;
+      margin-right: 230px;
+    }
   }
 }

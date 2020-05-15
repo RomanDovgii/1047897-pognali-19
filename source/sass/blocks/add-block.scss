@@ -1,0 +1,147 @@
+.add-block {
+  width: 221px;
+  background-color: $white;
+  border: 1px solid $blue-10-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.add-block__letters {
+  @include reset;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1px;
+  margin-right: -1px;
+  margin-left: -1px;
+}
+
+.add-block__letter-wrapper {
+  width: 45px;
+  height: 42px;
+
+  &:not(:nth-child(5n+1)) {
+    margin-left: -1px;
+  }
+
+  &:nth-child(n+6) {
+    margin-top: -1px;
+  }
+}
+
+.add-block__letter-link {
+  text-decoration: none;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $text__dark-blue;
+
+  background-color: $white;
+
+  padding-top: 11px;
+
+  border: 1px solid $blue-10-color;
+
+  &--active {
+    color: $white;
+    background-color: $text__dark-blue;
+    border-color: $text__dark-blue;
+  }
+}
+
+.add-block__countries {
+  @include reset;
+  list-style: none;
+
+  padding-top: 12px;
+  padding-left: 19px;
+  padding-bottom: 15px;
+}
+
+.add-block__country-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: $gray;
+}
+
+@media (min-width: $tablet-breakpoint) {
+  .add-block {
+    display: flex;
+    width: 575px;
+    border: none;
+    box-shadow: 0 20px 50px 0 rgba($text__dark-blue, 0.1);
+  }
+
+  .add-block__letters-block {
+    padding-right: 62px;
+  }
+
+  .add-block__letters {
+    max-width: 308px;
+
+    padding-top: 36px;
+    padding-left: 28px;
+  }
+
+  .add-block__letter-wrapper {
+    width: 53px;
+    height: 70px;
+  }
+
+  .add-block__letter-link {
+    font-size: 20px;
+    line-height: 24px;
+
+    padding-top: 22px;
+  }
+
+  .add-block__countries {
+    padding-top: 31px;
+    padding-left: 25px;
+    border-left: 1px solid $blue-10-color;
+    padding-bottom: 56px;
+  }
+
+  .add-block__country-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .add-block {
+    width: 730px;
+  }
+
+  .add-block__letters {
+    max-width: 429px;
+  }
+
+  .add-block__letter-wrapper {
+    width: 60px;
+    height: 70px;
+
+    &:not(:nth-child(5n+1)) {
+      margin-left: 15px;
+    }
+
+    &:nth-child(n+6) {
+      margin-top: 15px;
+    }
+  }
+
+  .add-block__countries {
+    padding-bottom: 116px;
+  }
+
+  .add-block__letter-link {
+    border-radius: 4px;
+  }
+}

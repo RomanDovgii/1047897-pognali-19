@@ -20,11 +20,23 @@
   .inner-links__item {
     text-align: initial;
   }
+
+  .inner-links__link {
+    font-size: 60px;
+    line-height: 71px;
+  }
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .inner-links {
+    margin-top: 10px;
+    margin-left: 114px;
+
+    display: flex;
+  }
+
   .inner-links__item {
-    margin-left: 35px;
+    margin-left: 33px;
   }
 
   .inner-links__link {

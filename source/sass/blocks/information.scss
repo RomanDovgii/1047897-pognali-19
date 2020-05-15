@@ -1,11 +1,16 @@
 .information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
 
   background: $white;
-  padding-top: 65px;
+
+
+  .information__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 65px;
+  }
 }
 
 .information__auth-link {
@@ -47,12 +52,25 @@
 
 @media (min-width: $tablet-breakpoint) {
   .information {
-    padding-left: 100px;
+    padding-left: 97px;
     align-items: initial;
+
+    display: none;
+  }
+
+  .information__inner-links {
+    margin-top: 24px;
   }
 
   .information__auth-link {
     display: none;
+  }
+
+  .information__contacts {
+    margin-left: 0;
+    margin-top: 133px;
+
+    width: 100%;
   }
 
   .information__social {
@@ -75,7 +93,9 @@
   }
 
   .information__inner-links {
-    display: flex;
-    flex-direction: row;
+    margin-top: 11px;
+    margin-left: 110px;
+
+    display: none;
   }
 }

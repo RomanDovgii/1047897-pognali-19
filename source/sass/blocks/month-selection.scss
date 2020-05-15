@@ -3,7 +3,6 @@
   border-bottom: 1px solid $blue-10-color;
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
 }
@@ -37,5 +36,42 @@
   &--next {
     background-image: url("../img/icons/mobile/month-arrow-right.svg");
     background-position: 3px 12px;
+  }
+}
+
+
+@media (min-width: $tablet-breakpoint) {
+  .month-selection__month-year {
+    font-size: 36px;
+
+    padding-top: 33px;
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-bottom: 32px;
+  }
+
+  .month-selection__button {
+    width: 50px;
+    background-size: 19px 34px;
+    background-position: 16px 26px;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .month-selection {
+    width: 100%;
+  }
+
+  .month-selection__button {
+    width: 50px;
+    background-size: 19px 34px;
+
+    &--next {
+      background-position: 31px 26px;
+    }
+
+    &--previous {
+      background-position: 0 26px;
+    }
   }
 }

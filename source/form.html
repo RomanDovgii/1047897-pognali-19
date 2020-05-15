@@ -9,17 +9,48 @@
   <body>
     <header class="header">
       <section class="top-menu header__top-menu">
-        <div class="functions top-menu__functions top-menu__functions--white top-menu__functions--index">
-          <a href="index.html" class="functions__link functions__link--white">
-            <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
-          </a>
-          <button class="functions__button functions__button--open" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <a class="functions__auth-link" href="">Авторизация</a>
+        <div class="wrapper top-menu__wrapper">
+          <div class="functions top-menu__functions top-menu__functions--white">
+            <a href="index.html" class="functions__link functions__link--white">
+              <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+            </a>
+            <button class="functions__button functions__button--open" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <a class="functions__auth-link" href="">Авторизация</a>
+          </div>
+
+          <ul class="inner-links top-menu__inner-links">
+            <li class="inner-links__item">
+              <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
+            </li>
+            <li class="inner-links__item">
+              <a class="inner-links__link" href="./form.html">Направления</a>
+            </li>
+            <li class="inner-links__item">
+              <a class="inner-links__link" href="./catalog.html">Попутчики</a>
+            </li>
+          </ul>
+
+          <ul class="actions top-menu__actions">
+            <li class="actions__item">
+              <a class="actions__link actions__link--phone" href="tel:88005558628">
+                <span class="visually-hidden">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="actions__item">
+              <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+            <li class="actions__item">
+              <a class="actions__link actions__link--auth" href="">Авторизация</a>
+            </li>
+          </ul>
         </div>
 
         <div class="information top-menu__information">
+          <div class="wrapper information__wrapper">
           <ul class="inner-links information__inner-links">
             <li class="inner-links__item">
               <a class="inner-links__link" href="./index.html">О сервисе</a>
@@ -60,46 +91,34 @@
               </a>
             </li>
           </ul>
+          </div>
         </div>
-
-        <ul class="actions top-menu__actions">
-          <li class="actions__item">
-            <a class="actions__link actions__link--phone" href="tel:88005558628">
-              <span class="visually-hidden">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="actions__item">
-            <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
-              <span class="visually-hidden">mail@htmlacademy.ru</span>
-            </a>
-          </li>
-          <li class="actions__item">
-            <a class="actions__link actions__link--auth" href="">Авторизация</a>
-          </li>
-        </ul>
       </section>
     </header>
 
     <main class="main">
 
-      <div class="main__heading-wrapper">
-        <h1 class="main__heading">Направления</h1>
+      <div class="main__heading-wrapper main__heading-wrapper--form">
+        <div class="wrapper main__wrapper">
+          <h1 class="main__heading main__heading--form">Направления</h1>
 
-        <div class="desktop-user-info main__desktop-user-info">
-          <p class="desktop-user-info__level">
-            <span class="desktop-user-info__number">80</span>
-            <span class="desktop-user-info__text">level</span>
-          </p>
+          <div class="desktop-user-info main__desktop-user-info">
+            <p class="desktop-user-info__level">
+              <span class="desktop-user-info__number">80</span>
+              <span class="desktop-user-info__text">level</span>
+            </p>
 
-          <img class="desktop-user-info__user-img" width="190" height="190" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
+            <img class="desktop-user-info__user-img" width="190" height="190" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
+          </div>
         </div>
       </div>
 
       <section class="change-bio main__change-bio">
+        <div class="wrapper change-bio__wrapper">
 
         <h2 class="visually-hidden">Обновить профиль</h2>
         <form class="change-bio__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="change-bio__wrapper">
+          <div class="change-bio__content-wrapper">
             <p class="change-bio__level">
               <span class="change-bio__number">80</span>
               <span class="change-bio__text">level</span>
@@ -141,7 +160,7 @@
 
           <label class="change-bio__fieldset change-bio__fieldset--tags">
             <span class="change-bio__legend change-bio__legend--tags">Тэги</span>
-            <textarea class="change-bio__tags" name="tags" rows="8" cols="20">#бургер #бар #футбол #концерт #крафт</textarea>
+            <textarea class="change-bio__tags" name="tags" rows="1" cols="20">#бургер #бар #футбол #концерт #крафт</textarea>
           </label>
 
           <fieldset class="change-bio__fieldset change-bio__fieldset--change-transport">
@@ -169,10 +188,12 @@
             </div>
           </fieldset>
         </form>
+        </div>
 
       </section>
 
       <section class="plans main__plans">
+        <div class="wrapper plans__wrapper">
 
         <h2 class="plans__heading">Мои планы:</h2>
 
@@ -194,12 +215,20 @@
             </div>
           </li>
         </ol>
+        </div>
 
       </section>
 
       <section class="new-plan main__new-plan">
+        <div class="wrapper new-plan__wrapper">
 
         <h2 class="new-plan__heading">Добавить план:<span class="new-plan__page-indicator"></span></h2>
+
+        <ul class="new-plan__progress">
+          <li class="new-plan__progress-item new-plan__progress-item--active"><span>Даты</span></li>
+          <li class="new-plan__progress-item"><span>Маршрут</span></li>
+          <li class="new-plan__progress-item"><span>Развлечения</span></li>
+        </ul>
 
         <form class="new-plan__form" action="https://echo.htmlacademy.ru" method="post">
 
@@ -210,7 +239,13 @@
               Даты пребывания
             </h3>
 
-            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <ul class="steps-ordered__progress">
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Даты</span></li>
+              <li class="steps-ordered__progress-item"><span>Маршрут</span></li>
+              <li class="steps-ordered__progress-item"><span>Развлечения</span></li>
+            </ul>
+
+            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
 
             <div class="steps-ordered__inputs-wrapper">
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--mates">
@@ -234,7 +269,7 @@
               </div>
 
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--duration">
-                <h4 class="number-input__legend">Длительность</h4>
+                <h4 class="number-input__legend number-input__legend--time">Длительность</h4>
 
                 <div class="number-input__wrapper">
                   <button class="number-input__button number-input__button--minus" type="button">
@@ -270,7 +305,7 @@
                   <span class="visually-hidden">Предыдущий месяц</span>
                 </button>
 
-                <span class="month-selection__month-year">Март 2019</span>
+                <span class="month-selection__month-year">Март&nbsp;2019</span>
 
                 <button class="month-selection__button month-selection__button--next" type="button">
                   <span class="visually-hidden">Следующий месяц</span>
@@ -321,7 +356,7 @@
                   <a class="calendar__day-link" href="">28</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link" href="">1</a>
+                  <a class="calendar__day-link" href="">1<span class="calendar__day-month"> мар</span></a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link" href="">2</a>
@@ -402,7 +437,7 @@
                   <a class="calendar__day-link calendar__day-link--choosen" href="">27</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--choosen" href="">28</a>
+                  <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-end" href="">28</a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--available" href="">29</a>
@@ -414,7 +449,7 @@
                   <a class="calendar__day-link calendar__day-link--available" href="">31</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--available" href="">1</a>
+                  <a class="calendar__day-link calendar__day-link--available" href="">1<span class="calendar__day-month"> апр</span></a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--available" href="">2</a>
@@ -443,7 +478,13 @@
               Маршрут
             </h3>
 
-            <p class="steps-ordered__description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+            <ul class="steps-ordered__progress">
+              <li class="steps-ordered__progress-item"><span>Даты</span></li>
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Маршрут</span></li>
+              <li class="steps-ordered__progress-item"><span>Развлечения</span></li>
+            </ul>
+
+            <p class="steps-ordered__description">Укажите страны, которые вы хотели посетить.<br> Это может быть одна или сразу несколько.</p>
 
             <div class="countries-planned steps-ordered__countries-planned">
               <ul class="countries-planned__list">
@@ -465,16 +506,134 @@
                   <button class="countries-planned__delete" type="button">
                     <span class="visually-hidden">удалить страну</span>
                   </button>
-                  <button class="countries-planned__choose" type="button">Выберите страну</button>
+                  <button class="countries-planned__choose countries-planned__choose--active" type="button">Выберите страну</button>
                   <input class="visually-hidden" type="text" name="country" value="" readonly>
+                  <div class="add-block countries-planned__add-block">
+                    <div class="add-block__letters-block">
+                      <ul class="add-block__letters">
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link add-block__letter-link--active" href="">А</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Б</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">В</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Г</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Д</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Е</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">З</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">И</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">К</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Л</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">М</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Н</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">О</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">П</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Р</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">С</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Т</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">У</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Ф</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Х</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Ч</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Ш</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Э</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Ю</a>
+                        </li>
+                        <li class="add-block__letter-wrapper">
+                          <a class="add-block__letter-link" href="">Я</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="add-block__country-block">
+                      <ul class="add-block__countries">
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Австралия</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Австрия</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Азербайджан</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Албания</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Алжир</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Ангола</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Андорра</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Антигуа и Барбуда</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Аргентина</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Армения</a>
+                        </li>
+                        <li class="add-block__country-wrapper">
+                          <a class="add-block__country-link" href="">Афганистан</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </li>
-                <li class="">
+                <li class="countries-planned__country">
                   <button class="countries-planned__add" type="button">Добавить страну</button>
                 </li>
               </ul>
             </div>
 
-            <div class="steps-ordered__movement">
+            <div class="steps-ordered__movement steps-ordered__movement--top-fix">
               <a class="steps-ordered__next" href="#step-3">Следующий шаг</a>
               <a class="steps-ordered__previous" href="#step-1">На шаг назад</a>
             </div>
@@ -486,16 +645,22 @@
               Развлечения
             </h3>
 
-            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <ul class="steps-ordered__progress">
+              <li class="steps-ordered__progress-item"><span>Даты</span></li>
+              <li class="steps-ordered__progress-item"><span>Маршрут</span></li>
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Развлечения</span></li>
+            </ul>
+
+            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. <br>Можно писать в свободной форме и ставить тэги.</p>
 
             <div class="step-description steps-ordered__step-description">
 
               <div class="step-description__wrapper">
-                <h4 class="step-description__country">Босния и герцеговина</h4>
+                <h4 class="step-description__country">Босния и Герцеговина</h4>
               </div>
-              <label class="steps-description__label">
+              <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
-                <textarea class="step-description__text" name="plan" rows="8" cols="60"></textarea>
+                <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий"></textarea>
               </label>
             </div>
 
@@ -503,23 +668,25 @@
               <div class="step-description__wrapper">
                 <h4 class="step-description__country">Чехия</h4>
               </div>
-              <label class="steps-description__label">
+              <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
                 <textarea class="step-description__text" name="plan" rows="8" cols="60">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
             </div>
 
-            <div class="steps-ordered__movement">
+            <div class="steps-ordered__movement steps-ordered__movement--send">
               <button class="steps-ordered__submit" type="submit">Отправить</button>
               <a class="steps-ordered__previous" href="#step-2">На шаг назад</a>
             </div>
 
           </section>
         </form>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="wrapper footer__wrapper">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
         <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
@@ -545,6 +712,7 @@
         <p class="developer__text">Разработано</p>
         <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
       </a>
+      </div>
     </footer>
 
   </body>
