@@ -508,14 +508,11 @@
                   </button>
                   <button class="countries-planned__choose" type="button">Выберите страну</button>
                   <input class="visually-hidden" type="text" name="country" value="" readonly>
-                </li>
-                <li class="countries-planned__country">
-                  <button class="countries-planned__add" type="button">Добавить страну</button>
                   <div class="add-block countries-planned__add-block">
                     <div class="add-block__letters-block">
                       <ul class="add-block__letters">
                         <li class="add-block__letter-wrapper">
-                          <a class="add-block__letter-link" href="">А</a>
+                          <a class="add-block__letter-link add-block__letter-link--active" href="">А</a>
                         </li>
                         <li class="add-block__letter-wrapper">
                           <a class="add-block__letter-link" href="">Б</a>
@@ -630,6 +627,9 @@
                     </div>
                   </div>
                 </li>
+                <li class="countries-planned__country">
+                  <button class="countries-planned__add" type="button">Добавить страну</button>
+                </li>
               </ul>
             </div>
 
@@ -658,7 +658,7 @@
               <div class="step-description__wrapper">
                 <h4 class="step-description__country">Босния и Герцеговина</h4>
               </div>
-              <label class="steps-description__label">
+              <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
                 <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий"></textarea>
               </label>
@@ -668,7 +668,7 @@
               <div class="step-description__wrapper">
                 <h4 class="step-description__country">Чехия</h4>
               </div>
-              <label class="steps-description__label">
+              <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
                 <textarea class="step-description__text" name="plan" rows="8" cols="60">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>

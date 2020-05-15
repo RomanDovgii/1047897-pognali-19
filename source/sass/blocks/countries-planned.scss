@@ -47,7 +47,8 @@
     z-index: 5;
   }
 
-  &:last-child {
+  &:nth-last-child(1) {
+    position: relative;
     margin-bottom: 20px;
     &::before {
       display: none;
@@ -228,6 +229,13 @@
   }
 }
 
+.countries-planned__add-block {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  z-index: 10;
+}
+
 @media (min-width: $tablet-breakpoint) {
   .countries-planned__list {
     width: 100%;
@@ -358,6 +366,8 @@
     max-width: 100%;
     width: 369px;
 
+    position: relative;
+
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2.5px;
@@ -387,6 +397,13 @@
       bottom: 26px;
       right: 27px;
     }
+  }
+
+  .countries-planned__add-block {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    z-index: 10;
   }
 
   .countries-planned__delete {
