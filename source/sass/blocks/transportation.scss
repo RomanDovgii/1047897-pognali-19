@@ -19,6 +19,7 @@
     height: 1px;
     background-color: $yellow-bright;
   }
+
   &::after {
     content: "";
     transform: rotate(180deg);
@@ -106,6 +107,7 @@
   .transportation__button {
     width: 43px;
     height: 43px;
+
     &--plane {
       background-position: 8px 11px;
       background-size: 25px 23px;

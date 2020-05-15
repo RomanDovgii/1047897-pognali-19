@@ -33,6 +33,7 @@
       right: 11px;
 
       background-color: transparent;
+
       &::after {
         opacity: 1;
         background-image: url("../img/icons/mobile/small-cross--white.svg");
@@ -497,6 +498,16 @@
         right: -155px;
       }
     }
+
+    &:nth-last-child(2) {
+      .countries-planned__delete {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background-image: url("../img/icons/mobile/small-cross--white.svg");
+      }
+    }
   }
 
   .countries-planned__delete {
@@ -519,18 +530,6 @@
     &::before {
       right: -52px;
       bottom: 30px;
-    }
-  }
-
-  .countries-planned__country {
-    &:nth-last-child(2) {
-      .countries-planned__delete {
-        display: block;
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        background-image: url("../img/icons/mobile/small-cross--white.svg");
-      }
     }
   }
 }
