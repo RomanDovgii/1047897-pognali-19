@@ -51,6 +51,7 @@
   &--active {
     color: $white;
     background-color: $text__dark-blue;
+    border-color: $text__dark-blue;
   }
 }
 
@@ -114,7 +115,7 @@
   }
 }
 
-@media (min-width: $tablet-breakpoint) {
+@media (min-width: $desktop-breakpoint) {
   .add-block {
     width: 730px;
   }
