@@ -12,7 +12,11 @@
         <div class="wrapper top-menu__wrapper">
           <div class="functions top-menu__functions top-menu__functions--white">
             <a href="index.html" class="functions__link functions__link--white">
-              <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
+                <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
+              </picture>
             </a>
             <button class="functions__button functions__button--open" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -715,5 +719,7 @@
       </div>
     </footer>
 
+    <script src="./js/open-menu.js"></script>
+    <script src="./js/picturefill.min.js"></script>
   </body>
 </html>
