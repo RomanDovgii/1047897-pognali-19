@@ -1,20 +1,44 @@
 .map {
   position: relative;
-}
-
-.map__img {
-  height: 334px;
+  min-height: 334px;
+  background-image: url("../img/map-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 @media (min-width: $tablet-breakpoint) {
-  .map__img {
-    height: 573px;
+  .map {
+    min-height: 573px;
+    background-image: url("../img/map-tablet@1x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
-  .map__img {
-    height: 480px;
+  .map {
+    min-height: 480px;
+    background-image: url("../img/map-desktop@1x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .map {
+    background-image: url("../img/map-mobile@2x.png");
+  }
+}
+
+@media (min-width: $tablet-breakpoint) and (min-resolution: $retina-dpi), (min-width: $tablet-breakpoint) and (min-resolution: $retina-dppx) {
+  .map {
+    background-image: url("../img/map-tablet@2x.png");
+  }
+}
+
+@media (min-width: $desktop-breakpoint) and (min-resolution: $retina-dpi), (min-width: $desktop-breakpoint) and (min-resolution: $retina-dppx) {
+  .map {
+    background-image: url("../img/map-desktop@2x.png");
   }
 }
