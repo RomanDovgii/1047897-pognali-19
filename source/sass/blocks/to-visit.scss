@@ -60,7 +60,6 @@
       width: 26px;
       height: 18px;
 
-      background-image: url("https://via.placeholder.com/150");
       background-size: contain;
       background-repeat: no-repeat;
       border-radius: 3px;
@@ -161,7 +160,7 @@
       width: auto;
 
       &:not(:first-child) {
-        margin-top: 0;
+        margin-top: 13px;
         margin-left: 28px;
       }
     }

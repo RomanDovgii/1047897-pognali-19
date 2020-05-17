@@ -180,7 +180,6 @@
 
       z-index: 3;
 
-      background-image: url("../img/desktop/smolov-back-desktop@1x.png"), url("../img/desktop/rogovaya-back-desktop@1x.png"), url("../img/mobile/rounded-square.svg");
       background-position: 547px 213px, 191px 466px, 60px 149px;
       background-size: 143px 143px, 285px 285px, 213px 213px;
     }
@@ -235,5 +234,21 @@
 
   .mates__people {
     margin-top: 113px;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .mates {
+    .mates__wrapper {
+      background-image: url("../img/desktop/smolov-back-desktop@2x.png"), url("../img/mobile/rogovaya-back-mobile@2x.png"), url("../img/mobile/rounded-square.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) and (min-resolution: $retina-dpi), (min-width: $tablet-breakpoint) and (min-resolution: $retina-dppx) {
+  .mates {
+    .mates__wrapper {
+      background-image: url("../img/desktop/smolov-back-desktop@2x.png"), url("../img/desktop/rogovaya-back-desktop@2x.png"), url("../img/mobile/rounded-square.svg");
+    }
   }
 }

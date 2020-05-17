@@ -198,7 +198,11 @@
         <ul class="people mates__people">
           <li class="people__item">
             <div class="mate-card people__mate-card">
-              <img class="mate-card__img" width="270" height="270" src="./img/desktop/firsova-desktop@1x.jpg" srcset="./img/desktop/firsova-desktop@2x.jpg 2x" alt="фото пользователя">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/firsova-desktop@1x.jpg 1x, ./img/desktop/firsova-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/firsova-tablet@1x.jpg 1x, ./img/tablet/firsova-tablet@2x.jpg2x">
+                <img class="mate-card__img" width="270" height="270" src="./img/mobile/firsova-mobile@1x.jpg" srcset="./img/mobile/firsova-mobile@2x.jpg 2x" alt="фото пользователя">
+              </picture>
                 <div class="level mate-card__level">
                   <p class="level__text"><span class="level__text--number">99</span> level</p>
                 </div>
@@ -268,7 +272,11 @@
           </li>
           <li class="people__item">
             <div class="mate-card people__mate-card">
-              <img class="mate-card__img" width="270" height="270" src="./img/desktop/demin-desktop@1x.jpg" srcset="./img/desktop/demin-desktop@2x.jpg 2x" alt="фото пользователя">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/demin-desktop@1x.jpg 1x, ./img/desktop/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/demin-tablet@1x.jpg 1x, ./img/tablet/demin-tablet@2x.jpg2x">
+                <img class="mate-card__img" width="270" height="270" src="./img/mobile/demin-mobile@1x.jpg" srcset="./img/mobile/demin-mobile@2x.jpg 2x" alt="фото пользователя">
+              </picture>
                 <div class="level level--demin mate-card__level">
                   <p class="level__text">
                     <span class="level__text--number">80</span>level</p>
@@ -414,7 +422,11 @@
 
       <section class="map main__map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__img" src="https://via.placeholder.com/150x150" height="333" width="100%" alt="маршрут к нашему офису">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/map-desktop@1x.png 1x, ./img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.png 1x, ./img/map-tablet@2x.png 2x">
+          <img class="map__img" src="./img/map-mobile@1x.png" srcset="./img/map-mobile@2x.png" object-fit="cover" height="333" width="100%" alt="маршрут к нашему офису">
+        </picture>
       </section>
     </main>
 
