@@ -64,6 +64,7 @@
   .footer__logo {
     width: 164px;
     height: 42px;
+    margin-top: 12px;
   }
 
   .footer__link {
@@ -83,7 +84,7 @@
     position: relative;
     z-index: 4;
     margin-top: 10px;
-    margin-left: 55px;
+    margin-left: -8px;
   }
 }
 
@@ -98,5 +99,11 @@
   .footer__logo {
     width: 198px;
     height: 52px;
+    margin-top: 10px;
+    margin-left: 2px;
+  }
+
+  .footer__social {
+    margin-left: -46px;
   }
 }

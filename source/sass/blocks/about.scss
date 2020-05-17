@@ -290,7 +290,7 @@
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
   .about__content-wrapper {
     &::after {
-      background: url("../img/mobile/about-mobile@1x.png");
+      background-image: url("../img/mobile/about-mobile@1x.png");
     }
   }
 }
