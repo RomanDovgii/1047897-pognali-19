@@ -97,6 +97,10 @@
     line-height: 30px;
     display: inline;
     margin-top: 17px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .transportation__buttons {

@@ -39,6 +39,7 @@
     z-index: 10;
 
     background-image: url("https://via.placeholder.com/150");
+    background-size: contain;
     border-radius: 3px;
   }
 
@@ -47,6 +48,10 @@
       background-image: url("../img/mobile/thailand-mobile@1x.jpg");
       background-repeat: no-repeat;
     }
+
+    &::before {
+      background-image: url("../img/flag-thailand.svg");
+    }
   }
 
   &--cz {
@@ -54,12 +59,19 @@
       background-image: url("../img/mobile/czech-mobile@1x.jpg");
       background-repeat: no-repeat;
     }
+
+    &::before {
+      background-image: url("../img/flag-czech.svg");
+    }
   }
 
   &--fr {
     &::after {
       background-image: url("../img/mobile/france-mobile@1x.jpg");
       background-repeat: no-repeat;
+    }
+    &::before {
+      background-image: url("../img/flag-france.svg");
     }
   }
 }
@@ -172,8 +184,6 @@
       top: 16px;
       right: 150px;
       z-index: 10;
-
-      background-image: url("https://via.placeholder.com/150");
       border-radius: 5px;
     }
 

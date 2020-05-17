@@ -11,11 +11,24 @@
   display: flex;
   justify-content: space-between;
 
+  &--cz {
+    &::after {
+      background-image: url("../img/flag-czech.svg");
+    }
+  }
+
+  &--ba {
+    &::after {
+      background-image: url("../img/flag-bosnia.svg");
+    }
+  }
+
   &::after {
     content: "";
     width: 35px;
     height: 24px;
-    background-color: $black;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-right: 2px;
     margin-left: 5px;
   }

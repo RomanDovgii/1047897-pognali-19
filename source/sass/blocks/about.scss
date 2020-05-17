@@ -63,6 +63,7 @@
     z-index: -1;
 
     background: url("../img/mobile/about-mobile@1x.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 18px 12px;
 
@@ -133,6 +134,7 @@
         border-radius: 0;
 
         background-image: url("../img/tablet/about-tablet@1x.png");
+        background-size: contain;
         background-repeat: no-repeat;
       }
     }
