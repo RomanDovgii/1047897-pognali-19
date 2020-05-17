@@ -181,8 +181,8 @@
 
       width: 70px;
       height: 47px;
-      top: 23px;
-      right: 152px;
+      top: 17px;
+      right: 150px;
       z-index: 10;
       border-radius: 5px;
     }
@@ -265,6 +265,11 @@
   .country-card {
     padding-bottom: 14px;
     min-width: 560px;
+
+    &::before {
+      top: 23px;
+      right: 152px;
+    }
   }
 
   .country-card__name {

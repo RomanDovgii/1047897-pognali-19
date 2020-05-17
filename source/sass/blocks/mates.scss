@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    background-image: url("../img/mobile/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
+    background-image: url("../img/desktop/smolov-back-desktop@1x.png"), url("../img/mobile/rogovaya-back-mobile@1x.png"), url("../img/mobile/rounded-square.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 152px 69px, -10px 341px, -20px 69px;
     background-size: 143px 143px, 71px 71px, 132px 132px;
@@ -104,6 +104,15 @@
 
       background-color: $background__dark-blue;
     }
+
+    .mates__wrapper {
+      background-image: url("../img/desktop/smolov-back-desktop@1x.png"), url("../img/desktop/rogovaya-back-desktop@1x.png"), url("../img/mobile/rounded-square.svg");
+      background-position: 40px 506px, 408px 160px, 40px 160px;
+      background-size: 143px 143px, 285px 285px, 213px 213px;
+      padding-top: 100px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 
   .mates__heading {
@@ -167,7 +176,17 @@
       align-items: flex-start;
 
       @include desktop-paddings;
-      padding-bottom: 46px;
+      padding-bottom: 55px;
+
+      z-index: 3;
+
+      background-image: url("../img/desktop/smolov-back-desktop@1x.png"), url("../img/desktop/rogovaya-back-desktop@1x.png"), url("../img/mobile/rounded-square.svg");
+      background-position: 547px 213px, 191px 466px, 60px 149px;
+      background-size: 143px 143px, 285px 285px, 213px 213px;
+    }
+
+    &::after {
+      bottom: -79px
     }
   }
 
