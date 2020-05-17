@@ -280,7 +280,8 @@
 
 @media (min-width: $desktop-breakpoint) {
   .rates {
-    padding-bottom: 120px;
+    padding-bottom: 119px;
+    padding-top: 118px;
 
     .rates__wrapper {
       padding-top: 50px;
@@ -319,5 +320,13 @@
   .rates__link {
     margin-top: 7px;
     margin-left: 91px;
+  }
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .rates__heading-wrapper {
+    &::after {
+      background-image: url("../img/mobile/rates@2x.png");
+    }
   }
 }

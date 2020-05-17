@@ -113,6 +113,12 @@
       }
     }
 
+    &--plane-index {
+      &::after {
+        background-position: 2px 0;
+      }
+    }
+
     &--catalog {
       background: none;
 

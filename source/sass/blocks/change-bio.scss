@@ -379,10 +379,34 @@
   }
 
   .change-bio__user-img {
-    display: none;
+    display: block;
+    width: 190px;
+    height: 190px;
+
+    position: absolute;
+
+    top: -190px;
+    right: 155px;
+
+    border-radius: 0;
+  }
+
+  .change-bio__number {
+    color: $white;
+  }
+
+  .change-bio__text {
+    color: $white;
+
+    &::before {
+      background-color: $white;
+    }
   }
 
   .change-bio__level {
-    display: none;
+    display: flex;
+    position: absolute;
+    top: -148px;
+    right: 392px;
   }
 }

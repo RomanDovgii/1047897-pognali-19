@@ -12,7 +12,11 @@
         <div class="wrapper top-menu__wrapper">
           <div class="functions top-menu__functions top-menu__functions--white">
             <a href="index.html" class="functions__link functions__link--white">
-              <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
+                <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
+              </picture>
             </a>
             <button class="functions__button functions__button--open" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -945,8 +949,13 @@
           <ul class="mates-sorted__list">
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img">
-                  <img src="./img/desktop/firsova-desktop@1x.jpg" width="70" height="70" alt="фото пользователя">
+                <div class="catalog-mate-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/firsova-desktop@1x.jpg 1x, ./img/desktop/firsova-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/firsova-tablet@1x.jpg 1x, ./img/tablet/firsova-tablet@2x.jpg2x">
+                    <img class="catalog-mate-card__img" src="./img/mobile/firsova-mobile@1x.jpg" srcset="../img/mobile/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
+                  </picture>
+
                 </div>
 
 
@@ -990,13 +999,13 @@
                     <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Шри-ланка</a>
+                        <a class="to-visit__link to-visit__link--lk to-visit__link--catalog" href="">Шри-ланка</a>
                       </li>
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Таиланд</a>
+                        <a class="to-visit__link to-visit__link--th to-visit__link--catalog" href="">Таиланд</a>
                       </li>
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Сейшелы</a>
+                        <a class="to-visit__link to-visit__link--sc to-visit__link--catalog" href="">Сейшелы</a>
                       </li>
                     </ul>
 
@@ -1032,8 +1041,12 @@
 
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img">
-                  <img src="./img/desktop/demin-desktop@1x.jpg" width="70" height="70" alt="фото пользователя">
+                <div class="catalog-mate-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/demin-desktop@1x.jpg 1x, ./img/desktop/demin-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/demin-tablet@1x.jpg 1x, ./img/tablet/demin-tablet@2x.jpg2x">
+                    <img class="catalog-mate-card__img" src="./img/mobile/demin-mobile@1x.jpg" srcset="../img/mobile/demin-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
+                  </picture>
                 </div>
 
 
@@ -1074,10 +1087,10 @@
                     <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Бельгия</a>
+                        <a class="to-visit__link to-visit__link--be to-visit__link--catalog" href="">Бельгия</a>
                       </li>
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Чехия</a>
+                        <a class="to-visit__link to-visit__link--cz to-visit__link--catalog" href="">Чехия</a>
                       </li>
                     </ul>
 
@@ -1114,8 +1127,12 @@
 
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img">
-                  <img src="./img/desktop/smolov-desktop@1x.jpg" width="70" height="70" alt="фото пользователя">
+                <div class="catalog-mate-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/smolov-desktop@1x.jpg 1x, ./img/desktop/smolov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/smolov-tablet@1x.jpg 1x, ./img/tablet/smolov-tablet@2x.jpg2x">
+                    <img class="catalog-mate-card__img" src="./img/mobile/smolov-mobile@1x.jpg" srcset="../img/mobile/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
+                  </picture>
                 </div>
 
 
@@ -1156,13 +1173,13 @@
                     <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">США</a>
+                        <a class="to-visit__link to-visit__link--us to-visit__link--catalog" href="">США</a>
                       </li>
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Австралия</a>
+                        <a class="to-visit__link to-visit__link--au to-visit__link--catalog" href="">Австралия</a>
                       </li>
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Доминика</a>
+                        <a class="to-visit__link to-visit__link--do to-visit__link--catalog" href="">Доминика</a>
                       </li>
                     </ul>
 
@@ -1199,8 +1216,12 @@
 
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img">
-                  <img src="./img/desktop/rogovaya-desktop@1x.jpg" width="70" height="70" alt="фото пользователя">
+                <div class="catalog-mate-card__img-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/rogovaya-desktop@1x.jpg 1x, ./img/desktop/rogovaya-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/rogovaya-tablet@1x.jpg 1x, ./img/tablet/rogovaya-tablet@2x.jpg2x">
+                    <img class="catalog-mate-card__img" src="./img/mobile/rogovaya-mobile@1x.jpg" srcset="../img/mobile/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
+                  </picture>
                 </div>
 
                 <div class="catalog-mate-card__first-block">
@@ -1237,10 +1258,10 @@
                     <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Великобритания</a>
+                        <a class="to-visit__link to-visit__link--uk to-visit__link--catalog" href="">Великобритания</a>
                       </li>
                       <li class="to-visit__item to-visit__item--catalog">
-                        <a class="to-visit__link to-visit__link--catalog" href="">Германия</a>
+                        <a class="to-visit__link to-visit__link--de to-visit__link--catalog" href="">Германия</a>
                       </li>
                     </ul>
 
@@ -1312,7 +1333,11 @@
       <div class="wrapper footer__wrapper">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
-        <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+          <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        </picture>
       </a>
       <ul class="social footer__social">
         <li class="social__item social__item--ftr">
@@ -1338,5 +1363,7 @@
       </div>
     </footer>
 
+    <script src="./js/open-menu.js"></script>
+    <script src="./js/picturefill.min.js"></script>
   </body>
 </html>

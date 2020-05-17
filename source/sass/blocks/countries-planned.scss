@@ -41,12 +41,27 @@
     }
   }
 
+  &--ba {
+    &::after {
+      background-image: url("../img/flag-bosnia.svg");
+    }
+  }
+
+  &--cz {
+    &::after {
+      background-image: url("../img/flag-czech.svg");
+    }
+  }
+
   &:not(:nth-last-child(2))::after {
     content: "";
     width: 53px;
     height: inherit;
     border: 1px solid $blue-10-color;
     border-radius: 4px;
+    background-size: 35px 24px;
+    background-position: 9px 9px;
+    background-repeat: no-repeat;
   }
 
   &:not(:nth-last-child(2))::before {
@@ -302,6 +317,18 @@
     width: 369px;
     margin-bottom: 15px;
 
+    &--ba {
+      &::after {
+        background-image: url("../img/flag-bosnia.svg");
+      }
+    }
+
+    &--cz {
+      &::after {
+        background-image: url("../img/flag-czech.svg");
+      }
+    }
+
     &:nth-last-child(2) {
       .countries-planned__delete {
         top: 25px;
@@ -333,10 +360,11 @@
         position: absolute;
         top: 12px;
         right: -123px;
+        background-position: 0 0;
+        background-size: contain;
 
 
         border: none;
-        background-color: $gray;
       }
     }
 

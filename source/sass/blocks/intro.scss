@@ -205,3 +205,39 @@
     justify-content: space-between;
   }
 }
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .intro {
+    background-image: url("../img/mobile/globe-back-mobile@2x.jpg");
+  }
+
+  .intro__actions {
+    &::after {
+      background-image: url("../img/mobile/traveller-illustration-mobile@2x.png");
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) and (min-resolution: $retina-dpi), (min-width: $tablet-breakpoint) and (min-resolution: $retina-dppx) {
+  .intro {
+    background-image: url("../img/tablet/globe-back-tablet@2x.jpg");
+  }
+
+  .intro__steps {
+    &::before {
+      background-image: url("../img/tablet/traveller-illustration-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) and (min-resolution: $retina-dpi), (min-width: $desktop-breakpoint) and (min-resolution: $retina-dppx) {
+  .intro {
+    background-image: url("../img/desktop/globe-back-desktop@2x.jpg");
+  }
+
+  .intro__steps {
+    &::before {
+      background-image: url("../img/desktop/traveller-illustration-desktop@2x.png");
+    }
+  }
+}

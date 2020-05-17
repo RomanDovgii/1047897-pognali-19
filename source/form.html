@@ -12,7 +12,11 @@
         <div class="wrapper top-menu__wrapper">
           <div class="functions top-menu__functions top-menu__functions--white">
             <a href="index.html" class="functions__link functions__link--white">
-              <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
+                <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
+              </picture>
             </a>
             <button class="functions__button functions__button--open" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -99,17 +103,8 @@
     <main class="main">
 
       <div class="main__heading-wrapper main__heading-wrapper--form">
-        <div class="wrapper main__wrapper">
+        <div class="wrapper main__wrapper main__wrapper--form">
           <h1 class="main__heading main__heading--form">Направления</h1>
-
-          <div class="desktop-user-info main__desktop-user-info">
-            <p class="desktop-user-info__level">
-              <span class="desktop-user-info__number">80</span>
-              <span class="desktop-user-info__text">level</span>
-            </p>
-
-            <img class="desktop-user-info__user-img" width="190" height="190" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
-          </div>
         </div>
       </div>
 
@@ -149,7 +144,10 @@
               <legend class="change-bio__legend">Транспорт</legend>
             </fieldset>
 
-            <img class="change-bio__user-img" width="100" height="100" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="./img/desktop/demin-desktop@1x.jpg 1x, ./img/desktop/demin-desktop@2x.jpg 2x">
+              <img class="change-bio__user-img" width="100" height="100" src="./img/tablet/demin-tablet@1x.jpg" srcset="./img/tablet/demin-tablet@2x.jpg 2x" alt="фото пользователя">
+            </picture>
           </div>
 
           <label class="change-bio__change-avatar">
@@ -488,14 +486,14 @@
 
             <div class="countries-planned steps-ordered__countries-planned">
               <ul class="countries-planned__list">
-                <li class="countries-planned__country">
+                <li class="countries-planned__country countries-planned__country--ba">
                   <button class="countries-planned__delete" type="button">
                     <span class="visually-hidden">удалить страну</span>
                   </button>
                   <button class="countries-planned__country-name" type="button">Босния и Герцеговина</button>
                   <input class="visually-hidden" type="text" name="country" value="Босния и Герцеговина" readonly>
                 </li>
-                <li class="countries-planned__country">
+                <li class="countries-planned__country countries-planned__country--cz">
                   <button class="countries-planned__delete" type="button">
                     <span class="visually-hidden">удалить страну</span>
                   </button>
@@ -655,7 +653,7 @@
 
             <div class="step-description steps-ordered__step-description">
 
-              <div class="step-description__wrapper">
+              <div class="step-description__wrapper step-description__wrapper--ba">
                 <h4 class="step-description__country">Босния и Герцеговина</h4>
               </div>
               <label class="step-description__label">
@@ -665,7 +663,7 @@
             </div>
 
             <div class="step-description steps-ordered__step-description">
-              <div class="step-description__wrapper">
+              <div class="step-description__wrapper step-description__wrapper--cz">
                 <h4 class="step-description__country">Чехия</h4>
               </div>
               <label class="step-description__label">
@@ -689,7 +687,11 @@
       <div class="wrapper footer__wrapper">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
-        <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+          <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        </picture>
       </a>
       <ul class="social footer__social">
         <li class="social__item social__item--ftr">
@@ -715,5 +717,7 @@
       </div>
     </footer>
 
+    <script src="./js/open-menu.js"></script>
+    <script src="./js/picturefill.min.js"></script>
   </body>
 </html>

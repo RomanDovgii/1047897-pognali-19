@@ -6,6 +6,7 @@
 .mate-card__img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  display: block;
 }
 
 .mate-card__level {
@@ -22,7 +23,6 @@
 
   background: $white;
 
-  margin-top: -4px;
   padding-bottom: 23px;
 
   border-bottom-right-radius: 10px;

@@ -148,6 +148,10 @@
     padding-top: 8px;
 
     margin-left: -1px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .set-level__input-wrapper {

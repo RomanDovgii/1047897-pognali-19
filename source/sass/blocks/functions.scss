@@ -35,6 +35,18 @@
     padding-top: 40px;
   }
 
+  .functions__link {
+    width: 166px;
+    height: 42px;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  .functions__logo-img {
+    width: 166px;
+    height: 42px;
+  }
+
   .functions__auth-link {
     display: flex;
 
@@ -48,7 +60,7 @@
 
   .functions__button {
     margin-top: 21px;
-    margin-left: 105px;
+    margin-left: 24px;
   }
 }
 
@@ -60,11 +72,12 @@
   .functions__link {
     width: 200px;
     height: 50px;
+    margin: 0;
   }
 
   .functions__logo-img {
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 50px;
   }
 
   .functions__button {

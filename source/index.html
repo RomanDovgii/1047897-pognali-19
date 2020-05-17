@@ -12,7 +12,11 @@
         <div class="wrapper top-menu__wrapper">
           <div class="functions top-menu__functions top-menu__functions--white top-menu__functions--index">
             <a href="index.html" class="functions__link functions__link--white">
-              <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" width="100" height="20" alt="Погнали?">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
+                <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
+              </picture>
             </a>
             <button class="functions__button functions__button--open" type="button">
               <span class="visually-hidden">Открыть меню</span>
@@ -194,7 +198,9 @@
         <ul class="people mates__people">
           <li class="people__item">
             <div class="mate-card people__mate-card">
-              <img class="mate-card__img" width="270" height="270" src="./img/desktop/firsova-desktop@1x.jpg" alt="фото пользователя">
+              <picture>
+                <img class="mate-card__img" width="270" height="270" src="./img/desktop/firsova-desktop@1x.jpg" srcset="./img/desktop/firsova-desktop@2x.jpg 2x" alt="фото пользователя">
+              </picture>
                 <div class="level mate-card__level">
                   <p class="level__text"><span class="level__text--number">99</span> level</p>
                 </div>
@@ -208,17 +214,17 @@
 
                   <ul class="to-visit mate-card__to-visit">
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--sri-lanka" href="">
+                      <a class="to-visit__link to-visit__link--lk-index" href="">
                         <span class="visually-hidden">Шри-ланка</span>
                       </a>
                     </li>
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--thailand" href="">
+                      <a class="to-visit__link to-visit__link--th-index" href="">
                         <span class="visually-hidden">Таиланд</span>
                       </a>
                     </li>
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--seychelles" href="">
+                      <a class="to-visit__link to-visit__link--sc-index" href="">
                         <span class="visually-hidden">Сейшеллы</span>
                       </a>
                     </li>
@@ -246,7 +252,7 @@
                   </ul>
 
                   <ul class="transport mate-card__transport">
-                    <li class="transport__item transport__item--plane transport__item--active">
+                    <li class="transport__item transport__item--plane transport__item--plane-index transport__item--active">
                       <span class="transport__description">Авиаперелет</span>
                     </li>
                     <li class="transport__item transport__item--bus">
@@ -264,7 +270,9 @@
           </li>
           <li class="people__item">
             <div class="mate-card people__mate-card">
-                <img class="mate-card__img" width="270" height="270" src="./img/desktop/demin-desktop@1x.jpg" alt="фото пользователя">
+              <picture>
+                <img class="mate-card__img" width="270" height="270" src="./img/desktop/demin-desktop@1x.jpg" srcset="./img/desktop/demin-desktop@2x.jpg 2x" alt="фото пользователя">
+              </picture>
                 <div class="level level--demin mate-card__level">
                   <p class="level__text">
                     <span class="level__text--number">80</span>level</p>
@@ -279,12 +287,12 @@
 
                   <ul class="to-visit mate-card__to-visit">
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--belgium" href="">
+                      <a class="to-visit__link to-visit__link--be-index" href="">
                         <span class="visually-hidden">Бельгия</span>
                       </a>
                     </li>
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--czech" href="">
+                      <a class="to-visit__link to-visit__link--cz-index" href="">
                         <span class="visually-hidden">Чехия</span>
                       </a>
                     </li>
@@ -309,7 +317,7 @@
                   </ul>
 
                   <ul class="transport mate-card__transport">
-                    <li class="transport__item transport__item--plane transport__item--active">
+                    <li class="transport__item transport__item--plane transport__item--plane-index transport__item--active">
                       <span class="transport__description">Авиаперелет</span>
                     </li>
                     <li class="transport__item transport__item--bus transport__item--active">
@@ -410,7 +418,6 @@
 
       <section class="map main__map">
         <h2 class="visually-hidden">Карта</h2>
-        <img class="map__img" src="https://via.placeholder.com/150x150" height="333" width="100%" alt="маршрут к нашему офису">
       </section>
     </main>
 
@@ -418,7 +425,11 @@
       <div class="wrapper footer__wrapper">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
-        <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+          <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        </picture>
       </a>
       <ul class="social footer__social">
         <li class="social__item social__item--ftr">
@@ -469,5 +480,6 @@
     </div>
 
     <script src="./js/open-menu.js"></script>
+    <script src="./js/picturefill.min.js"></script>
   </body>
 </html>
