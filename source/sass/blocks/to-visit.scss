@@ -15,6 +15,7 @@
 
 .to-visit__item {
   width: 35px;
+  height: 24px;
 
   &:not(:first-child) {
     margin-left: 3px;
@@ -38,6 +39,9 @@
   border-radius: 3px;
 
   text-decoration: none;
+
+  background-size: contain;
+  background-repeat: no-repeat;
 
   &--catalog {
     background: none;
@@ -72,10 +76,18 @@
     }
   }
 
+  &--lk-index {
+    background-image: url("../img/flag-sri-lanka.svg");
+  }
+
   &--th {
     &::before {
       background-image: url("../img/flag-thailand.svg");
     }
+  }
+
+  &--th-index {
+    background-image: url("../img/flag-thailand.svg");
   }
 
   &--sc {
@@ -84,16 +96,28 @@
     }
   }
 
+  &--sc-index {
+    background-image: url("../img/flag-seychelles.svg");
+  }
+
   &--cz {
     &::before {
       background-image: url("../img/flag-czech.svg");
     }
   }
 
+  &--cz-index {
+    background-image: url("../img/flag-czech.svg");
+  }
+
   &--be {
     &::before {
       background-image: url("../img/flag-belgium.svg");
     }
+  }
+
+  &--be-index {
+    background-image: url("../img/flag-belgium.svg");
   }
 
   &--us {

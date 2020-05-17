@@ -1316,7 +1316,11 @@
       <div class="wrapper footer__wrapper">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
-        <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+          <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        </picture>
       </a>
       <ul class="social footer__social">
         <li class="social__item social__item--ftr">

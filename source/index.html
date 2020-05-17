@@ -212,17 +212,17 @@
 
                   <ul class="to-visit mate-card__to-visit">
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--sri-lanka" href="">
+                      <a class="to-visit__link to-visit__link--lk-index" href="">
                         <span class="visually-hidden">Шри-ланка</span>
                       </a>
                     </li>
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--thailand" href="">
+                      <a class="to-visit__link to-visit__link--th-index" href="">
                         <span class="visually-hidden">Таиланд</span>
                       </a>
                     </li>
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--seychelles" href="">
+                      <a class="to-visit__link to-visit__link--sc-index" href="">
                         <span class="visually-hidden">Сейшеллы</span>
                       </a>
                     </li>
@@ -283,12 +283,12 @@
 
                   <ul class="to-visit mate-card__to-visit">
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--belgium" href="">
+                      <a class="to-visit__link to-visit__link--be-index" href="">
                         <span class="visually-hidden">Бельгия</span>
                       </a>
                     </li>
                     <li class="to-visit__item">
-                      <a class="to-visit__link to-visit__link--czech" href="">
+                      <a class="to-visit__link to-visit__link--cz-index" href="">
                         <span class="visually-hidden">Чехия</span>
                       </a>
                     </li>
@@ -422,7 +422,11 @@
       <div class="wrapper footer__wrapper">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
-        <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+          <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
+        </picture>
       </a>
       <ul class="social footer__social">
         <li class="social__item social__item--ftr">

@@ -61,6 +61,11 @@
     }
   }
 
+  .footer__logo {
+    width: 164px;
+    height: 42px;
+  }
+
   .footer__link {
     position: relative;
     z-index: 4;
@@ -88,5 +93,10 @@
       padding-left: 59px;
       padding-right: 59px;
     }
+  }
+
+  .footer__logo {
+    width: 198px;
+    height: 52px;
   }
 }
