@@ -160,7 +160,7 @@
       width: auto;
 
       &:not(:first-child) {
-        margin-top: 13px;
+        margin-top: 0;
         margin-left: 28px;
       }
     }
@@ -194,6 +194,7 @@
     &--catalog {
       &:not(:first-child) {
         margin-left: 0;
+        margin-top: 13px;
       }
     }
   }

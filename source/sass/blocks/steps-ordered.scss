@@ -256,7 +256,7 @@
   }
 
   .steps-ordered__movement {
-    margin-top: 47px;
+    margin-top: 19px;
     order: 7;
 
     display: flex;
@@ -270,6 +270,10 @@
       .steps-ordered__previous {
         margin-top: -8px;
       }
+    }
+
+    &--top-fix {
+      margin-top: 0;
     }
   }
 
