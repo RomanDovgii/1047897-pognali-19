@@ -284,3 +284,31 @@
     margin-top: 85px;
   }
 }
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about__content-wrapper {
+    &::after {
+      background: url("../img/mobile/about-mobile@1x.png");
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) and (min-resolution: $retina-dpi), (min-width: $tablet-breakpoint) and (min-resolution: $retina-dppx) {
+  .about {
+    .about__wrapper {
+      &::after {
+        background-image: url("../img/tablet/about-tablet@2x.png");
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) and (min-resolution: $retina-dpi), (min-width: $desktop-breakpoint) and (min-resolution: $retina-dppx) {
+  .about {
+    .about__wrapper {
+      &::after {
+        background-image: url("../img/desktop/about-desktop@1x.png");
+      }
+    }
+  }
+}

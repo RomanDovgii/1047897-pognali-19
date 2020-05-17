@@ -321,3 +321,11 @@
     margin-left: 91px;
   }
 }
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .rates__heading-wrapper {
+    &::after {
+      background-image: url("../img/mobile/rates@2x.png");
+    }
+  }
+}
