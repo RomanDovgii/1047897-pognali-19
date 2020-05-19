@@ -171,19 +171,40 @@
 
         <ul class="countries directions__countries">
           <li class="country-card country-card--th countries__country-card">
-              <p class="country-card__name">Таиланд</p>
-              <p class="country-card__text country-card__text--number">18321<span class="visually-hidden"> человек посетило эту страну</span></p>
-              <p class="country-card__text">Джунгли зовут!</p>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/desktop/webp/thailand-desktop@1x.webp 1x, ./img/desktop/webp/thailand-desktop@2x.webp 2x">
+              <source srcset="./img/mobile/webp/thailand-mobile@1x.webp 1x, ./img/mobile/webp/thailand-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="./img/desktop/thailand-desktop@1x.jpg 1x, ./img/desktop/thailand-desktop@2x.jpg 2x">
+              <img class="country-card__image" src="./img/mobile/thailand-mobile@1x.jpg" srcset="./img/mobile/thailand-mobile@2x.jpg 2x" alt="Тайланд">
+            </picture>
+            <p class="country-card__name">Таиланд</p>
+            <p class="country-card__text country-card__text--number">18321<span class="visually-hidden"> человек посетило эту страну</span></p>
+            <p class="country-card__text">Джунгли зовут!</p>
           </li>
           <li class="country-card country-card--fr countries__country-card">
-              <p class="country-card__name">Франция</p>
-              <p class="country-card__text country-card__text--number">12518<span class="visually-hidden"> человек посетило эту страну</span></p>
-              <p class="country-card__text">Трэ бьен, манифик!</p>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/desktop/webp/france-desktop@1x.webp 1x, ./img/desktop/webp/france-desktop@2x.webp 2x">
+              <source srcset="./img/mobile/webp/france-mobile@1x.webp 1x, ./img/mobile/webp/france-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="./img/desktop/france-desktop@1x.jpg 1x, ./img/desktop/france-desktop@2x.jpg 2x">
+              <img class="country-card__image" src="./img/mobile/france-mobile@1x.jpg" srcset="./img/mobile/france-mobile@2x.jpg 2x" alt="Тайланд">
+            </picture>
+            <p class="country-card__name">Франция</p>
+            <p class="country-card__text country-card__text--number">12518<span class="visually-hidden"> человек посетило эту страну</span></p>
+            <p class="country-card__text">Трэ бьен, манифик!</p>
           </li>
           <li class="country-card country-card--cz countries__country-card">
-              <p class="country-card__name">Чехия</p>
-              <p class="country-card__text country-card__text--number">5326<span class="visually-hidden"> человек посетило эту страну</span></p>
-              <p class="country-card__text">Закоулки старой Европы</p>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/desktop/webp/czech-desktop@1x.webp 1x, ./img/desktop/webp/czech-desktop@2x.webp 2x">
+              <source srcset="./img/mobile/webp/czech-mobile@1x.webp 1x, ./img/mobile/webp/czech-mobile@2x.webp 2x">
+
+              <source media="(min-width: 768px)" srcset="./img/desktop/czech-desktop@1x.jpg 1x, ./img/desktop/czech-desktop@2x.jpg 2x">
+              <img class="country-card__image" src="./img/mobile/czech-mobile@1x.jpg" srcset="./img/mobile/czech-mobile@2x.jpg 2x" alt="Тайланд">
+            </picture>
+            <p class="country-card__name">Чехия</p>
+            <p class="country-card__text country-card__text--number">5326<span class="visually-hidden"> человек посетило эту страну</span></p>
+            <p class="country-card__text">Закоулки старой Европы</p>
           </li>
         </ul>
 
@@ -427,6 +448,9 @@
         </p>
         <a class="office__link" href="">
           <span class="office__span">Проложить маршрут</span>
+          <svg width="10" height="14" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#triangle-arrow-right"></use>
+          </svg>
         </a>
         </div>
       </section>
@@ -454,25 +478,32 @@
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
             <span class="visually-hidden">Наш Facebook</span>
+            <svg width="23" height="12" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--vk-ftr" href="">
             <span class="visually-hidden">Наш VK</span>
+            <svg width="23" height="12" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
             <span class="visually-hidden">Наш instagram</span>
+            <svg width="23" height="12" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#instagram"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="developer footer__developer" href="">
         <p class="developer__text">Разработано</p>
-        <!-- <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy"> -->
-
-        <svg class="developer__logo" width="27" height="34" alt="HTML Academy">
-          <use xlink:href="./img/sprite-icons.svg#htmlacademy"></use>
+        <svg class="developer__logo" width="27" height="34" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
       </div>

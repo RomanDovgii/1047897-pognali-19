@@ -95,7 +95,7 @@
     border-radius: 10px;
   }
 
-  &::after {
+  svg {
     content: "";
 
     display: block;
@@ -104,9 +104,6 @@
     position: absolute;
     top: 24px;
     right: 23px;
-
-    background-image: url("../img/icons/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
   }
 
   &:hover,
@@ -121,8 +118,8 @@
       background-color: $universal__dark-blue;
     }
 
-    &::after {
-      background-image: url("../img/icons/mobile/triangle-arrow-right-white.svg");
+    svg {
+      fill: $white;
     }
   }
 
@@ -134,8 +131,8 @@
       opacity: 0.3;
     }
 
-    &::after {
-      background-image: url("../img/icons/mobile/triangle-arrow-right-white.svg");
+    svg {
+      fill: $white;
       opacity: 0.3;
     }
   }
@@ -200,7 +197,7 @@
       border-radius: 20px;
     }
 
-    &::after {
+    svg {
       top: 34px;
       right: 36px;
     }

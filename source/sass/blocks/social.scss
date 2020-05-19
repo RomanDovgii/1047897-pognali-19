@@ -45,7 +45,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &::after {
+  svg {
     content: "";
     display: block;
     width: 100%;
@@ -53,56 +53,71 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &--facebook {
-    &::after {
-      background-image: url("../img/icons/mobile/facebook-blue.svg");
-      background-size: 11px 21px;
+    svg {
+      width: 11px;
+      height: 21px;
+
+      top: 13px;
+      left: 17px;
     }
   }
 
   &--vk {
-    &::after {
-      background-image: url("../img/icons/mobile/vk-blue.svg");
-      background-size: 23px 12px;
+    svg {
+      width: 23px;
+      height: 12px;
+
+      top: 18px;
+      left: 11px;
     }
   }
 
   &--instagram {
-    &::after {
-      background-image: url("../img/icons/mobile/instagram-blue.svg");
-      background-size: 18px 18px;
+    svg {
+      width: 18px;
+      height: 18px;
+
+      top: 14px;
+      left: 14px;
     }
   }
 
   &--facebook-ftr {
-    &::after {
-      background-image: url("../img/icons/mobile/facebook-navy.svg");
-      background-size: 11px 21px;
+    svg {
+      width: 11px;
+      height: 21px;
+
+      top: 13px;
+      left: 17px;
     }
   }
 
   &--vk-ftr {
-    &::after {
-      background-image: url("../img/icons/mobile/vk-navy.svg");
-      background-size: 23px 12px;
+    svg {
+      width: 23px;
+      height: 12px;
+
+      top: 18px;
+      left: 11px;
     }
   }
 
   &--instagram-ftr {
-    &::after {
-      background-image: url("../img/icons/mobile/instagram-navy.svg");
-      background-size: 18px 18px;
+    svg {
+      width: 18px;
+      height: 18px;
+
+      top: 14px;
+      left: 14px;
     }
   }
 
   &:hover,
   &:focus {
-    &::after {
+    svg {
       opacity: 0.6;
     }
   }
