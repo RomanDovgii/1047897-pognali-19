@@ -44,11 +44,17 @@
           <ul class="actions top-menu__actions">
             <li class="actions__item">
               <a class="actions__link actions__link--phone" href="tel:88005558628">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#topmenu-phone"></use>
+                </svg>
                 <span class="visually-hidden">8 800 555-86-28</span>
               </a>
             </li>
             <li class="actions__item">
               <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
+                <svg width="18" height="14" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#topmenu-mail"></use>
+                </svg>
                 <span class="visually-hidden">mail@htmlacademy.ru</span>
               </a>
             </li>
@@ -58,51 +64,61 @@
           </ul>
         </div>
 
+          <div class="information top-menu__information">
+            <div class="wrapper information__wrapper">
+            <ul class="inner-links information__inner-links">
+              <li class="inner-links__item">
+                <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
+              </li>
+              <li class="inner-links__item">
+                <a class="inner-links__link" href="./form.html">Направления</a>
+              </li>
+              <li class="inner-links__item">
+                <a class="inner-links__link" href="./catalog.html">Попутчики</a>
+              </li>
+            </ul>
 
-        <div class="information top-menu__information">
-          <div class="wrapper information__wrapper">
-          <ul class="inner-links information__inner-links">
-            <li class="inner-links__item">
-              <a class="inner-links__link" href="./index.html">О сервисе</a>
-            </li>
-            <li class="inner-links__item">
-              <a class="inner-links__link" href="./form.html">Направления</a>
-            </li>
-            <li class="inner-links__item">
-              <a class="inner-links__link inner-links__link--active" href="./catalog.html">Попутчики</a>
-            </li>
-          </ul>
+            <a class="information__auth-link" href="">Авторизация</a>
 
-          <a class="information__auth-link" href="">Авторизация</a>
+            <ul class="contacts information__contacts">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--phone" href="tel:88005558628">
+                  <svg width="18" height="18">
+                    <use xlink:href="./img/sprite.svg#contacts-phone"></use>
+                  </svg>
+                  <span>8 800 555-86-28</span>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
+                  <svg width="18" height="18">
+                    <use xlink:href="./img/sprite.svg#contacts-mail"></use>
+                  </svg>
+                  <span>mail@htmlacademy.ru</span>
+                </a>
+              </li>
+            </ul>
 
-          <ul class="contacts information__contacts">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--phone" href="tel:88005558628">8 800 555-86-28</a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
+            <ul class="social information__social">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="">
+                  <span class="visually-hidden">Наш Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="">
+                  <span class="visually-hidden">Наш VK</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="">
+                  <span class="visually-hidden">Наш instagram</span>
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
 
-          <ul class="social information__social">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="">
-                <span class="visually-hidden">Наш Facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="">
-                <span class="visually-hidden">Наш VK</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="">
-                <span class="visually-hidden">Наш instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        </div>
 
       </section>
     </header>
@@ -1021,17 +1037,29 @@
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
                         <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
-                        <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                        <ul class="transport transport--catalog mate-card__transport">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active  transport__item--catalog">
+                            <svg width="19" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--catalog">
+                            <svg width="17" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                            <svg width="24" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog  transport__item--catalog">
+                            <svg width="20" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
@@ -1113,17 +1141,29 @@
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
                         <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
-                        <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                        <ul class="transport transport--catalog mate-card__transport">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active  transport__item--catalog">
+                            <svg width="19" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--active  transport__item--catalog">
+                            <svg width="17" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                            <svg width="24" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--active  transport__item--catalog">
+                            <svg width="20" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
@@ -1209,17 +1249,29 @@
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
                         <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
-                        <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                        <ul class="transport transport--catalog mate-card__transport">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active transport__item--catalog">
+                            <svg width="19" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--catalog">
+                            <svg width="17" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog transport__item--active  transport__item--catalog">
+                            <svg width="24" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog  transport__item--catalog">
+                            <svg width="20" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
@@ -1298,17 +1350,29 @@
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
                         <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
-                        <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                        <ul class="transport transport--catalog mate-card__transport">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active transport__item--catalog">
+                            <svg width="19" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--active transport__item--catalog">
+                            <svg width="17" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                            <svg width="24" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--catalog">
+                            <svg width="20" height="21" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
@@ -1380,22 +1444,33 @@
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
             <span class="visually-hidden">Наш Facebook</span>
+            <svg width="23" height="12" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--vk-ftr" href="">
             <span class="visually-hidden">Наш VK</span>
+            <svg width="23" height="12" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
             <span class="visually-hidden">Наш instagram</span>
+            <svg width="23" height="12" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#instagram"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="developer footer__developer" href="">
         <p class="developer__text">Разработано</p>
-        <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
+        <svg class="developer__logo" width="27" height="34" alt="HTML Academy" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
       </div>
     </footer>

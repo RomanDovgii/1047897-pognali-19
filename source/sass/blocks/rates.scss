@@ -64,6 +64,10 @@
   padding-right: 45px;
 
   counter-reset: items;
+
+  svg {
+    display: none;
+  }
 }
 
 .rates__item {
@@ -132,6 +136,25 @@
 
   margin-top: 31px;
   padding-bottom: 5px;
+
+  svg {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    span,
+    svg {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    span,
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -254,6 +277,16 @@
 
     padding-left: 79px;
 
+
+
+  svg {
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 14px;
+    z-index: 5;
+  }
+
     &::before {
       content: "";
 
@@ -264,14 +297,9 @@
       position: absolute;
       top: -23px;
       left: -10px;
-
       z-index: 4;
 
       background-color: $grayish-blue-light-alt;
-      background-image: url("../img/icons/mobile/business.svg");
-      background-size: 17px 21px;
-      background-position: center;
-      background-repeat: no-repeat;
 
       border-radius: 50%;
     }

@@ -1,6 +1,12 @@
 .mate-card {
   position: relative;
   max-width: 270px;
+
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .mate-card__img {
@@ -50,6 +56,23 @@
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+
+    .mate-card__name {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .mate-card__name {
+      opacity: 0.3;
+    }
+  }
 
   &::before {
     content: "";
@@ -127,8 +150,8 @@
   }
 
   .mate-card__level {
-    top: 20px;
-    left: 21px;
+    top: 23px;
+    left: 23px;
   }
 
   .mate-card__img {

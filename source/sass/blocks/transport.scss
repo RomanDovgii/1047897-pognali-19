@@ -14,48 +14,86 @@
   height: 21px;
   position: relative;
 
-  &::after {
-    content: "";
+  margin-top: 0;
+  margin-left: 6px;
 
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  svg {
+    margin-top: 0;
+  }
 
-    background-repeat: no-repeat;
-    background-position: center;
+  &:hover,
+  &:focus {
+    .transport__description {
+      display: block;
+      width: auto;
+      height: auto;
 
-    opacity: 0.15;
-    z-index: 4;
+      position: absolute;
+      top: 35px;
+      left: -45px;
+      z-index: 10;
+
+      text-align: center;
+      font-size: 15px;
+      line-height: 24px;
+      color: $white;
+
+      background-color: $text__dark-blue;
+
+      padding-top: 10px;
+      padding-right: 17px;
+      padding-left: 17px;
+      padding-bottom: 10px;
+
+      border-radius: 4px;
+
+      clip: auto;
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 13px;
+      height: 16px;
+
+      position: absolute;
+      top: 26px;
+      left: 6px;
+      z-index: 11;
+
+      background-image: url("../../img/icons/mobile/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+
+      transform: rotate(-90deg);
+    }
+  }
+
+  svg {
+    color: rgba($text__dark-blue, 0.15);
+    margin-top: 2px;
+    margin-left: 1px;
   }
 
   &:not(:first-child) {
     margin-left: 10px;
   }
 
-  &--plane {
-    &::after {
-      background-image: url("../img/icons/mobile/plane.svg");
-    }
-  }
-
   &--bus {
-    &::after {
-      background-image: url("../img/icons/mobile/bus.svg");
+    svg {
+      margin-left: 3px;
     }
   }
 
   &--bycicle {
-    &::after {
-      background-image: url("../img/icons/mobile/bike.svg");
+    svg {
+      margin-left: 0;
     }
   }
 
   &--run {
-    &::after {
-      background-image: url("../img/icons/mobile/run.svg");
+    svg {
+      margin-left: -1px;
     }
   }
 
@@ -81,8 +119,8 @@
   }
 
   &--active {
-    &::after {
-      opacity: 1;
+    svg {
+      color: $text__dark-blue;
     }
   }
 }
@@ -98,14 +136,45 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .transport {
+    flex-direction: column;
+  }
+
   .transport__item {
     &--catalog {
       background: none;
+
+      svg {
+        margin-left: -1px;
+      }
+    }
+
+    &--bus-catalog {
+      svg {
+        margin-left: 8px;
+      }
+    }
+
+    &--bike-catalog {
+      svg {
+        margin-top: 0;
+        margin-left: 5px;
+      }
+    }
+
+    &--run-catalog {
+      svg {
+        margin-left: 7px;
+      }
     }
   }
 }
 
 @media (min-width: $desktop-breakpoint) {
+  .transport {
+    flex-direction: row;
+  }
+
   .transport__item {
     &--plane {
       &::after {
