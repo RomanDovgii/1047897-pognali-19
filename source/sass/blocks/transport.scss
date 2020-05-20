@@ -138,10 +138,9 @@
 
 @media (min-width: $tablet-breakpoint) {
   .transport {
-    flex-direction: column;
-
     &--catalog {
       padding-left: 25px;
+      flex-direction: column;
     }
   }
 
