@@ -18,7 +18,9 @@
   margin-left: 6px;
 
   svg {
-    margin-top: 0;
+    color: rgba($text__dark-blue, 0.15);
+    margin-top: 2px;
+    margin-left: 1px;
   }
 
   &:hover,
@@ -67,12 +69,6 @@
 
       transform: rotate(-90deg);
     }
-  }
-
-  svg {
-    color: rgba($text__dark-blue, 0.15);
-    margin-top: 2px;
-    margin-left: 1px;
   }
 
   &:not(:first-child) {

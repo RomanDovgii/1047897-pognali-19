@@ -28,8 +28,6 @@
 
 .catalog-mate-card__img {
   object-fit: cover;
-  width: inherit;
-  height: inherit;
   border-radius: 50%;
 
   width: 70px;
@@ -428,7 +426,6 @@
 
     position: absolute;
     top: 0;
-    right: 0;
     bottom: auto;
     right: auto;
 
