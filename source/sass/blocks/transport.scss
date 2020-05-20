@@ -5,7 +5,7 @@
   &--catalog {
     list-style: none;
 
-    padding-left: 25px;
+    padding-left: 19px;
   }
 }
 
@@ -103,6 +103,11 @@
     background-color: $main-color;
     border-radius: 50%;
 
+    svg {
+      margin-top: 8px;
+      margin-left: 8px;
+    }
+
     &::after {
       background-size: 19px 17px;
     }
@@ -138,6 +143,10 @@
 @media (min-width: $tablet-breakpoint) {
   .transport {
     flex-direction: column;
+
+    &--catalog {
+      padding-left: 25px;
+    }
   }
 
   .transport__item {
@@ -149,21 +158,34 @@
       }
     }
 
+    &--plane-catalog {
+      svg {
+        width: 19px;
+        height: 21px;
+      }
+    }
+
     &--bus-catalog {
       svg {
+        width: 17px;
+        height: 21px;
         margin-left: 8px;
       }
     }
 
     &--bike-catalog {
       svg {
-        margin-top: 0;
+        width: 24px;
+        height: 21px;
+        margin-top: 6px;
         margin-left: 5px;
       }
     }
 
     &--run-catalog {
       svg {
+        width: 20px;
+        height: 21px;
         margin-left: 7px;
       }
     }
@@ -193,6 +215,31 @@
 
       &::after {
         background-size: 28px 22px;
+      }
+    }
+
+    &--plane-catalog {
+      svg {
+        margin-left: 1px;
+      }
+    }
+
+    &--bus-catalog {
+      svg {
+        margin-left: 5px;
+      }
+    }
+
+    &--bike-catalog {
+      svg {
+        margin-top: 8px;
+        margin-left: 3px;
+      }
+    }
+
+    &--run-catalog {
+      svg {
+        margin-left: 5px;
       }
     }
   }
