@@ -277,31 +277,31 @@
 
     padding-left: 79px;
 
-  svg {
-    display: block;
-    position: absolute;
-    top: -1px;
-    left: 14px;
-    z-index: 5;
+    svg {
+      display: block;
+      position: absolute;
+      top: -1px;
+      left: 14px;
+      z-index: 5;
+    }
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 67px;
+      height: 67px;
+
+      position: absolute;
+      top: -23px;
+      left: -10px;
+      z-index: 4;
+
+      background-color: $grayish-blue-light-alt;
+
+      border-radius: 50%;
+    }
   }
-
-  &::before {
-    content: "";
-
-    display: block;
-    width: 67px;
-    height: 67px;
-
-    position: absolute;
-    top: -23px;
-    left: -10px;
-    z-index: 4;
-
-    background-color: $grayish-blue-light-alt;
-
-    border-radius: 50%;
-  }
-}
 }
 
 @media (min-width: $desktop-breakpoint) {
