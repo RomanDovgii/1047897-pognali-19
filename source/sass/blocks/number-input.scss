@@ -35,7 +35,7 @@
 }
 
 .number-input__wrapper {
-  margin-top: 6px;
+  margin-top: 7px;
   margin-right: 11px;
   margin-left: 11px;
   display: flex;
@@ -44,19 +44,12 @@
   position: relative;
 }
 
-.number-input__label {
-  width: 100%;
-
+.number-input__input {
   padding-top: 12px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
 
   border: 1px solid $blue-10-color;
   border-radius: 4px;
-
-}
-
-.number-input__input {
-  max-width: 100%;
 
   font-size: 15px;
   line-height: 14px;
@@ -66,10 +59,31 @@
   appearance: textfield;
 
   width: 100%;
-  height: 100%;
 
-  border: none;
   text-align: center;
+
+  &:hover {
+    border-color: $blue-90-color;
+
+    ~ .number-input__button {
+      &::before,
+      &::after {
+        background-color: $blue-90-color;
+      }
+    }
+  }
+
+  &:active,
+  &:focus {
+    border-color: $font-color;
+
+    ~ .number-input__button {
+      &::before,
+      &::after {
+        background-color: $font-color;
+      }
+    }
+  }
 }
 
 .number-input__input::-webkit-inner-spin-button,
@@ -85,27 +99,46 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.3;
   width: 14px;
   height: 14px;
 
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 2px;
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+
+    background-color: $grayish-blue-light-alt-6;
+  }
+
   &--plus {
-    background-image: url("../img/icons/mobile/qty-plus-mobile.svg");
     margin-right: 14px;
     margin-left: auto;
 
     position: absolute;
     top: 16px;
     right: 0;
+
+    &::after {
+      transform: rotate(90deg);
+    }
   }
 
   &--minus {
-    background-image: url("../img/icons/mobile/qty-minus-mobile.svg");
     margin-right: auto;
     margin-left: 14px;
     position: absolute;
     top: 16px;
     left: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -138,13 +171,20 @@
     line-height: 20px;
     font-weight: 700;
 
-    padding-top: 8px;
-    padding-bottom: 14px;
+    padding-top: 21px;
+    padding-bottom: 23px;
   }
 
   .number-input__button {
     width: 20px;
     height: 20px;
+
+    &::before,
+    &::after {
+      width: 20px;
+
+      top: 8px;
+    }
 
     &--minus {
       margin-top: 9px;
