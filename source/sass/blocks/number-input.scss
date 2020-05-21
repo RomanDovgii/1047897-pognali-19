@@ -106,14 +106,17 @@
   top: 0;
 
   &:hover,
-  &:focus {
+  &:focus,
+  .number-input__input ~ &:hover,
+  .number-input__input ~ &:focus {
     &::before,
     &::after {
       background-color: $grayish;
     }
   }
 
-  &:active {
+  &:active,
+  .number-input__input ~ &:active {
     &::before,
     &::after {
       background-color: $grayish-light;
