@@ -99,21 +99,24 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  width: 14px;
-  height: 14px;
+  width: 50px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
 
   &:hover,
   &:focus {
     &::before,
     &::after {
-      background-color: $blue-90-color;
+      background-color: $grayish;
     }
   }
 
   &:active {
     &::before,
     &::after {
-      background-color: $font-color;
+      background-color: $grayish-light;
     }
   }
 
@@ -125,19 +128,18 @@
     height: 2px;
 
     position: absolute;
-    top: 6px;
-    left: 0;
+    top: 22px;
 
     background-color: $grayish-blue-light-alt-6;
   }
 
   &--plus {
-    margin-right: 14px;
-    margin-left: auto;
-
-    position: absolute;
-    top: 16px;
     right: 0;
+
+    &::before,
+    &::after {
+      left: 22px;
+    }
 
     &::after {
       transform: rotate(90deg);
@@ -145,11 +147,11 @@
   }
 
   &--minus {
-    margin-right: auto;
-    margin-left: 14px;
-    position: absolute;
-    top: 16px;
     left: 0;
+
+    &::before {
+      left: 14px;
+    }
 
     &::after {
       display: none;
@@ -191,24 +193,25 @@
   }
 
   .number-input__button {
-    width: 20px;
-    height: 20px;
-
     &::before,
     &::after {
       width: 20px;
 
-      top: 8px;
-    }
-
-    &--minus {
-      margin-top: 9px;
-      margin-left: 22px;
+      top: 33px;
     }
 
     &--plus {
-      margin-top: 10px;
-      margin-right: 19px;
+      &::before,
+      &::after {
+        left: 10px;
+      }
+    }
+
+    &--minus {
+      &::before,
+      &::after {
+        left: 20px;
+      }
     }
   }
 }
@@ -236,12 +239,6 @@
       text-align: left;
       color: $text__dark-blue;
       opacity: 1;
-    }
-  }
-
-  .number-input__button {
-    &--minus {
-      margin-left: 19px;
     }
   }
 
