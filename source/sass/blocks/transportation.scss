@@ -51,6 +51,12 @@
     opacity: 0.15;
   }
 
+  &:hover {
+    svg {
+      opacity: 0.15;
+    }
+  }
+
   &--plane {
     svg {
       top: 8px;
