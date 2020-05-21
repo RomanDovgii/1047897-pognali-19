@@ -300,7 +300,7 @@
 
       bottom: auto;
 
-      padding-right: 69px;
+      padding-right: 71px;
       padding-left: 55px;
 
       .change-bio__legend {
@@ -311,11 +311,6 @@
 
         margin-left: -73px;
       }
-
-      .change-bio__transportation {
-        margin-top: 4px;
-        margin-left: 11px;
-      }
     }
 
     &--tags {
@@ -323,6 +318,11 @@
 
       align-items: stretch;
     }
+  }
+
+  .change-bio__transportation {
+    margin-top: 3px;
+    margin-left: 19px;
   }
 
   .change-bio__number {
