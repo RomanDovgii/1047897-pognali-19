@@ -68,7 +68,7 @@
     ~ .number-input__button {
       &::before,
       &::after {
-        background-color: $grayish;
+        background-color: $blue-90-color;
       }
     }
   }
@@ -80,7 +80,7 @@
     ~ .number-input__button {
       &::before,
       &::after {
-        background-color: $grayish-light;
+        background-color: $font-color;
       }
     }
   }
