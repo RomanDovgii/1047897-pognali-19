@@ -44,10 +44,17 @@
   justify-content: center;
   padding-top: 14px;
   padding-bottom: 9px;
+
+  position: relative;
+}
+
+.number-input__label {
+  width: 100%;
+  height: 100%;
 }
 
 .number-input__input {
-  max-width: 162px;
+  max-width: 100%;
 
   font-size: 15px;
   line-height: 14px;
@@ -55,11 +62,19 @@
   font-weight: 500;
   color: $text__dark-blue;
 
+  width: 100%;
+  height: 100%;
+
   border: none;
   text-align: center;
-
-  appearance: textfield;
 }
+
+.number-input__input::-webkit-inner-spin-button,
+.number-input__input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 
 .number-input__button {
   border: none;
@@ -75,12 +90,17 @@
     background-image: url("../img/icons/mobile/qty-plus-mobile.svg");
     margin-right: 14px;
     margin-left: auto;
+
+    position: absolute;
+    right: 0;
   }
 
   &--minus {
     background-image: url("../img/icons/mobile/qty-minus-mobile.svg");
     margin-right: auto;
     margin-left: 14px;
+    position: absolute;
+    left: 0;
   }
 }
 
@@ -172,8 +192,6 @@
   }
 
   .number-input__input {
-    max-width: 85px;
-
     font-size: 20px;
     line-height: 18px;
   }
