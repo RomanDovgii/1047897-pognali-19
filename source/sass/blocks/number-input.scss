@@ -35,22 +35,24 @@
 }
 
 .number-input__wrapper {
-  border: 1px solid $blue-10-color;
-  border-radius: 4px;
   margin-top: 6px;
   margin-right: 11px;
   margin-left: 11px;
   display: flex;
   justify-content: center;
-  padding-top: 14px;
-  padding-bottom: 9px;
-
+  min-width: 220px;
   position: relative;
 }
 
 .number-input__label {
   width: 100%;
-  height: 100%;
+
+  padding-top: 12px;
+  padding-bottom: 11px;
+
+  border: 1px solid $blue-10-color;
+  border-radius: 4px;
+
 }
 
 .number-input__input {
@@ -93,6 +95,7 @@
     margin-left: auto;
 
     position: absolute;
+    top: 16px;
     right: 0;
   }
 
@@ -101,6 +104,7 @@
     margin-right: auto;
     margin-left: 14px;
     position: absolute;
+    top: 16px;
     left: 0;
   }
 }
@@ -110,7 +114,6 @@
     width: 531px;
     margin-left: 12px;
     margin-right: 12px;
-    padding-top: 14px;
   }
 
   .number-input__legend {
@@ -189,6 +192,7 @@
 
   .number-input__wrapper {
     width: 181px;
+    min-width: 0;
     margin-top: -1px;
   }
 
