@@ -1,6 +1,7 @@
 .intro {
   background-color: $header-color;
   background-image: url("../img/mobile/globe-back-mobile@1x.jpg");
+  background-size: 320px 569px;
   background-position: 0 -51px;
   background-repeat: no-repeat;
 
@@ -11,7 +12,7 @@
     height: 174px;
 
     position: absolute;
-    bottom: 76px;
+    bottom: 163px;
     left: 0;
 
     background-color: $header-color;

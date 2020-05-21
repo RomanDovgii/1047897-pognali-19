@@ -25,69 +25,39 @@
   &::before {
     content: "";
 
+    display: block;
     width: 45px;
     height: 45px;
-    position: relative;
     flex-shrink: 0;
 
     background-color: $universal__dark-blue;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 18px 18px;
     border-radius: 50%;
 
     margin-right: 16px;
   }
 
-  &--phone {
-    &::before {
-      background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow.svg");
-    }
-
-    &:hover,
-    &:focus {
-      &::before {
-        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow-hover.svg");
-      }
-    }
-
-    &:active {
-      &::before {
-        opacity: 1;
-        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow-active.svg");
-      }
-    }
-  }
-
-  &--email {
-    &::before {
-      background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow.svg");
-    }
-
-    &:hover,
-    &:focus {
-      &::before {
-        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow-hover.svg");
-      }
-    }
-
-    &:active {
-      &::before {
-        opacity: 1;
-        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow-active.svg");
-      }
-    }
+  svg {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: $universal__bright-yellow;
   }
 
   &:hover,
   &:focus {
-    span {
+    color: $orangish-yellow-color;
+
+    svg {
       color: $orangish-yellow-color;
     }
   }
 
   &:active {
     span {
+      opacity: 0.3;
+    }
+
+    svg {
       opacity: 0.3;
     }
   }
@@ -114,16 +84,12 @@
       background-size: 27px 27px;
     }
 
-    &--phone {
-      &::before {
-        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-phone-yellow.svg");
-      }
-    }
+    svg {
+      width: 27px;
+      height: 27px;
 
-    &--email {
-      &::before {
-        background-image: url("../img/icons/mobile/mail-contacts-yellow/contacts-mail-yellow.svg");
-      }
+      top: 21px;
+      left: 21px;
     }
   }
 }
@@ -144,6 +110,13 @@
     span {
       padding-top: 30px;
       padding-left: 16px;
+    }
+
+    svg {
+      width: 36px;
+      height: 36px;
+      top: 27px;
+      left: 28px;
     }
 
     &--cta {

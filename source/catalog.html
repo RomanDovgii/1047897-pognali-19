@@ -13,6 +13,11 @@
           <div class="functions top-menu__functions top-menu__functions--white">
             <a href="index.html" class="functions__link functions__link--white">
               <picture>
+                <source media="(min-width: 1440px)" srcset="./img/desktop/webp/logo-desktop-white@1x.webp 1x, ./img/desktop/webp/logo-desktop-white@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/webp/logo-tablet-white@1x.webp 1x, ./img/tablet/webp/logo-tablet-white@2x.webp 2x">
+                <source srcset="./img/mobile/webp/logo-mobile-white@1x.webp 1x, ./img/mobile/webp/logo-mobile-white@2x.webp 2x">
+
+
                 <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
                 <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
@@ -39,11 +44,17 @@
           <ul class="actions top-menu__actions">
             <li class="actions__item">
               <a class="actions__link actions__link--phone" href="tel:88005558628">
+                <svg width="18" height="18" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#topmenu-phone"></use>
+                </svg>
                 <span class="visually-hidden">8 800 555-86-28</span>
               </a>
             </li>
             <li class="actions__item">
               <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
+                <svg width="18" height="14" aria-hidden="true">
+                  <use xlink:href="./img/sprite.svg#topmenu-mail"></use>
+                </svg>
                 <span class="visually-hidden">mail@htmlacademy.ru</span>
               </a>
             </li>
@@ -53,51 +64,61 @@
           </ul>
         </div>
 
+          <div class="information top-menu__information">
+            <div class="wrapper information__wrapper">
+            <ul class="inner-links information__inner-links">
+              <li class="inner-links__item">
+                <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
+              </li>
+              <li class="inner-links__item">
+                <a class="inner-links__link" href="./form.html">Направления</a>
+              </li>
+              <li class="inner-links__item">
+                <a class="inner-links__link" href="./catalog.html">Попутчики</a>
+              </li>
+            </ul>
 
-        <div class="information top-menu__information">
-          <div class="wrapper information__wrapper">
-          <ul class="inner-links information__inner-links">
-            <li class="inner-links__item">
-              <a class="inner-links__link" href="./index.html">О сервисе</a>
-            </li>
-            <li class="inner-links__item">
-              <a class="inner-links__link" href="./form.html">Направления</a>
-            </li>
-            <li class="inner-links__item">
-              <a class="inner-links__link inner-links__link--active" href="./catalog.html">Попутчики</a>
-            </li>
-          </ul>
+            <a class="information__auth-link" href="">Авторизация</a>
 
-          <a class="information__auth-link" href="">Авторизация</a>
+            <ul class="contacts information__contacts">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--phone" href="tel:88005558628">
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#contacts-phone"></use>
+                  </svg>
+                  8 800 555-86-28
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#contacts-mail"></use>
+                  </svg>
+                  mail@htmlacademy.ru
+                </a>
+              </li>
+            </ul>
 
-          <ul class="contacts information__contacts">
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--phone" href="tel:88005558628">8 800 555-86-28</a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
+            <ul class="social information__social">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="">
+                  <span class="visually-hidden">Наш Facebook</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="">
+                  <span class="visually-hidden">Наш VK</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="">
+                  <span class="visually-hidden">Наш instagram</span>
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
 
-          <ul class="social information__social">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="">
-                <span class="visually-hidden">Наш Facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="">
-                <span class="visually-hidden">Наш VK</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="">
-                <span class="visually-hidden">Наш instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        </div>
 
       </section>
     </header>
@@ -896,24 +917,44 @@
 
               <div class="transportation mates-filter__transportation">
                 <h3 class="transportation__heading">Транспорт<span class="mates-filter__colon">:</span></h3>
-                <div class="transportation__buttons">
+                <div class="transportation__buttons transportation__buttons--catalog">
                   <label class="transportation__button transportation__button--plane">
                     <input class="visually-hidden transportation__checkbox" type="checkbox" name="plane" checked>
+                    <div class="transportation__svg-wrapper">
+                      <svg width="14" height="16" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#plane"></use>
+                      </svg>
+                    </div>
                     <span class="transport__description">Авиаперелет</span>
                   </label>
 
                   <label class="transportation__button transportation__button--bus" >
                     <input class="visually-hidden transportation__checkbox" type="checkbox" name="bus" checked>
+                    <div class="transportation__svg-wrapper">
+                      <svg width="13" height="16" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#bus"></use>
+                      </svg>
+                    </div>
                     <span class="transport__description">Автотранспорт</span>
                   </label>
 
                   <label class="transportation__button transportation__button--bike">
                     <input class="visually-hidden transportation__checkbox" type="checkbox" name="bike">
+                    <div class="transportation__svg-wrapper">
+                      <svg width="19" height="17" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#bike"></use>
+                      </svg>
+                    </div>
                     <span class="transport__description">Велосипед</span>
                   </label>
 
                   <label class="transportation__button transportation__button--run">
                     <input class="visually-hidden transportation__checkbox" type="checkbox" name="run" checked>
+                    <div class="transportation__svg-wrapper">
+                      <svg width="15" height="17" aria-hidden="true">
+                        <use xlink:href="./img/sprite.svg#run"></use>
+                      </svg>
+                    </div>
                     <span class="transport__description">Пешком</span>
                   </label>
                 </div>
@@ -951,8 +992,12 @@
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
                 <div class="catalog-mate-card__img-wrapper">
                   <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/webp/firsova-desktop@1x.webp 1x, ./img/desktop/webp/firsova-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/webp/firsova-tablet@1x.webp 1x, ./img/tablet/webp/firsova-tablet@2x.webp 2x">
+                    <source srcset="./img/tablet/webp/firsova-tablet@1x.webp 1x, ./img/tablet/webp/firsova-tablet@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="./img/desktop/firsova-desktop@1x.jpg 1x, ./img/desktop/firsova-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="./img/tablet/firsova-tablet@1x.jpg 1x, ./img/tablet/firsova-tablet@2x.jpg2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/firsova-tablet@1x.jpg 1x, ./img/tablet/firsova-tablet@2x.jpg 2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/firsova-mobile@1x.jpg" srcset="../img/mobile/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
                   </picture>
 
@@ -996,7 +1041,9 @@
 
                 <div class="catalog-mate-card__second-block">
                   <div class="catalog-mate-card__countries-wrapper">
-                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
+                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">
+                      <span>Хочет посетить:</span>
+                    </h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
                         <a class="to-visit__link to-visit__link--lk to-visit__link--catalog" href="">Шри-ланка</a>
@@ -1011,24 +1058,41 @@
 
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
-                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
+                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">
+                          <span>Транспорт:</span>
+                        </h4>
                         <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active  transport__item--catalog">
+                            <svg width="14" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--catalog">
+                            <svg width="13" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                            <svg width="19" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog  transport__item--catalog">
+                            <svg width="15" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="90 100" viewBox="0 0 32 32" role="presentation" aria-hidden="true">
+                          <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
+                        </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                         <p class="catalog-mate-card__level">99</p>
                         <p class="catalog-mate-card__level-text">level</p>
@@ -1043,6 +1107,10 @@
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
                 <div class="catalog-mate-card__img-wrapper">
                   <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/webp/demin-desktop@1x.webp 1x, ./img/desktop/webp/demin-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="./img/tablet/webp/demin-tablet@1x.webp 1x, ./img/tablet/webp/demin-tablet@2x.webp 2x">
+                      <source srcset="./img/tablet/webp/demin-tablet@1x.webp 1x, ./img/tablet/webp/demin-tablet@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="./img/desktop/demin-desktop@1x.jpg 1x, ./img/desktop/demin-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/tablet/demin-tablet@1x.jpg 1x, ./img/tablet/demin-tablet@2x.jpg2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/demin-mobile@1x.jpg" srcset="../img/mobile/demin-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
@@ -1084,7 +1152,9 @@
 
                 <div class="catalog-mate-card__second-block">
                   <div class="catalog-mate-card__countries-wrapper">
-                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
+                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">
+                      <span>Хочет посетить:</span>
+                    </h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
                         <a class="to-visit__link to-visit__link--be to-visit__link--catalog" href="">Бельгия</a>
@@ -1096,24 +1166,41 @@
 
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
-                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
+                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">
+                          <span>Транспорт:</span>
+                        </h4>
                         <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active  transport__item--catalog">
+                            <svg width="14" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--active  transport__item--catalog">
+                            <svg width="13" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                            <svg width="19" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--active  transport__item--catalog">
+                            <svg width="15" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="80 100" viewBox="0 0 32 32" role="presentation" aria-hidden="true">
+                          <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
+                        </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                         <p class="catalog-mate-card__level">80</p>
                         <p class="catalog-mate-card__level-text">level</p>
@@ -1129,6 +1216,10 @@
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
                 <div class="catalog-mate-card__img-wrapper">
                   <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/webp/smolov-desktop@1x.webp 1x, ./img/desktop/webp/smolov-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/webp/smolov-tablet@1x.webp 1x, ./img/tablet/webp/smolov-tablet@2x.webp 2x">
+                    <source srcset="./img/tablet/webp/smolov-tablet@1x.webp 1x, ./img/tablet/webp/smolov-tablet@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="./img/desktop/smolov-desktop@1x.jpg 1x, ./img/desktop/smolov-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/tablet/smolov-tablet@1x.jpg 1x, ./img/tablet/smolov-tablet@2x.jpg2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/smolov-mobile@1x.jpg" srcset="../img/mobile/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
@@ -1170,7 +1261,9 @@
 
                 <div class="catalog-mate-card__second-block">
                   <div class="catalog-mate-card__countries-wrapper">
-                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
+                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">
+                      <span>Хочет посетить:</span>
+                    </h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
                         <a class="to-visit__link to-visit__link--us to-visit__link--catalog" href="">США</a>
@@ -1185,24 +1278,41 @@
 
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
-                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
+                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">
+                          <span>Транспорт:</span>
+                        </h4>
                         <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active transport__item--catalog">
+                            <svg width="14" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--catalog">
+                            <svg width="13" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog transport__item--active  transport__item--catalog">
+                            <svg width="19" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog  transport__item--catalog">
+                            <svg width="15" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="25 100" viewBox="0 0 32 32" role="presentation" aria-hidden="true">
+                          <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
+                        </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                         <p class="catalog-mate-card__level">25</p>
                         <p class="catalog-mate-card__level-text">level</p>
@@ -1218,6 +1328,10 @@
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
                 <div class="catalog-mate-card__img-wrapper">
                   <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/desktop/webp/rogovaya-desktop@1x.webp 1x, ./img/desktop/webp/rogovaya-desktop@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./img/tablet/webp/rogovaya-tablet@1x.webp 1x, ./img/tablet/webp/rogovaya-tablet@2x.webp 2x">
+                    <source srcset="./img/tablet/webp/rogovaya-tablet@1x.webp 1x, ./img/tablet/webp/rogovaya-tablet@2x.webp 2x">
+
                     <source media="(min-width: 1440px)" srcset="./img/desktop/rogovaya-desktop@1x.jpg 1x, ./img/desktop/rogovaya-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/tablet/rogovaya-tablet@1x.jpg 1x, ./img/tablet/rogovaya-tablet@2x.jpg2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/rogovaya-mobile@1x.jpg" srcset="../img/mobile/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
@@ -1255,7 +1369,9 @@
 
                 <div class="catalog-mate-card__second-block">
                   <div class="catalog-mate-card__countries-wrapper">
-                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">Хочет посетить:</h4>
+                    <h4 class="catalog-mate-card__text catalog-mate-card__text--to-visit">
+                      <span>Хочет посетить:</span>
+                    </h4>
                     <ul class="to-visit to-visit--catalog catalog-mate-card__to-visit">
                       <li class="to-visit__item to-visit__item--catalog">
                         <a class="to-visit__link to-visit__link--uk to-visit__link--catalog" href="">Великобритания</a>
@@ -1267,24 +1383,41 @@
 
                     <div class="catalog-mate-card__transport-level">
                       <div class="catalog-mate-card__transport-wrapper">
-                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">Транспорт:</h4>
+                        <h4 class="catalog-mate-card__text catalog-mate-card__text--transport">
+                          <span>Транспорт:</span>
+                        </h4>
                         <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--active transport__item--plane transport__item--catalog">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active transport__item--catalog">
+                            <svg width="14" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#plane"></use>
+                            </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--active transport__item--bus transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--active transport__item--catalog">
+                            <svg width="13" height="16" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bus"></use>
+                            </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bycicle transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                            <svg width="19" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#bike"></use>
+                            </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--catalog">
+                            <svg width="15" height="17" aria-hidden="true">
+                              <use xlink:href="./img/sprite.svg#run"></use>
+                            </svg>
                             <span class="transport__description">Пешком</span>
                           </li>
                         </ul>
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="50 100" viewBox="0 0 32 32" role="presentation" aria-hidden="true">
+                          <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
+                        </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
                         <p class="catalog-mate-card__level">50</p>
                         <p class="catalog-mate-card__level-text">level</p>
@@ -1334,6 +1467,10 @@
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <a href="" class="footer__link">
         <picture>
+          <source media="(min-width: 1440px)" srcset="./img/desktop/webp/logo-desktop-blue@1x.webp 1x, ./img/desktop/webp/logo-desktop-blue@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="./img/tablet/webp/logo-tablet-blue@1x.webp 1x, ./img/tablet/webp/logo-tablet-blue@2x.webp 2x">
+          <source srcset="./img/mobile/webp/logo-mobile-blue@1x.webp 1x, ./img/mobile/webp/logo-mobile-blue@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
           <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
@@ -1343,22 +1480,33 @@
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
             <span class="visually-hidden">Наш Facebook</span>
+            <svg width="23" height="12" aria-hidden="true">
+              <use xlink:href="./img/sprite.svg#facebook"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--vk-ftr" href="">
             <span class="visually-hidden">Наш VK</span>
+            <svg width="23" height="12" aria-hidden="true">
+              <use xlink:href="./img/sprite.svg#vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
             <span class="visually-hidden">Наш instagram</span>
+            <svg width="23" height="12" aria-hidden="true">
+              <use xlink:href="./img/sprite.svg#instagram"></use>
+            </svg>
           </a>
         </li>
       </ul>
       <a class="developer footer__developer" href="">
         <p class="developer__text">Разработано</p>
-        <img class="developer__logo" width="27" height="34" src="./img/icons/mobile/htmlacademy-navy.svg" alt="HTML Academy">
+        <svg class="developer__logo" aria-label="HTML Academy" width="27" height="34">
+          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+        </svg>
       </a>
       </div>
     </footer>

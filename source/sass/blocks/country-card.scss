@@ -14,7 +14,7 @@
 
   border-radius: 10px;
 
-  &::after {
+  img {
     content: "";
     display: block;
     width: 100%;
@@ -44,11 +44,6 @@
   }
 
   &--th {
-    &::after {
-      background-image: url("../img/mobile/thailand-mobile@1x.jpg");
-      background-repeat: no-repeat;
-    }
-
     &::before {
       background-image: url("../img/flag-thailand.svg");
     }
@@ -66,11 +61,6 @@
   }
 
   &--fr {
-    &::after {
-      background-image: url("../img/mobile/france-mobile@1x.jpg");
-      background-repeat: no-repeat;
-    }
-
     &::before {
       background-image: url("../img/flag-france.svg");
     }
@@ -164,7 +154,7 @@
 
     border-radius: 20px;
 
-    &::after {
+    img {
       border-radius: 0;
 
       width: 186px;
@@ -186,12 +176,6 @@
       right: 150px;
       z-index: 10;
       border-radius: 5px;
-    }
-
-    &--th {
-      &::after {
-        background-image: url("../img/desktop/thailand-desktop@1x.jpg");
-      }
     }
 
     &--cz {
@@ -284,50 +268,6 @@
 
       &::before {
         bottom: 12px;
-      }
-    }
-  }
-}
-
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .country-card {
-    &--th {
-      &::after {
-        background-image: url("../img/mobile/thailand-mobile@2x.jpg");
-      }
-    }
-
-    &--cz {
-      &::after {
-        background-image: url("../img/mobile/czech-mobile@2x.jpg");
-      }
-    }
-
-    &--fr {
-      &::after {
-        background-image: url("../img/mobile/france-mobile@2x.jpg");
-      }
-    }
-  }
-}
-
-@media (min-width: $tablet-breakpoint) and (min-resolution: $retina-dpi), (min-width: $tablet-breakpoint) and (min-resolution: $retina-dppx) {
-  .country-card {
-    &--th {
-      &::after {
-        background-image: url("../img/desktop/thailand-desktop@2x.jpg");
-      }
-    }
-
-    &--cz {
-      &::after {
-        background-image: url("../img/desktop/czech-desktop@2x.jpg");
-      }
-    }
-
-    &--fr {
-      &::after {
-        background-image: url("../img/desktop/france-desktop@2x.jpg");
       }
     }
   }

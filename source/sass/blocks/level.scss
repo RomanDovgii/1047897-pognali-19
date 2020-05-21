@@ -11,41 +11,21 @@
   background: rgba($black, 0.6);
   border-radius: 50%;
 
-  &::before {
-    content: "";
-
-    display: block;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip: rect(0, 30px, 60px, 0);
-    border-radius: 50%;
-    border: 3px solid $level-circle__orange;
-    transform: rotate(180deg);
-  }
-
-  &::after {
-    content: "";
-
-    display: block;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip: rect(0, 30px, 60px, 0);
-    border-radius: 50%;
-    border: 3px solid $level-circle__orange;
-    transform: rotate(350deg);
-  }
-
   &--demin {
     &::after {
       transform: rotate(296deg);
     }
   }
+}
+
+.level__pie-graph {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  fill: transparent;
+  stroke: $level-circle__orange;
+  transform: rotate(-90deg);
 }
 
 .level__text {

@@ -35,31 +35,63 @@
 }
 
 .number-input__wrapper {
-  border: 1px solid $blue-10-color;
-  border-radius: 4px;
-  margin-top: 6px;
+  margin-top: 7px;
   margin-right: 11px;
   margin-left: 11px;
   display: flex;
   justify-content: center;
-  padding-top: 14px;
-  padding-bottom: 9px;
+  min-width: 220px;
+  position: relative;
 }
 
 .number-input__input {
-  max-width: 162px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border: 1px solid $blue-10-color;
+  border-radius: 4px;
 
   font-size: 15px;
   line-height: 14px;
   letter-spacing: 1.5px;
   font-weight: 500;
   color: $text__dark-blue;
+  appearance: textfield;
 
-  border: none;
+  width: 100%;
+
   text-align: center;
 
-  appearance: textfield;
+  &:hover {
+    border-color: $blue-90-color;
+
+    ~ .number-input__button {
+      &::before,
+      &::after {
+        background-color: $blue-90-color;
+      }
+    }
+  }
+
+  &:active,
+  &:focus {
+    border-color: $font-color;
+
+    ~ .number-input__button {
+      &::before,
+      &::after {
+        background-color: $font-color;
+      }
+    }
+  }
 }
+
+.number-input__input::-webkit-inner-spin-button,
+.number-input__input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 
 .number-input__button {
   border: none;
@@ -67,20 +99,66 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.3;
-  width: 14px;
-  height: 14px;
+  width: 50px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+
+  &:hover,
+  &:focus,
+  .number-input__input ~ &:hover,
+  .number-input__input ~ &:focus {
+    &::before,
+    &::after {
+      background-color: $grayish;
+    }
+  }
+
+  &:active,
+  .number-input__input ~ &:active {
+    &::before,
+    &::after {
+      background-color: $grayish-light;
+    }
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 2px;
+
+    position: absolute;
+    top: 22px;
+
+    background-color: $grayish-blue-light-alt-6;
+  }
 
   &--plus {
-    background-image: url("../img/icons/mobile/qty-plus-mobile.svg");
-    margin-right: 14px;
-    margin-left: auto;
+    right: 0;
+
+    &::before,
+    &::after {
+      left: 22px;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
   }
 
   &--minus {
-    background-image: url("../img/icons/mobile/qty-minus-mobile.svg");
-    margin-right: auto;
-    margin-left: 14px;
+    left: 0;
+
+    &::before {
+      left: 14px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -89,7 +167,6 @@
     width: 531px;
     margin-left: 12px;
     margin-right: 12px;
-    padding-top: 14px;
   }
 
   .number-input__legend {
@@ -114,22 +191,30 @@
     line-height: 20px;
     font-weight: 700;
 
-    padding-top: 8px;
-    padding-bottom: 14px;
+    padding-top: 21px;
+    padding-bottom: 23px;
   }
 
   .number-input__button {
-    width: 20px;
-    height: 20px;
+    &::before,
+    &::after {
+      width: 20px;
 
-    &--minus {
-      margin-top: 9px;
-      margin-left: 22px;
+      top: 33px;
     }
 
     &--plus {
-      margin-top: 10px;
-      margin-right: 19px;
+      &::before,
+      &::after {
+        left: 10px;
+      }
+    }
+
+    &--minus {
+      &::before,
+      &::after {
+        left: 20px;
+      }
     }
   }
 }
@@ -160,20 +245,13 @@
     }
   }
 
-  .number-input__button {
-    &--minus {
-      margin-left: 19px;
-    }
-  }
-
   .number-input__wrapper {
     width: 181px;
+    min-width: 0;
     margin-top: -1px;
   }
 
   .number-input__input {
-    max-width: 85px;
-
     font-size: 20px;
     line-height: 18px;
   }

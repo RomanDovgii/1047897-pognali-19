@@ -30,6 +30,16 @@
   &--active {
     background-color: $yellow-200-color;
   }
+
+  &:hover,
+  &:focus {
+    color: rgba($blue-700-color, 0.6);
+  }
+
+  &:active {
+    color: rgba($blue-700-color, 1);
+    background-color: $yellow-200-color;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {

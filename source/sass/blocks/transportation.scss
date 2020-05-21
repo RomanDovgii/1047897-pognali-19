@@ -41,55 +41,114 @@
 .transportation__button {
   width: 32px;
   height: 32px;
+
+  svg {
+    position: absolute;
+    fill: $black;
+    opacity: 0.15;
+  }
+
+  &--plane {
+    svg {
+      top: 8px;
+      left: 8px;
+
+      width: 14px;
+      height: 16px;
+    }
+  }
+
+  &--bus {
+    svg {
+      top: 50%;
+      left: 50%;
+
+      margin-top: -8px;
+      margin-left: -6px;
+
+      width: 13px;
+      height: 16px;
+    }
+  }
+
+  &--bike {
+    svg {
+      top: 50%;
+      left: 50%;
+
+      margin-top: -8px;
+      margin-left: -9px;
+
+      width: 19px;
+      height: 17px;
+    }
+  }
+
+  &--run {
+    svg {
+      top: 50%;
+      left: 50%;
+
+      margin-top: -8px;
+      margin-left: -7px;
+
+      width: 15px;
+      height: 17px;
+    }
+  }
+}
+
+.transportation__svg-wrapper {
   background-color: $white;
   border-radius: 50%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-  &--plane {
-    background-image: url("../img/transport/recolorized/gray/plane.svg");
-    background-position: 8px 9px;
-    background-repeat: no-repeat;
-    background-size: 14px 16px;
-  }
+.transportation__checkbox + .transportation__svg-wrapper svg {
+  opacity: 0.15;
+}
 
-  &--bus {
-    background-image: url("../img/transport/recolorized/gray/bus.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 13px 16px;
-  }
+.transportation__checkbox:hover .transportation__svg-wrapper {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
-  &--bike {
-    background-image: url("../img/transport/recolorized/gray/bike.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 19px 17px;
-  }
-
-  &--run {
-    background-image: url("../img/transport/recolorized/gray/run.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 15px 17px;
+  svg {
+    opacity: 0.3;
   }
 }
 
-.transportation__checkbox:checked + .transportation__button {
-  &--plane {
-    background-image: url("../img/transport/recolorized/blue/plane.svg");
-  }
+.transportation__checkbox:active + .transportation__svg-wrapper {
+  background-color: $blue-50-color;
+  box-shadow: none;
 
-  &--bus {
-    background-image: url("../img/transport/recolorized/blue/bus.svg");
-  }
-
-  &--bike {
-    background-image: url("../img/transport/recolorized/blue/bike.svg");
-  }
-
-  &--run {
-    background-image: url("../img/transport/recolorized/blue/run.svg");
+  svg {
+    opacity: 0.1;
   }
 }
+
+.transportation__checkbox:checked + .transportation__svg-wrapper svg {
+  color: $text__dark-blue;
+  opacity: 1;
+}
+
+.transportation__checkbox:checked:hover + .transportation__svg-wrapper {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+
+  svg {
+    opacity: 0.7;
+  }
+}
+
+.transportation__checkbox:checked:active + .transportation__svg-wrapper {
+  background-color: $blue-50-color;
+  box-shadow: none;
+
+  svg {
+    opacity: 0.3;
+  }
+}
+
 
 @media (min-width: $tablet-breakpoint) {
   .transportation__heading {
@@ -113,26 +172,40 @@
     height: 43px;
 
     &--plane {
-      background-position: 8px 11px;
-      background-size: 25px 23px;
+      svg {
+        top: 11px;
+        left: 9px;
+        width: 23px;
+        height: 21px;
+      }
     }
 
     &--bus {
-      background-size: 26px 21px;
+      svg {
+        margin-top: -11px;
+        margin-left: -11px;
+
+        width: 26px;
+        height: 21px;
+      }
     }
 
     &--bike {
-      background-image: url("../img/transport/recolorized/gray/bike.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 24px 21px;
+      svg {
+        margin-top: -12px;
+        margin-left: -11px;
+        width: 24px;
+        height: 21px;
+      }
     }
 
     &--run {
-      background-image: url("../img/transport/recolorized/gray/run.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 26px 21px;
+      svg {
+        margin-top: -11px;
+        margin-left: -12px;
+        width: 26px;
+        height: 21px;
+      }
     }
   }
 }
@@ -163,30 +236,10 @@
   .transportation__buttons {
     margin-top: 14px;
     margin-left: -3px;
-  }
 
-  .transportation__button {
-    &--plane {
-      background-position: 8px 11px;
-      background-size: 25px 23px;
-    }
-
-    &--bus {
-      background-size: 26px 21px;
-    }
-
-    &--bike {
-      background-image: url("../img/transport/recolorized/gray/bike.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 24px 21px;
-    }
-
-    &--run {
-      background-image: url("../img/transport/recolorized/gray/run.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 26px 21px;
+    &--catalog {
+      margin-top: 15px;
+      margin-left: -1px;
     }
   }
 }
