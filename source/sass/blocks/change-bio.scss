@@ -322,11 +322,11 @@
 
   .change-bio__transportation {
     margin-top: 3px;
-    margin-left: 19px;
+    margin-left: 13px;
   }
 
   .change-bio__number {
-    padding-top: 5px;
+    padding-top: 11px;
     padding-left: 0;
   }
 
@@ -415,6 +415,11 @@
     }
   }
 
+  .change-bio__transportation {
+    margin-top: 3px;
+    margin-left: 19px;
+  }
+
   .change-bio__content-wrapper {
     order: 3;
     margin-top: 0;
@@ -437,6 +442,8 @@
 
   .change-bio__number {
     color: $white;
+    padding-top: 11px;
+    padding-left: 3px;
   }
 
   .change-bio__text {
