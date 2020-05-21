@@ -106,16 +106,12 @@
   height: 100%;
 }
 
-
-
-
-
 .transportation__checkbox + .transportation__svg-wrapper svg {
   opacity: 0.15;
 }
 
 .transportation__button:hover .transportation__svg-wrapper {
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
   svg {
     opacity: 0.3;
@@ -137,16 +133,20 @@
 }
 
 .transportation__button:hover .transportation__checkbox:checked + .transportation__svg-wrapper {
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
   svg {
     opacity: 0.7;
   }
 }
 
-.transportation__button:active .transportation__checkbox:checked + .transportation__svg-wrapper svg {
-  opacity: 0.3;
+.transportation__button:active .transportation__checkbox:checked + .transportation__svg-wrapper {
+  background-color: $blue-50-color;
   box-shadow: none;
+
+  svg {
+    opacity: 0.3;
+  }
 }
 
 
