@@ -102,6 +102,21 @@
   width: 14px;
   height: 14px;
 
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: $blue-90-color;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: $font-color;
+    }
+  }
+
   &::before,
   &::after {
     content: "";
