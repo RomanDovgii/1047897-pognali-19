@@ -32,7 +32,6 @@
 
       position: absolute;
       top: 35px;
-      left: -45px;
       z-index: 10;
 
       text-align: center;
@@ -50,6 +49,7 @@
       border-radius: 4px;
 
       clip: auto;
+      transform: translateX(-40%);
     }
 
     &::after {
@@ -65,6 +65,7 @@
       z-index: 11;
 
       background-image: url("../../img/icons/mobile/triangle-arrow-right.svg");
+      background-size: 13px 16px;
       background-repeat: no-repeat;
 
       transform: rotate(-90deg);

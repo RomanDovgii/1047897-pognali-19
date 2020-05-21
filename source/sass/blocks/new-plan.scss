@@ -103,6 +103,10 @@
     }
   }
 
+  .new-plan__progress {
+    display: none;
+  }
+
   .new-plan__heading {
     @include desktop-form-headings;
     padding-left: 106px;
