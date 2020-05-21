@@ -110,7 +110,7 @@
   opacity: 0.15;
 }
 
-.transportation__button:hover .transportation__svg-wrapper {
+.transportation__checkbox:hover .transportation__svg-wrapper {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
   svg {
@@ -132,7 +132,7 @@
   opacity: 1;
 }
 
-.transportation__button:hover .transportation__checkbox:checked + .transportation__svg-wrapper {
+.transportation__checkbox:checked:hover + .transportation__svg-wrapper {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
   svg {
@@ -140,7 +140,7 @@
   }
 }
 
-.transportation__button:active .transportation__checkbox:checked + .transportation__svg-wrapper {
+.transportation__checkbox:checked:active + .transportation__svg-wrapper {
   background-color: $blue-50-color;
   box-shadow: none;
 
