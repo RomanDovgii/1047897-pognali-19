@@ -139,28 +139,13 @@
   text-transform: lowercase;
 
   &--to-visit {
-    span {
       position: relative;
+      max-width: 116px;
       z-index: 8;
       background-color: $white;
       margin-left: 16px;
       padding-left: 10px;
       padding-right: 10px;
-    }
-
-    &::before {
-      content: "";
-      display: block;
-
-      width: 100%;
-      height: 1px;
-
-      position: absolute;
-      left: 0;
-      bottom: 7px;
-
-      background-color: $main-color;
-    }
   }
 
   &--transport {
@@ -199,9 +184,20 @@
 .catalog-mate-card__countries-wrapper {
   width: 100%;
   margin-top: 13px;
+  position: relative;
 
-  &--tablet {
-    display: none;
+  &::before {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 1px;
+
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    background-color: $main-color;
   }
 }
 
@@ -617,6 +613,10 @@
     margin-right: auto;
     margin-top: 15px;
     margin-left: 15px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .catalog-mate-card__to-visit {
