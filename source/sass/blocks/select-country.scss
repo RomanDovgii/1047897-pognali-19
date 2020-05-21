@@ -101,6 +101,21 @@
       background-size: 18px 18px;
       background-position: 1px 6px;
     }
+
+    &:hover,
+    &:focus {
+      background-color: $grayish-blue-light-alt-5;
+    }
+
+    &:active {
+      span {
+        opacity: 0.3;
+      }
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
   }
 }
 

@@ -124,6 +124,12 @@
       margin-right: 14px;
       margin-top: -3px;
     }
+
+    &:hover {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   &--lk {

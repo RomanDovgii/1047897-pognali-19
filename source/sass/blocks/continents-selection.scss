@@ -13,10 +13,20 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: $grayish-blue;
+  color: $background__dark-blue;
+  opacity: 0.3;
 
   &--active {
-    color: $background__dark-blue;
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
 
