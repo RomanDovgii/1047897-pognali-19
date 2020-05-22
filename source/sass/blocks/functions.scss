@@ -6,12 +6,61 @@
 .functions__button {
   @include reset;
   border: none;
-  margin-top: 4px;
-  width: 25px;
-  height: 11px;
-  background: url("../img/icons/mobile/menu.svg");
+  position: relative;
+
+  margin-top: -4px;
+  margin-right: -3px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+
+    position: absolute;
+    top: 11px;
+    left: -8px;
+
+    margin-top: 1px;
+    margin-left: 12px;
+
+    background-color: $grayish-light-2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &--open {
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+
+    &::before {
+      transform: rotate(0);
+      top: 8px;
+      left: -10px;
+    }
+
+    &::after {
+      transform: rotate(0);
+      top: 16px;
+      left: -10px;
+    }
+  }
 }
 
 .functions__auth-link {
@@ -59,8 +108,13 @@
   }
 
   .functions__button {
-    margin-top: 21px;
-    margin-left: 24px;
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 0;
+
+    &--open {
+      margin-top: 4px;
+    }
   }
 }
 

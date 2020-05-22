@@ -39,7 +39,7 @@
     position: absolute;
     bottom: -14px;
     left: 0;
-    z-index: 10;
+    z-index: 1;
 
     background-color: $background__orange-color;
     border-radius: 2px;
@@ -84,7 +84,6 @@
 
       left: 2px;
       bottom: -13px;
-      z-index: 10;
 
       border-radius: 4px;
     }

@@ -1,13 +1,21 @@
 .header {
   width: 100%;
-  background-color: $header-color;
+  background-color: $white;
   position: relative;
   z-index: 3;
+
+  &--blue {
+    background-color: $blue-700-color;
+  }
+
+  &--index-blue {
+    background-color: $blue-700-color;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
   .header {
-    &--index {
+    &--index-blue {
       background-color: $header-color-tablet;
     }
   }
@@ -15,8 +23,6 @@
 
 @media (min-width: $desktop-breakpoint) {
   .header {
-    &--index {
-      background-color: $header-color;
-    }
+    background-color: $header-color;
   }
 }

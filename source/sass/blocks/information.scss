@@ -1,6 +1,5 @@
 .information {
   width: 100%;
-
   background: $white;
 
 
@@ -9,7 +8,18 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding-top: 65px;
+    padding-top: 56px;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--js {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
   }
 }
 
@@ -55,7 +65,14 @@
     padding-left: 97px;
     align-items: initial;
 
-    display: none;
+    .information__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      padding-top: 65px;
+      padding-left: 48px;
+    }
   }
 
   .information__inner-links {
@@ -75,6 +92,9 @@
 
   .information__social {
     justify-content: flex-start;
+    margin-top: 119px;
+    padding-left: 8px;
+    padding-bottom: 70px;
   }
 }
 

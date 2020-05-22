@@ -210,11 +210,14 @@
 
   .cta-form__input {
     max-width: 100%;
+    width: 536px;
 
     font-size: 24px;
     line-height: 24px;
 
     padding-left: 33px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .cta-form__button-description {
