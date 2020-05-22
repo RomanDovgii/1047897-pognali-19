@@ -208,7 +208,7 @@
   margin-right: 0;
   margin-left: auto;
   position: relative;
-  padding-right: 9px;
+  padding-right: 0;
 }
 
 .catalog-mate-card__pie-graph {
@@ -334,7 +334,7 @@
 
   .catalog-mate-card__transport-level {
     position: absolute;
-    top: 3px;
+    bottom: 68px;
     right: 25px;
 
     display: flex;
