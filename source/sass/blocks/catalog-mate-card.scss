@@ -404,7 +404,7 @@
     }
 
     &--to-visit {
-      padding-left: 57px;
+      margin-left: 71px;
     }
   }
 
@@ -609,6 +609,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 42px;
+
+    position: static;
 
     margin-right: auto;
     margin-top: 15px;
