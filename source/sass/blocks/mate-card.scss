@@ -105,6 +105,7 @@
 .mate-card__hashtags {
   @include reset;
   margin-top: 15px;
+  max-width: 300px;
 }
 
 .mate-card__transport {
