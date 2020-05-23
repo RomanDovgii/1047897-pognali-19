@@ -42,11 +42,19 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    color: rgba($text__dark-blue, 0.6);
+
+    &::after {
+      opacity: 0.6;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba($text__dark-blue, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -140,11 +148,19 @@ input[type="checkbox"]:checked + .preference__name {
 
     &:hover,
     &:focus {
-      opacity: 1;
+      color: rgba($text__dark-blue, 1);
+
+      &::after {
+        opacity: 1;
+      }
     }
 
     &:active {
-      opacity: 1;
+      color: rgba($text__dark-blue, 1);
+
+      &::after {
+        opacity: 1;
+      }
     }
   }
 
