@@ -88,6 +88,15 @@
 
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+  }
+
+  &:active {
+    color: rgba($text__dark-blue, 0.3)
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {

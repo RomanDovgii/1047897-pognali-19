@@ -6,7 +6,19 @@
 
   &:hover {
     box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .mate-card__img {
+      transform: scale(1.05) translateY(-7px);
+    }
   }
+}
+
+.mate-card__img-wrapper {
+  display: block;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .mate-card__img {
@@ -155,6 +167,13 @@
   .mate-card__level {
     top: 23px;
     left: 23px;
+  }
+
+  .mate-card__img-wrapper {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
   }
 
   .mate-card__img {

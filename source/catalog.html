@@ -16,20 +16,20 @@
     <header class="header">
       <section class="top-menu header__top-menu">
         <div class="wrapper top-menu__wrapper">
-          <div class="functions top-menu__functions top-menu__functions--white">
+          <div class="functions top-menu__functions top-menu__functions--white top-menu__functions--index">
             <a href="index.html" class="functions__link functions__link--white">
               <picture>
-                <source type="img/webp" media="(min-width: 1440px)" srcset="./img/desktop/webp/logo-desktop-white@1x.webp 1x, ./img/desktop/webp/logo-desktop-white@2x.webp 2x">
-                <source type="img/webp" media="(min-width: 768px)" srcset="./img/tablet/webp/logo-tablet-white@1x.webp 1x, ./img/tablet/webp/logo-tablet-white@2x.webp 2x">
-                <source type="img/webp" srcset="./img/mobile/webp/logo-mobile-white@1x.webp 1x, ./img/mobile/webp/logo-mobile-white@2x.webp 2x">
+                <source type="img/webp" media="(min-width: 1440px)" srcset="./img/desktop/webp/logo-desktop-blue@1x.webp 1x, ./img/desktop/webp/logo-desktop-blue@2x.webp 2x">
+                <source type="img/webp" media="(min-width: 768px)" srcset="./img/tablet/webp/logo-tablet-blue@1x.webp 1x, ./img/tablet/webp/logo-tablet-blue@2x.webp 2x">
+                <source type="img/webp" srcset="./img/mobile/webp/logo-mobile-blue@1x.webp 1x, ./img/mobile/webp/logo-mobile-blue@2x.webp 2x">
 
 
-                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
-                <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
+                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+                <img class="functions__logo-img" src="./img/mobile/logo-mobile-blue@1x.png" srcset="./img/mobile/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
               </picture>
             </a>
-            <button class="functions__button functions__button--open" type="button">
+            <button class="functions__button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <a class="functions__auth-link" href="">Авторизация</a>
@@ -37,13 +37,25 @@
 
           <ul class="inner-links top-menu__inner-links">
             <li class="inner-links__item">
-              <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
+              <a class="inner-links__link inner-links__link--active" href="./index.html">
+                <span data-hover="О сервисе">
+                  О сервисе
+                </span>
+              </a>
             </li>
             <li class="inner-links__item">
-              <a class="inner-links__link" href="./form.html">Направления</a>
+              <a class="inner-links__link" href="./form.html">
+                <span data-hover="Направления">
+                  Направления
+                </span>
+              </a>
             </li>
             <li class="inner-links__item">
-              <a class="inner-links__link" href="./catalog.html">Попутчики</a>
+              <a class="inner-links__link" href="./catalog.html">
+                <span data-hover="Попутчики">
+                  Попутчики
+                </span>
+              </a>
             </li>
           </ul>
 
@@ -70,17 +82,17 @@
           </ul>
         </div>
 
-          <div class="information top-menu__information">
-            <div class="wrapper information__wrapper">
+        <div class="information top-menu__information">
+          <div class="wrapper information__wrapper">
             <ul class="inner-links information__inner-links">
               <li class="inner-links__item">
-                <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
+                <a data-hover="О сервисе" class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
               </li>
               <li class="inner-links__item">
-                <a class="inner-links__link" href="./form.html">Направления</a>
+                <a data-hover="Направления" class="inner-links__link" href="./form.html">Направления</a>
               </li>
               <li class="inner-links__item">
-                <a class="inner-links__link" href="./catalog.html">Попутчики</a>
+                <a data-hover="Попутчики" class="inner-links__link" href="./catalog.html">Попутчики</a>
               </li>
             </ul>
 
@@ -92,7 +104,7 @@
                   <svg width="18" height="18" aria-hidden="true">
                     <use xlink:href="./img/sprite.svg#contacts-phone"></use>
                   </svg>
-                  8 800 555-86-28
+                  <span>8 800 555-86-28</span>
                 </a>
               </li>
               <li class="contacts__item">
@@ -100,7 +112,7 @@
                   <svg width="18" height="18" aria-hidden="true">
                     <use xlink:href="./img/sprite.svg#contacts-mail"></use>
                   </svg>
-                  mail@htmlacademy.ru
+                  <span>mail@htmlacademy.ru</span>
                 </a>
               </li>
             </ul>
@@ -109,21 +121,30 @@
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="">
                   <span class="visually-hidden">Наш Facebook</span>
+                  <svg width="23" height="12"  aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--vk" href="">
                   <span class="visually-hidden">Наш VK</span>
+                  <svg width="23" height="12"  aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--instagram" href="">
                   <span class="visually-hidden">Наш instagram</span>
+                  <svg width="23" height="12" aria-hidden="true">
+                    <use xlink:href="./img/sprite.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-            </div>
           </div>
+        </div>
 
 
       </section>

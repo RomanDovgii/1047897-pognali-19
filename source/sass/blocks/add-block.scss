@@ -53,6 +53,17 @@
     background-color: $text__dark-blue;
     border-color: $text__dark-blue;
   }
+
+  &:hover,
+  &:focus {
+    border-color: $blue-90-color;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $text__dark-blue;
+    border-color: $text__dark-blue;
+  }
 }
 
 .add-block__countries {
@@ -69,6 +80,16 @@
   font-size: 16px;
   line-height: 22px;
   color: $gray;
+
+  &:hover,
+  &:focus {
+    color: $text__dark-blue;
+  }
+
+  &:active {
+    color: $text__dark-blue;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {

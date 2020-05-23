@@ -94,14 +94,19 @@
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
-  color: $blue-700-color;
+  color: $text__dark-blue;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $orangish-yellow-color;
   }
 
   &:active {
     color: rgba($text__dark-blue, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -125,13 +130,22 @@
   text-align: center;
   font-size: 17px;
   line-height: 30px;
-  color: $blue-700-color;
+  color: $text__dark-blue;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   padding-top: 13px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .steps-ordered__step-description {
@@ -173,13 +187,26 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
-  color: $blue-700-color;
+  color: $text__dark-blue;
   text-transform: uppercase;
   text-align: center;
   background-color: $universal__bright-yellow;
   border-radius: 20px;
   padding-top: 7px;
   padding-bottom: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: $orangish-yellow-color;
+  }
+
+  &:active {
+    color: rgba($text__dark-blue, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -388,11 +415,15 @@
     padding-bottom: 105px;
 
     &:first-child {
-      padding-bottom: 105px;
+      padding-bottom: 106px;
     }
 
     &:not(:first-child) {
       margin-top: 44px;
+    }
+
+    &:last-child {
+      margin-top: 45px;
     }
   }
 
