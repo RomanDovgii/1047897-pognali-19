@@ -14,3 +14,4 @@ source/css/*.css
 source/css/*.map
 build/
 Thumbs.db
+source/img/sprite.svg

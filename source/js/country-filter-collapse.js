@@ -4,12 +4,14 @@ const filterBlock = document.querySelector(".select-country");
 const buttonText = document.querySelector(".country-filter__button-text");
 const filterSection = document.querySelector(".country-filter");
 const fixer = document.querySelector(".country-filter__width-fix");
+const wrapper = fixer.querySelector(".country-filter__wrapper");
 
 const closedClass = "select-country--closed";
 const blockOpenClass = "country-filter--open";
-const buttonOpenClass = "country-filter__button--open"
-const fixerClass = "country-filter__width-fix--js"
-const fixerClosedClass = "country-filter__width-fix--closed"
+const buttonOpenClass = "country-filter__button--open";
+const fixerClass = "country-filter__width-fix--js";
+const fixerClosedClass = "country-filter__width-fix--closed";
+const wrapperJSClass = "country-filter__wrapper--js";
 
 
 const buttonTextOpen = "Показать все";
@@ -41,6 +43,7 @@ const selector = () => {
 }
 
 closeBlock();
+wrapper.classList.add(wrapperJSClass);
 fixer.classList.add(fixerClass);
 fixer.classList.add(fixerClosedClass);
 buttonCollapse.addEventListener("click", selector);
