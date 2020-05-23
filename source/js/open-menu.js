@@ -57,5 +57,3 @@ openMenuButton.addEventListener("click", function(evt) {
     closeMenu();
   }
 });
-
-
