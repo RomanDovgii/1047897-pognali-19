@@ -98,6 +98,7 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
+
   &::placeholder {
     color: $rgba__text__light-gray;
   }
@@ -110,6 +111,15 @@
     background-color: $background__dark-blue;
     color: $white;
     border: 4px solid $white;
+  }
+
+  &--invalid {
+    background-color: $error;
+    border: $error;
+
+    &::placeholder {
+      color: $error-text;
+    }
   }
 }
 

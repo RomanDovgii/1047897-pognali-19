@@ -54,7 +54,10 @@ gulp.task("images", function () {
     imagemin.mozjpeg({progressive: true}),
     imagemin.svgo({
       removeStyleElement: true,
-      removeAttrs: { attrs: '(fill|stroke)' }
+      removeAttrs: { attrs: '(fill|stroke)'},
+      plugins: [
+        {cleanupIDs: false}
+      ]
     })
   ])).pipe(gulp.dest("build/img"));
 });
