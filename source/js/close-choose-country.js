@@ -27,4 +27,3 @@ const switcher = () => {
 removeChooseCountry();
 addCountryButton.addEventListener("click", switcher);
 deleteButton.addEventListener("click", switcher);
-
