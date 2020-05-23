@@ -43,10 +43,10 @@
 
 .country-filter__button {
   cursor: pointer;
+  position: relative;
 
   &--open {
-    position: relative;
-    z-index: 5;
+    z-index: 2;
     background: none;
     border: none;
     margin-left: 23px;
@@ -60,13 +60,10 @@
 
   &--collapse {
     background: none;
-    position: relative;
     z-index: 2;
     border: none;
     display: block;
     margin-left: 21px;
-    width: 20px;
-    height: 20px;
     background-image: url("../img/icons/filter-close.svg");
     background-position: center;
     background-size: 12px 12px;
