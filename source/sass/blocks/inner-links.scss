@@ -41,8 +41,10 @@
   }
 
   &:active {
-    span:before {
-      color: rgba($universal__bright-yellow, 0.3);
+    span {
+      &::before {
+        color: rgba($universal__bright-yellow, 0.3);
+      }
     }
   }
 }
