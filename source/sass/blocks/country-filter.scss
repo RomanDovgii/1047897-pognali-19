@@ -110,10 +110,9 @@
     z-index: 2;
     border: none;
     display: block;
-    margin-left: 0px;
+    margin-left: 0;
     height: 18px;
     width: 18px;
-
 
     &::after {
       content: "";
@@ -168,7 +167,7 @@
   }
 
   .country-filter__width-fix {
-    top: 80px
+    top: 80px;
   }
 
   .country-filter__wrapper {
@@ -184,7 +183,6 @@
   .country-filter__name-wrapper {
     max-width: 100%;
     width: 768px;
-    padding-left: 20px;
     align-self: stretch;
     justify-content: space-between;
     padding-top: 41px;
@@ -251,8 +249,7 @@
 
         position: absolute;
         top: 12px;
-        right: 0px;
-
+        right: 0;
 
         background-image: url("../img/icons/mobile/dots.svg");
         background-position: center;

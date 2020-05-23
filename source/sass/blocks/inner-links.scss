@@ -32,7 +32,7 @@
     top: 100%;
     color: $universal__bright-yellow;
     content: attr(data-hover);
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
   }
 
   &:hover span,
@@ -40,8 +40,10 @@
     transform: translateY(-100%);
   }
 
-  &:active span:before{
-    color: rgba($universal__bright-yellow, 0.3);
+  &:active {
+    span:before {
+      color: rgba($universal__bright-yellow, 0.3);
+    }
   }
 }
 
