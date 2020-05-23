@@ -121,14 +121,18 @@
 
 @media (min-width: $desktop-breakpoint) {
   .select-country__letters-selection {
-    margin-top: 0;
+    margin-top: -3px;
   }
 
   .select-country__collapse {
     position: relative;
     z-index: 10;
-    margin-top: -92px;
+    margin-top: -91px;
     max-width: 100%;
     width: 1320px;
+
+    &::before {
+      margin-right: 19px;
+    }
   }
 }

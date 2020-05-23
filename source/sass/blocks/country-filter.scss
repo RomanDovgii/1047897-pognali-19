@@ -44,6 +44,7 @@
 .country-filter__button {
   cursor: pointer;
   position: relative;
+  color: $background__dark-blue;
 
   &--open {
     z-index: 2;
@@ -68,6 +69,15 @@
     background-position: center;
     background-size: 12px 12px;
     background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -161,11 +171,13 @@
 
     padding-left: 39px;
 
-    margin-top: 19px;
+    margin-top: 5px;
 
     &::before {
       width: 23px;
       height: 15px;
+
+      bottom: 5px;
     }
   }
 
@@ -175,13 +187,17 @@
     padding-left: 84px;
   }
 
+  .country-filter__select-country {
+    padding-top: 8px;
+  }
+
   .country-filter__continents-selection {
-    margin-top: 23px;
+    margin-top: 10px;
     margin-left: 29px;
   }
 
   .country-filter__button {
-    margin-top: 14px;
+    margin-top: 22px;
     margin-right: 127px;
     margin-left: auto;
   }

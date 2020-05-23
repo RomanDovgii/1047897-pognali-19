@@ -9,6 +9,14 @@
 
   background-color: $white;
   border-radius: 20px;
+
+  &:hover {
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .catalog-mate-card__img {
+      transform: scale(1.05) translateY(-7px);
+    }
+  }
 }
 
 .catalog-mate-card__second-block {
@@ -24,6 +32,8 @@
 
   width: 70px;
   height: 70px;
+
+  overflow: hidden;
 }
 
 .catalog-mate-card__img {
@@ -533,6 +543,9 @@
 
     width: 285px;
     height: 284px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .catalog-mate-card__img {
