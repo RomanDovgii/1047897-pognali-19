@@ -23,8 +23,6 @@
   span {
     position: relative;
     display: inline-block;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
 
@@ -34,15 +32,11 @@
     top: 100%;
     color: $universal__bright-yellow;
     content: attr(data-hover);
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
 
   &:hover span,
   &:focus span {
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
     transform: translateY(-100%);
   }
 
