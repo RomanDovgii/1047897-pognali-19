@@ -14,10 +14,18 @@
 .country-filter__width-fix {
   width: 100%;
   background-color: inherit;
-  position: absolute;
+  position: relative;
   z-index: 20;
 
   top: 38px;
+
+  &--js {
+    position: absolute;
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .country-filter__wrapper {
