@@ -20,25 +20,27 @@
     border-left: 1px solid $main-color;
   }
 
-  &::after {
-    content: "";
-    display: flex;
-    width: 10px;
-    height: 20px;
-    justify-content: center;
-    position: absolute;
-    top: 15px;
-    left: 62px;
+  .page-navigation__link {
+    &::after {
+      content: "";
+      display: flex;
+      width: 10px;
+      height: 20px;
+      justify-content: center;
+      position: absolute;
 
-    background: url("../img/icons/mobile/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+      background: url("../img/icons/mobile/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
   }
 
   &:first-child {
-    &::after {
-      transform: rotate(180deg);
+    a {
+      &::after {
+        transform: rotate(180deg);
+      }
     }
   }
 }
@@ -48,6 +50,19 @@
   display: block;
   width: 100%;
   height: 100%;
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {

@@ -66,11 +66,7 @@
       @include desktop-paddings;
 
       padding-top: 50px;
-      padding-bottom: 4px;
-
-      &--form {
-        padding-bottom: 9px;
-      }
+      padding-bottom: 9px;
     }
   }
 
@@ -139,6 +135,7 @@
 
     .main__wrapper {
       padding-top: 27px;
+      padding-bottom: 4px;
 
       &--form {
         padding-top: 34px;

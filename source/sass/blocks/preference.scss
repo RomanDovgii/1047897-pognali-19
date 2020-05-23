@@ -39,6 +39,15 @@
     background-image: url("../img/icons/dropdown.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .preference__checkboxes {
@@ -119,6 +128,7 @@ input[type="checkbox"]:checked + .preference__name {
 
     font-size: 20px;
     line-height: 30px;
+    font-weight: 500;
 
     &::before {
       display: none;
@@ -126,6 +136,15 @@ input[type="checkbox"]:checked + .preference__name {
 
     &::after {
       display: none;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
     }
   }
 
@@ -188,6 +207,15 @@ input[type="checkbox"]:checked + .preference__name {
       height: 6px;
       background-image: url("../img/icons/dropdown.svg");
       background-repeat: no-repeat;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 

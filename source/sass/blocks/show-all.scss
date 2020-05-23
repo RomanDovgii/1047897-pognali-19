@@ -20,11 +20,7 @@
 
   border-radius: 10px;
 
-  &:hover {
-    transition: background-color 0.3s;
-    background-color: $orangish-yellow-color;
-  }
-
+  &:hover,
   &:focus {
     transition: background-color 0.3s;
     background-color: $orangish-yellow-color;
