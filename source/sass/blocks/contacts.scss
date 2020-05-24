@@ -82,6 +82,8 @@
       width: 68px;
       height: 68px;
 
+      margin-right: 23px;
+
       background-size: 27px 27px;
     }
 
@@ -127,6 +129,10 @@
 
         background-size: 36px 36px;
       }
+    }
+
+    &::before {
+      margin-right: 32px;
     }
   }
 }

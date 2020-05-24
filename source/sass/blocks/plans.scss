@@ -13,7 +13,7 @@
   @include reset;
   width: 270px;
   z-index: 2;
-
+  color: $text__dark-blue;
   padding-top: 24px;
 }
 
@@ -45,12 +45,14 @@
   font-weight: 700;
   margin: 0;
   padding-top: 24px;
+  color: $text__dark-blue;
 
   &::before {
     content: counter(blocks) ".";
     padding-left: 23px;
     padding-right: 6px;
     font-weight: 500;
+    color: $text__dark-blue;
   }
 }
 
@@ -64,6 +66,7 @@
   padding-left: 25px;
   padding-top: 20px;
   letter-spacing: 1.5px;
+  color: $text__dark-blue;
 
   &--number {
     padding-right: 5px;
@@ -79,6 +82,7 @@
   padding-left: 25px;
   padding-top: 5px;
   letter-spacing: 1.5px;
+  color: $text__dark-blue;
 }
 
 .plans__link {

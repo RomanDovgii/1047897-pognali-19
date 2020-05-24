@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
 }
 
+.map__iframe {
+  width: 100%;
+  min-height: 334px;
+}
+
 
 @media (min-width: $tablet-breakpoint) {
   .map {
@@ -13,6 +18,10 @@
     background-image: url("../img/map-tablet@1x.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .map__iframe {
+    min-height: 595px;
   }
 }
 
@@ -22,6 +31,11 @@
     background-image: url("../img/map-desktop@1x.png");
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .map__iframe {
+    width: 100%;
+    min-height: 476px;
   }
 }
 

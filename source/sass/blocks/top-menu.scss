@@ -1,3 +1,16 @@
+.top-menu {
+  &--fixed  {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 100;
+
+    padding-bottom: 12px;
+  }
+}
+
 .top-menu__wrapper {
   min-height: 61px;
 }
@@ -21,6 +34,12 @@
 }
 
 @media (min-width: $tablet-breakpoint) {
+  .top-menu {
+    &--fixed  {
+      padding-bottom: 42px;
+    }
+  }
+
   .top-menu__functions {
     margin-left: 25px;
     margin-right: 40px;

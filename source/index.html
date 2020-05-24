@@ -130,7 +130,7 @@
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="">
                   <span class="visually-hidden">Наш Facebook</span>
-                  <svg width="23" height="12"  aria-hidden="true">
+                  <svg width="23" height="12" aria-hidden="true">
                     <use xlink:href="#facebook"></use>
                   </svg>
                 </a>
@@ -138,7 +138,7 @@
               <li class="social__item">
                 <a class="social__link social__link--vk" href="">
                   <span class="visually-hidden">Наш VK</span>
-                  <svg width="23" height="12"  aria-hidden="true">
+                  <svg width="23" height="12" aria-hidden="true">
                     <use xlink:href="#vk"></use>
                   </svg>
                 </a>
@@ -219,7 +219,7 @@
           <div class="directions__content-wrapper">
             <h2 class="directions__heading">Направления</h2>
             <p class="directions__text">Мы не продаем туры <br>и ничего не рекламируем. <br>Люди сами пишут о странах, <br>куда хотели бы отправиться <br>и чем можно там заняться.</p>
-            <a class="show-all directions__show-all directions__show-all--desktop" href="">
+            <a class="show-all directions__show-all directions__show-all--desktop" href="./form.html">
               <svg width="10" height="14" aria-hidden="true">
                 <use xlink:href="#triangle-arrow-right"></use>
               </svg>
@@ -267,7 +267,7 @@
             </li>
           </ul>
 
-          <a class="show-all directions__show-all" href="">
+          <a class="show-all directions__show-all" href="./form.html">
             <svg width="10" height="14" aria-hidden="true">
               <use xlink:href="#triangle-arrow-right"></use>
             </svg>
@@ -282,7 +282,7 @@
           <h2 class="mates__heading">Попутчики</h2>
           <p class="mates__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а&nbsp; другому маршрут для хайкинга.</p>
           <p class="mates__text mates__text--additional">Теперь можно легко <br class="mates__tablet-br"> найти единомышленников!</p>
-          <a class="show-all mates__show-all" href="">
+          <a class="show-all mates__show-all" href="./catalog.html">
             <svg width="10" height="14" aria-hidden="true">
               <use xlink:href="#triangle-arrow-right"></use>
             </svg>
@@ -304,7 +304,7 @@
                   <svg class="level__pie-graph" width="60" height="60" stroke-dasharray="90 100" viewBox="0 0 32 32"  aria-hidden="true">
                     <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
                   </svg>
-                  <p class="level__text"><span class="level__text--number">99</span> level</p>
+                  <p class="level__text"><span>99</span> level</p>
                 </div>
 
                 <div class="mate-card__info">
@@ -396,7 +396,7 @@
                     <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
                   </svg>
                   <p class="level__text">
-                    <span class="level__text--number">80</span>level</p>
+                    <span>80</span>level</p>
                 </div>
 
                 <div class="mate-card__info">
@@ -468,7 +468,7 @@
           </li>
         </ul>
 
-        <a class="show-all mates__show-all" href="">
+        <a class="show-all mates__show-all" href="./catalog.html">
           <svg width="10" height="14" aria-hidden="true">
             <use xlink:href="#triangle-arrow-right"></use>
           </svg>
@@ -523,7 +523,7 @@
         </p>
 
         <form class="cta-form__email-form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="cta-form__input" type="email" name="email" placeholder="E-mail" required>
+          <input class="cta-form__input" type="email" name="email" aria-label="введите ваш email" placeholder="E-mail" required>
           <button class="cta-form__button" type="submit">
             <span class="cta-form__button-description">Регистрация</span>
           </button>
@@ -572,6 +572,7 @@
 
       <section class="map main__map">
         <h2 class="visually-hidden">Карта</h2>
+        <iframe class="map__iframe" src="https://www.google.com/maps/d/u/0/embed?mid=17TJNYvGx8khuWNvDw4AsU_RoY8LYFphj"></iframe>
       </section>
     </main>
 
@@ -615,9 +616,9 @@
           </a>
         </li>
       </ul>
-      <a class="developer footer__developer" href="">
+      <a class="developer footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer__text">Разработано</p>
-        <svg class="developer__logo"  aria-label="HTML Academy" width="27" height="34">
+        <svg class="developer__logo" aria-label="HTML Academy" width="27" height="34">
           <use xlink:href="#htmlacademy"></use>
         </svg>
       </a>
@@ -648,7 +649,7 @@
       <a href="" class="business-rates__link">Закрыть окно</a>
     </div>
 
-    <script src="./js/open-menu.js"></script>
+    <!-- <script src="./js/open-menu.js"></script> -->
     <script src="./js/open-business.js"></script>
     <script src="./js/email-form-validation.js"></script>
   </body>

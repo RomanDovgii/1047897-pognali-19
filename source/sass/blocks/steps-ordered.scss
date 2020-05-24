@@ -154,24 +154,26 @@
 
   &:first-of-type {
     margin-top: 19px;
+  }
 
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
+
+  &:not(:first-of-type) {
     &::after {
       content: "";
 
       display: block;
       width: 2px;
-      height: 281px;
+      height: 279px;
 
       position: absolute;
-      top: 13px;
+      top: -265px;
       left: 11px;
 
       background-color: $text__dark-blue;
     }
-  }
-
-  &:last-of-type {
-    margin-bottom: 22px;
   }
 }
 
@@ -250,6 +252,42 @@
     }
   }
 
+  .steps-ordered__step-description {
+    margin-top: 29px;
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-left: 45px;
+    margin-right: 45px;
+
+    &:first-of-type {
+      margin-top: 56px;
+      padding-top: 79px;
+    }
+
+    &:not(:first-of-type) {
+      &::after {
+        top: 89px;
+        right: 222px;
+        width: 3px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 3px;
+        height: 261px;
+
+        position: absolute;
+        top: -244px;
+        right: 1px;
+        left: auto;
+
+        background-color: $text__dark-blue;
+      }
+    }
+  }
+
   .steps-ordered__next {
     position: relative;
     margin: 0;
@@ -292,7 +330,7 @@
     padding-right: 43px;
 
     &--send {
-      margin-top: 24px;
+      margin-top: 28px;
 
       .steps-ordered__previous {
         margin-top: -8px;
@@ -439,6 +477,18 @@
     }
   }
 
+  .steps-ordered__step-description {
+    margin-left: 161px;
+    margin-right: 162px;
+
+    &:not(:first-of-type) {
+      &::after {
+        right: 222px;
+        width: 3px;
+      }
+    }
+  }
+
   .steps-ordered__progress {
     display: block;
     position: absolute;
@@ -451,7 +501,7 @@
 
   .steps-ordered__progress-item {
     position: relative;
-    color: rgba($black, 0.6);
+    color: rgba($text__dark-blue, 0.6);
     text-transform: uppercase;
     font-size: 20px;
     line-height: 20px;
@@ -467,7 +517,7 @@
       top: 9px;
       left: -42px;
 
-      background-color: rgba($black, 0.6);
+      background-color: rgba($text__dark-blue, 0.6);
 
       border-radius: 50%;
     }
@@ -477,10 +527,10 @@
     }
 
     &--active {
-      color: $black;
+      color: $text__dark-blue;
 
       &::before {
-        background-color: $black;
+        background-color: $text__dark-blue;
       }
     }
   }
@@ -536,7 +586,7 @@
     }
 
     &--send {
-      margin-top: 34px;
+      margin-top: 37px;
     }
   }
 

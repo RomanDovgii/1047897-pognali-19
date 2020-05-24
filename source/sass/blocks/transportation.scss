@@ -42,6 +42,16 @@
   }
 }
 
+.transportation__description {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .transportation__buttons {
   display: flex;
   margin-top: 15px;
@@ -50,6 +60,7 @@
 .transportation__button {
   width: 32px;
   height: 32px;
+  position: relative;
 
   svg {
     position: absolute;
@@ -103,6 +114,55 @@
 
       width: 15px;
       height: 17px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .transportation__description {
+      display: block;
+      width: auto;
+      height: auto;
+
+      position: absolute;
+      top: 50px;
+      z-index: 10;
+
+      text-align: center;
+      font-size: 15px;
+      line-height: 24px;
+      color: $white;
+
+      background-color: $text__dark-blue;
+
+      padding-top: 10px;
+      padding-right: 17px;
+      padding-left: 17px;
+      padding-bottom: 10px;
+
+      border-radius: 4px;
+
+      clip: auto;
+      transform: translateX(-30%);
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 13px;
+      height: 16px;
+
+      position: absolute;
+      top: 40px;
+      left: 15px;
+      z-index: 11;
+
+      background-image: url("../../img/icons/mobile/triangle-arrow-right.svg");
+      background-size: 13px 16px;
+      background-repeat: no-repeat;
+
+      transform: rotate(-90deg);
     }
   }
 }

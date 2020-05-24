@@ -160,8 +160,21 @@
     background-image: url("../img/icons/mobile/small-cross.svg");
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.3;
+    opacity: 0.1;
     background-size: 9px 9px;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.05;
+    }
   }
 
   &--active {

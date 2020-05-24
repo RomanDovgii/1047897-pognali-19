@@ -130,7 +130,7 @@
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="">
                   <span class="visually-hidden">Наш Facebook</span>
-                  <svg width="23" height="12"  aria-hidden="true">
+                  <svg width="23" height="12" aria-hidden="true">
                     <use xlink:href="#facebook"></use>
                   </svg>
                 </a>
@@ -138,7 +138,7 @@
               <li class="social__item">
                 <a class="social__link social__link--vk" href="">
                   <span class="visually-hidden">Наш VK</span>
-                  <svg width="23" height="12"  aria-hidden="true">
+                  <svg width="23" height="12" aria-hidden="true">
                     <use xlink:href="#vk"></use>
                   </svg>
                 </a>
@@ -965,7 +965,7 @@
                         <use xlink:href="#plane"></use>
                       </svg>
                     </span>
-                    <span class="transport__description">Авиаперелет</span>
+                    <span class="transportation__description">Авиаперелет</span>
                   </label>
 
                   <label class="transportation__button transportation__button--bus" >
@@ -975,7 +975,7 @@
                         <use xlink:href="#bus"></use>
                       </svg>
                     </span>
-                    <span class="transport__description">Автотранспорт</span>
+                    <span class="transportation__description">Автотранспорт</span>
                   </label>
 
                   <label class="transportation__button transportation__button--bike">
@@ -985,7 +985,7 @@
                         <use xlink:href="#bike"></use>
                       </svg>
                     </span>
-                    <span class="transport__description">Велосипед</span>
+                    <span class="transportation__description">Велосипед</span>
                   </label>
 
                   <label class="transportation__button transportation__button--run">
@@ -995,7 +995,7 @@
                         <use xlink:href="#run"></use>
                       </svg>
                     </span>
-                    <span class="transport__description">Пешком</span>
+                    <span class="transportation__description">Пешком</span>
                   </label>
                 </div>
               </div>
@@ -1005,8 +1005,8 @@
                 <h3 class="set-level__name">Левел<span class="set-level__colon">:</span></h3>
 
                 <div class="set-level__input-wrapper">
-                  <input class="set-level__input set-level__input--min-level" type="number" name="min-level" value="30">
-                  <input class="set-level__input set-level__input--max-level" type="number" name="max-level" value="100">
+                  <input class="set-level__input set-level__input--min-level" aria-label="минимальный уровень попутчика" type="number" name="min-level" value="30">
+                  <input class="set-level__input set-level__input--max-level" aria-label="максимальный уровень попутчика" type="number" name="max-level" value="100">
                 </div>
 
                 <div class="set-level__line">
@@ -1030,7 +1030,7 @@
           <ul class="mates-sorted__list">
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img-wrapper">
+                <a href="" class="catalog-mate-card__img-wrapper">
                   <picture>
                     <source type="img/webp" media="(min-width: 1440px)" srcset="./img/desktop/webp/firsova-desktop@1x.webp 1x, ./img/desktop/webp/firsova-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="./img/tablet/webp/firsova-tablet@1x.webp 1x, ./img/tablet/webp/firsova-tablet@2x.webp 2x">
@@ -1040,8 +1040,7 @@
                     <source media="(min-width: 768px)" srcset="./img/tablet/firsova-tablet@1x.jpg 1x, ./img/tablet/firsova-tablet@2x.jpg 2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/firsova-mobile@1x.jpg" srcset="../img/mobile/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
                   </picture>
-
-                </div>
+                </a>
 
 
                 <div class="catalog-mate-card__first-block">
@@ -1104,7 +1103,7 @@
                           <span>Транспорт:</span>
                         </h4>
                         <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--plane-catalog transport__item--active  transport__item--catalog">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active transport__item--catalog">
                             <svg width="14" height="16" aria-hidden="true">
                               <use xlink:href="#plane"></use>
                             </svg>
@@ -1116,13 +1115,13 @@
                             </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog transport__item--catalog">
                             <svg width="19" height="17" aria-hidden="true">
                               <use xlink:href="#bike"></use>
                             </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run-catalog  transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--catalog">
                             <svg width="15" height="17" aria-hidden="true">
                               <use xlink:href="#run"></use>
                             </svg>
@@ -1132,7 +1131,7 @@
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
-                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="90 100" viewBox="0 0 32 32"  aria-hidden="true">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="90 100" viewBox="0 0 32 32" aria-hidden="true">
                           <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
                         </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
@@ -1147,7 +1146,7 @@
 
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img-wrapper">
+                <a href="" class="catalog-mate-card__img-wrapper">
                   <picture>
                     <source type="img/webp" media="(min-width: 1440px)" srcset="./img/desktop/webp/demin-desktop@1x.webp 1x, ./img/desktop/webp/demin-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="./img/tablet/webp/demin-tablet@1x.webp 1x, ./img/tablet/webp/demin-tablet@2x.webp 2x">
@@ -1157,7 +1156,7 @@
                     <source media="(min-width: 768px)" srcset="./img/tablet/demin-tablet@1x.jpg 1x, ./img/tablet/demin-tablet@2x.jpg 2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/demin-mobile@1x.jpg" srcset="./img/mobile/demin-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
                   </picture>
-                </div>
+                </a>
 
 
                 <div class="catalog-mate-card__first-block">
@@ -1214,25 +1213,25 @@
                           <span>Транспорт:</span>
                         </h4>
                         <ul class="transport transport--catalog catalog-mate-card__transport">
-                          <li class="transport__item transport__item--plane-catalog transport__item--active  transport__item--catalog">
+                          <li class="transport__item transport__item--plane-catalog transport__item--active transport__item--catalog">
                             <svg width="14" height="16" aria-hidden="true">
                               <use xlink:href="#plane"></use>
                             </svg>
                             <span class="transport__description">Авиаперелет</span>
                           </li>
-                          <li class="transport__item transport__item--bus-catalog transport__item--active  transport__item--catalog">
+                          <li class="transport__item transport__item--bus-catalog transport__item--active transport__item--catalog">
                             <svg width="13" height="16" aria-hidden="true">
                               <use xlink:href="#bus"></use>
                             </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog transport__item--catalog">
                             <svg width="19" height="17" aria-hidden="true">
                               <use xlink:href="#bike"></use>
                             </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run-catalog transport__item--active  transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--active transport__item--catalog">
                             <svg width="15" height="17" aria-hidden="true">
                               <use xlink:href="#run"></use>
                             </svg>
@@ -1242,7 +1241,7 @@
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
-                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="80 100" viewBox="0 0 32 32"  aria-hidden="true">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="80 100" viewBox="0 0 32 32" aria-hidden="true">
                           <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
                         </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
@@ -1258,7 +1257,7 @@
 
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img-wrapper">
+                <a href="" class="catalog-mate-card__img-wrapper">
                   <picture>
                     <source type="img/webp" media="(min-width: 1440px)" srcset="./img/desktop/webp/smolov-desktop@1x.webp 1x, ./img/desktop/webp/smolov-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="./img/tablet/webp/smolov-tablet@1x.webp 1x, ./img/tablet/webp/smolov-tablet@2x.webp 2x">
@@ -1268,7 +1267,7 @@
                     <source media="(min-width: 768px)" srcset="./img/tablet/smolov-tablet@1x.jpg 1x, ./img/tablet/smolov-tablet@2x.jpg 2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/smolov-mobile@1x.jpg" srcset="../img/mobile/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
                   </picture>
-                </div>
+                </a>
 
 
                 <div class="catalog-mate-card__first-block">
@@ -1340,13 +1339,13 @@
                             </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bike-catalog transport__item--active  transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog transport__item--active transport__item--catalog">
                             <svg width="19" height="17" aria-hidden="true">
                               <use xlink:href="#bike"></use>
                             </svg>
                             <span class="transport__description">Велосипед</span>
                           </li>
-                          <li class="transport__item transport__item--run-catalog  transport__item--catalog">
+                          <li class="transport__item transport__item--run-catalog transport__item--catalog">
                             <svg width="15" height="17" aria-hidden="true">
                               <use xlink:href="#run"></use>
                             </svg>
@@ -1356,7 +1355,7 @@
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
-                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="25 100" viewBox="0 0 32 32"  aria-hidden="true">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="25 100" viewBox="0 0 32 32" aria-hidden="true">
                           <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
                         </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
@@ -1372,7 +1371,7 @@
 
             <li class="mates-sorted__item">
               <div class="catalog-mate-card mates-sorted__catalog-mate-card">
-                <div class="catalog-mate-card__img-wrapper">
+                <a href="" class="catalog-mate-card__img-wrapper">
                   <picture>
                     <source type="img/webp" media="(min-width: 1440px)" srcset="./img/desktop/webp/rogovaya-desktop@1x.webp 1x, ./img/desktop/webp/rogovaya-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="./img/tablet/webp/rogovaya-tablet@1x.webp 1x, ./img/tablet/webp/rogovaya-tablet@2x.webp 2x">
@@ -1382,7 +1381,7 @@
                     <source media="(min-width: 768px)" srcset="./img/tablet/rogovaya-tablet@1x.jpg 1x, ./img/tablet/rogovaya-tablet@2x.jpg 2x">
                     <img class="catalog-mate-card__img" src="./img/mobile/rogovaya-mobile@1x.jpg" srcset="../img/mobile/rogovaya-mobile@2x.jpg 2x" width="70" height="70" alt="фото пользователя">
                   </picture>
-                </div>
+                </a>
 
                 <div class="catalog-mate-card__first-block">
                   <div class="catalog-mate-card__name-hashtags">
@@ -1447,7 +1446,7 @@
                             </svg>
                             <span class="transport__description">Автотранспорт</span>
                           </li>
-                          <li class="transport__item transport__item--bike-catalog  transport__item--catalog">
+                          <li class="transport__item transport__item--bike-catalog transport__item--catalog">
                             <svg width="19" height="17" aria-hidden="true">
                               <use xlink:href="#bike"></use>
                             </svg>
@@ -1463,7 +1462,7 @@
                       </div>
 
                       <div class="catalog-mate-card__level-wrapper">
-                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="50 100" viewBox="0 0 32 32"  aria-hidden="true">
+                        <svg class="catalog-mate-card__pie-graph" width="60" height="60" stroke-dasharray="50 100" viewBox="0 0 32 32" aria-hidden="true">
                           <circle r="15" cx="16" cy="16" stroke-width="2"></circle>
                         </svg>
                         <p class="catalog-mate-card__text catalog-mate-card__text--level">левел:</p>
@@ -1551,7 +1550,7 @@
           </a>
         </li>
       </ul>
-      <a class="developer footer__developer" href="">
+      <a class="developer footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer__text">Разработано</p>
         <svg class="developer__logo" aria-label="HTML Academy" width="27" height="34">
           <use xlink:href="#htmlacademy"></use>
@@ -1561,6 +1560,6 @@
     </footer>
 
     <script src="./js/open-menu.js"></script>
-    <script src="./js/country-filter-collapse.js"></script>
+    <!-- <script src="./js/country-filter-collapse.js"></script> -->
   </body>
 </html>

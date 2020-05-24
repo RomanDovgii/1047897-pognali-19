@@ -125,7 +125,8 @@
       margin-top: -3px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         display: none;
       }

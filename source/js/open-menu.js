@@ -4,12 +4,40 @@ const mobileMenu = document.querySelector(".information");
 const logo = document.querySelector(".functions__link picture");
 const sources = logo.querySelectorAll("source");
 const image = logo.querySelector(".functions__logo-img");
+const topMenu = document.querySelector(".top-menu");
+const main = document.querySelector(".main");
+const intro = document.querySelector(".intro");
+
+const topMenyStickyClass = "top-menu--fixed";
+const openMenuButtonSticky = "functions__button--js";
 
 const white = "white";
 const blue = "blue";
 
 const whiteToChange = /white/gi;
 const blueToChange = /blue/gi;
+
+let height;
+
+const addStickyClass = () => {
+  if (topMenu.offsetWidth < 1440) {
+    height = topMenu.offsetHeight;
+  } else {
+    height = intro.offsetHeight;
+  }
+
+  if (window.pageYOffset > height) {
+    topMenu.classList.add(topMenyStickyClass);
+    header.style.paddingTop = height + "px";
+    openMenuButton.classList.add(openMenuButtonSticky);
+    imageChanger(sources, whiteToChange, blue);
+  } else {
+    topMenu.classList.remove(topMenyStickyClass);
+    header.style.paddingTop = 0;
+    openMenuButton.classList.remove(openMenuButtonSticky);
+    imageChanger(sources, blueToChange, white);
+  }
+}
 
 let imageChanger = (array, colorOne, colorTwo) => {
   array.forEach(function(element) {
@@ -32,7 +60,10 @@ let openMenu = () => {
 }
 
 let closeMenu = () => {
-  imageChanger(sources, blueToChange, white);
+  if (!topMenu.classList.contains(topMenyStickyClass)) {
+    imageChanger(sources, blueToChange, white);
+  }
+
   openMenuButton.classList.add("functions__button--open");
   if (header.classList.contains("header--index")) {
     header.classList.add("header--index-blue")
@@ -57,3 +88,5 @@ openMenuButton.addEventListener("click", function(evt) {
     closeMenu();
   }
 });
+
+window.addEventListener("scroll", addStickyClass);

@@ -61,6 +61,13 @@
       left: -10px;
     }
   }
+
+  &--js {
+    &::before,
+    &::after {
+      background-color: $grayish-light-2;
+    }
+  }
 }
 
 .functions__auth-link {

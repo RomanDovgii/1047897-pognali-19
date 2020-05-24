@@ -24,9 +24,11 @@
 }
 
 .catalog-mate-card__img-wrapper {
+  display: block;
   position: absolute;
   margin-top: 15px;
   margin-left: 18px;
+  z-index: 10;
 
   border-radius: 50%;
 
@@ -111,6 +113,7 @@
   position: absolute;
   top: 55px;
   left: 88px;
+  z-index: 10;
 
   color: rgba($blue-700-color, 1);
   font-size: 14px;

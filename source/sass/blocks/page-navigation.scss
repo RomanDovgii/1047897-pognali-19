@@ -16,8 +16,24 @@
   width: 50%;
   height: 100%;
 
+  &:first-child {
+    .page-navigation__link {
+      &::after {
+        top: 15px;
+        left: 63px;
+      }
+    }
+  }
+
   &:last-child {
     border-left: 1px solid $main-color;
+
+    .page-navigation__link {
+      &::after {
+        top: 15px;
+        right: 62px;
+      }
+    }
   }
 
   .page-navigation__link {
@@ -29,10 +45,10 @@
       justify-content: center;
       position: absolute;
 
-      background: url("../img/icons/mobile/triangle-arrow-right.svg");
+      background: url("../img/icons/next.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: 20px 20px;
     }
   }
 

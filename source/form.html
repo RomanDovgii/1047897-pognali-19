@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="preload" href="./css/style.min.css" as="style">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
@@ -130,7 +131,7 @@
               <li class="social__item">
                 <a class="social__link social__link--facebook" href="">
                   <span class="visually-hidden">Наш Facebook</span>
-                  <svg width="23" height="12"  aria-hidden="true">
+                  <svg width="23" height="12" aria-hidden="true">
                     <use xlink:href="#facebook"></use>
                   </svg>
                 </a>
@@ -138,7 +139,7 @@
               <li class="social__item">
                 <a class="social__link social__link--vk" href="">
                   <span class="visually-hidden">Наш VK</span>
-                  <svg width="23" height="12"  aria-hidden="true">
+                  <svg width="23" height="12" aria-hidden="true">
                     <use xlink:href="#vk"></use>
                   </svg>
                 </a>
@@ -190,7 +191,7 @@
                       <use xlink:href="#plane"></use>
                     </svg>
                   </span>
-                  <span class="transport__description">Авиаперелет</span>
+                  <span class="transportation__description">Авиаперелет</span>
                 </label>
 
                 <label class="transportation__button transportation__button--bus" >
@@ -200,7 +201,7 @@
                       <use xlink:href="#bus"></use>
                     </svg>
                   </span>
-                  <span class="transport__description">Автотранспорт</span>
+                  <span class="transportation__description">Автотранспорт</span>
                 </label>
 
                 <label class="transportation__button transportation__button--bike">
@@ -210,7 +211,7 @@
                       <use xlink:href="#bike"></use>
                     </svg>
                   </span>
-                  <span class="transport__description">Велосипед</span>
+                  <span class="transportation__description">Велосипед</span>
                 </label>
 
                 <label class="transportation__button transportation__button--run">
@@ -220,7 +221,7 @@
                       <use xlink:href="#run"></use>
                     </svg>
                   </span>
-                  <span class="transport__description">Пешком</span>
+                  <span class="transportation__description">Пешком</span>
                 </label>
               </div>
             </fieldset>
@@ -306,11 +307,11 @@
 
             <div class="steps-ordered__inputs-wrapper">
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--mates">
-                <h4 class="number-input__legend">Ищу попутчиков</h4>
+                <label class="number-input__legend" for="trip-mates">Ищу попутчиков</label>
 
                 <div class="number-input__wrapper">
                   <span class="visually-hidden">Количество попутчиков</span>
-                  <input class="number-input__input" type="number" name="number-of-mates" value="2">
+                  <input class="number-input__input" type="number" name="number-of-mates" id="trip-mates" value="2">
 
                   <button class="number-input__button number-input__button--minus" type="button">
                     <span class="visually-hidden">Убрать</span>
@@ -324,11 +325,11 @@
               </div>
 
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--duration">
-                <h4 class="number-input__legend number-input__legend--time">Длительность</h4>
+                <label class="number-input__legend number-input__legend--time" for="trip-length">Длительность</label>
 
                 <div class="number-input__wrapper">
                   <span class="visually-hidden">Длительность поездки</span>
-                  <input class="number-input__input" type="number" name="length-of-the-trip" value="2">
+                  <input class="number-input__input" type="number" name="length-of-the-trip" id="trip-length" value="2">
 
                   <button class="number-input__button number-input__button--minus" type="button">
                     <span class="visually-hidden">Убрать</span>
@@ -485,7 +486,7 @@
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-start" href="">26</a>
                 </li>
-                <li class="calendar__day calendar__day-link--choosen">
+                <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--choosen" href="">27</a>
                 </li>
                 <li class="calendar__day">
@@ -722,7 +723,7 @@
               </div>
               <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
-                <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий"  required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
             </div>
 
@@ -755,7 +756,7 @@
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
             <span class="visually-hidden">Наш Facebook</span>
-            <svg width="23" height="12"  aria-hidden="true">
+            <svg width="23" height="12" aria-hidden="true">
               <use xlink:href="#facebook"></use>
             </svg>
           </a>
@@ -763,7 +764,7 @@
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--vk-ftr" href="">
             <span class="visually-hidden">Наш VK</span>
-            <svg width="23" height="12"  aria-hidden="true">
+            <svg width="23" height="12" aria-hidden="true">
               <use xlink:href="#vk"></use>
             </svg>
           </a>
@@ -777,7 +778,7 @@
           </a>
         </li>
       </ul>
-      <a class="developer footer__developer" href="">
+      <a class="developer footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer__text">Разработано</p>
         <svg class="developer__logo" aria-label="HTML Academy" width="27" height="34">
           <use xlink:href="#htmlacademy"></use>

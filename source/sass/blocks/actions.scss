@@ -96,7 +96,7 @@
   }
 
   &:active {
-    &::after {
+    svg {
       transition: opacity 0.1s;
       opacity: 0.3;
     }
