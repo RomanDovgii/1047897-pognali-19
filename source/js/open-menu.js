@@ -61,6 +61,7 @@ let imageChanger = (array, colorOne, colorTwo) => {
 let openMenu = () => {
   imageChanger(sources, whiteToChange, blue);
   openMenuButton.classList.remove("functions__button--open");
+  openMenuButton.classList.add("functions__button--js");
   mobileMenu.classList.remove("information--closed")
   header.classList.remove("header--index-blue");
   header.classList.remove("header--blue");
