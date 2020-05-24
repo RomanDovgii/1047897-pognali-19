@@ -5,11 +5,13 @@ const logo = document.querySelector(".functions__link picture");
 const sources = logo.querySelectorAll("source");
 const image = logo.querySelector(".functions__logo-img");
 const topMenu = document.querySelector(".top-menu");
+const topMenuInnerLinks = document.querySelector(".top-menu__inner-links");
 const main = document.querySelector(".main");
 const intro = document.querySelector(".intro");
 
 const topMenyStickyClass = "top-menu--fixed";
 const openMenuButtonSticky = "functions__button--js";
+const InnerLinksFixClass = "top-menu__inner-links--dropdown"
 
 const white = "white";
 const blue = "blue";
@@ -21,10 +23,11 @@ let changeHeight;
 let body = document.querySelector("body");
 
 const addStickyClass = () => {
-  if (topMenu.offsetWidth < 1440) {
+  if ((topMenu.offsetWidth < 1440) && (!intro)) {
     changeHeight = topMenu.offsetHeight;
   } else {
     changeHeight = intro.offsetHeight;
+    topMenuInnerLinks.classList.add(InnerLinksFixClass);
   }
 
   let height = topMenu.offsetHeight;
@@ -39,6 +42,7 @@ const addStickyClass = () => {
     header.style.paddingTop = 0;
     openMenuButton.classList.remove(openMenuButtonSticky);
     imageChanger(sources, blueToChange, white);
+    topMenuInnerLinks.classList.remove(InnerLinksFixClass);
   }
 }
 

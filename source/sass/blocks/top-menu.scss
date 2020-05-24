@@ -91,6 +91,16 @@
 
       background-color: $white;
     }
+
+    &--dropdown {
+      &::before {
+        background-color: $rgba__text__dark-blue;
+      }
+
+      .inner-links__link {
+        color: $rgba__text__dark-blue;
+      }
+    }
   }
 
   .top-menu__actions {
