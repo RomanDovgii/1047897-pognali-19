@@ -17,17 +17,19 @@ const blue = "blue";
 const whiteToChange = /white/gi;
 const blueToChange = /blue/gi;
 
-let height;
+let changeHeight;
 let body = document.querySelector("body");
 
 const addStickyClass = () => {
   if (topMenu.offsetWidth < 1440) {
-    height = topMenu.offsetHeight;
+    changeHeight = topMenu.offsetHeight;
   } else {
-    height = intro.offsetHeight;
+    changeHeight = intro.offsetHeight;
   }
 
-  if (window.pageYOffset > height) {
+  let height = topMenu.offsetHeight;
+
+  if (window.pageYOffset > changeHeight) {
     topMenu.classList.add(topMenyStickyClass);
     header.style.paddingTop = height + "px";
     openMenuButton.classList.add(openMenuButtonSticky);
