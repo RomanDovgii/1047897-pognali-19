@@ -1,3 +1,9 @@
+.select-country {
+  &--closed {
+    display: none;
+  }
+}
+
 .select-country__collapse {
   @include reset;
   font-family: inherit;
@@ -7,10 +13,11 @@
   width: 270px;
   margin: 0 auto;
 
+  margin-bottom: 27px;
+
   background-color: $grayish-blue-light-alt-2;
   border: none;
   border-radius: 20px;
-  margin-right: 25px;
   padding-top: 7px;
   padding-bottom: 4px;
 
@@ -21,16 +28,23 @@
   text-transform: uppercase;
   justify-content: center;
 
-  &::before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-image: url("../img/icons/close.svg");
-    background-size: 12px 12px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 25px;
-    margin-right: 13px;
+  span {
+    position: relative;
+    margin-right: -13px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      left: -24px;
+      background-image: url("../img/icons/close.svg");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-top: 25px;
+    }
   }
 }
 
@@ -46,7 +60,7 @@
 
 .select-country__countries-selection {
   margin-top: 12px;
-  margin-left: 51px;
+  margin-left: 52px;
   margin-bottom: 29px;
 }
 
@@ -62,8 +76,9 @@
   .select-country__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 768px;
 
-    margin-top: -15px;
+    margin-top: -17px;
   }
 
   .select-country__letters-selection {
@@ -92,14 +107,21 @@
 
     margin: 0 auto;
     margin-top: 61px;
-    margin-bottom: 58px;
+    margin-bottom: 74px;
 
-    &::before {
-      width: 20px;
-      height: 20px;
+    span {
+      margin-right: -18px;
 
-      background-size: 18px 18px;
-      background-position: 1px 6px;
+      &::before {
+        width: 20px;
+        height: 20px;
+
+        top: 0;
+        left: -40px;
+
+        background-size: 18px 18px;
+        background-position: 1px 6px;
+      }
     }
 
     &:hover,
@@ -121,14 +143,23 @@
 
 @media (min-width: $desktop-breakpoint) {
   .select-country__letters-selection {
-    margin-top: 0;
+    margin-top: 32px;
+  }
+
+  .select-country__wrapper {
+    min-width: 1440px;
+    margin-top: -38px;
   }
 
   .select-country__collapse {
     position: relative;
     z-index: 10;
-    margin-top: -92px;
+    margin-top: -89px;
     max-width: 100%;
     width: 1320px;
+
+    &::before {
+      margin-right: 19px;
+    }
   }
 }

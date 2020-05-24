@@ -1,143 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body>
-    <header class="header">
-      <section class="top-menu header__top-menu">
-        <div class="wrapper top-menu__wrapper">
-          <div class="functions top-menu__functions top-menu__functions--white">
-            <a href="index.html" class="functions__link functions__link--white">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/desktop/webp/logo-desktop-white@1x.webp 1x, ./img/desktop/webp/logo-desktop-white@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="./img/tablet/webp/logo-tablet-white@1x.webp 1x, ./img/tablet/webp/logo-tablet-white@2x.webp 2x">
-                <source srcset="./img/mobile/webp/logo-mobile-white@1x.webp 1x, ./img/mobile/webp/logo-mobile-white@2x.webp 2x">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Погнали</title>
+
+  <link rel="preload" href="./fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="header">
+    <section class="top-menu header__top-menu">
+      <div class="wrapper top-menu__wrapper">
+        <div class="functions top-menu__functions top-menu__functions--white">
+          <a href="index.html" class="functions__link functions__link--white">
+            <picture>
+              <source type="img/webp" media="(min-width: 1440px)"
+                srcset="./img/desktop/webp/logo-desktop-white@1x.webp 1x, ./img/desktop/webp/logo-desktop-white@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 768px)"
+                srcset="./img/tablet/webp/logo-tablet-blue@1x.webp 1x, ./img/tablet/webp/logo-tablet-blue@2x.webp 2x">
+              <source type="img/webp"
+                srcset="./img/mobile/webp/logo-mobile-blue@1x.webp 1x, ./img/mobile/webp/logo-mobile-blue@2x.webp 2x">
 
 
-                <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-white@1x.png 1x, ./img/tablet/logo-tablet-white@2x.png 2x">
-                <img class="functions__logo-img" src="./img/mobile/logo-mobile-white@1x.png" srcset="./img/mobile/logo-mobile-white@2x.png 2x" width="100" height="20" alt="Погнали?">
-              </picture>
-            </a>
-            <button class="functions__button functions__button--open" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <a class="functions__auth-link" href="">Авторизация</a>
-          </div>
-
-          <ul class="inner-links top-menu__inner-links">
-            <li class="inner-links__item">
-              <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
-            </li>
-            <li class="inner-links__item">
-              <a class="inner-links__link" href="./form.html">Направления</a>
-            </li>
-            <li class="inner-links__item">
-              <a class="inner-links__link" href="./catalog.html">Попутчики</a>
-            </li>
-          </ul>
-
-          <ul class="actions top-menu__actions">
-            <li class="actions__item">
-              <a class="actions__link actions__link--phone" href="tel:88005558628">
-                <svg width="18" height="18" aria-hidden="true">
-                  <use xlink:href="./img/sprite.svg#topmenu-phone"></use>
-                </svg>
-                <span class="visually-hidden">8 800 555-86-28</span>
-              </a>
-            </li>
-            <li class="actions__item">
-              <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
-                <svg width="18" height="14" aria-hidden="true">
-                  <use xlink:href="./img/sprite.svg#topmenu-mail"></use>
-                </svg>
-                <span class="visually-hidden">mail@htmlacademy.ru</span>
-              </a>
-            </li>
-            <li class="actions__item">
-              <a class="actions__link actions__link--auth" href="">Авторизация</a>
-            </li>
-          </ul>
+              <source media="(min-width: 1440px)"
+                srcset="./img/desktop/logo-desktop-white@1x.png 1x, ./img/desktop/logo-desktop-white@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+              <img class="functions__logo-img" src="./img/mobile/logo-mobile-blue@1x.png"
+                srcset="./img/mobile/logo-mobile-blue@2x.png 2x" width="100" height="20" alt="Погнали?">
+            </picture>
+          </a>
+          <button class="functions__button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <a class="functions__auth-link" href="">Авторизация</a>
         </div>
 
-          <div class="information top-menu__information">
-            <div class="wrapper information__wrapper">
-            <ul class="inner-links information__inner-links">
-              <li class="inner-links__item">
-                <a class="inner-links__link inner-links__link--active" href="./index.html">О сервисе</a>
-              </li>
-              <li class="inner-links__item">
-                <a class="inner-links__link" href="./form.html">Направления</a>
-              </li>
-              <li class="inner-links__item">
-                <a class="inner-links__link" href="./catalog.html">Попутчики</a>
-              </li>
-            </ul>
+        <ul class="inner-links top-menu__inner-links">
+          <li class="inner-links__item">
+            <a class="inner-links__link inner-links__link--active" href="./index.html">
+              <span data-hover="О сервисе">
+                О сервисе
+              </span>
+            </a>
+          </li>
+          <li class="inner-links__item">
+            <a class="inner-links__link" href="./form.html">
+              <span data-hover="Направления">
+                Направления
+              </span>
+            </a>
+          </li>
+          <li class="inner-links__item">
+            <a class="inner-links__link" href="./catalog.html">
+              <span data-hover="Попутчики">
+                Попутчики
+              </span>
+            </a>
+          </li>
+        </ul>
 
-            <a class="information__auth-link" href="">Авторизация</a>
+        <ul class="actions top-menu__actions">
+          <li class="actions__item">
+            <a class="actions__link actions__link--phone" href="tel:88005558628">
+              <svg width="18" height="18" aria-hidden="true">
+                <use xlink:href="#topmenu-phone"></use>
+              </svg>
+              <span class="visually-hidden">8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="actions__item">
+            <a class="actions__link actions__link--email" href="mailto:mail@htmlacademy.ru">
+              <svg width="18" height="14" aria-hidden="true">
+                <use xlink:href="#topmenu-mail"></use>
+              </svg>
+              <span class="visually-hidden">mail@htmlacademy.ru</span>
+            </a>
+          </li>
+          <li class="actions__item">
+            <a class="actions__link actions__link--auth" href="">Авторизация</a>
+          </li>
+        </ul>
+      </div>
 
-            <ul class="contacts information__contacts">
-              <li class="contacts__item">
-                <a class="contacts__link contacts__link--phone" href="tel:88005558628">
-                  <svg width="18" height="18" aria-hidden="true">
-                    <use xlink:href="./img/sprite.svg#contacts-phone"></use>
-                  </svg>
-                  8 800 555-86-28
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
-                  <svg width="18" height="18" aria-hidden="true">
-                    <use xlink:href="./img/sprite.svg#contacts-mail"></use>
-                  </svg>
-                  mail@htmlacademy.ru
-                </a>
-              </li>
-            </ul>
+      <div class="information top-menu__information">
+        <div class="wrapper information__wrapper">
+          <ul class="inner-links information__inner-links">
+            <li class="inner-links__item">
+              <a class="inner-links__link inner-links__link--active" href="./index.html">
+                <span data-hover="О сервисе">
+                  О сервисе
+                </span>
+              </a>
+            </li>
+            <li class="inner-links__item">
+              <a data-hover="Направления" class="inner-links__link" href="./form.html">
+                <span data-hover="Направления">
+                  Направления
+                </span>
+              </a>
+            </li>
+            <li class="inner-links__item">
+              <a data-hover="Попутчики" class="inner-links__link" href="./catalog.html">
+                <span data-hover="Попутчики">
+                  Попутчики
+                </span>
+              </a>
+            </li>
+          </ul>
 
-            <ul class="social information__social">
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="">
-                  <span class="visually-hidden">Наш Facebook</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--vk" href="">
-                  <span class="visually-hidden">Наш VK</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="">
-                  <span class="visually-hidden">Наш instagram</span>
-                </a>
-              </li>
-            </ul>
-            </div>
-          </div>
+          <a class="information__auth-link" href="">Авторизация</a>
 
+          <ul class="contacts information__contacts">
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--phone" href="tel:88005558628">
+                <svg width="18" height="18" aria-hidden="true">
+                  <use xlink:href="#contacts-phone"></use>
+                </svg>
+                8 800 555-86-28
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
+                <svg width="18" height="18" aria-hidden="true">
+                  <use xlink:href="#contacts-mail"></use>
+                </svg>
+                mail@htmlacademy.ru
+              </a>
+            </li>
+          </ul>
 
-      </section>
-    </header>
-    <main class="main">
-
-      <div class="main__heading-wrapper main__heading-wrapper--form">
-        <div class="wrapper main__wrapper main__wrapper--form">
-          <h1 class="main__heading main__heading--form">Направления</h1>
+          <ul class="social information__social">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">Наш Facebook</span>
+                <svg width="23" height="12" aria-hidden="true">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="">
+                <span class="visually-hidden">Наш VK</span>
+                <svg width="23" height="12" aria-hidden="true">
+                  <use xlink:href="#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="">
+                <span class="visually-hidden">Наш instagram</span>
+                <svg width="23" height="12" aria-hidden="true">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <section class="change-bio main__change-bio">
-        <div class="wrapper change-bio__wrapper">
+
+    </section>
+  </header>
+  <main class="main">
+
+    <div class="main__heading-wrapper main__heading-wrapper--form">
+      <div class="wrapper main__wrapper main__wrapper--form">
+        <h1 class="main__heading main__heading--form">Направления</h1>
+      </div>
+    </div>
+
+    <section class="change-bio main__change-bio">
+      <div class="wrapper change-bio__wrapper">
 
         <h2 class="visually-hidden">Обновить профиль</h2>
         <form class="change-bio__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="change-bio__content-wrapper">
             <p class="change-bio__level">
-              <svg class="change-bio__pie-graph" width="103" height="103" stroke-dasharray="80 100" viewBox="0 0 32 32" role="presentation" aria-hidden="true">
+              <svg class="change-bio__pie-graph" width="103" height="103" stroke-dasharray="80 100" viewBox="0 0 32 32"
+                aria-hidden="true">
                 <circle r="15" cx="16" cy="16" stroke-width="1"></circle>
               </svg>
               <span class="change-bio__number">80</span>
@@ -145,56 +193,60 @@
             </p>
 
             <fieldset class="change-bio__fieldset change-bio__fieldset--change-transport">
+              <legend class="change-bio__legend">Транспорт</legend>
               <div class="transportation change-bio__transportation">
                 <label class="transportation__button transportation__button--plane">
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="plane" checked>
-                  <div class="transportation__svg-wrapper">
+                  <span class="transportation__svg-wrapper">
                     <svg width="14" height="16" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#plane"></use>
+                      <use xlink:href="#plane"></use>
                     </svg>
-                  </div>
-                  <span class="transport__description">Авиаперелет</span>
+                  </span>
+                  <span class="transportation__description">Авиаперелет</span>
                 </label>
 
-                <label class="transportation__button transportation__button--bus" >
+                <label class="transportation__button transportation__button--bus">
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="bus" checked>
-                  <div class="transportation__svg-wrapper">
+                  <span class="transportation__svg-wrapper">
                     <svg width="13" height="16" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#bus"></use>
+                      <use xlink:href="#bus"></use>
                     </svg>
-                  </div>
-                  <span class="transport__description">Автотранспорт</span>
+                  </span>
+                  <span class="transportation__description">Автотранспорт</span>
                 </label>
 
                 <label class="transportation__button transportation__button--bike">
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="bike">
-                  <div class="transportation__svg-wrapper">
+                  <span class="transportation__svg-wrapper">
                     <svg width="19" height="17" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#bike"></use>
+                      <use xlink:href="#bike"></use>
                     </svg>
-                  </div>
-                  <span class="transport__description">Велосипед</span>
+                  </span>
+                  <span class="transportation__description">Велосипед</span>
                 </label>
 
                 <label class="transportation__button transportation__button--run">
                   <input class="visually-hidden transportation__checkbox" type="checkbox" name="run" checked>
-                  <div class="transportation__svg-wrapper">
+                  <span class="transportation__svg-wrapper">
                     <svg width="15" height="17" aria-hidden="true">
-                      <use xlink:href="./img/sprite.svg#run"></use>
+                      <use xlink:href="#run"></use>
                     </svg>
-                  </div>
-                  <span class="transport__description">Пешком</span>
+                  </span>
+                  <span class="transportation__description">Пешком</span>
                 </label>
               </div>
-              <legend class="change-bio__legend">Транспорт</legend>
             </fieldset>
 
             <picture>
-              <source media="(min-width: 1440px)" srcset="./img/desktop/webp/demin-desktop@1x.webp 1x, ./img/desktop/webp/demin-desktop@2x.webp 2x">
-              <source srcset="./img/tablet/webp/demin-tablet@1x.webp 1x, ./img/tablet/webp/demin-tablet@2x.webp 2x">
+              <source type="img/webp" media="(min-width: 1440px)"
+                srcset="./img/desktop/webp/demin-desktop@1x.webp 1x, ./img/desktop/webp/demin-desktop@2x.webp 2x">
+              <source type="img/webp"
+                srcset="./img/tablet/webp/demin-tablet@1x.webp 1x, ./img/tablet/webp/demin-tablet@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="./img/desktop/demin-desktop@1x.jpg 1x, ./img/desktop/demin-desktop@2x.jpg 2x">
-              <img class="change-bio__user-img" width="100" height="100" src="./img/tablet/demin-tablet@1x.jpg" srcset="./img/tablet/demin-tablet@2x.jpg 2x" alt="фото пользователя">
+              <source media="(min-width: 1440px)"
+                srcset="./img/desktop/demin-desktop@1x.jpg 1x, ./img/desktop/demin-desktop@2x.jpg 2x">
+              <img class="change-bio__user-img" width="100" height="100" src="./img/tablet/demin-tablet@1x.jpg"
+                srcset="./img/tablet/demin-tablet@2x.jpg 2x" alt="фото пользователя">
             </picture>
           </div>
 
@@ -206,15 +258,16 @@
 
           <label class="change-bio__fieldset change-bio__fieldset--tags">
             <span class="change-bio__legend change-bio__legend--tags">Тэги</span>
-            <textarea class="change-bio__tags" name="tags" rows="1" cols="20">#бургер #бар #футбол #концерт #крафт</textarea>
+            <textarea class="change-bio__tags" placeholder="Коротко о себе в виде 5-8 хештэгов" name="tags" rows="1"
+              cols="20">#бургер #бар #футбол #концерт #крафт</textarea>
           </label>
         </form>
-        </div>
+      </div>
 
-      </section>
+    </section>
 
-      <section class="plans main__plans">
-        <div class="wrapper plans__wrapper">
+    <section class="plans main__plans">
+      <div class="wrapper plans__wrapper">
 
         <h2 class="plans__heading">Мои планы:</h2>
 
@@ -236,12 +289,12 @@
             </div>
           </li>
         </ol>
-        </div>
+      </div>
 
-      </section>
+    </section>
 
-      <section class="new-plan main__new-plan">
-        <div class="wrapper new-plan__wrapper">
+    <section class="new-plan main__new-plan">
+      <div class="wrapper new-plan__wrapper">
 
         <h2 class="new-plan__heading">Добавить план:<span class="new-plan__page-indicator"></span></h2>
 
@@ -266,15 +319,16 @@
               <li class="steps-ordered__progress-item"><span>Развлечения</span></li>
             </ul>
 
-            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <p class="steps-ordered__description">Укажите предпочтительное количество попутчиков, которых <br> вы хотели
+              бы позвать в поездку и ее предполагаемую длительность.</p>
 
             <div class="steps-ordered__inputs-wrapper">
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--mates">
-                <h4 class="number-input__legend">Ищу попутчиков</h4>
+                <label class="number-input__legend" for="trip-mates">Ищу попутчиков</label>
 
                 <div class="number-input__wrapper">
                   <span class="visually-hidden">Количество попутчиков</span>
-                  <input class="number-input__input" type="number" name="number-of-mates" value="2">
+                  <input class="number-input__input" type="number" name="number-of-mates" id="trip-mates" value="2">
 
                   <button class="number-input__button number-input__button--minus" type="button">
                     <span class="visually-hidden">Убрать</span>
@@ -288,11 +342,11 @@
               </div>
 
               <div class="number-input steps-ordered__number-input steps-ordered__number-input--duration">
-                <h4 class="number-input__legend number-input__legend--time">Длительность</h4>
+                <label class="number-input__legend number-input__legend--time" for="trip-length">Длительность</label>
 
                 <div class="number-input__wrapper">
                   <span class="visually-hidden">Длительность поездки</span>
-                  <input class="number-input__input" type="number" name="length-of-the-trip" value="2">
+                  <input class="number-input__input" type="number" name="length-of-the-trip" id="trip-length" value="2">
 
                   <button class="number-input__button number-input__button--minus" type="button">
                     <span class="visually-hidden">Убрать</span>
@@ -447,13 +501,15 @@
                   <a class="calendar__day-link" href="">25</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-start" href="">26</a>
+                  <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-start"
+                    href="">26</a>
                 </li>
-                <li class="calendar__day calendar__day-link--choosen">
+                <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--choosen" href="">27</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-end" href="">28</a>
+                  <a class="calendar__day-link calendar__day-link--choosen calendar__day-link--choosen-end"
+                    href="">28</a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--available" href="">29</a>
@@ -465,7 +521,8 @@
                   <a class="calendar__day-link calendar__day-link--available" href="">31</a>
                 </li>
                 <li class="calendar__day">
-                  <a class="calendar__day-link calendar__day-link--available" href="">1<span class="calendar__day-month"> апр</span></a>
+                  <a class="calendar__day-link calendar__day-link--available" href="">1<span
+                      class="calendar__day-month"> апр</span></a>
                 </li>
                 <li class="calendar__day">
                   <a class="calendar__day-link calendar__day-link--available" href="">2</a>
@@ -500,7 +557,8 @@
               <li class="steps-ordered__progress-item"><span>Развлечения</span></li>
             </ul>
 
-            <p class="steps-ordered__description">Укажите страны, которые вы хотели посетить.<br> Это может быть одна или сразу несколько.</p>
+            <p class="steps-ordered__description">Укажите страны, которые вы хотели посетить.<br> Это может быть одна
+              или сразу несколько.</p>
 
             <div class="countries-planned steps-ordered__countries-planned">
               <ul class="countries-planned__list">
@@ -519,10 +577,11 @@
                   <input class="visually-hidden" type="text" name="country" value="Чехия" readonly>
                 </li>
                 <li class="countries-planned__country">
-                  <button class="countries-planned__delete" type="button">
+                  <button class="countries-planned__delete countries-planned__delete--active" type="button">
                     <span class="visually-hidden">удалить страну</span>
                   </button>
-                  <button class="countries-planned__choose countries-planned__choose--active" type="button">Выберите страну</button>
+                  <button class="countries-planned__choose countries-planned__choose--active" type="button">Выберите
+                    страну</button>
                   <input class="visually-hidden" type="text" name="country" value="" readonly>
                   <div class="add-block countries-planned__add-block">
                     <div class="add-block__letters-block">
@@ -664,10 +723,12 @@
             <ul class="steps-ordered__progress">
               <li class="steps-ordered__progress-item"><span>Даты</span></li>
               <li class="steps-ordered__progress-item"><span>Маршрут</span></li>
-              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Развлечения</span></li>
+              <li class="steps-ordered__progress-item steps-ordered__progress-item--active"><span>Развлечения</span>
+              </li>
             </ul>
 
-            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. <br>Можно писать в свободной форме и ставить тэги.</p>
+            <p class="steps-ordered__description">Наконец, расскажите о своих планах времяпровождения. <br>Можно писать
+              в свободной форме и ставить тэги.</p>
 
             <div class="step-description steps-ordered__step-description">
 
@@ -676,7 +737,8 @@
               </div>
               <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
-                <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий"></textarea>
+                <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий"
+                  required></textarea>
               </label>
             </div>
 
@@ -686,7 +748,8 @@
               </div>
               <label class="step-description__label">
                 <span class="visually-hidden">Описание данной части маршрута</span>
-                <textarea class="step-description__text" name="plan" rows="8" cols="60">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <textarea class="step-description__text" name="plan" rows="8" cols="60" placeholder="План действий"
+                  required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </label>
             </div>
 
@@ -697,21 +760,26 @@
 
           </section>
         </form>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class="footer">
-      <div class="wrapper footer__wrapper">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
+  <footer class="footer">
+    <h2 class="visually-hidden">Наши социальные сети</h2>
+    <div class="wrapper footer__wrapper">
       <a href="" class="footer__link">
         <picture>
-          <source media="(min-width: 1440px)" srcset="./img/desktop/webp/logo-desktop-blue@1x.webp 1x, ./img/desktop/webp/logo-desktop-blue@2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="./img/tablet/webp/logo-tablet-blue@1x.webp 1x, ./img/tablet/webp/logo-tablet-blue@2x.webp 2x">
-          <source srcset="./img/mobile/webp/logo-mobile-blue@1x.webp 1x, ./img/mobile/webp/logo-mobile-blue@2x.webp 2x">
+          <source type="img/webp" media="(min-width: 1440px)"
+            srcset="./img/desktop/webp/logo-desktop-blue@1x.webp 1x, ./img/desktop/webp/logo-desktop-blue@2x.webp 2x">
+          <source type="img/webp" media="(min-width: 768px)"
+            srcset="./img/tablet/webp/logo-tablet-blue@1x.webp 1x, ./img/tablet/webp/logo-tablet-blue@2x.webp 2x">
+          <source type="img/webp"
+            srcset="./img/mobile/webp/logo-mobile-blue@1x.webp 1x, ./img/mobile/webp/logo-mobile-blue@2x.webp 2x">
 
-          <source media="(min-width: 1440px)" srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
+          <source media="(min-width: 1440px)"
+            srcset="./img/desktop/logo-desktop-blue@1x.png 1x, ./img/desktop/logo-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="./img/tablet/logo-tablet-blue@1x.png 1x, ./img/tablet/logo-tablet-blue@2x.png 2x">
           <img class="footer__logo" src="./img/mobile/logo-mobile-blue@1x.png" width="100" height="20" alt="Погнали?">
         </picture>
       </a>
@@ -719,16 +787,16 @@
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--facebook-ftr" href="">
             <span class="visually-hidden">Наш Facebook</span>
-            <svg width="23" height="12"  aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#facebook"></use>
+            <svg width="23" height="12" aria-hidden="true">
+              <use xlink:href="#facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--ftr">
           <a class="social__link social__link--ftr social__link--vk-ftr" href="">
             <span class="visually-hidden">Наш VK</span>
-            <svg width="23" height="12"  aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#vk"></use>
+            <svg width="23" height="12" aria-hidden="true">
+              <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
@@ -736,21 +804,23 @@
           <a class="social__link social__link--ftr social__link--instagram-ftr" href="">
             <span class="visually-hidden">Наш instagram</span>
             <svg width="23" height="12" aria-hidden="true">
-              <use xlink:href="./img/sprite.svg#instagram"></use>
+              <use xlink:href="#instagram"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="developer footer__developer" href="">
+      <a class="developer footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="developer__text">Разработано</p>
         <svg class="developer__logo" aria-label="HTML Academy" width="27" height="34">
-          <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+          <use xlink:href="#htmlacademy"></use>
         </svg>
       </a>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="./js/open-menu.js"></script>
-    <script src="./js/picturefill.min.js"></script>
-  </body>
+  <script src="./js/open-menu.js"></script>
+  <script src="./js/close-choose-country.js"></script>
+  <script src="./js/country-form-validation.js"></script>
+</body>
+
 </html>

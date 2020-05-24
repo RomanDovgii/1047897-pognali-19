@@ -6,7 +6,19 @@
 
   &:hover {
     box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    .mate-card__img {
+      transform: scale(1.17);
+    }
   }
+}
+
+.mate-card__img-wrapper {
+  display: block;
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .mate-card__img {
@@ -45,10 +57,12 @@
 
 .mate-card__name {
   @include reset;
+  display: block;
 }
 
 .mate-card__name-link {
   text-decoration: none;
+  display: block;
 
   position: relative;
 
@@ -82,7 +96,7 @@
     height: 5px;
     position: absolute;
     left: -16px;
-    bottom: -12px;
+    top: 16px;
 
     background-color: $background__pinkish;
     border-radius: 50%;
@@ -105,6 +119,7 @@
 .mate-card__hashtags {
   @include reset;
   margin-top: 15px;
+  max-width: 300px;
 }
 
 .mate-card__transport {
@@ -152,6 +167,13 @@
   .mate-card__level {
     top: 23px;
     left: 23px;
+  }
+
+  .mate-card__img-wrapper {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
   }
 
   .mate-card__img {

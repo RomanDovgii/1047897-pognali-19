@@ -98,6 +98,7 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 
+
   &::placeholder {
     color: $rgba__text__light-gray;
   }
@@ -111,24 +112,65 @@
     color: $white;
     border: 4px solid $white;
   }
+
+  &--invalid {
+    background-color: $error;
+    border: $error;
+
+    &::placeholder {
+      color: $error-text;
+    }
+  }
 }
 
 .cta-form__button {
   border: none;
+  position: relative;
 
   flex-shrink: 0;
 
   width: 60px;
   height: 100%;
-
-  background: rgba($universal__bright-yellow, 1) url("../img/icons/mobile/triangle-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: 27px 24px;
-  background-size: 10px 14px;
   border-radius: 10px;
 
   margin-right: 0;
   margin-left: auto;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba($universal__bright-yellow, 1) url("../img/icons/mobile/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 27px 24px;
+    background-size: 10px 14px;
+    border-radius: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    transition: background-color 0.3s;
+    background-color: $orangish-yellow-color;
+  }
+
+  &:active {
+    transition: color 0.3s, opacity 0.3s;
+    color: $rgba__light-bright-blue;
+
+    &::after {
+      opacity: 0.3;
+    }
+
+    .cta-form__button-description {
+      opacity: 0.3;
+    }
+  }
 }
 
 .cta-form__button-description {
@@ -205,16 +247,25 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    background-position: 36px 34px;
+
+    &::after {
+      border-radius: 0;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background-position: 36px 34px;
+    }
   }
 
   .cta-form__input {
     max-width: 100%;
+    width: 536px;
 
     font-size: 24px;
     line-height: 24px;
 
     padding-left: 33px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .cta-form__button-description {
@@ -269,8 +320,11 @@
   .cta-form__button {
     font-family: inherit;
     width: 324px;
-    background-position: 279px 34px;
     text-align: left;
+
+    &::after {
+      background-position: 279px 34px;
+    }
   }
 
   .cta-form__button-description {

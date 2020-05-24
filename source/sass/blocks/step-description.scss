@@ -45,6 +45,43 @@
   }
 }
 
+
+.step-description__label {
+  margin-left: 2px;
+
+  &--invalid {
+    border-color: $error-border;
+
+    &::after {
+      content: "Это поле должно быть заполнено";
+      display: block;
+      width: 218px;
+      height: 56px;
+
+      position: absolute;
+      left: 26px;
+      bottom: 1px;
+
+      font-family: inherit;
+      font-size: 20px;
+      line-height: 24px;
+      color: $error-text;
+
+      padding-top: 5px;
+      padding-left: 10px;
+
+      background-color: $error;
+
+      border-bottom-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    .step-description__text {
+      border-color: #f47e7e;
+    }
+  }
+}
+
 .step-description__country {
   margin: 0;
   position: relative;
@@ -83,13 +120,11 @@
   }
 }
 
-.step-description__label {
-  margin-left: 2px;
-}
-
 .step-description__text {
   font-family: inherit;
+  position: relative;
   resize: none;
+  display: block;
   width: 220px;
   height: 220px;
   border: 1px solid $blue-10-color;
@@ -104,11 +139,19 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  &:hover {
+    border-color: $blue-90-color;
+  }
+
+  &:focus {
+    border-color: $font-color;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
   .step-description {
-    margin-top: 29px;
+    margin-top: 33px;
     padding-left: 0;
     padding-right: 0;
 
@@ -120,22 +163,45 @@
       padding-top: 36px;
 
       border-top: 1px solid $grayish-blue-light-alt-3;
+    }
+  }
+
+  .step-description__label {
+    margin-left: 2px;
+
+    &--invalid {
+      border-color: $error-border;
 
       &::after {
-        content: "";
+        content: "Это поле должно быть заполнено";
         display: block;
-        width: 3px;
-        height: 261px;
+        width: 497px;
+        height: 56px;
 
         position: absolute;
-        top: 49px;
-        right: 1px;
-        left: auto;
+        left: 3px;
+        bottom: 1px;
 
-        background-color: $text__dark-blue;
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 24px;
+        color: $error-text;
+
+        padding-top: 15px;
+        padding-left: 24px;
+
+        background-color: $error;
+
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+      }
+
+      .step-description__text {
+        border-color: #f47e7e;
       }
     }
   }
+
 
   .step-description__wrapper {
     &::before {
@@ -186,23 +252,27 @@
 @media (min-width: $desktop-breakpoint) {
   .step-description {
     margin-left: 161px;
+    margin-right: 162px;
+    margin-top: 33px;
 
     &:first-of-type {
-      margin-top: 57px;
-      padding-top: 79px;
+      margin-top: 55px;
+      padding-top: 80px;
+    }
+  }
+
+  .step-description__label {
+    &--invalid {
+      border-color: $error-border;
 
       &::after {
-        top: 89px;
-        right: 339px;
-        width: 2px;
+        width: 727px;
       }
     }
   }
 
   .step-description__country {
-    &::after {
-      right: 82px;
-    }
+    margin-right: 75px;
   }
 
   .step-description__text {
@@ -214,12 +284,12 @@
 
   .step-description__wrapper {
     &::before {
-      right: 333px;
+      right: 216px;
     }
 
     &::after {
       margin-top: -5px;
-      margin-right: 230px;
+      margin-right: 113px;
     }
   }
 }

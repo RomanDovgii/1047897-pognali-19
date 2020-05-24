@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
 
-    padding-top: 48px;
+    padding-top: 30px;
     padding-right: 25px;
     padding-bottom: 12px;
     padding-left: 25px;
@@ -39,7 +39,7 @@
     position: absolute;
     bottom: -14px;
     left: 0;
-    z-index: 10;
+    z-index: 1;
 
     background-color: $background__orange-color;
     border-radius: 2px;
@@ -84,7 +84,6 @@
 
       left: 2px;
       bottom: -13px;
-      z-index: 10;
 
       border-radius: 4px;
     }
@@ -135,7 +134,13 @@
     }
 
     .main__wrapper {
-      padding-top: 34px;
+      padding-top: 27px;
+      padding-bottom: 4px;
+
+      &--form {
+        padding-top: 34px;
+        padding-bottom: 3px;
+      }
     }
   }
 
@@ -148,14 +153,14 @@
   .main__heading {
     margin-left: 66px;
     padding-top: 25px;
+    padding-bottom: 64px;
+
+    &::after {
+      bottom: -7px;
+    }
 
     &--form {
-      padding-top: 76px;
-      padding-bottom: 58px;
-
-      &::after {
-        bottom: -13px;
-      }
+      padding-top: 70px;
     }
   }
 
@@ -163,7 +168,7 @@
     display: flex;
     justify-content: center;
 
-    padding-top: 60px;
+    padding-top: 65px;
   }
 
   .main__mates-sorted {

@@ -118,6 +118,9 @@
   padding-top: 8px;
 
   &:hover {
+    background-color: $text__dark-blue;
+    color: $white;
+
     &::after {
       content: "";
 
@@ -143,14 +146,14 @@
   &--choosen {
     opacity: 1;
 
-    background-color: $text__dark-blue;
+    background-color: $blue-650-color;
     color: $white;
   }
 
   &--choosen-start {
     opacity: 1;
 
-    background-color: $text__dark-blue;
+    background-color: $blue-650-color;
     color: $white;
 
     &::after {

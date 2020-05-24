@@ -4,6 +4,10 @@
   border: 1px solid $blue-10-color;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .add-block__letters {
@@ -53,6 +57,17 @@
     background-color: $text__dark-blue;
     border-color: $text__dark-blue;
   }
+
+  &:hover,
+  &:focus {
+    border-color: $blue-90-color;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $text__dark-blue;
+    border-color: $text__dark-blue;
+  }
 }
 
 .add-block__countries {
@@ -69,6 +84,16 @@
   font-size: 16px;
   line-height: 22px;
   color: $gray;
+
+  &:hover,
+  &:focus {
+    color: $text__dark-blue;
+  }
+
+  &:active {
+    color: $text__dark-blue;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-breakpoint) {
@@ -77,6 +102,10 @@
     width: 575px;
     border: none;
     box-shadow: 0 20px 50px 0 rgba($text__dark-blue, 0.1);
+
+    &--hidden {
+      display: none;
+    }
   }
 
   .add-block__letters-block {
@@ -118,6 +147,10 @@
 @media (min-width: $desktop-breakpoint) {
   .add-block {
     width: 730px;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   .add-block__letters {

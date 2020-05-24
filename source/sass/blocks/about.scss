@@ -229,6 +229,21 @@
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    &:hover,
+    &:focus {
+      transition: background-color 0.3s;
+      background-color: $orangish-yellow-color;
+    }
+
+    &:active {
+      transition: color 0.3s, opacity 0.3s;
+      color: $rgba__light-bright-blue;
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 }
 

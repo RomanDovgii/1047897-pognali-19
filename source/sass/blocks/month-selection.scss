@@ -29,13 +29,22 @@
   opacity: 0.3;
 
   &--previous {
-    background-image: url("../img/icons/mobile/month-arrow-left.svg");
+    background-image: url("../img/icons/month-arrow-left.svg");
     background-position: 0 12px;
   }
 
   &--next {
-    background-image: url("../img/icons/mobile/month-arrow-right.svg");
+    background-image: url("../img/icons/month-arrow-right.svg");
     background-position: 3px 12px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 

@@ -45,6 +45,7 @@
 
       padding-right: 40px;
       padding-left: 40px;
+      padding-bottom: 45px;
     }
   }
 
@@ -78,7 +79,7 @@
 @media (min-width: $desktop-breakpoint) {
   .footer {
     margin-top: -28px;
-    padding-bottom: 43px;
+    padding-bottom: 0;
 
     .footer__wrapper {
       padding-left: 59px;

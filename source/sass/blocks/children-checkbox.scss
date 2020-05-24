@@ -2,25 +2,51 @@
   position: relative;
   font-size: 15px;
   line-height: 29px;
-  color: $gray;
   display: flex;
   width: 220px;
   margin: 0 auto;
   margin-top: 21px;
   margin-bottom: 18px;
+  color: $text__dark-blue;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     width: 26px;
     height: 26px;
-    border: 1px solid $blue-10-color;
     border-radius: 4px;
     margin-right: 13px;
+  }
+
+  &::after {
+    position: absolute;
+  }
+
+  &::before {
+    border: 1px solid $blue-10-color;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: $blue-90-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $blue-50-color;
+      background-color: $blue-50-color;
+    }
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 
 .children-checkbox__label input:checked + .children-checkbox__label-name {
-  &::before {
+  &::after {
     background-image: url("../img/icons/mobile/tick.svg");
     background-size: 9px 9px;
     background-repeat: no-repeat;
@@ -52,9 +78,9 @@
 
 @media (min-width: $tablet-breakpoint) {
   .children-checkbox__label input:checked + .children-checkbox__label-name {
-    &::before {
+    &::after {
       background-size: 24px 12px;
-      background-position: 7px 11px;
+      background-position: 7px 5px;
     }
   }
 }

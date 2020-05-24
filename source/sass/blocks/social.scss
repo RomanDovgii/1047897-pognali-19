@@ -137,6 +137,33 @@
   }
 
   .social__link {
+    &--facebook {
+      svg {
+        width: 14px;
+        height: 29px;
+
+        top: 11px;
+        left: 19px;
+      }
+    }
+
+    &--vk {
+      svg {
+        width: 31px;
+        height: 16px;
+
+        top: 19px;
+        left: 10px;
+      }
+    }
+
+    &--instagram {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
     &--facebook-ftr {
       svg {
         width: 14px;
