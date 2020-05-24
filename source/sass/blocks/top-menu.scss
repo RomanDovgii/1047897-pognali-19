@@ -53,6 +53,18 @@
 
 @media (min-width: $desktop-breakpoint) {
   .top-menu {
+    &--fixed {
+      padding-top: 20px;
+      padding-bottom: 8px;
+
+      .top-menu__inner-links {
+        &::before {
+          width: 45px;
+          left: -18px;
+        }
+      }
+    }
+
     .top-menu__wrapper {
       @include desktop-paddings;
       display: flex;

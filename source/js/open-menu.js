@@ -23,10 +23,15 @@ let changeHeight;
 let body = document.querySelector("body");
 
 const addStickyClass = () => {
-  if ((topMenu.offsetWidth < 1440) && (!intro)) {
+  if ((topMenu.offsetWidth < 1440)) {
     changeHeight = topMenu.offsetHeight;
   } else {
-    changeHeight = intro.offsetHeight;
+    if (intro) {
+      changeHeight = intro.offsetHeight;
+    } else {
+      changeHeight = topMenu.offsetHeight;
+    }
+
     topMenuInnerLinks.classList.add(InnerLinksFixClass);
   }
 
