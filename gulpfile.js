@@ -98,5 +98,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy",  "css", "sprite","images", "html"));
+gulp.task("cleanSprite", function () {
+  return del("./source/img/sprite.svg");
+});
+
+
+gulp.task("build", gulp.series("clean", "copy",  "css", "sprite", "images", "html", "cleanSprite"));
 gulp.task("start", gulp.series("build", "server"));

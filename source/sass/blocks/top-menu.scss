@@ -1,5 +1,5 @@
 .top-menu {
-  &--fixed  {
+  &--fixed {
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .top-menu {
-    &--fixed  {
+    &--fixed {
       padding-bottom: 42px;
     }
   }
