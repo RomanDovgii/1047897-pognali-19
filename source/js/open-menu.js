@@ -18,6 +18,7 @@ const whiteToChange = /white/gi;
 const blueToChange = /blue/gi;
 
 let height;
+let body = document.querySelector("body");
 
 const addStickyClass = () => {
   if (topMenu.offsetWidth < 1440) {
@@ -57,6 +58,7 @@ let openMenu = () => {
   mobileMenu.classList.remove("information--closed")
   header.classList.remove("header--index-blue");
   header.classList.remove("header--blue");
+  mobileMenu.style.display = "block";
 }
 
 let closeMenu = () => {
@@ -71,6 +73,7 @@ let closeMenu = () => {
     header.classList.add("header--blue")
   }
   mobileMenu.classList.add("information--closed")
+  mobileMenu.style.display = "none";
 
 }
 
@@ -81,12 +84,18 @@ closeMenu();
 openMenuButton.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (mobileMenu.classList.contains("information--closed")) {
-    mobileMenu.style.display = "block";
     openMenu();
   } else {
-    mobileMenu.style.display = "none";
     closeMenu();
   }
 });
 
+
+fixLogoDesktop = () => {
+  if (body.offsetWidth >= 1440) {
+    closeMenu();
+  }
+}
+
 window.addEventListener("scroll", addStickyClass);
+window.addEventListener("resize", fixLogoDesktop);
