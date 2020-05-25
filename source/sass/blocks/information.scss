@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-breakpoint) {
   .information {
-    padding-left: 97px;
+    padding-left: 0;
     align-items: initial;
 
     .information__wrapper {
@@ -71,7 +71,7 @@
       align-items: flex-start;
       position: relative;
       padding-top: 65px;
-      padding-left: 48px;
+      padding-left: 97px;
     }
   }
 

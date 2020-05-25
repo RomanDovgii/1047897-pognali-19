@@ -3,12 +3,18 @@
   min-height: 334px;
   background-image: url("../img/map-mobile@1x.png");
   background-size: cover;
+  background-position: 0 -178px;
   background-repeat: no-repeat;
 }
 
 .map__iframe {
+  display: none;
   width: 100%;
   min-height: 334px;
+
+  &--js {
+    display: block;
+  }
 }
 
 
@@ -17,6 +23,7 @@
     min-height: 600px;
     background-image: url("../img/map-tablet@1x.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -30,6 +37,7 @@
     min-height: 480px;
     background-image: url("../img/map-desktop@1x.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 

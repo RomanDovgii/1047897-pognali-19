@@ -1,24 +1,24 @@
-const buttonCollapse = document.querySelector(".country-filter__button");
-const buttonCollapseBottom = document.querySelector(".select-country__collapse");
-const filterBlock = document.querySelector(".select-country");
-const buttonText = document.querySelector(".country-filter__button-text");
-const filterSection = document.querySelector(".country-filter");
-const fixer = document.querySelector(".country-filter__width-fix");
-const wrapper = fixer.querySelector(".country-filter__wrapper");
+var buttonCollapse = document.querySelector(".country-filter__button");
+var buttonCollapseBottom = document.querySelector(".select-country__collapse");
+var filterBlock = document.querySelector(".select-country");
+var buttonText = document.querySelector(".country-filter__button-text");
+var filterSection = document.querySelector(".country-filter");
+var fixer = document.querySelector(".country-filter__width-fix");
+var wrapper = fixer.querySelector(".country-filter__wrapper");
 
-const closedClass = "select-country--closed";
-const blockOpenClass = "country-filter--open";
-const buttonOpenClass = "country-filter__button--open";
-const fixerClass = "country-filter__width-fix--js";
-const fixerClosedClass = "country-filter__width-fix--closed";
-const wrapperJSClass = "country-filter__wrapper--js";
-
-
-const buttonTextOpen = "Показать все";
-const buttonTextClose = "Свернуть";
+var closedClass = "select-country--closed";
+var blockOpenClass = "country-filter--open";
+var buttonOpenClass = "country-filter__button--open";
+var fixerClass = "country-filter__width-fix--js";
+var fixerClosedClass = "country-filter__width-fix--closed";
+var wrapperJSClass = "country-filter__wrapper--js";
 
 
-const closeBlock = () => {
+var buttonTextOpen = "Показать все";
+var buttonTextClose = "Свернуть";
+
+
+function closeBlock() {
   filterBlock.classList.add(closedClass);
   buttonCollapse.removeEventListener("click", closeBlock);
   buttonCollapseBottom.removeEventListener("click", closeBlock);
@@ -28,7 +28,7 @@ const closeBlock = () => {
   fixer.classList.add(fixerClosedClass);
 }
 
-const openBlock = () => {
+function openBlock() {
   filterBlock.classList.remove(closedClass);
   buttonCollapse.addEventListener("click", closeBlock);
   buttonCollapseBottom.addEventListener("click", closeBlock);
@@ -38,7 +38,7 @@ const openBlock = () => {
   fixer.classList.remove(fixerClosedClass);
 }
 
-const selector = () => {
+function selector() {
   buttonCollapse.classList.contains(buttonOpenClass) ? openBlock() : closeBlock();
 }
 

@@ -54,6 +54,30 @@
   }
 }
 
+.children-checkbox__label input {
+  &:hover,
+  &:focus {
+    ~ .children-checkbox__label-name {
+      &::before {
+        border-color: $blue-90-color;
+      }
+    }
+  }
+
+  &:active {
+    ~ .children-checkbox__label-name {
+      &::before {
+        border-color: $blue-50-color;
+        background-color: $blue-50-color;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
 @media (min-width: $tablet-breakpoint) {
   .children-checkbox__label-name {
     text-transform: uppercase;

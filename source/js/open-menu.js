@@ -1,28 +1,28 @@
-const openMenuButton = document.querySelector(".functions__button");
-const header = document.querySelector(".header");
-const mobileMenu = document.querySelector(".information");
-const logo = document.querySelector(".functions__link picture");
-const sources = logo.querySelectorAll("source");
-const image = logo.querySelector(".functions__logo-img");
-const topMenu = document.querySelector(".top-menu");
-const topMenuInnerLinks = document.querySelector(".top-menu__inner-links");
-const main = document.querySelector(".main");
-const intro = document.querySelector(".intro");
+var openMenuButton = document.querySelector(".functions__button");
+var header = document.querySelector(".header");
+var mobileMenu = document.querySelector(".information");
+var logo = document.querySelector(".functions__link picture");
+var sources = logo.querySelectorAll("source");
+var image = logo.querySelector(".functions__logo-img");
+var topMenu = document.querySelector(".top-menu");
+var topMenuInnerLinks = document.querySelector(".top-menu__inner-links");
+var main = document.querySelector(".main");
+var intro = document.querySelector(".intro");
 
-const topMenyStickyClass = "top-menu--fixed";
-const openMenuButtonSticky = "functions__button--js";
-const InnerLinksFixClass = "top-menu__inner-links--dropdown"
+var topMenyStickyClass = "top-menu--fixed";
+var openMenuButtonSticky = "functions__button--js";
+var InnerLinksFixClass = "top-menu__inner-links--dropdown"
 
-const white = "white";
-const blue = "blue";
+var white = "white";
+var blue = "blue";
 
-const whiteToChange = /white/gi;
-const blueToChange = /blue/gi;
+var whiteToChange = /white/gi;
+var blueToChange = /blue/gi;
 
 let changeHeight;
 let body = document.querySelector("body");
 
-const addStickyClass = () => {
+function addStickyClass() {
   if ((topMenu.offsetWidth < 1440)) {
     changeHeight = topMenu.offsetHeight;
   } else {
@@ -51,19 +51,19 @@ const addStickyClass = () => {
   }
 }
 
-let imageChanger = (array, colorOne, colorTwo) => {
-  array.forEach(function(element) {
-    replacement = element.srcset.replace(colorOne, colorTwo);
-    element.srcset = replacement;
-  });
+function imageChanger(array, colorOne, colorTwo) {
+  for (let i = 0; i < array.length; i++) {
+    replacement = array[i].getAttribute("srcset").replace(colorOne, colorTwo);
+    array[i].srcset = replacement;
+  }
 
   let logoSrc = image.src.replace(colorOne, colorTwo);
-  let logoSrcset = image.srcset.replace(colorOne, colorTwo);
+  let logoSrcset = image.setAttribute("srcset", image.getAttribute("srcset").replace(colorOne, colorTwo));
   image.src = logoSrc;
   image.srcset = logoSrcset;
 }
 
-let openMenu = () => {
+function openMenu() {
   imageChanger(sources, whiteToChange, blue);
   openMenuButton.classList.remove("functions__button--open");
   openMenuButton.classList.add("functions__button--js");
@@ -73,7 +73,7 @@ let openMenu = () => {
   mobileMenu.style.display = "block";
 }
 
-let closeMenu = () => {
+function closeMenu() {
   if (!topMenu.classList.contains(topMenyStickyClass)) {
     imageChanger(sources, blueToChange, white);
   }
@@ -103,7 +103,7 @@ openMenuButton.addEventListener("click", function(evt) {
 });
 
 
-fixLogoDesktop = () => {
+function fixLogoDesktop() {
   if (body.offsetWidth >= 1440) {
     closeMenu();
   }

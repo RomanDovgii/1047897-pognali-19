@@ -180,11 +180,60 @@
   opacity: 0.15;
 }
 
-.transportation__button:hover .transportation__svg-wrapper {
+.transportation__checkbox:not(:checked):hover + .transportation__svg-wrapper,
+.transportation__checkbox:not(:checked):focus + .transportation__svg-wrapper {
+
+
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
   svg {
     opacity: 0.3;
+  }
+
+  ~ .transportation__description {
+    display: block;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: $white;
+
+    background-color: $text__dark-blue;
+
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-bottom: 10px;
+
+    border-radius: 4px;
+
+    clip: auto;
+    transform: translateX(-30%);
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 13px;
+    height: 16px;
+
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    z-index: 11;
+
+    background-image: url("../../img/icons/mobile/triangle-arrow-right.svg");
+    background-size: 13px 16px;
+    background-repeat: no-repeat;
+
+    transform: rotate(-90deg);
   }
 }
 
@@ -202,11 +251,58 @@
   opacity: 1;
 }
 
-.transportation__checkbox:checked:hover + .transportation__svg-wrapper {
+.transportation__checkbox:checked:hover + .transportation__svg-wrapper,
+.transportation__checkbox:checked:focus + .transportation__svg-wrapper {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 
   svg {
     opacity: 0.7;
+  }
+
+  ~ .transportation__description {
+    display: block;
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    color: $white;
+
+    background-color: $text__dark-blue;
+
+    padding-top: 10px;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-bottom: 10px;
+
+    border-radius: 4px;
+
+    clip: auto;
+    transform: translateX(-30%);
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 13px;
+    height: 16px;
+
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    z-index: 11;
+
+    background-image: url("../../img/icons/mobile/triangle-arrow-right.svg");
+    background-size: 13px 16px;
+    background-repeat: no-repeat;
+
+    transform: rotate(-90deg);
   }
 }
 
@@ -218,7 +314,6 @@
     opacity: 0.3;
   }
 }
-
 
 @media (min-width: $tablet-breakpoint) {
   .transportation__heading {

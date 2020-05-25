@@ -5,10 +5,15 @@
 .inner-links__item {
   text-align: center;
   overflow: hidden;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .inner-links__link {
   position: relative;
+  display: block;
   text-decoration: none;
 
   color: $rgba__text__dark-blue;
@@ -17,35 +22,26 @@
   font-weight: 500;
   text-transform: uppercase;
 
-  outline: none;
-  height: 1em;
+  transition: transform 0.3s;
 
-  span {
-    position: relative;
-    display: inline-block;
-    transition: transform 0.3s;
-  }
-
-  span::before {
-    position: absolute;
-    display: inline-block;
-    top: 100%;
-    color: $universal__bright-yellow;
-    content: attr(data-hover);
-    transform: translate3d(0, 0, 0);
-  }
-
-  &:hover span,
-  &:focus span {
+  &:hover,
+  &:focus {
     transform: translateY(-100%);
+    opacity: 1;
   }
 
   &:active {
-    span {
-      &::before {
-        color: rgba($universal__bright-yellow, 0.3);
-      }
-    }
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+
+    color: $universal__bright-yellow;
+
+    transform: translate3d(0, 0, 0);
   }
 }
 

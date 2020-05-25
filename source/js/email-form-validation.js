@@ -1,12 +1,12 @@
-const input = document.querySelector(".cta-form__input");
+var input = document.querySelector(".cta-form__input");
 
-const inputInvalidClass = "cta-form__input--invalid";
+var inputInvalidClass = "cta-form__input--invalid";
 
-const activateInvalid = () => {
+function activateInvalid() {
   input.classList.add(inputInvalidClass);
 }
 
-const disactivateInvalid = () => {
+function disactivateInvalid() {
   input.classList.remove(inputInvalidClass);
 }
 

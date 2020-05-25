@@ -54,9 +54,7 @@
   }
 
   &:active {
-    span {
-      opacity: 0.3;
-    }
+    color: rgba($universal__bright-yellow, 0.3);
 
     svg {
       opacity: 0.3;

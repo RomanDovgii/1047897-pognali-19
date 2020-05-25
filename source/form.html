@@ -15,10 +15,10 @@
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="header">
+  <header class="header header">
     <section class="top-menu header__top-menu">
       <div class="wrapper top-menu__wrapper">
-        <div class="functions top-menu__functions top-menu__functions--white">
+        <div class="functions top-menu__functions top-menu__functions--white top-menu__functions">
           <a href="index.html" class="functions__link functions__link--white">
             <picture>
               <source type="img/webp" media="(min-width: 1440px)"
@@ -45,24 +45,18 @@
 
         <ul class="inner-links top-menu__inner-links">
           <li class="inner-links__item">
-            <a class="inner-links__link inner-links__link--active" href="./index.html">
-              <span data-hover="О сервисе">
-                О сервисе
-              </span>
+            <a class="inner-links__link inner-links__link--active" href="./index.html" data-hover="О сервисе">
+              О сервисе
             </a>
           </li>
           <li class="inner-links__item">
-            <a class="inner-links__link" href="./form.html">
-              <span data-hover="Направления">
-                Направления
-              </span>
+            <a class="inner-links__link" href="./form.html" data-hover="Направления">
+              Направления
             </a>
           </li>
           <li class="inner-links__item">
-            <a class="inner-links__link" href="./catalog.html">
-              <span data-hover="Попутчики">
-                Попутчики
-              </span>
+            <a class="inner-links__link" href="./catalog.html" data-hover="Попутчики">
+              Попутчики
             </a>
           </li>
         </ul>
@@ -94,24 +88,18 @@
         <div class="wrapper information__wrapper">
           <ul class="inner-links information__inner-links">
             <li class="inner-links__item">
-              <a class="inner-links__link inner-links__link--active" href="./index.html">
-                <span data-hover="О сервисе">
-                  О сервисе
-                </span>
+              <a class="inner-links__link inner-links__link--active" href="./index.html" data-hover="О сервисе">
+                О сервисе
               </a>
             </li>
             <li class="inner-links__item">
-              <a data-hover="Направления" class="inner-links__link" href="./form.html">
-                <span data-hover="Направления">
-                  Направления
-                </span>
+              <a class="inner-links__link" href="./form.html" data-hover="Направления">
+                Направления
               </a>
             </li>
             <li class="inner-links__item">
-              <a data-hover="Попутчики" class="inner-links__link" href="./catalog.html">
-                <span data-hover="Попутчики">
-                  Попутчики
-                </span>
+              <a class="inner-links__link" href="./catalog.html" data-hover="Попутчики">
+                Попутчики
               </a>
             </li>
           </ul>
@@ -165,8 +153,6 @@
           </ul>
         </div>
       </div>
-
-
     </section>
   </header>
   <main class="main">
@@ -821,6 +807,7 @@
   <script src="./js/open-menu.js"></script>
   <script src="./js/close-choose-country.js"></script>
   <script src="./js/country-form-validation.js"></script>
+  <script src="./js/picturefill.min.js"></script>
 </body>
 
 </html>

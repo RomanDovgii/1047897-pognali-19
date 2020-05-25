@@ -124,7 +124,6 @@
   padding-left: 16px;
 
   &::before {
-
     content: "";
 
     display: block;
@@ -153,6 +152,8 @@
     background-position: center;
     background-size: 13px 11px;
     border-radius: 50%;
+
+    opacity: 0.3;
   }
 
   &:hover,
@@ -160,12 +161,16 @@
     &::before {
       background-color: $grayish-blue-light-alt;
     }
+
+    &::after {
+      opacity: 0.5;
+    }
   }
 
   &:active {
     &::after {
       background-image: url("../img/icons/mobile/heart.svg");
-      opacity: 0.3;
+      opacity: 0.1;
     }
   }
 
@@ -176,12 +181,17 @@
 
     &::after {
       background-image: url("../img/icons/mobile/heart-active.svg");
+      opacity: 1;
     }
 
     &:hover,
     &:focus {
       &::before {
         background-color: $white-redish;
+      }
+
+      &::after {
+        opacity: 1;
       }
     }
 
@@ -329,7 +339,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 7px;
+  margin-top: 10px;
 
   width: 100%;
 }

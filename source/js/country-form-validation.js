@@ -1,12 +1,13 @@
-const labels = document.querySelectorAll(".step-description__label");
+var labels = document.querySelectorAll(".step-description__label");
 
-const invalidTextareaClass = "step-description__label--invalid";
+var invalidTextareaClass = "step-description__label--invalid";
 
+for (let i = 0; i < labels.length; i++) {
+  let element = labels[i];
 
-labels.forEach(element => {
   let planDescription = element.querySelector(".step-description__text");
 
   planDescription.addEventListener("invalid", function () {
     element.classList.add(invalidTextareaClass)
   });
-});
+}

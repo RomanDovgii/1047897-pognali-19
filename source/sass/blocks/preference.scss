@@ -98,7 +98,8 @@
     background-color: $white;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($gray, 0.6);
 
     &::before {
@@ -121,6 +122,40 @@ input[type="checkbox"]:checked + .preference__name {
     background-size: 9px 9px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+input[type="checkbox"] {
+  &:checked {
+    ~ .preference__name {
+      &::before {
+        background-image: url("../img/icons/mobile/tick.svg");
+        background-size: 9px 9px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    ~ .preference__name {
+      color: rgba($gray, 0.6);
+
+      &::before {
+        background-color: rgba($white, 0.6);
+      }
+    }
+  }
+
+  &:active {
+    ~ .preference__name {
+      color: rgba($gray, 0.3);
+
+      &::before {
+        background-color: rgba($white, 0.3);
+      }
+    }
   }
 }
 
