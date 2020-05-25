@@ -20,6 +20,8 @@
 
   &::after {
     position: absolute;
+    top: 8px;
+    left: 0;
   }
 
   &::before {
@@ -50,7 +52,7 @@
     background-image: url("../img/icons/mobile/tick.svg");
     background-size: 9px 9px;
     background-repeat: no-repeat;
-    background-position: 8px 7px;
+    background-position: 9px 0;
   }
 }
 
@@ -104,7 +106,7 @@
   .children-checkbox__label input:checked + .children-checkbox__label-name {
     &::after {
       background-size: 24px 12px;
-      background-position: 7px 5px;
+      background-position: 7px 4px;
     }
   }
 }

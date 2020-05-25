@@ -37,6 +37,7 @@
 
 .mates__content-wrapper {
   padding-left: 25px;
+  width: 320px;
 
   .mates__show-all {
     display: none;
@@ -113,6 +114,10 @@
       padding-left: 25px;
       padding-right: 25px;
     }
+  }
+
+  .mates__content-wrapper {
+    width: 768px;
   }
 
   .mates__heading {
@@ -220,6 +225,8 @@
   }
 
   .mates__content-wrapper {
+    width: 1440px;
+
     .mates__show-all {
       margin: 0;
       display: block;
